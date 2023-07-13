@@ -1,0 +1,13 @@
+.listContainer {
+  /* border: 1px solid white; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.horizontal {
+  grid-column: 1 / -1;
+}
+
+.right {
+  grid-column: -2 / -1;
+}

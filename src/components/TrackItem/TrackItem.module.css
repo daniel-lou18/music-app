@@ -1,0 +1,63 @@
+.trackItem {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.trackItem:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+svg,
+:global(.btnsContainer) {
+  opacity: 0;
+}
+
+.trackItem:hover svg,
+.redHeart,
+.trackItem:hover :global(.btnsContainer) {
+  opacity: 1;
+}
+
+/* .trackItem:hover .iconsContainer svg {
+  stroke: lightgrey;
+  transform: scale(1.1);
+} */
+
+.iconsContainer svg:hover {
+  cursor: pointer;
+  stroke: lightgray;
+  fill: rgb(32, 178, 170, 0.3);
+  transform: scale(1.1);
+}
+
+.iconsContainer svg:global(.feather-heart):hover {
+  fill: rgb(255, 0, 0, 0.5);
+}
+
+.iconsContainer svg:global(.feather-heart).redHeart:hover {
+  fill: rgb(255, 0, 0);
+}
+
+.track .trackItem img {
+  height: 50px;
+  width: 50px;
+}
+
+/* .trackItem div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} */
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 20px;
+}
+
+.iconsContainer svg {
+}

@@ -1,0 +1,8 @@
+.audio {
+  border: 2px solid #242424;
+  border-radius: 15px;
+}
+
+.locked {
+  opacity: 0.5;
+}

@@ -1,0 +1,41 @@
+.imgWrapper {
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: darkgray;
+}
+
+.listItem {
+  padding: 12px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 49);
+}
+
+.textContainer {
+  margin-top: 15px;
+}
+
+.title,
+.subtitle {
+  word-break: break-word;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+}
+
+.square {
+  border-radius: 5px;
+}
+
+.circle {
+  border-radius: 50%;
+}

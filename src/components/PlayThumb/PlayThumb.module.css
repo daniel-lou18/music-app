@@ -1,0 +1,139 @@
+.playerContainer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.imgWrapper {
+  position: relative;
+}
+.imgWrapper:hover {
+  cursor: pointer;
+}
+
+.img {
+  border-radius: 5px;
+}
+
+.audio {
+  border: 2px solid #242424;
+  border-radius: 15px;
+  position: relative;
+}
+
+.locked {
+  opacity: 0.5;
+}
+
+/* .audio img {
+  background-color: black;
+} */
+
+.svgWrapper {
+  height: 25px;
+  width: 25px;
+}
+
+.btnsContainer {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(49, 49, 49, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-left: 12px;
+}
+
+.trackName {
+  font-size: 1.2rem;
+}
+
+.trackArtist {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.inputRange {
+  display: flex;
+  align-items: center;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 10rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #999999;
+  border-radius: 2px;
+  height: 4px;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -6px; /* Centers thumb on the track */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background-color: lightseagreen;
+  /* outline: 3px solid lightseagreen;
+  outline-offset: 0.125rem; */
+}
+
+/* input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #ffffff;
+  outline-offset: 0.125rem;
+} */
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #999999;
+  border-radius: 2px;
+  height: 4px;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #ffffff;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #ffffff;
+  outline-offset: 0.125rem;
+}
