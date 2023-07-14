@@ -12,16 +12,19 @@ function TrackList({ tracks }) {
   };
 
   return (
-    <ul className={styles.tracklist}>
-      {tracks.map((track) => (
-        <TrackItem
-          key={track.id}
-          track={track}
-          isPlayingId={isPlayingId}
-          handlePlay={handlePlay}
-        />
-      ))}
-    </ul>
+    <>
+      <h2 className="section-title">Songs</h2>
+      <ul className={styles.tracklist}>
+        {tracks.map((track) => (
+          <TrackItem
+            key={track.id}
+            track={track}
+            isPlayingId={isPlayingId}
+            handlePlay={handlePlay}
+          />
+        ))}
+      </ul>
+    </>
   );
 }
 

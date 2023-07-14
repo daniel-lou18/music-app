@@ -5,5 +5,8 @@
 }
 
 .content-container {
-  padding: 8px 20px;
+  padding: 8px 0px 8px 25px;
+  background-color: var(--darkest-bg-color);
+  margin-left: 8px;
+  border-radius: 4px;
 }

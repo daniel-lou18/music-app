@@ -1,0 +1,21 @@
+.result {
+  padding: 15px;
+  background-color: var(--darker-bg-color);
+  border-radius: 5px;
+}
+
+.img {
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+}
+
+.itemTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.itemSubtitles {
+}

@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.92);
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(0, 0, 0);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,8 +15,8 @@
 }
 
 html {
-  --darkest-bg-color: rgb(36, 36, 36);
-  --darker-bg-color: rgb(49, 49, 49);
+  --darkest-bg-color: rgb(20, 20, 20);
+  --darker-bg-color: rgb(35, 35, 35);
   --dark-bg-color: rgb(60, 60, 60);
 
   --light-white-color: rgba(255, 255, 255, 0.92);
@@ -148,4 +148,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }

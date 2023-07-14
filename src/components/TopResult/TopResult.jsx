@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-
-// import { useAuth } from "../../context/AuthContext";
-
-// const BASE_URL = "https://api.spotify.com/v1";
+import styles from "./TopResult.module.css";
 
 function TopResult({ items, query }) {
+  const [topResult, setTopResult] = useState([]);
+  console.log(topResult);
+
   useEffect(() => {
     const itemsArray = [
       ...items.albums.items,
@@ -14,40 +14,36 @@ function TopResult({ items, query }) {
     ];
 
     itemsArray.forEach((item) => {
-      if (item.name.toLowerCase().includes(query)) console.log(item);
+      if (item.name.toLowerCase().includes(query)) setTopResult(item);
     });
   }, [items, query]);
 
-  // const topAlbum = items.albums.items[0].name;
-  // const topArtist = items.artists.items[0].name;
-  // const topTrack = items.tracks.items[0].name;
-  // console.log("album: " + topAlbum);
-  // console.log("artist: " + topArtist);
-  // console.log("track: " + topTrack);
+  if (!Object.keys(topResult).length) return <div>No results...</div>;
 
-  // const { token } = useAuth();
-
-  // useEffect(() => {
-  //   if (albums.items[0].length < 1) return;
-  //   const fetchMusic = async () => {
-  //     try {
-  //       const res = await fetch(`${BASE_URL}/albums/${albums.items[0].id}`, {
-  //         method: "GET",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //           Authorization: `Bearer ${token})}`,
-  //         },
-  //       });
-  //       const data = await res.json();
-  //       console.log(data);
-  //     } catch (err) {
-  //       console.error(err);
-  //     }
-  //   };
-  //   fetchMusic();
-  // }, [token, albums.items]);
-
-  return <div>{items.albums.items[0].name}</div>;
+  return (
+    <>
+      <h2 className="section-title">Top Result</h2>
+      <div className={styles.result}>
+        <img
+          className={styles.img}
+          src={
+            topResult.type === "track"
+              ? topResult.album.images[0]?.url
+              : topResult.images[0]?.url
+          }
+        />
+        <h3 className={styles.itemTitle}>{topResult.name}</h3>
+        <div className={styles.itemSubtitles}>
+          <h3 className={styles.firstSubtitle}>
+            {topResult.type === "track" || topResult.type === "album"
+              ? topResult.artists[0]?.name
+              : topResult.genres[0]}
+          </h3>
+          <h4 className={styles.secondSubtitle}></h4>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default TopResult;

@@ -11,12 +11,12 @@
   outline: 1px solid var(--medium-outline-color);
 }
 
-.trackItem svg,
+.trackItem .playerContainer svg,
 :global(.btnsContainer) {
   opacity: 0;
 }
 
-.trackItem:hover svg,
+.trackItem:hover .playerContainer svg,
 .trackItem:hover :global(.btnsContainer) {
   opacity: 1;
 }
