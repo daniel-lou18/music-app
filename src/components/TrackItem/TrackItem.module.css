@@ -7,7 +7,8 @@
 }
 
 .trackItem:hover {
-  background-color: rgb(49, 49, 49);
+  background-color: var(--darker-bg-color);
+  outline: 1px solid var(--medium-outline-color);
 }
 
 svg,
@@ -16,9 +17,12 @@ svg,
 }
 
 .trackItem:hover svg,
-.redHeart,
 .trackItem:hover :global(.btnsContainer) {
   opacity: 1;
+}
+
+.trackItem:hover :global(.note) {
+  opacity: 0;
 }
 
 /* .trackItem:hover .iconsContainer svg {
@@ -26,7 +30,7 @@ svg,
   transform: scale(1.1);
 } */
 
-.iconsContainer svg:hover {
+/* .iconsContainer svg:hover {
   cursor: pointer;
   stroke: lightgray;
   fill: rgb(32, 178, 170, 0.3);
@@ -39,7 +43,7 @@ svg,
 
 .iconsContainer svg:global(.feather-heart).redHeart:hover {
   fill: rgb(255, 0, 0);
-}
+} */
 
 .track .trackItem img {
   height: 50px;
@@ -52,7 +56,7 @@ svg,
   justify-content: space-around;
 } */
 
-.iconsContainer {
+/* .iconsContainer {
   display: flex;
   align-items: center;
   padding-left: 30px;
@@ -60,4 +64,4 @@ svg,
 }
 
 .iconsContainer svg {
-}
+} */
