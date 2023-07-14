@@ -11,3 +11,7 @@
 .right {
   grid-column: -2 / -1;
 }
+
+.left {
+  grid-column: 1 / 2;
+}

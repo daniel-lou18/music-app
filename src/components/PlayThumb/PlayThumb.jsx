@@ -118,8 +118,14 @@ function PlayThumb({
         )}
       </div>
       <div className={styles.textContainer}>
-        <h3 className={styles.trackName}>{name}</h3>
-        <h4 className={styles.trackArtist}>{artists[0].name}</h4>
+        <h3 className={styles.trackName}>
+          {name.length > 40 ? `${name.slice(0, 40)}...` : name}
+        </h3>
+        <h4 className={styles.trackArtist}>
+          {artists[0].name.length > 40
+            ? `${artists[0].name.slice(0, 40)}...`
+            : artists[0].name}
+        </h4>
       </div>
       <div className={styles.inputRange}>
         <input

@@ -2,11 +2,16 @@
 import { useState, useEffect } from "react";
 
 import { useAuth } from "./context/AuthContext";
+import AppContainer from "./components/Containers/AppContainer";
+import ContentContainer from "./components/Containers/ContentContainer";
+import Sidebar from "./components/Containers/Sidebar";
+import SearchBar from "./components/SearchBar";
+import TopResult from "./components/TopResult";
 import TrackList from "./components/TrackList";
 import HorizontalList from "./components/HorizontalList/HorizontalList";
 import "./App.css";
-import ListContainer from "./components/ListContainer/ListContainer";
-import Results from "./components/Results/Results";
+import ListContainer from "./components/Containers/ListContainer/";
+import Results from "./components/Containers/Results";
 import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
 
 const BASE_URL = "https://api.spotify.com/v1";
@@ -21,60 +26,65 @@ function App() {
 
   useEffect(() => {
     if (!query || !token) return;
+    const controller = new AbortController();
+
     const fetchMusic = async () => {
       try {
         setIsLoading(true);
         setError("");
         const res = await fetch(
-          `${BASE_URL}/search?q=${query}&type=artist,track,album&limit=10`,
+          `${BASE_URL}/search?q=${query}&type=artist,track,album&limit=5`,
           {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${token})}`,
             },
+            signal: controller.signal,
           }
         );
         const data = await res.json();
         console.log(data);
         setData(data);
       } catch (err) {
-        console.error(err);
-        setError(err.message);
+        // console.error(err);
+        if (err.name !== "AbortError") setError(err.message);
       } finally {
         setIsLoading(false);
       }
     };
+
     fetchMusic();
+    return () => controller.abort();
   }, [token, query]);
 
+  const handleQuery = (e) => setQuery(e.target.value);
+
   return (
-    <div className="app-container">
-      <div className="content-container">
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        ></input>
+    <AppContainer>
+      <Sidebar />
+      <ContentContainer>
+        <SearchBar query={query} onQuery={handleQuery} />
         <Results>
-          {!error && !isLoading && data?.tracks?.items.length > 0 && (
-            <ListContainer position="right">
-              <TrackList tracks={data?.tracks?.items.slice(0, 5)} />
-            </ListContainer>
-          )}
-          {!error && !isLoading && data?.tracks?.items.length > 0 && (
-            <ListContainer>
-              <HorizontalList items={data?.artists?.items} />
-            </ListContainer>
-          )}
-          {!error && !isLoading && data?.tracks?.items.length > 0 && (
-            <ListContainer>
-              <HorizontalList items={data?.albums?.items} />
-            </ListContainer>
+          {!error && data?.tracks?.items.length > 0 && (
+            <>
+              <ListContainer position="left">
+                <TopResult items={data} query={query} />
+              </ListContainer>
+              <ListContainer position="right">
+                <TrackList tracks={data?.tracks?.items} />
+              </ListContainer>
+              <ListContainer>
+                <HorizontalList items={data?.artists?.items} />
+              </ListContainer>
+              <ListContainer>
+                <HorizontalList items={data?.albums?.items} />
+              </ListContainer>
+            </>
           )}
         </Results>
-      </div>
-    </div>
+      </ContentContainer>
+    </AppContainer>
   );
 }
 

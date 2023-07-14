@@ -11,7 +11,7 @@
   outline: 1px solid var(--medium-outline-color);
 }
 
-svg,
+.trackItem svg,
 :global(.btnsContainer) {
   opacity: 0;
 }

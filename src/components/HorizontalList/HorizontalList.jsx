@@ -8,11 +8,7 @@ function HorizontalList({ items }) {
       {items.map((item) => (
         <HorizontalListItem
           key={item.id}
-          imgUrl={
-            item.type === "artist"
-              ? item?.images[item?.images.length - 1]?.url
-              : item?.images[item?.images.length - 2]?.url
-          }
+          imgUrl={item?.images[0]?.url}
           id={item.id}
           title={item.name}
           subtitle={
