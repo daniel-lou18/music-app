@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
 import { useAuth } from "./context/AuthContext";
 import AppContainer from "./components/Containers/AppContainer";
@@ -24,7 +24,7 @@ function App() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!query || !token) return;
     const controller = new AbortController();
 

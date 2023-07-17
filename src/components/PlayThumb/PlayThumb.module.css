@@ -5,6 +5,8 @@
 
 .imgWrapper {
   position: relative;
+  height: 64px;
+  width: 64px;
 }
 .imgWrapper:hover {
   cursor: pointer;
@@ -17,10 +19,6 @@
 .audio {
   display: none;
 }
-
-/* .audio img {
-  background-color: black;
-} */
 
 .svgWrapper {
   height: 25px;
@@ -86,7 +84,7 @@ li:not(:hover) .pauseBtn {
 }
 
 .trackName {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .trackArtist {
@@ -99,7 +97,14 @@ li:not(:hover) .pauseBtn {
   align-items: center;
 }
 
-/*********** Baseline, reset styles ***********/
+@media screen and (max-width: 1200px) {
+  .inputRange {
+    display: none;
+  }
+}
+
+/*********** Baseline,
+  reset styles ***********/
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;

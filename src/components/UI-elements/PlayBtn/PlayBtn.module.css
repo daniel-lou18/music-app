@@ -1,0 +1,19 @@
+.playBtn {
+  opacity: 0;
+  margin-left: auto;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: var(--transp-btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playBtn:hover {
+  background-color: var(--main-btn-color);
+  transform: scale(1.1);
+}
+
+.playBtnSvg {
+}
