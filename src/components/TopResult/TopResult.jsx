@@ -25,7 +25,7 @@ function TopResult({ items, query }) {
 
   return (
     <div className={styles.resultContainer}>
-      <h2 className="section-title">Top Result</h2>
+      <h2 className={`section-title ${styles.title}`}>Top Result</h2>
       <div className={styles.result}>
         <img
           className={styles.img}
@@ -37,7 +37,13 @@ function TopResult({ items, query }) {
         />
         <h3 className={styles.itemTitle}>{topResult.name}</h3>
         <div className={styles.itemSubtitles}>
-          <h3 className={`${styles.firstSubtitle} small-subtext`}>
+          <h3
+            className={`${styles.firstSubtitle} small-subtext ${
+              topResult.type === "artist" && topResult.genres.length === 0
+                ? styles.firstSubtitleHidden
+                : ""
+            } `}
+          >
             {topResult.type === "track" || topResult.type === "album"
               ? topResult.artists[0]?.name
               : topResult.genres[0]}
@@ -57,7 +63,7 @@ function TopResult({ items, query }) {
                 : Math.ceil(topResult.popularity / 20)
             }
           />
-          <PlayBtn />
+          <PlayBtn type={topResult.type} />
         </div>
       </div>
     </div>

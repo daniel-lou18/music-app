@@ -75,10 +75,13 @@ function App() {
                 <TrackList tracks={data?.tracks?.items} />
               </ListContainer>
               <ListContainer>
-                <HorizontalList items={data?.artists?.items} />
+                <HorizontalList
+                  items={data?.artists?.items}
+                  title={"Artists"}
+                />
               </ListContainer>
               <ListContainer>
-                <HorizontalList items={data?.albums?.items} />
+                <HorizontalList items={data?.albums?.items} title={"Albums"} />
               </ListContainer>
             </>
           )}

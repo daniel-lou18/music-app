@@ -16,11 +16,11 @@
 
 html {
   --darkest-bg-color: rgb(20, 20, 20);
-  --darker-bg-color: #232323;
-  --dark-bg-color: #3c3c3c;
+  --darker-bg-color: rgb(35, 35, 35);
+  --dark-bg-color: rgb(60, 60, 60);
   --medium-bg-color: rgba(255, 255, 255, 0.5);
 
-  --light-white-color: rgba(255, 255, 255, 0.92);
+  --light-white-color: #ffffffeb;
   --medium-outline-color: rgba(255, 255, 255, 0.5);
 
   --main-btn-color: rgb(32, 178, 170, 0.8);
@@ -153,7 +153,7 @@ table {
 }
 
 .section-title {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: bold;

@@ -8,14 +8,26 @@
 }
 
 .listItem {
-  padding: 15px;
+  position: relative;
+  padding: 15px 15px 20px 15px;
   border-radius: 5px;
   background-color: var(--darker-bg-color);
   margin-right: 25px;
+  transition: background-color 0.3s;
+}
+
+.listItem:hover {
+  background-color: rgba(60, 60, 60, 0.7);
+}
+
+li.listItem:hover :global(.playBtn) {
+  opacity: 1;
+  right: 5%;
+  bottom: 5%;
 }
 
 .textContainer {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .title,
@@ -39,4 +51,14 @@
 
 .circle {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    display: none;
+  }
 }

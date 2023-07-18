@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import styles from "./HorizontalListItem.module.css";
+import PlayBtn from "../UI-elements/PlayBtn/";
 
 function HorizontalListItem({ id, imgUrl, title, subtitle, type }) {
   return (
@@ -16,6 +17,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type }) {
       <div className={styles.textContainer}>
         <h3 className={styles.title}>{title}</h3>
         <h4 className={styles.subtitle}>{subtitle}</h4>
+        <PlayBtn type={type} />
       </div>
     </li>
   );

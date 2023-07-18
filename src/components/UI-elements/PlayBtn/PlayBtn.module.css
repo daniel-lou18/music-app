@@ -1,4 +1,7 @@
-.playBtn {
+:global(.playBtn) {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
   opacity: 0;
   margin-left: auto;
   height: 48px;
@@ -8,12 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-.playBtn:hover {
+:global(.playBtn:hover) {
   background-color: var(--main-btn-color);
-  transform: scale(1.1);
+  cursor: pointer;
 }
 
-.playBtnSvg {
+.playBtnIcon {
+  transform: translateX(1px);
 }
