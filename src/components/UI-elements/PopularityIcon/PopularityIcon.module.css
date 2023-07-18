@@ -1,16 +1,14 @@
 .popularityContainer {
-  margin-top: 20px;
+  margin-top: 6px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   height: 36px;
 }
 
-.popularityLabel {
-  height: 24px;
-  padding-top: 0.2rem;
-}
-
 .popularityIcon {
+  position: relative;
+  top: 8%;
 }
 
 .one,

@@ -1,3 +1,7 @@
+.trackItem:first-child {
+  padding-top: 10px;
+}
+
 .trackItem {
   display: grid;
   grid-template-columns: 1fr auto;

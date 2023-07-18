@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import PopularityIcon from "../UI-elements/PopularityIcon/";
 import styles from "./TopResult.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
+import StarRating from "../StarRating/";
 
 function TopResult({ items, query }) {
   const [topResult, setTopResult] = useState([]);
@@ -55,16 +56,15 @@ function TopResult({ items, query }) {
                 topResult.type.slice(1)}
           </h4>
         </div>
-        <div className={`${styles.lastLine}`}>
-          <PopularityIcon
-            popularity={
-              topResult.type === "album"
-                ? 3
-                : Math.ceil(topResult.popularity / 20)
-            }
-          />
-          <PlayBtn type={topResult.type} />
-        </div>
+        <PopularityIcon
+          popularity={
+            topResult.type === "album"
+              ? 3
+              : Math.ceil(topResult.popularity / 20)
+          }
+        />
+        <PlayBtn type={topResult.type} />
+        <StarRating size={24} color="yellow" text="Rating" number={5} />
       </div>
     </div>
   );
