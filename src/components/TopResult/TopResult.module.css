@@ -28,8 +28,15 @@
 .itemTitle {
   margin-top: 20px;
   margin-bottom: 30px;
-  font-size: 1.7rem;
+  font-size: 27px;
   font-weight: bold;
+}
+
+.itemTitleSmall {
+  letter-spacing: -1px;
+  font-size: 21px;
+  margin-top: 23px;
+  margin-bottom: 33px;
 }
 
 .itemSubtitles {

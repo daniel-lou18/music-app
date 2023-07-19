@@ -1,19 +1,45 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useState, useLayoutEffect } from "react";
+import { createContext, useContext, useLayoutEffect, useReducer } from "react";
 
 import { useAuth } from "./AuthContext";
 
-const MusicContext = createContext();
-
 const BASE_URL = "https://api.spotify.com/v1";
+
+const MusicContext = createContext();
 
 export const MusicProvider = ({ children }) => {
   const { token } = useAuth();
 
-  const [data, setData] = useState([]);
-  const [query, setQuery] = useState("coltrane");
-  const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const initialState = {
+    data: [],
+    query: "coltrane",
+    error: "",
+    isLoading: false,
+    playId: "",
+  };
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case "search/query":
+        return { ...state, query: action.payload };
+      case "search/loading":
+        return { ...state, error: "", isLoading: true };
+      case "search/loaded":
+        return { ...state, data: action.payload, isLoading: false };
+      case "search/error":
+        if (action.payload.name === "AbortError") return state;
+        return { ...state, error: action.payload.message, isLoading: false };
+      case "track/play":
+        return { ...state, playId: action.payload };
+      default:
+        return state;
+    }
+  };
+
+  const [{ data, query, error, isLoading, playId }, dispatch] = useReducer(
+    reducer,
+    initialState
+  );
 
   useLayoutEffect(() => {
     if (!query || !token) return;
@@ -21,8 +47,7 @@ export const MusicProvider = ({ children }) => {
 
     const fetchMusic = async () => {
       try {
-        setIsLoading(true);
-        setError("");
+        dispatch({ type: "search/loading" });
         const res = await fetch(
           `${BASE_URL}/search?q=${query}&type=artist,track,album&limit=5`,
           {
@@ -36,12 +61,10 @@ export const MusicProvider = ({ children }) => {
         );
         const data = await res.json();
         console.log(data);
-        setData(data);
+        dispatch({ type: "search/loaded", payload: data });
       } catch (err) {
-        // console.error(err);
-        if (err.name !== "AbortError") setError(err.message);
-      } finally {
-        setIsLoading(false);
+        console.error(err);
+        dispatch({ type: "search/error", payload: err });
       }
     };
 
@@ -50,7 +73,9 @@ export const MusicProvider = ({ children }) => {
   }, [token, query]);
 
   return (
-    <MusicContext.Provider value={{ data, query, setQuery, error, isLoading }}>
+    <MusicContext.Provider
+      value={{ data, query, error, isLoading, playId, dispatch }}
+    >
       {children}
     </MusicContext.Provider>
   );

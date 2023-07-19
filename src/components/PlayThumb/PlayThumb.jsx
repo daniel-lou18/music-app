@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import styles from "./PlayThumb.module.css";
+import { useMusic } from "../../context/MusicContext";
 
 function PlayThumb({
   album,
@@ -14,6 +15,7 @@ function PlayThumb({
   const isPlaying = isPlayingId === id ? true : false;
   const [currentTime, setCurrentTime] = useState(0);
   const audioEl = useRef();
+  const { playId, dispatch } = useMusic();
 
   useEffect(() => {
     isPlaying ? audioEl.current.play() : audioEl.current.pause();
@@ -25,6 +27,14 @@ function PlayThumb({
     }, 1000);
     return () => clearInterval(intervalId);
   }, []);
+
+  useEffect(() => {
+    if (playId === id) {
+      audioEl.current.play();
+      handlePlay(id);
+      dispatch({ type: "track/play", payload: "" });
+    }
+  }, [playId, id, handlePlay, dispatch]);
 
   const handleSlider = (e) => {
     audioEl.current.currentTime = e.target.value;

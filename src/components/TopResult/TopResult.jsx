@@ -36,7 +36,15 @@ function TopResult({ items, query }) {
               : topResult.images[0]?.url
           }
         />
-        <h3 className={styles.itemTitle}>{topResult.name}</h3>
+        <h3
+          className={`${styles.itemTitle} ${
+            topResult.name.length > 30 ? styles.itemTitleSmall : ""
+          }`}
+        >
+          {topResult.name.length > 30
+            ? topResult.name.slice(0, 30) + "..."
+            : topResult.name}
+        </h3>
         <div className={styles.itemSubtitles}>
           <h3
             className={`${styles.firstSubtitle} small-subtext ${
@@ -63,7 +71,7 @@ function TopResult({ items, query }) {
               : Math.ceil(topResult.popularity / 20)
           }
         />
-        <PlayBtn type={topResult.type} />
+        <PlayBtn type={topResult.type} id={topResult.id} />
         <StarRating size={24} color="yellow" text="Rating" number={5} />
       </div>
     </div>

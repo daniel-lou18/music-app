@@ -16,15 +16,19 @@ import AudioPlayer from "./components/AudioPlayer/AudioPlayer";
 const BASE_URL = "https://api.spotify.com/v1";
 
 function App() {
-  const { data, query, setQuery, error, isLoading } = useMusic();
-
-  const handleQuery = (e) => setQuery(e.target.value);
+  const { data, query, error, isLoading, dispatch } = useMusic();
+  console.log(query);
 
   return (
     <AppContainer>
       <Sidebar />
       <ContentContainer>
-        <SearchBar query={query} onQuery={handleQuery} />
+        <SearchBar
+          query={query}
+          onQuery={(e) =>
+            dispatch({ type: "search/query", payload: e.target.value })
+          }
+        />
         <Results>
           {!error && data?.tracks?.items.length > 0 && (
             <>

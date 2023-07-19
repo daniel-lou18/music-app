@@ -1,9 +1,26 @@
 /* eslint-disable react/prop-types */
-import styles from "./PlayBtn.module.css";
+import { useEffect, useState } from "react";
 
-function PlayBtn({ type }) {
+import styles from "./PlayBtn.module.css";
+import { useMusic } from "../../../context/MusicContext";
+
+function PlayBtn({ type, id }) {
+  const { dispatch, playId } = useMusic();
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    if (playId === id) setIsPlaying(true);
+  }, [playId, id]);
+
+  if (isPlaying) return;
+
   return (
-    <div className={`${styles.playBtn} playBtn`}>
+    <div
+      className={`${styles.playBtn} playBtn`}
+      onClick={() => {
+        if (type === "track") dispatch({ type: "track/play", payload: id });
+      }}
+    >
       {(type === "artist" || type === "album") && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
