@@ -6,3 +6,7 @@
 .starList span {
   margin-right: 15px;
 }
+
+.notRated li {
+  opacity: 0.3;
+}
