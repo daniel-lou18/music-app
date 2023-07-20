@@ -1,11 +1,15 @@
 /* eslint-disable react/prop-types */
 
 import { useEffect, useRef, useState } from "react";
+
+import { useMusic } from "../../../context/MusicContext";
 import styles from "./PlayBtn.module.css";
 
-function PlayBtn({ type, url }) {
+function PlayBtn({ type, url, id }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioEl = useRef();
+
+  const { dispatch } = useMusic();
 
   useEffect(() => {
     const handleEnded = () => setIsPlaying(false);
@@ -27,7 +31,19 @@ function PlayBtn({ type, url }) {
   return (
     <>
       {(type === "artist" || type === "album") && (
-        <div className={`${styles.playBtn} playBtn`} onClick={handleClick}>
+        <div
+          className={`${styles.playBtn} playBtn`}
+          onClick={() => {
+            if (type === "artist")
+              dispatch({ type: "artist/get", payload: id });
+            if (type === "album") dispatch({ type: "album/get", payload: id });
+            window.scrollTo({
+              top: 60,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

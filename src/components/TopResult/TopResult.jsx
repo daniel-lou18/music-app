@@ -5,10 +5,12 @@ import PopularityIcon from "../UI-elements/PopularityIcon/";
 import styles from "./TopResult.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
 import StarRating from "../StarRating/";
+import { useMusic } from "../../context/MusicContext";
 
 function TopResult({ items, query }) {
   const [topResult, setTopResult] = useState([]);
-  console.log(topResult);
+
+  const { topResult: newTopResult } = useMusic();
 
   useEffect(() => {
     const itemsArray = [
@@ -21,6 +23,11 @@ function TopResult({ items, query }) {
       if (item.name.toLowerCase().includes(query)) setTopResult(item);
     });
   }, [items, query]);
+
+  useEffect(() => {
+    if (!newTopResult || !newTopResult.type) return;
+    setTopResult(newTopResult);
+  }, [newTopResult]);
 
   if (!Object.keys(topResult).length) return <div>No results...</div>;
 

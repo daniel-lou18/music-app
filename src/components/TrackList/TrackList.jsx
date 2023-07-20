@@ -21,6 +21,7 @@ function TrackList({ tracks }) {
             track={track}
             isPlayingId={isPlayingId}
             handlePlay={handlePlay}
+            item={track}
           />
         ))}
       </ul>
