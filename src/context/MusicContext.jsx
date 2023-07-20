@@ -15,7 +15,6 @@ export const MusicProvider = ({ children }) => {
     query: "coltrane",
     error: "",
     isLoading: false,
-    playId: "",
   };
 
   const reducer = (state, action) => {
@@ -29,8 +28,6 @@ export const MusicProvider = ({ children }) => {
       case "search/error":
         if (action.payload.name === "AbortError") return state;
         return { ...state, error: action.payload.message, isLoading: false };
-      case "track/play":
-        return { ...state, playId: action.payload };
       default:
         return state;
     }

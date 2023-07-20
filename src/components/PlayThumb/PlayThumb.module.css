@@ -29,13 +29,13 @@
 
 .btnsContainer {
   position: absolute;
-  z-index: 5;
+  /* z-index: 5; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
   background-color: rgb(49, 49, 49, 0.5);
   display: flex;
@@ -43,16 +43,17 @@
   align-items: center;
 }
 
-.btnsContainer:hover svg.playBtn {
+.imgWrapper:hover svg.pauseBtn,
+.imgWrapper:hover svg.playBtn {
   stroke: lightseagreen;
   transform: scale(1.1);
 }
 
-.btnsContainer:hover svg.note {
+.imgWrapper:hover svg.note {
   opacity: 0;
 }
 
-.btnsContainer:has(svg.note) {
+:global(.noteContainer) {
   opacity: 1;
 }
 
@@ -60,22 +61,9 @@ svg.note {
   opacity: 1;
 }
 
-.pauseNoteContainer:hover .pauseBtn {
-  stroke: lightseagreen;
-  transform: translateX(50%) scale(1.1);
-}
-
-li:not(:hover) .pauseBtn {
+/* li:not(:hover) .pauseBtn {
   opacity: 0;
-}
-
-.pauseBtn {
-  transform: translateX(50%);
-}
-
-.note {
-  transform: translateX(-50%);
-}
+} */
 
 .textContainer {
   display: flex;

@@ -71,7 +71,11 @@ function TopResult({ items, query }) {
               : Math.ceil(topResult.popularity / 20)
           }
         />
-        <PlayBtn type={topResult.type} id={topResult.id} />
+        <PlayBtn
+          key={topResult.id}
+          type={topResult.type}
+          url={topResult.preview_url}
+        />
         <StarRating size={24} color="yellow" text="Rating" number={5} />
       </div>
     </div>

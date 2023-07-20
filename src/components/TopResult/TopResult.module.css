@@ -13,11 +13,39 @@
   background-color: rgba(60, 60, 60, 0.7);
 }
 
-.resultContainer:hover :global(.playBtn) {
+.result:hover :global(.playBtn) {
+  opacity: 1;
+  right: 5%;
+  bottom: 3%;
+}
+
+.result :global(.pauseContainer) {
+  display: none;
+}
+
+.result :global(.noteContainer) {
+  opacity: 1;
+  right: 5%;
+  bottom: 3%;
+  background-color: rgb(49, 49, 49, 0.5);
+}
+
+.result:hover :global(.pauseContainer) {
+  display: flex;
+  right: 5%;
+  bottom: 3%;
+}
+
+.result:hover :global(.noteContainer) {
+  display: none;
+}
+
+/* .result :global(.pauseNoteContainer) {
   opacity: 1;
   right: 5%;
   bottom: 5%;
-}
+  background-color: rgb(49, 49, 49, 0.5);
+} */
 
 .img {
   height: 125px;

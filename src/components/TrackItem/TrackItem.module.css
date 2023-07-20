@@ -15,17 +15,15 @@
   outline: 1px solid var(--medium-outline-color);
 }
 
-.trackItem .playerContainer svg,
 :global(.btnsContainer) {
   opacity: 0;
 }
 
-.trackItem:hover .playerContainer svg,
 .trackItem:hover :global(.btnsContainer) {
   opacity: 1;
 }
 
-.trackItem:hover :global(.note) {
+.trackItem:hover :global(.noteContainer) {
   opacity: 0;
 }
 

@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import styles from "./PlayThumb.module.css";
-import { useMusic } from "../../context/MusicContext";
 
 function PlayThumb({
   album,
@@ -15,7 +14,6 @@ function PlayThumb({
   const isPlaying = isPlayingId === id ? true : false;
   const [currentTime, setCurrentTime] = useState(0);
   const audioEl = useRef();
-  const { playId, dispatch } = useMusic();
 
   useEffect(() => {
     isPlaying ? audioEl.current.play() : audioEl.current.pause();
@@ -29,12 +27,15 @@ function PlayThumb({
   }, []);
 
   useEffect(() => {
-    if (playId === id) {
-      audioEl.current.play();
-      handlePlay(id);
-      dispatch({ type: "track/play", payload: "" });
-    }
-  }, [playId, id, handlePlay, dispatch]);
+    const handleEnded = () => {
+      setCurrentTime(0);
+      audioEl.current.currentTime = 0;
+      handlePlay("");
+    };
+    const current = audioEl.current;
+    current.addEventListener("ended", handleEnded);
+    return () => current.removeEventListener("ended", handleEnded);
+  }, [handlePlay, id]);
 
   const handleSlider = (e) => {
     audioEl.current.currentTime = e.target.value;
@@ -89,41 +90,48 @@ function PlayThumb({
           </div>
         )}
         {preview_url && isPlaying && (
-          <div
-            className={`${styles.btnsContainer} ${styles.pauseNoteContainer} btnsContainer`}
-            onClick={() => handlePlay("")}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className={`${styles.playerBtn} ${styles.pauseBtn}`}
+          <div>
+            <div
+              className={`${styles.btnsContainer} ${styles.pauseContainer} pauseContainer btnsContainer`}
+              onClick={() => handlePlay("")}
             >
-              <rect x="6" y="4" width="4" height="16" />
-              <rect x="14" y="4" width="4" height="16" />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className={`${styles.playerBtn} ${styles.note} note`}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={`${styles.playerBtn} ${styles.pauseBtn}`}
+              >
+                <rect x="6" y="4" width="4" height="16" />
+                <rect x="14" y="4" width="4" height="16" />
+              </svg>
+            </div>
+            <div
+              className={`${styles.btnsContainer} ${styles.noteContainer} noteContainer`}
+              onClick={() => handlePlay("")}
             >
-              <path d="M9 18V5l12-2v13" />
-              <circle cx="6" cy="18" r="3" />
-              <circle cx="18" cy="16" r="3" />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={`${styles.playerBtn} ${styles.note} note`}
+              >
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
           </div>
         )}
       </div>
