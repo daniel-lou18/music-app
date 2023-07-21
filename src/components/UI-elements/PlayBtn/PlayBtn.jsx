@@ -1,49 +1,24 @@
 /* eslint-disable react/prop-types */
-
-import { useEffect, useRef, useState } from "react";
-
 import { useMusic } from "../../../context/MusicContext";
 import styles from "./PlayBtn.module.css";
 
-function PlayBtn({ type, url, id }) {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioEl = useRef();
+function PlayBtn({ type, id }) {
+  const { isPlayingId, dispatch } = useMusic();
 
-  const { dispatch } = useMusic();
-
-  useEffect(() => {
-    const handleEnded = () => setIsPlaying(false);
-    const current = audioEl.current;
-    current.addEventListener("ended", handleEnded);
-    return () => current.removeEventListener("ended", handleEnded);
-  }, []);
-
-  const handleClick = () => {
-    if (!isPlaying) {
-      audioEl.current.play();
-      setIsPlaying(true);
-    } else {
-      audioEl.current.pause();
-      setIsPlaying(false);
-    }
+  const handleGet = () => {
+    if (type === "artist") dispatch({ type: "artist/get", payload: id });
+    if (type === "album") dispatch({ type: "album/get", payload: id });
+    window.scrollTo({
+      top: 60,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
     <>
       {(type === "artist" || type === "album") && (
-        <div
-          className={`${styles.playBtn} playBtn`}
-          onClick={() => {
-            if (type === "artist")
-              dispatch({ type: "artist/get", payload: id });
-            if (type === "album") dispatch({ type: "album/get", payload: id });
-            window.scrollTo({
-              top: 60,
-              left: 0,
-              behavior: "smooth",
-            });
-          }}
-        >
+        <div className={`${styles.playBtn} playBtn`} onClick={handleGet}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -61,8 +36,14 @@ function PlayBtn({ type, url, id }) {
           </svg>
         </div>
       )}
-      {type === "track" && !isPlaying && (
-        <div className={`${styles.playBtn} playBtn`} onClick={handleClick}>
+      {type === "track" && !isPlayingId && (
+        <div
+          className={`${styles.playBtn} playBtn`}
+          onClick={() => {
+            console.log(id);
+            dispatch({ type: "playing/set", payload: id });
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -79,11 +60,11 @@ function PlayBtn({ type, url, id }) {
           </svg>
         </div>
       )}
-      {type === "track" && isPlaying && (
+      {type === "track" && isPlayingId && (
         <div>
           <div
             className={`${styles.btnsContainer} ${styles.pauseContainer} pauseContainer playBtn`}
-            onClick={handleClick}
+            onClick={() => dispatch({ type: "playing/set", payload: "" })}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +84,7 @@ function PlayBtn({ type, url, id }) {
           </div>
           <div
             className={`${styles.btnsContainer} ${styles.noteContainer} noteContainer playBtn`}
-            onClick={handleClick}
+            onClick={() => dispatch({ type: "playing/set", payload: "" })}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +105,6 @@ function PlayBtn({ type, url, id }) {
           </div>
         </div>
       )}
-      <div className={`${styles.audio}`}>
-        <audio ref={audioEl} src={url} />
-      </div>
     </>
   );
 }

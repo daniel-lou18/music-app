@@ -1,16 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import styles from "./PlayThumb.module.css";
+import { useMusic } from "../../context/MusicContext";
 
-function PlayThumb({
-  album,
-  id,
-  name,
-  artists,
-  preview_url,
-  isPlayingId,
-  handlePlay,
-}) {
+function PlayThumb({ album, id, name, artists, preview_url }) {
+  const { isPlayingId, dispatch } = useMusic();
   const isPlaying = isPlayingId === id ? true : false;
   const [currentTime, setCurrentTime] = useState(0);
   const audioEl = useRef();
@@ -26,16 +20,11 @@ function PlayThumb({
     return () => clearInterval(intervalId);
   }, []);
 
-  useEffect(() => {
-    const handleEnded = () => {
-      setCurrentTime(0);
-      audioEl.current.currentTime = 0;
-      handlePlay("");
-    };
-    const current = audioEl.current;
-    current.addEventListener("ended", handleEnded);
-    return () => current.removeEventListener("ended", handleEnded);
-  }, [handlePlay, id]);
+  const handleEnded = () => {
+    setCurrentTime(0);
+    audioEl.current.currentTime = 0;
+    dispatch({ type: "playing/set", payload: "" });
+  };
 
   const handleSlider = (e) => {
     audioEl.current.currentTime = e.target.value;
@@ -71,7 +60,7 @@ function PlayThumb({
         {preview_url && !isPlaying && (
           <div
             className={`${styles.btnsContainer} btnsContainer`}
-            onClick={() => handlePlay(id)}
+            onClick={() => dispatch({ type: "playing/set", payload: id })}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +82,7 @@ function PlayThumb({
           <div>
             <div
               className={`${styles.btnsContainer} ${styles.pauseContainer} pauseContainer btnsContainer`}
-              onClick={() => handlePlay("")}
+              onClick={() => dispatch({ type: "playing/set", payload: "" })}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +102,7 @@ function PlayThumb({
             </div>
             <div
               className={`${styles.btnsContainer} ${styles.noteContainer} noteContainer`}
-              onClick={() => handlePlay("")}
+              onClick={() => dispatch({ type: "playing/set", payload: "" })}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +144,7 @@ function PlayThumb({
         />
       </div>
       <div className={`${styles.audio}`}>
-        <audio ref={audioEl} src={preview_url} />
+        <audio ref={audioEl} src={preview_url} onEnded={handleEnded} />
       </div>
     </div>
   );

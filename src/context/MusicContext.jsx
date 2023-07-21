@@ -15,9 +15,9 @@ export const MusicProvider = ({ children }) => {
     query: "coltrane",
     error: "",
     isLoading: false,
+    isPlayingId: "",
     artistId: "",
     albumId: "",
-    topResult: {},
   };
 
   const reducer = (state, action) => {
@@ -62,8 +62,8 @@ export const MusicProvider = ({ children }) => {
             },
           },
         };
-      case "topResult/set":
-        return { ...state, topResult: action.payload };
+      case "playing/set":
+        return { ...state, isPlayingId: action.payload };
 
       default:
         return state;
@@ -71,7 +71,7 @@ export const MusicProvider = ({ children }) => {
   };
 
   const [
-    { data, query, error, isLoading, artistId, albumId, topResult },
+    { data, query, error, isLoading, isPlayingId, artistId, albumId },
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -188,9 +188,9 @@ export const MusicProvider = ({ children }) => {
         query,
         error,
         isLoading,
+        isPlayingId,
         artistId,
         albumId,
-        topResult,
         dispatch,
       }}
     >

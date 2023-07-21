@@ -5,12 +5,9 @@ import PopularityIcon from "../UI-elements/PopularityIcon/";
 import styles from "./TopResult.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
 import StarRating from "../StarRating/";
-import { useMusic } from "../../context/MusicContext";
 
 function TopResult({ items, query }) {
   const [topResult, setTopResult] = useState([]);
-
-  const { topResult: newTopResult } = useMusic();
 
   useEffect(() => {
     const itemsArray = [
@@ -23,11 +20,6 @@ function TopResult({ items, query }) {
       if (item.name.toLowerCase().includes(query)) setTopResult(item);
     });
   }, [items, query]);
-
-  useEffect(() => {
-    if (!newTopResult || !newTopResult.type) return;
-    setTopResult(newTopResult);
-  }, [newTopResult]);
 
   if (!Object.keys(topResult).length) return <div>No results...</div>;
 
@@ -82,6 +74,7 @@ function TopResult({ items, query }) {
           key={topResult.id}
           type={topResult.type}
           url={topResult.preview_url}
+          id={topResult.id}
         />
         <StarRating size={24} color="yellow" text="Rating" number={5} />
       </div>
