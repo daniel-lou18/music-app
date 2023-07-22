@@ -15,6 +15,10 @@ function PlayBtn({ type, id }) {
     });
   };
 
+  const handlePlay = () => {
+    dispatch({ type: "playing/set", payload: id });
+  };
+
   return (
     <>
       {(type === "artist" || type === "album") && (
@@ -36,14 +40,8 @@ function PlayBtn({ type, id }) {
           </svg>
         </div>
       )}
-      {type === "track" && !isPlayingId && (
-        <div
-          className={`${styles.playBtn} playBtn`}
-          onClick={() => {
-            console.log(id);
-            dispatch({ type: "playing/set", payload: id });
-          }}
-        >
+      {type === "track" && isPlayingId !== id && (
+        <div className={`${styles.playBtn} playBtn`} onClick={handlePlay}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -60,7 +58,7 @@ function PlayBtn({ type, id }) {
           </svg>
         </div>
       )}
-      {type === "track" && isPlayingId && (
+      {type === "track" && isPlayingId === id && (
         <div>
           <div
             className={`${styles.btnsContainer} ${styles.pauseContainer} pauseContainer playBtn`}

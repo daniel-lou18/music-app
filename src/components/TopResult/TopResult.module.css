@@ -4,6 +4,7 @@
 
 .result {
   height: 310px;
+  width: calc(100% - 40px);
   padding: 20px;
   background-color: var(--darker-bg-color);
   border-radius: 5px;
