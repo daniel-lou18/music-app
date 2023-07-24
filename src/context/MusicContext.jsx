@@ -18,12 +18,19 @@ export const MusicProvider = ({ children }) => {
     isPlayingId: "",
     artistId: "",
     albumId: "",
+    topResult: {},
   };
 
   const reducer = (state, action) => {
     switch (action.type) {
       case "search/query":
-        return { ...state, query: action.payload };
+        return {
+          ...state,
+          query: action.payload,
+          artistId: "",
+          albumId: "",
+          isPlayingId: "",
+        };
       case "loading":
         return { ...state, error: "", isLoading: true };
       case "loaded":
@@ -32,9 +39,19 @@ export const MusicProvider = ({ children }) => {
         if (action.payload.name === "AbortError") return state;
         return { ...state, error: action.payload.message, isLoading: false };
       case "artist/get":
-        return { ...state, artistId: action.payload };
+        return {
+          ...state,
+          artistId: action.payload,
+          isPlayingId: "",
+          albumId: "",
+        };
       case "album/get":
-        return { ...state, albumId: action.payload };
+        return {
+          ...state,
+          albumId: action.payload,
+          isPlayingId: "",
+          artistId: "",
+        };
       case "albums/loaded":
         return { ...state, data: { ...state.data, albums: action.payload } };
 
@@ -64,6 +81,8 @@ export const MusicProvider = ({ children }) => {
         };
       case "playing/set":
         return { ...state, isPlayingId: action.payload };
+      case "topResult/set":
+        return { ...state, topResult: action.payload, isPlayingId: "" };
 
       default:
         return state;
@@ -71,7 +90,16 @@ export const MusicProvider = ({ children }) => {
   };
 
   const [
-    { data, query, error, isLoading, isPlayingId, artistId, albumId },
+    {
+      data,
+      query,
+      error,
+      isLoading,
+      isPlayingId,
+      artistId,
+      albumId,
+      topResult,
+    },
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -96,6 +124,7 @@ export const MusicProvider = ({ children }) => {
         const data = await res.json();
         console.log(data);
         dispatch({ type: "loaded", payload: data });
+        dispatch({ type: "topResult/set", payload: getTopResult(data, query) });
       } catch (err) {
         console.error(err);
         dispatch({ type: "error", payload: err });
@@ -128,6 +157,7 @@ export const MusicProvider = ({ children }) => {
       }
     }
 
+    fetchArtist("", "topResult/set");
     fetchArtist("albums?limit=5", "albums/loaded");
     fetchArtist("related-artists", "artists/loaded");
     fetchArtist("top-tracks?market=Fr", "tracks/loaded");
@@ -162,6 +192,7 @@ export const MusicProvider = ({ children }) => {
           }
         );
         const albumData = await albumRes.json();
+        dispatch({ type: "topResult/set", payload: albumData });
 
         const data = {
           ...trackData,
@@ -177,8 +208,6 @@ export const MusicProvider = ({ children }) => {
     }
 
     fetchAlbum();
-    // fetchAlbum("related-artists", "artists/loaded");
-    // fetchAlbum("top-tracks?market=Fr", "tracks/loaded");
   }, [albumId, token]);
 
   return (
@@ -191,6 +220,7 @@ export const MusicProvider = ({ children }) => {
         isPlayingId,
         artistId,
         albumId,
+        topResult,
         dispatch,
       }}
     >
@@ -202,3 +232,13 @@ export const MusicProvider = ({ children }) => {
 export const useMusic = () => {
   return useContext(MusicContext);
 };
+
+function getTopResult(items, query) {
+  const itemsArray = [
+    ...items.artists.items,
+    ...items.tracks.items,
+    ...items.albums.items,
+  ];
+
+  return itemsArray.find((item) => item.name.toLowerCase().includes(query));
+}

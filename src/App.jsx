@@ -17,7 +17,7 @@ const BASE_URL = "https://api.spotify.com/v1";
 
 function App() {
   const { data, query, error, isLoading, dispatch } = useMusic();
-  console.log(query);
+  console.log(data);
 
   return (
     <AppContainer>

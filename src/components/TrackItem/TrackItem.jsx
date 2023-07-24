@@ -13,7 +13,7 @@ function TrackItem({ track: { id, preview_url, name, artists, album } }) {
         name={name}
         artists={artists}
       />
-      <TrackIcons />
+      <TrackIcons spotifyId={id} />
     </li>
   );
 }

@@ -1,25 +1,13 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
-
 import PopularityIcon from "../UI-elements/PopularityIcon/";
 import styles from "./TopResult.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
 import StarRating from "../StarRating/";
+import { useMusic } from "../../context/MusicContext";
 
-function TopResult({ items, query }) {
-  const [topResult, setTopResult] = useState([]);
-
-  useEffect(() => {
-    const itemsArray = [
-      ...items.albums.items,
-      ...items.artists.items,
-      ...items.tracks.items,
-    ];
-
-    itemsArray.forEach((item) => {
-      if (item.name.toLowerCase().includes(query)) setTopResult(item);
-    });
-  }, [items, query]);
+function TopResult() {
+  const { topResult } = useMusic();
+  if (!topResult) return;
 
   if (!Object.keys(topResult).length) return <div>No results...</div>;
 
