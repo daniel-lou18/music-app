@@ -9,9 +9,9 @@
 
 .searchField input {
   border: none;
-  border-radius: 20px;
+  border-radius: 24px;
   background-color: var(--dark-bg-color);
-  height: 40px;
+  height: 48px;
   padding-left: 40px;
   vertical-align: middle;
   font-size: 1rem;

@@ -2,15 +2,16 @@
 import styles from "./TrackIcons.module.css";
 import { useFavorites } from "../../context/FavoritesContext";
 
-function TrackIcons({ spotifyId }) {
+function TrackIcons({ track }) {
+  const { id: spotifyId } = track;
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
-  const id = favoritesData.find((item) => item.spotifyId === spotifyId)?.id;
+  const id = favoritesData.find((item) => item.id === spotifyId)?.id;
 
   const handleClick = () => {
     console.log(favoritesData);
     console.log(id);
     if (!id) {
-      addFavorite(spotifyId);
+      addFavorite(track);
     } else {
       removeFavorite(id);
     }

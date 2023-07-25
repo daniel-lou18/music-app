@@ -1,0 +1,74 @@
+.navBar {
+  margin-top: 20px;
+}
+
+.navLink,
+.navItem {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 48px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.navLink:hover,
+.navLink:global(.active) {
+  opacity: initial;
+}
+
+.listItem {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.svgWrapper {
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+
+.svgWrapper svg {
+  position: absolute;
+  left: 2px;
+  top: 3px;
+}
+
+.textWrapper {
+}
+
+.chevron {
+  box-sizing: border-box;
+  height: 22px;
+  width: 22px;
+  padding-top: 4px;
+}
+
+.dropdown {
+  justify-content: space-between;
+}
+
+.subMenu {
+  padding-left: 48px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.subMenuItem {
+  margin-bottom: 12px;
+}
+
+.subNavLink {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.subMenuOpen {
+  max-height: 200px;
+  transition: max-height 0.5s ease-in;
+}

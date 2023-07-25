@@ -3,7 +3,9 @@ import PlayThumb from "../PlayThumb";
 import TrackIcons from "../TrackIcons";
 import styles from "./TrackItem.module.css";
 
-function TrackItem({ track: { id, preview_url, name, artists, album } }) {
+function TrackItem({ track }) {
+  const { id, preview_url, name, artists, album } = track;
+
   return (
     <li className={styles.trackItem}>
       <PlayThumb
@@ -13,7 +15,7 @@ function TrackItem({ track: { id, preview_url, name, artists, album } }) {
         name={name}
         artists={artists}
       />
-      <TrackIcons spotifyId={id} />
+      <TrackIcons track={track} />
     </li>
   );
 }

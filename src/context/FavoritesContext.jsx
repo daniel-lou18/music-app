@@ -58,7 +58,7 @@ export const FavoritesProvider = ({ children }) => {
     fetchFavorites();
   }, []);
 
-  const addFavorite = async (spotifyId) => {
+  const addFavorite = async (item) => {
     try {
       dispatchFavorites({ type: "loading" });
       const res = await fetch(`${BASE_URL}/favorites`, {
@@ -66,7 +66,7 @@ export const FavoritesProvider = ({ children }) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ spotifyId }),
+        body: JSON.stringify({ ...item }),
       });
       const data = await res.json();
       console.log(data);

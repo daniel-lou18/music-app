@@ -2,7 +2,12 @@
   position: relative;
 }
 
+h2.title {
+  margin-top: 20px;
+}
+
 .result {
+  position: relative;
   height: 310px;
   width: calc(100% - 40px);
   padding: 20px;
@@ -12,6 +17,25 @@
 
 .result:hover {
   background-color: rgba(60, 60, 60, 0.7);
+}
+
+.result svg:global(.feather-heart) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.result svg:global(.feather-heart):hover {
+  fill: rgb(255, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.result svg:global(.feather-heart).redHeart:hover {
+  fill: rgb(255, 0, 0);
+}
+
+.redHeart {
+  opacity: 1;
 }
 
 .result:hover :global(.playBtn) {
