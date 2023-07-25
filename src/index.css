@@ -16,11 +16,12 @@
 
 html {
   --darkest-bg-color: rgb(20, 20, 20);
-  --darker-bg-color: rgb(35, 35, 35);
+  --darker-bg-color: rgb(30, 30, 30);
   --dark-bg-color: rgb(60, 60, 60);
   --medium-bg-color: rgba(255, 255, 255, 0.5);
 
-  --light-white-color: #ffffffeb;
+  --light-white-color: rgba(255, 255, 255, 0.92);
+  --medium-white-color: rgba(255, 255, 255, 0.7);
   --medium-outline-color: rgba(255, 255, 255, 0.5);
 
   --main-btn-color: rgb(32, 178, 170, 0.8);

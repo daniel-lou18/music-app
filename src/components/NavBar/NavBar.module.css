@@ -40,6 +40,10 @@
 .textWrapper {
 }
 
+.dropdown {
+  justify-content: space-between;
+}
+
 .chevron {
   box-sizing: border-box;
   height: 22px;
@@ -47,15 +51,19 @@
   padding-top: 4px;
 }
 
-.dropdown {
-  justify-content: space-between;
+.chevron svg {
+  transition: 0.3s ease-out;
+}
+
+.chevronOpen {
+  transform: rotate(-180deg);
 }
 
 .subMenu {
   padding-left: 48px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 
 .subMenuItem {
@@ -75,5 +83,5 @@
 
 .subMenuOpen {
   max-height: 200px;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.3s ease-in;
 }

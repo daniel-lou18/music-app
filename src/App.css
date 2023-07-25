@@ -1,4 +1,6 @@
 .app-container {
+  box-sizing: border-box;
+  min-height: 100vh;
   padding: 8px 8px;
   display: grid;
   grid-template-columns: minmax(250px, 15vw) auto;

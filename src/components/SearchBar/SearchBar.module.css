@@ -1,13 +1,22 @@
 .searchField {
   position: relative;
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 0px repeat(5, 1fr);
 }
 
 .searchField input:focus {
   outline: 2px solid var(--light-white-color);
 }
 
+.searchField input:hover:not(:focus) {
+  cursor: text;
+  outline: 2px solid var(--medium-white-color);
+}
+
 .searchField input {
+  grid-column: 1/4;
+  margin-right: 25px;
   border: none;
   border-radius: 24px;
   background-color: var(--dark-bg-color);
