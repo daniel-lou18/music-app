@@ -25,7 +25,7 @@ function Search() {
               <TopResult items={data} query={query} />
             </ListContainer>
             <ListContainer position="right">
-              <TrackList tracks={data?.tracks?.items} />
+              <TrackList tracks={data?.tracks?.items} title="Songs" />
             </ListContainer>
             <ListContainer>
               <HorizontalList items={data?.artists?.items} title={"Artists"} />

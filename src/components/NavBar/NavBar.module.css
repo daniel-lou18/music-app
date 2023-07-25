@@ -59,13 +59,18 @@
 }
 
 .subMenuItem {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 .subNavLink {
   text-decoration: none;
   color: inherit;
   opacity: 0.7;
+}
+
+.subNavLink:hover,
+.subNavLink:global(.active) {
+  opacity: initial;
 }
 
 .subMenuOpen {

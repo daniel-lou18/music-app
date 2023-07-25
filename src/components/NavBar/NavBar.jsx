@@ -58,7 +58,7 @@ function NavBar() {
         </li>
         <li className={styles.listItem} onClick={handleFavorites}>
           <NavLink
-            to={"favorites"}
+            // to={"favorites/songs"}
             className={`${styles.navLink} ${styles.dropdown}`}
           >
             <div className={styles.navItem}>
@@ -121,14 +121,29 @@ function NavBar() {
               favoritesOpen ? styles.subMenuOpen : ""
             }`}
           >
-            <li className={styles.subMenuItem}>
-              <NavLink className={styles.subNavLink}>Songs</NavLink>
+            <li
+              className={styles.subMenuItem}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <NavLink to={"favorites/songs"} className={styles.subNavLink}>
+                Songs
+              </NavLink>
             </li>
-            <li className={styles.subMenuItem}>
-              <NavLink className={styles.subNavLink}>Artists</NavLink>
+            <li
+              className={styles.subMenuItem}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <NavLink to={"favorites/artists"} className={styles.subNavLink}>
+                Artists
+              </NavLink>
             </li>
-            <li className={styles.subMenuItem}>
-              <NavLink className={styles.subNavLink}>Albums</NavLink>
+            <li
+              className={styles.subMenuItem}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <NavLink to={"favorites/albums"} className={styles.subNavLink}>
+                Albums
+              </NavLink>
             </li>
           </ul>
         </li>

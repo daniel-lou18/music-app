@@ -1,126 +1,414 @@
 {
   "favorites": [
     {
-      "spotifyId": "3PzVrpdkB6Ql5Az5spffJm",
-      "id": 1
-    },
-    {
-      "spotifyId": "7aQWQSrLhPuRbHUewe6HLB",
-      "id": 2
-    },
-    {
-      "spotifyId": "79JAw296lCbgzq8dm4h4tD",
-      "id": 3
-    },
-    {
-      "spotifyId": "5Os2lSlPvvc40Wmun45Tz8",
-      "id": 4
-    },
-    {
-      "spotifyId": "3CEq25wswQlcpZwuBy0ZU8",
-      "id": 5
-    },
-    {
-      "spotifyId": "0E8q2Fx2XuzXCO2NSAppkR",
-      "id": 6
-    },
-    {
-      "spotifyId": "2hGh5VOeeqimQFxqXvfCUf",
-      "id": 7
-    },
-    {
-      "item": {
-        "album": {
-          "album_type": "single",
-          "artists": [
-            {
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/6iXZPP5qLB2dtIQ4WuNk9M"
-              },
-              "href": "https://api.spotify.com/v1/artists/6iXZPP5qLB2dtIQ4WuNk9M",
-              "id": "6iXZPP5qLB2dtIQ4WuNk9M",
-              "name": "Thelonious Coltrane",
-              "type": "artist",
-              "uri": "spotify:artist:6iXZPP5qLB2dtIQ4WuNk9M"
-            }
-          ],
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/0ZsDH6FXHvplXoguWnZXMo"
-          },
-          "href": "https://api.spotify.com/v1/albums/0ZsDH6FXHvplXoguWnZXMo",
-          "id": "0ZsDH6FXHvplXoguWnZXMo",
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b27336acdf0afffd85280ae5f994",
-              "width": 640
-            },
-            {
-              "height": 300,
-              "url": "https://i.scdn.co/image/ab67616d00001e0236acdf0afffd85280ae5f994",
-              "width": 300
-            },
-            {
-              "height": 64,
-              "url": "https://i.scdn.co/image/ab67616d0000485136acdf0afffd85280ae5f994",
-              "width": 64
-            }
-          ],
-          "is_playable": true,
-          "name": "Ideal Image, Pt. 2",
-          "release_date": "2023-03-31",
-          "release_date_precision": "day",
-          "total_tracks": 1,
-          "type": "album",
-          "uri": "spotify:album:0ZsDH6FXHvplXoguWnZXMo"
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+      },
+      "followers": {
+        "href": null,
+        "total": 1545791
+      },
+      "genres": [
+        "bebop",
+        "free jazz",
+        "jazz",
+        "jazz saxophone",
+        "vocal jazz"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+      "id": "2hGh5VOeeqimQFxqXvfCUf",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb73c7f7505c1af82929ec41df",
+          "width": 640
         },
-        "artists": [
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517473c7f7505c1af82929ec41df",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17873c7f7505c1af82929ec41df",
+          "width": 160
+        }
+      ],
+      "name": "John Coltrane",
+      "popularity": 61,
+      "type": "artist",
+      "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+    },
+    {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+          },
+          "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+          "id": "2hGh5VOeeqimQFxqXvfCUf",
+          "name": "John Coltrane",
+          "type": "artist",
+          "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "© 2005 Atlantic Recording Corp. Manufactured & Marketed by Warner Strategic Marketing",
+          "type": "C"
+        },
+        {
+          "text": "℗ 2005 Atlantic Recording Corp. Manufactured & Marketed by Warner Strategic Marketing",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "081227558864"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2h8x8HL7N3grURq1OM77ja"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/2h8x8HL7N3grURq1OM77ja",
+      "id": "2h8x8HL7N3grURq1OM77ja",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27367b13bfccfa3e7458b8ac3dc",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0267b13bfccfa3e7458b8ac3dc",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485167b13bfccfa3e7458b8ac3dc",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "label": "Rhino Atlantic",
+      "name": "Coltrane's Sound",
+      "popularity": 41,
+      "release_date": "1964-06",
+      "release_date_precision": "month",
+      "total_tracks": 8,
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/2h8x8HL7N3grURq1OM77ja/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
+        "items": [
           {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 411293,
+            "explicit": false,
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/6iXZPP5qLB2dtIQ4WuNk9M"
+              "spotify": "https://open.spotify.com/track/5rVVbOL9bl2RmAh9aNqPp8"
             },
-            "href": "https://api.spotify.com/v1/artists/6iXZPP5qLB2dtIQ4WuNk9M",
-            "id": "6iXZPP5qLB2dtIQ4WuNk9M",
-            "name": "Thelonious Coltrane",
-            "type": "artist",
-            "uri": "spotify:artist:6iXZPP5qLB2dtIQ4WuNk9M"
+            "href": "https://api.spotify.com/v1/tracks/5rVVbOL9bl2RmAh9aNqPp8",
+            "id": "5rVVbOL9bl2RmAh9aNqPp8",
+            "is_local": false,
+            "is_playable": true,
+            "name": "The Night Has a Thousand Eyes",
+            "preview_url": "https://p.scdn.co/mp3-preview/b8263ff37722e07b946eca4d6a9568ad2d487da5?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:5rVVbOL9bl2RmAh9aNqPp8"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 251293,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0Ve1sQdEcXQe0ZpS8AWDPC"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0Ve1sQdEcXQe0ZpS8AWDPC",
+            "id": "0Ve1sQdEcXQe0ZpS8AWDPC",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Central Park West",
+            "preview_url": "https://p.scdn.co/mp3-preview/eea736452b0750ce3c8612badc953d3e3c244f46?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:0Ve1sQdEcXQe0ZpS8AWDPC"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 411306,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/08fPORjYOPjT9Vu6MVrlB5"
+            },
+            "href": "https://api.spotify.com/v1/tracks/08fPORjYOPjT9Vu6MVrlB5",
+            "id": "08fPORjYOPjT9Vu6MVrlB5",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Liberia",
+            "preview_url": "https://p.scdn.co/mp3-preview/ebf3101a24f4c9e1ed7ffffc0e1622a738eab67c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:08fPORjYOPjT9Vu6MVrlB5"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 337133,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/26bnmztmGcY03sO1uWmoTd"
+            },
+            "href": "https://api.spotify.com/v1/tracks/26bnmztmGcY03sO1uWmoTd",
+            "id": "26bnmztmGcY03sO1uWmoTd",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Body and Soul",
+            "preview_url": "https://p.scdn.co/mp3-preview/d46d8cc88fa09ed8b002fb79b3b6c9d60b577767?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:26bnmztmGcY03sO1uWmoTd"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 487279,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1OtISG0K02k06m1BENey4H"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1OtISG0K02k06m1BENey4H",
+            "id": "1OtISG0K02k06m1BENey4H",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Equinox",
+            "preview_url": "https://p.scdn.co/mp3-preview/bf9bd3fea3c76904f96de0aec143eaa1e788b9e3?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:1OtISG0K02k06m1BENey4H"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 351373,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3aEshDcbhyoOtsxbP0RYoQ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3aEshDcbhyoOtsxbP0RYoQ",
+            "id": "3aEshDcbhyoOtsxbP0RYoQ",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Satellite",
+            "preview_url": "https://p.scdn.co/mp3-preview/8d59c561a3c70d06db03297ed5ce4f2e6fc76577?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:3aEshDcbhyoOtsxbP0RYoQ"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 373000,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3m88YPqvxIj4VV0JJKR5FZ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3m88YPqvxIj4VV0JJKR5FZ",
+            "id": "3m88YPqvxIj4VV0JJKR5FZ",
+            "is_local": false,
+            "is_playable": true,
+            "name": "26-2",
+            "preview_url": "https://p.scdn.co/mp3-preview/4bc95fee4cb297d761752d7bd414b9fa79747c76?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:3m88YPqvxIj4VV0JJKR5FZ"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
+                },
+                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
+                "id": "2hGh5VOeeqimQFxqXvfCUf",
+                "name": "John Coltrane",
+                "type": "artist",
+                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 359640,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4houPiSUb7mgV4bzIsLDjX"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4houPiSUb7mgV4bzIsLDjX",
+            "id": "4houPiSUb7mgV4bzIsLDjX",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Body and Soul - Alternate Take",
+            "preview_url": "https://p.scdn.co/mp3-preview/f2faf99a518f3cc41e3c6c0be8cc7b608866cc83?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:4houPiSUb7mgV4bzIsLDjX"
           }
         ],
-        "disc_number": 1,
-        "duration_ms": 116317,
-        "explicit": false,
-        "external_ids": {
-          "isrc": "FRX202333860"
-        },
-        "external_urls": {
-          "spotify": "https://open.spotify.com/track/3VVkXqGbgpIIHPWAfwvNBH"
-        },
-        "href": "https://api.spotify.com/v1/tracks/3VVkXqGbgpIIHPWAfwvNBH",
-        "id": "3VVkXqGbgpIIHPWAfwvNBH",
-        "is_local": false,
-        "is_playable": true,
-        "name": "Ideal Image, Pt. 2",
-        "popularity": 46,
-        "preview_url": "https://p.scdn.co/mp3-preview/64af91bb2c73c7f2f69e0cc64d4f9dd76e6d57d6?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-        "track_number": 1,
-        "type": "track",
-        "uri": "spotify:track:3VVkXqGbgpIIHPWAfwvNBH"
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 8
       },
-      "id": 8
+      "type": "album",
+      "uri": "spotify:album:2h8x8HL7N3grURq1OM77ja"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+      },
+      "followers": {
+        "href": null,
+        "total": 80640555
+      },
+      "genres": [
+        "pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
+      "id": "06HL4z0CvFAxyc27GXpf02",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebf173136b94ae2f75f49f8b2b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174f173136b94ae2f75f49f8b2b",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178f173136b94ae2f75f49f8b2b",
+          "width": 160
+        }
+      ],
+      "name": "Taylor Swift",
+      "popularity": 100,
+      "type": "artist",
+      "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
     },
     {
       "album": {
-        "album_type": "album",
+        "album_type": "single",
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/3xYXYzm9H3RzyQgBrYwIcx"
+              "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
             },
-            "href": "https://api.spotify.com/v1/artists/3xYXYzm9H3RzyQgBrYwIcx",
-            "id": "3xYXYzm9H3RzyQgBrYwIcx",
-            "name": "Colter Wall",
+            "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
+            "id": "68CRxZTAqk19AznItZInip",
+            "name": "Swifty Blue",
             "type": "artist",
-            "uri": "spotify:artist:3xYXYzm9H3RzyQgBrYwIcx"
+            "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/27OdVby2oeFjM1C5XvC3hC"
+            },
+            "href": "https://api.spotify.com/v1/artists/27OdVby2oeFjM1C5XvC3hC",
+            "id": "27OdVby2oeFjM1C5XvC3hC",
+            "name": "Peysoh",
+            "type": "artist",
+            "uri": "spotify:artist:27OdVby2oeFjM1C5XvC3hC"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5w61NhDHxboaPUjFZ9r2vh"
+            },
+            "href": "https://api.spotify.com/v1/artists/5w61NhDHxboaPUjFZ9r2vh",
+            "id": "5w61NhDHxboaPUjFZ9r2vh",
+            "name": "MoneySign Suede",
+            "type": "artist",
+            "uri": "spotify:artist:5w61NhDHxboaPUjFZ9r2vh"
           }
         ],
         "available_markets": [
@@ -310,44 +598,64 @@
           "ZW"
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/4l1JW9aV2fmAxnH9TeeK82"
+          "spotify": "https://open.spotify.com/album/1IhrrkevqxaxKpylbMfSzF"
         },
-        "href": "https://api.spotify.com/v1/albums/4l1JW9aV2fmAxnH9TeeK82",
-        "id": "4l1JW9aV2fmAxnH9TeeK82",
+        "href": "https://api.spotify.com/v1/albums/1IhrrkevqxaxKpylbMfSzF",
+        "id": "1IhrrkevqxaxKpylbMfSzF",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b27300b6a9de83478b42e9bfcd88",
+            "url": "https://i.scdn.co/image/ab67616d0000b2734417eb0e17bb7225e0ad37ee",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e0200b6a9de83478b42e9bfcd88",
+            "url": "https://i.scdn.co/image/ab67616d00001e024417eb0e17bb7225e0ad37ee",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d0000485100b6a9de83478b42e9bfcd88",
+            "url": "https://i.scdn.co/image/ab67616d000048514417eb0e17bb7225e0ad37ee",
             "width": 64
           }
         ],
-        "name": "Little Songs",
-        "release_date": "2023-07-14",
+        "name": "Grimey Park",
+        "release_date": "2022-04-20",
         "release_date_precision": "day",
-        "total_tracks": 10,
+        "total_tracks": 6,
         "type": "album",
-        "uri": "spotify:album:4l1JW9aV2fmAxnH9TeeK82"
+        "uri": "spotify:album:1IhrrkevqxaxKpylbMfSzF"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3xYXYzm9H3RzyQgBrYwIcx"
+            "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
           },
-          "href": "https://api.spotify.com/v1/artists/3xYXYzm9H3RzyQgBrYwIcx",
-          "id": "3xYXYzm9H3RzyQgBrYwIcx",
-          "name": "Colter Wall",
+          "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
+          "id": "68CRxZTAqk19AznItZInip",
+          "name": "Swifty Blue",
           "type": "artist",
-          "uri": "spotify:artist:3xYXYzm9H3RzyQgBrYwIcx"
+          "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/27OdVby2oeFjM1C5XvC3hC"
+          },
+          "href": "https://api.spotify.com/v1/artists/27OdVby2oeFjM1C5XvC3hC",
+          "id": "27OdVby2oeFjM1C5XvC3hC",
+          "name": "Peysoh",
+          "type": "artist",
+          "uri": "spotify:artist:27OdVby2oeFjM1C5XvC3hC"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5w61NhDHxboaPUjFZ9r2vh"
+          },
+          "href": "https://api.spotify.com/v1/artists/5w61NhDHxboaPUjFZ9r2vh",
+          "id": "5w61NhDHxboaPUjFZ9r2vh",
+          "name": "MoneySign Suede",
+          "type": "artist",
+          "uri": "spotify:artist:5w61NhDHxboaPUjFZ9r2vh"
         }
       ],
       "available_markets": [
@@ -537,24 +845,476 @@
         "XK"
       ],
       "disc_number": 1,
-      "duration_ms": 200960,
-      "explicit": false,
+      "duration_ms": 163350,
+      "explicit": true,
       "external_ids": {
-        "isrc": "USRC12300588"
+        "isrc": "USLD91737219"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/2l0VAMc78JKvxssvAZ3nDj"
+        "spotify": "https://open.spotify.com/track/4gfMy1g8KrfSiUTz6AZTYX"
       },
-      "href": "https://api.spotify.com/v1/tracks/2l0VAMc78JKvxssvAZ3nDj",
-      "id": "2l0VAMc78JKvxssvAZ3nDj",
+      "href": "https://api.spotify.com/v1/tracks/4gfMy1g8KrfSiUTz6AZTYX",
+      "id": "4gfMy1g8KrfSiUTz6AZTYX",
       "is_local": false,
-      "name": "The Coyote & The Cowboy",
-      "popularity": 62,
-      "preview_url": "https://p.scdn.co/mp3-preview/7b44880f18fb73e20faeb597c553d3a47815b3bb?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-      "track_number": 4,
+      "name": "Grimey Park",
+      "popularity": 42,
+      "preview_url": "https://p.scdn.co/mp3-preview/ac08d28282fce1b987b03132427dd4b24b46ce8c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 2,
       "type": "track",
-      "uri": "spotify:track:2l0VAMc78JKvxssvAZ3nDj",
-      "spotifyId": "2l0VAMc78JKvxssvAZ3nDj"
+      "uri": "spotify:track:4gfMy1g8KrfSiUTz6AZTYX"
+    },
+    {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+          },
+          "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+          "id": "2QjVv1gkLn8XkQxVndgLHF",
+          "name": "Bill Laurance",
+          "type": "artist",
+          "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "(C) 2019 Flint Music",
+          "type": "C"
+        }
+      ],
+      "external_ids": {
+        "upc": "193483564678"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6RpYXTRusgYEt9loqqDWTu"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/6RpYXTRusgYEt9loqqDWTu",
+      "id": "6RpYXTRusgYEt9loqqDWTu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b82f11b39fe453e8e67f51e1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b82f11b39fe453e8e67f51e1",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b82f11b39fe453e8e67f51e1",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "label": "Flint Music",
+      "name": "Swift",
+      "popularity": 22,
+      "release_date": "2015-03-31",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/6RpYXTRusgYEt9loqqDWTu/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 508160,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4wuydHBVFNoVZMlarBOlan"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4wuydHBVFNoVZMlarBOlan",
+            "id": "4wuydHBVFNoVZMlarBOlan",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Prologue: Fjords",
+            "preview_url": "https://p.scdn.co/mp3-preview/9a2dc60172698ce41fc5478f7ebcab98d5cf3dc2?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:4wuydHBVFNoVZMlarBOlan"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 295733,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4GEbSfCW5yBM63aMZiGAKH"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4GEbSfCW5yBM63aMZiGAKH",
+            "id": "4GEbSfCW5yBM63aMZiGAKH",
+            "is_local": false,
+            "is_playable": true,
+            "name": "December in New York",
+            "preview_url": "https://p.scdn.co/mp3-preview/2f1f345821c0ee8786571cdfb53b79dbe19f2e6a?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:4GEbSfCW5yBM63aMZiGAKH"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 283186,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5ZnN3NIKkV1lNzurZM1QY2"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5ZnN3NIKkV1lNzurZM1QY2",
+            "id": "5ZnN3NIKkV1lNzurZM1QY2",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Swift",
+            "preview_url": "https://p.scdn.co/mp3-preview/c93f22b902e4bcc5aa246e96792566b3d7109a71?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:5ZnN3NIKkV1lNzurZM1QY2"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 408866,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/63JUHceffyLxacmiVdPXOR"
+            },
+            "href": "https://api.spotify.com/v1/tracks/63JUHceffyLxacmiVdPXOR",
+            "id": "63JUHceffyLxacmiVdPXOR",
+            "is_local": false,
+            "is_playable": true,
+            "name": "U-Bahn",
+            "preview_url": "https://p.scdn.co/mp3-preview/62639d3654f6cd8736b64200c053bd4075b68dd1?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:63JUHceffyLxacmiVdPXOR"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 321893,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5Dk36Q5iVEK7BoPhGAu2qx"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5Dk36Q5iVEK7BoPhGAu2qx",
+            "id": "5Dk36Q5iVEK7BoPhGAu2qx",
+            "is_local": false,
+            "is_playable": true,
+            "name": "The Rush",
+            "preview_url": "https://p.scdn.co/mp3-preview/d2994843b8e671432d0028727229351b8995aa64?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:5Dk36Q5iVEK7BoPhGAu2qx"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 313400,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0vAarvRsijtiHlZiDGJEN3"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0vAarvRsijtiHlZiDGJEN3",
+            "id": "0vAarvRsijtiHlZiDGJEN3",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Denmark Hill",
+            "preview_url": "https://p.scdn.co/mp3-preview/e81e9a7f8b00557a470d601de3813a4678ca956f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:0vAarvRsijtiHlZiDGJEN3"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 319560,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1Jjme1QCZPjGu9TpKtCDE8"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1Jjme1QCZPjGu9TpKtCDE8",
+            "id": "1Jjme1QCZPjGu9TpKtCDE8",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Red Sand",
+            "preview_url": "https://p.scdn.co/mp3-preview/f8ce1fd4aefe54a320a24751f200eda35fcd00b6?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:1Jjme1QCZPjGu9TpKtCDE8"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 386093,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/20wC645jdId3KenSsAnuZK"
+            },
+            "href": "https://api.spotify.com/v1/tracks/20wC645jdId3KenSsAnuZK",
+            "id": "20wC645jdId3KenSsAnuZK",
+            "is_local": false,
+            "is_playable": true,
+            "name": "The Real One",
+            "preview_url": "https://p.scdn.co/mp3-preview/cf6d332c0d57c227a18e2869618431d7f34a8daa?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:20wC645jdId3KenSsAnuZK"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 303000,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2KvoBjIYjoI5iuMBkFK3UK"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2KvoBjIYjoI5iuMBkFK3UK",
+            "id": "2KvoBjIYjoI5iuMBkFK3UK",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Mr. Elevator",
+            "preview_url": "https://p.scdn.co/mp3-preview/2d8031fbcc388887c5db70173190a3c61bdf8bf0?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:2KvoBjIYjoI5iuMBkFK3UK"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 261720,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5GW5Hs89Tc841zW4IMmmew"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5GW5Hs89Tc841zW4IMmmew",
+            "id": "5GW5Hs89Tc841zW4IMmmew",
+            "is_local": false,
+            "is_playable": true,
+            "name": "One Time",
+            "preview_url": "https://p.scdn.co/mp3-preview/28255bd272eb221de2b295d062400d17e8873a4a?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:5GW5Hs89Tc841zW4IMmmew"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2QjVv1gkLn8XkQxVndgLHF"
+                },
+                "href": "https://api.spotify.com/v1/artists/2QjVv1gkLn8XkQxVndgLHF",
+                "id": "2QjVv1gkLn8XkQxVndgLHF",
+                "name": "Bill Laurance",
+                "type": "artist",
+                "uri": "spotify:artist:2QjVv1gkLn8XkQxVndgLHF"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 727386,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5uzYa33Io6TVG84POmD8le"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5uzYa33Io6TVG84POmD8le",
+            "id": "5uzYa33Io6TVG84POmD8le",
+            "is_local": false,
+            "is_playable": true,
+            "name": "The Isles",
+            "preview_url": "https://p.scdn.co/mp3-preview/2c1dff79dbd95a9b9d8eededb713f4c24608082b?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:5uzYa33Io6TVG84POmD8le"
+          }
+        ],
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 11
+      },
+      "type": "album",
+      "uri": "spotify:album:6RpYXTRusgYEt9loqqDWTu"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
+      },
+      "followers": {
+        "href": null,
+        "total": 25460
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
+      "id": "68CRxZTAqk19AznItZInip",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb248a8e9c9e0e4dacca68e158",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174248a8e9c9e0e4dacca68e158",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178248a8e9c9e0e4dacca68e158",
+          "width": 160
+        }
+      ],
+      "name": "Swifty Blue",
+      "popularity": 44,
+      "type": "artist",
+      "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+      },
+      "followers": {
+        "href": null,
+        "total": 728
+      },
+      "genres": [
+        "belgian jazz"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+      "id": "1sR6UagoDJiGkAjTmMITg0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebdfafaa46ea5fbb778f662601",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174dfafaa46ea5fbb778f662601",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178dfafaa46ea5fbb778f662601",
+          "width": 160
+        }
+      ],
+      "name": "Alex Koo",
+      "popularity": 5,
+      "type": "artist",
+      "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
     },
     {
       "album": {
@@ -562,76 +1322,1217 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/1Me5uqmDKqxVpEsuI6Kk0J"
+              "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
             },
-            "href": "https://api.spotify.com/v1/artists/1Me5uqmDKqxVpEsuI6Kk0J",
-            "id": "1Me5uqmDKqxVpEsuI6Kk0J",
-            "name": "Miles Davis and his favorite Tenors",
+            "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+            "id": "1sR6UagoDJiGkAjTmMITg0",
+            "name": "Alex Koo",
             "type": "artist",
-            "uri": "spotify:artist:1Me5uqmDKqxVpEsuI6Kk0J"
+            "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
           }
         ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/0wlQwazUJ18kybQaQJkJCf"
+          "spotify": "https://open.spotify.com/album/7axt1jCmqgfNl8hNHx5A0a"
         },
-        "href": "https://api.spotify.com/v1/albums/0wlQwazUJ18kybQaQJkJCf",
-        "id": "0wlQwazUJ18kybQaQJkJCf",
+        "href": "https://api.spotify.com/v1/albums/7axt1jCmqgfNl8hNHx5A0a",
+        "id": "7axt1jCmqgfNl8hNHx5A0a",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273f8b40a7d1cd491afc343cae3",
+            "url": "https://i.scdn.co/image/ab67616d0000b27357c96476a0b87f70f9305e8d",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02f8b40a7d1cd491afc343cae3",
+            "url": "https://i.scdn.co/image/ab67616d00001e0257c96476a0b87f70f9305e8d",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851f8b40a7d1cd491afc343cae3",
+            "url": "https://i.scdn.co/image/ab67616d0000485157c96476a0b87f70f9305e8d",
             "width": 64
           }
         ],
         "is_playable": true,
-        "name": "Milestones of a Jazz Legend - Miles Davis and his favorite Tenors, Vol. 5",
-        "release_date": "2019-05-03",
+        "name": "Etudes for Piano",
+        "release_date": "2023-03-03",
         "release_date_precision": "day",
-        "total_tracks": 12,
+        "total_tracks": 8,
         "type": "album",
-        "uri": "spotify:album:0wlQwazUJ18kybQaQJkJCf"
+        "uri": "spotify:album:7axt1jCmqgfNl8hNHx5A0a"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0kbYTNQb4Pb1rPbbaF0pT4"
+            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
           },
-          "href": "https://api.spotify.com/v1/artists/0kbYTNQb4Pb1rPbbaF0pT4",
-          "id": "0kbYTNQb4Pb1rPbbaF0pT4",
-          "name": "Miles Davis",
+          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+          "id": "1sR6UagoDJiGkAjTmMITg0",
+          "name": "Alex Koo",
           "type": "artist",
-          "uri": "spotify:artist:0kbYTNQb4Pb1rPbbaF0pT4"
+          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
         }
       ],
       "disc_number": 1,
-      "duration_ms": 321786,
+      "duration_ms": 126506,
       "explicit": false,
       "external_ids": {
-        "isrc": "DEU240502586"
+        "isrc": "BEA952320906"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/0K5f9hmGKLOKt5T2TTGTo2"
+        "spotify": "https://open.spotify.com/track/2L6i2Yjur7Yaj14sh8szqC"
       },
-      "href": "https://api.spotify.com/v1/tracks/0K5f9hmGKLOKt5T2TTGTo2",
-      "id": "0K5f9hmGKLOKt5T2TTGTo2",
+      "href": "https://api.spotify.com/v1/tracks/2L6i2Yjur7Yaj14sh8szqC",
+      "id": "2L6i2Yjur7Yaj14sh8szqC",
       "is_local": false,
       "is_playable": true,
-      "name": "It Never Entered My Mind",
-      "popularity": 42,
-      "preview_url": "https://p.scdn.co/mp3-preview/86efb33ef91b7d375543020a59cac4d9645714b0?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-      "track_number": 5,
+      "name": "Five in Fis",
+      "popularity": 11,
+      "preview_url": "https://p.scdn.co/mp3-preview/c927d7f7765107d3559e1bea3c106da5cabd8ce7?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 6,
       "type": "track",
-      "uri": "spotify:track:0K5f9hmGKLOKt5T2TTGTo2"
+      "uri": "spotify:track:2L6i2Yjur7Yaj14sh8szqC"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+            },
+            "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+            "id": "1sR6UagoDJiGkAjTmMITg0",
+            "name": "Alex Koo",
+            "type": "artist",
+            "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2evqpNR4DDSHiUxGMokRJI"
+            },
+            "href": "https://api.spotify.com/v1/artists/2evqpNR4DDSHiUxGMokRJI",
+            "id": "2evqpNR4DDSHiUxGMokRJI",
+            "name": "Attila Gyárfás",
+            "type": "artist",
+            "uri": "spotify:artist:2evqpNR4DDSHiUxGMokRJI"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
+            },
+            "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
+            "id": "2yHcAgHAPUdUhVuiIWWcba",
+            "name": "Ralph Alessi",
+            "type": "artist",
+            "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4mdxhfPmoboGYB3RdEgWB1"
+        },
+        "href": "https://api.spotify.com/v1/albums/4mdxhfPmoboGYB3RdEgWB1",
+        "id": "4mdxhfPmoboGYB3RdEgWB1",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2731e19c978ada9561044250252",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e021e19c978ada9561044250252",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048511e19c978ada9561044250252",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "Identified Flying Object",
+        "release_date": "2021-01-08",
+        "release_date_precision": "day",
+        "total_tracks": 8,
+        "type": "album",
+        "uri": "spotify:album:4mdxhfPmoboGYB3RdEgWB1"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+          },
+          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+          "id": "1sR6UagoDJiGkAjTmMITg0",
+          "name": "Alex Koo",
+          "type": "artist",
+          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2evqpNR4DDSHiUxGMokRJI"
+          },
+          "href": "https://api.spotify.com/v1/artists/2evqpNR4DDSHiUxGMokRJI",
+          "id": "2evqpNR4DDSHiUxGMokRJI",
+          "name": "Attila Gyárfás",
+          "type": "artist",
+          "uri": "spotify:artist:2evqpNR4DDSHiUxGMokRJI"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
+          },
+          "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
+          "id": "2yHcAgHAPUdUhVuiIWWcba",
+          "name": "Ralph Alessi",
+          "type": "artist",
+          "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 345960,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "BEA952117901"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5P5MKDb8y8yGbxUyOq6ZFa"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5P5MKDb8y8yGbxUyOq6ZFa",
+      "id": "5P5MKDb8y8yGbxUyOq6ZFa",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Nebula",
+      "popularity": 7,
+      "preview_url": "https://p.scdn.co/mp3-preview/ebb7b05839184fcf84efb762e0777e1ea285227e?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:5P5MKDb8y8yGbxUyOq6ZFa"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+            },
+            "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+            "id": "1sR6UagoDJiGkAjTmMITg0",
+            "name": "Alex Koo",
+            "type": "artist",
+            "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/36kfddkWcVc6XrzNN9BsTP"
+            },
+            "href": "https://api.spotify.com/v1/artists/36kfddkWcVc6XrzNN9BsTP",
+            "id": "36kfddkWcVc6XrzNN9BsTP",
+            "name": "Mark Turner",
+            "type": "artist",
+            "uri": "spotify:artist:36kfddkWcVc6XrzNN9BsTP"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
+            },
+            "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
+            "id": "2yHcAgHAPUdUhVuiIWWcba",
+            "name": "Ralph Alessi",
+            "type": "artist",
+            "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1v3ctKOGurzwt4JGR9yQl8"
+        },
+        "href": "https://api.spotify.com/v1/albums/1v3ctKOGurzwt4JGR9yQl8",
+        "id": "1v3ctKOGurzwt4JGR9yQl8",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273ae1e09b3f67b7df9e7a17b85",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02ae1e09b3f67b7df9e7a17b85",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851ae1e09b3f67b7df9e7a17b85",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "Appleblueseagreen",
+        "release_date": "2019-02-18",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:1v3ctKOGurzwt4JGR9yQl8"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+          },
+          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+          "id": "1sR6UagoDJiGkAjTmMITg0",
+          "name": "Alex Koo",
+          "type": "artist",
+          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 277354,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "BEAR51800002"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6us7xktzNHj3RUYRewcRMx"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6us7xktzNHj3RUYRewcRMx",
+      "id": "6us7xktzNHj3RUYRewcRMx",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Dune",
+      "popularity": 9,
+      "preview_url": "https://p.scdn.co/mp3-preview/429ecbfe67b5f9d560c4a02dc21359f12e8b6b70?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:6us7xktzNHj3RUYRewcRMx"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+            },
+            "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+            "id": "1sR6UagoDJiGkAjTmMITg0",
+            "name": "Alex Koo",
+            "type": "artist",
+            "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/36kfddkWcVc6XrzNN9BsTP"
+            },
+            "href": "https://api.spotify.com/v1/artists/36kfddkWcVc6XrzNN9BsTP",
+            "id": "36kfddkWcVc6XrzNN9BsTP",
+            "name": "Mark Turner",
+            "type": "artist",
+            "uri": "spotify:artist:36kfddkWcVc6XrzNN9BsTP"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
+            },
+            "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
+            "id": "2yHcAgHAPUdUhVuiIWWcba",
+            "name": "Ralph Alessi",
+            "type": "artist",
+            "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1v3ctKOGurzwt4JGR9yQl8"
+        },
+        "href": "https://api.spotify.com/v1/albums/1v3ctKOGurzwt4JGR9yQl8",
+        "id": "1v3ctKOGurzwt4JGR9yQl8",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273ae1e09b3f67b7df9e7a17b85",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02ae1e09b3f67b7df9e7a17b85",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851ae1e09b3f67b7df9e7a17b85",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "Appleblueseagreen",
+        "release_date": "2019-02-18",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "type": "album",
+        "uri": "spotify:album:1v3ctKOGurzwt4JGR9yQl8"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+          },
+          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+          "id": "1sR6UagoDJiGkAjTmMITg0",
+          "name": "Alex Koo",
+          "type": "artist",
+          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/36kfddkWcVc6XrzNN9BsTP"
+          },
+          "href": "https://api.spotify.com/v1/artists/36kfddkWcVc6XrzNN9BsTP",
+          "id": "36kfddkWcVc6XrzNN9BsTP",
+          "name": "Mark Turner",
+          "type": "artist",
+          "uri": "spotify:artist:36kfddkWcVc6XrzNN9BsTP"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
+          },
+          "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
+          "id": "2yHcAgHAPUdUhVuiIWWcba",
+          "name": "Ralph Alessi",
+          "type": "artist",
+          "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 63143,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "BEAR51800001"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5ks5cTsc2CKIzH7u4R0Ilg"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5ks5cTsc2CKIzH7u4R0Ilg",
+      "id": "5ks5cTsc2CKIzH7u4R0Ilg",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Enud",
+      "popularity": 8,
+      "preview_url": "https://p.scdn.co/mp3-preview/3233959853fdb882ff36f1593a1a450c65a342d5?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:5ks5cTsc2CKIzH7u4R0Ilg"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+            },
+            "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+            "id": "1sR6UagoDJiGkAjTmMITg0",
+            "name": "Alex Koo",
+            "type": "artist",
+            "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/7axt1jCmqgfNl8hNHx5A0a"
+        },
+        "href": "https://api.spotify.com/v1/albums/7axt1jCmqgfNl8hNHx5A0a",
+        "id": "7axt1jCmqgfNl8hNHx5A0a",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27357c96476a0b87f70f9305e8d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0257c96476a0b87f70f9305e8d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485157c96476a0b87f70f9305e8d",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "Etudes for Piano",
+        "release_date": "2023-03-03",
+        "release_date_precision": "day",
+        "total_tracks": 8,
+        "type": "album",
+        "uri": "spotify:album:7axt1jCmqgfNl8hNHx5A0a"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+          },
+          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+          "id": "1sR6UagoDJiGkAjTmMITg0",
+          "name": "Alex Koo",
+          "type": "artist",
+          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 161600,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "BEA952320901"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3fW5FIbfxeizEcK7EyFWad"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3fW5FIbfxeizEcK7EyFWad",
+      "id": "3fW5FIbfxeizEcK7EyFWad",
+      "is_local": false,
+      "is_playable": true,
+      "name": "All Arms on Deck!",
+      "popularity": 7,
+      "preview_url": "https://p.scdn.co/mp3-preview/6e36171378060129dd3beea79869271e324f3974?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:3fW5FIbfxeizEcK7EyFWad"
+    },
+    {
+      "album": {
+        "album_type": "compilation",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+            },
+            "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+            "id": "0LyfQWJT6nXafLPZqxe9Of",
+            "name": "Multi-interprètes",
+            "type": "artist",
+            "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2jNFZNKAHQzf6rWS0pmQ0S"
+        },
+        "href": "https://api.spotify.com/v1/albums/2jNFZNKAHQzf6rWS0pmQ0S",
+        "id": "2jNFZNKAHQzf6rWS0pmQ0S",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273263e13badb90d81a4f418dd3",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02263e13badb90d81a4f418dd3",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851263e13badb90d81a4f418dd3",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "Las Grandes Voces Finalistas 2008",
+        "release_date": "2009-06-23",
+        "release_date_precision": "day",
+        "total_tracks": 20,
+        "type": "album",
+        "uri": "spotify:album:2jNFZNKAHQzf6rWS0pmQ0S"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+          },
+          "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+          "id": "4lEH49x4XlhgntLjcPCkB7",
+          "name": "Lorena del Mar",
+          "type": "artist",
+          "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 230440,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "MXF600900068"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1MVLVbS0lPrs9kjcCBcYxS"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1MVLVbS0lPrs9kjcCBcYxS",
+      "id": "1MVLVbS0lPrs9kjcCBcYxS",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Tu voz",
+      "popularity": 0,
+      "preview_url": "https://p.scdn.co/mp3-preview/db2fa92b505ac2b75ee1eebcd487296161c556fe?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:1MVLVbS0lPrs9kjcCBcYxS"
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+            },
+            "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+            "id": "4lEH49x4XlhgntLjcPCkB7",
+            "name": "Lorena del Mar",
+            "type": "artist",
+            "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1qo5KIhBOzoDhq3jSBqo6R"
+        },
+        "href": "https://api.spotify.com/v1/albums/1qo5KIhBOzoDhq3jSBqo6R",
+        "id": "1qo5KIhBOzoDhq3jSBqo6R",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27349a9e8595f4118b6e45d9fba",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0249a9e8595f4118b6e45d9fba",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485149a9e8595f4118b6e45d9fba",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "My Resistance Is Low",
+        "release_date": "2015-05-28",
+        "release_date_precision": "day",
+        "total_tracks": 7,
+        "type": "album",
+        "uri": "spotify:album:1qo5KIhBOzoDhq3jSBqo6R"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+          },
+          "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+          "id": "4lEH49x4XlhgntLjcPCkB7",
+          "name": "Lorena del Mar",
+          "type": "artist",
+          "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+          },
+          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+          "id": "1sR6UagoDJiGkAjTmMITg0",
+          "name": "Alex Koo",
+          "type": "artist",
+          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7xQ9unko2ORZVCTukcm0Bg"
+          },
+          "href": "https://api.spotify.com/v1/artists/7xQ9unko2ORZVCTukcm0Bg",
+          "id": "7xQ9unko2ORZVCTukcm0Bg",
+          "name": "Attila Gyarfas",
+          "type": "artist",
+          "uri": "spotify:artist:7xQ9unko2ORZVCTukcm0Bg"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2RKEPgZxxE1Yfiti8QfMT0"
+          },
+          "href": "https://api.spotify.com/v1/artists/2RKEPgZxxE1Yfiti8QfMT0",
+          "id": "2RKEPgZxxE1Yfiti8QfMT0",
+          "name": "Matheus Nicolaiewsky",
+          "type": "artist",
+          "uri": "spotify:artist:2RKEPgZxxE1Yfiti8QfMT0"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 521159,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "NLD2C1500001"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6WIkOattxEI7BMm70g3qfr"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6WIkOattxEI7BMm70g3qfr",
+      "id": "6WIkOattxEI7BMm70g3qfr",
+      "is_local": false,
+      "is_playable": true,
+      "name": "My Resistance Is Low",
+      "popularity": 0,
+      "preview_url": "https://p.scdn.co/mp3-preview/a9e107aad333103b49b7d767a79cec5a04be3f5f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:6WIkOattxEI7BMm70g3qfr"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+            },
+            "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+            "id": "4lEH49x4XlhgntLjcPCkB7",
+            "name": "Lorena del Mar",
+            "type": "artist",
+            "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/29AOqyMsEafc8ZnKbZ3HhY"
+        },
+        "href": "https://api.spotify.com/v1/albums/29AOqyMsEafc8ZnKbZ3HhY",
+        "id": "29AOqyMsEafc8ZnKbZ3HhY",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2739a8a1cfd698380098cb66f9d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e029a8a1cfd698380098cb66f9d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048519a8a1cfd698380098cb66f9d",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "It Was an Accident",
+        "release_date": "2020-06-02",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:29AOqyMsEafc8ZnKbZ3HhY"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+          },
+          "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+          "id": "4lEH49x4XlhgntLjcPCkB7",
+          "name": "Lorena del Mar",
+          "type": "artist",
+          "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 213527,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "BE3JN2000001"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2LADaLsR69aTXxsOtcb5AR"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2LADaLsR69aTXxsOtcb5AR",
+      "id": "2LADaLsR69aTXxsOtcb5AR",
+      "is_local": false,
+      "is_playable": true,
+      "name": "It Was an Accident",
+      "popularity": 0,
+      "preview_url": "https://p.scdn.co/mp3-preview/ed847289051a566bc1416e7c155ab485f32187f8?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:2LADaLsR69aTXxsOtcb5AR"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+      },
+      "followers": {
+        "href": null,
+        "total": 33
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+      "id": "4lEH49x4XlhgntLjcPCkB7",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebf47be3c01090f272403a0a0b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174f47be3c01090f272403a0a0b",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178f47be3c01090f272403a0a0b",
+          "width": 160
+        }
+      ],
+      "name": "Lorena del Mar",
+      "popularity": 0,
+      "type": "artist",
+      "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+    },
+    {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+          },
+          "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+          "id": "4lEH49x4XlhgntLjcPCkB7",
+          "name": "Lorena del Mar",
+          "type": "artist",
+          "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "2015 Lorena Del Mar",
+          "type": "C"
+        },
+        {
+          "text": "2015 Lorena Del Mar",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "0616043618227"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1qo5KIhBOzoDhq3jSBqo6R"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/1qo5KIhBOzoDhq3jSBqo6R",
+      "id": "1qo5KIhBOzoDhq3jSBqo6R",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27349a9e8595f4118b6e45d9fba",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0249a9e8595f4118b6e45d9fba",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485149a9e8595f4118b6e45d9fba",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "label": "Clever Tree Records",
+      "name": "My Resistance Is Low",
+      "popularity": 0,
+      "release_date": "2015-05-28",
+      "release_date_precision": "day",
+      "total_tracks": 7,
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/1qo5KIhBOzoDhq3jSBqo6R/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+                },
+                "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+                "id": "1sR6UagoDJiGkAjTmMITg0",
+                "name": "Alex Koo",
+                "type": "artist",
+                "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7xQ9unko2ORZVCTukcm0Bg"
+                },
+                "href": "https://api.spotify.com/v1/artists/7xQ9unko2ORZVCTukcm0Bg",
+                "id": "7xQ9unko2ORZVCTukcm0Bg",
+                "name": "Attila Gyarfas",
+                "type": "artist",
+                "uri": "spotify:artist:7xQ9unko2ORZVCTukcm0Bg"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2RKEPgZxxE1Yfiti8QfMT0"
+                },
+                "href": "https://api.spotify.com/v1/artists/2RKEPgZxxE1Yfiti8QfMT0",
+                "id": "2RKEPgZxxE1Yfiti8QfMT0",
+                "name": "Matheus Nicolaiewsky",
+                "type": "artist",
+                "uri": "spotify:artist:2RKEPgZxxE1Yfiti8QfMT0"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 521159,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6WIkOattxEI7BMm70g3qfr"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6WIkOattxEI7BMm70g3qfr",
+            "id": "6WIkOattxEI7BMm70g3qfr",
+            "is_local": false,
+            "is_playable": true,
+            "name": "My Resistance Is Low",
+            "preview_url": "https://p.scdn.co/mp3-preview/a9e107aad333103b49b7d767a79cec5a04be3f5f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:6WIkOattxEI7BMm70g3qfr"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 259926,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0I8qhQbhYhA1tvKN85xNOh"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0I8qhQbhYhA1tvKN85xNOh",
+            "id": "0I8qhQbhYhA1tvKN85xNOh",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Aplastamiento de las Gotas",
+            "preview_url": "https://p.scdn.co/mp3-preview/6dde7fb9a4f7eeebde80376977b1731e056213fb?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:0I8qhQbhYhA1tvKN85xNOh"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 321246,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5DFmId3nJLwAS7aevk6qZ9"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5DFmId3nJLwAS7aevk6qZ9",
+            "id": "5DFmId3nJLwAS7aevk6qZ9",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Nostalgia in Times Square",
+            "preview_url": "https://p.scdn.co/mp3-preview/4409af086ad4991c0920f8364bd34e92f051bae3?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:5DFmId3nJLwAS7aevk6qZ9"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 370025,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0yr8oevBTniS7KeW3Rf5x8"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0yr8oevBTniS7KeW3Rf5x8",
+            "id": "0yr8oevBTniS7KeW3Rf5x8",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Lacho",
+            "preview_url": "https://p.scdn.co/mp3-preview/1476aaae3f3e6d5b61ffb9a371381ff7bed856c3?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:0yr8oevBTniS7KeW3Rf5x8"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 305554,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5Yx0QFOnaW3MEu6Dio5QWf"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5Yx0QFOnaW3MEu6Dio5QWf",
+            "id": "5Yx0QFOnaW3MEu6Dio5QWf",
+            "is_local": false,
+            "is_playable": true,
+            "name": "The Hunt",
+            "preview_url": "https://p.scdn.co/mp3-preview/b0a2a181a3f129f7f11e06ecebc7067b9d93fbce?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:5Yx0QFOnaW3MEu6Dio5QWf"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 466037,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5WE0D1oUOvghgsM0giLMDr"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5WE0D1oUOvghgsM0giLMDr",
+            "id": "5WE0D1oUOvghgsM0giLMDr",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Elube Changó",
+            "preview_url": "https://p.scdn.co/mp3-preview/0d8c823eb31df0e62088c9f9bc372513f2b80c9f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:5WE0D1oUOvghgsM0giLMDr"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 246199,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/03uD4AAxlnsPc2Gm8Sz1nO"
+            },
+            "href": "https://api.spotify.com/v1/tracks/03uD4AAxlnsPc2Gm8Sz1nO",
+            "id": "03uD4AAxlnsPc2Gm8Sz1nO",
+            "is_local": false,
+            "is_playable": true,
+            "name": "No Matter Where You Roam",
+            "preview_url": "https://p.scdn.co/mp3-preview/99cf239dbf8d02c1f07b843f5253542cbee51bb8?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:03uD4AAxlnsPc2Gm8Sz1nO"
+          }
+        ],
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 7
+      },
+      "type": "album",
+      "uri": "spotify:album:1qo5KIhBOzoDhq3jSBqo6R"
+    },
+    {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+          },
+          "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+          "id": "4lEH49x4XlhgntLjcPCkB7",
+          "name": "Lorena del Mar",
+          "type": "artist",
+          "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "2021 Lorena del Mar",
+          "type": "C"
+        },
+        {
+          "text": "2021 Lorena del Mar",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "721535813957"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3Qe8FflRFQp9dot3uLX16Z"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/3Qe8FflRFQp9dot3uLX16Z",
+      "id": "3Qe8FflRFQp9dot3uLX16Z",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273bfbc2448a46701f43d829d68",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02bfbc2448a46701f43d829d68",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851bfbc2448a46701f43d829d68",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "label": "Clever Tree Records",
+      "name": "The Does",
+      "popularity": 0,
+      "release_date": "2021-10-31",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/3Qe8FflRFQp9dot3uLX16Z/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4lEH49x4XlhgntLjcPCkB7"
+                },
+                "href": "https://api.spotify.com/v1/artists/4lEH49x4XlhgntLjcPCkB7",
+                "id": "4lEH49x4XlhgntLjcPCkB7",
+                "name": "Lorena del Mar",
+                "type": "artist",
+                "uri": "spotify:artist:4lEH49x4XlhgntLjcPCkB7"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 302613,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2DVry7fErbaxouzDRJT22L"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2DVry7fErbaxouzDRJT22L",
+            "id": "2DVry7fErbaxouzDRJT22L",
+            "is_local": false,
+            "is_playable": true,
+            "name": "The Does",
+            "preview_url": "https://p.scdn.co/mp3-preview/4f6eca502eaa7e80ae4c760e54df068ffff942d3?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:2DVry7fErbaxouzDRJT22L"
+          }
+        ],
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 1
+      },
+      "type": "album",
+      "uri": "spotify:album:3Qe8FflRFQp9dot3uLX16Z"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      },
+      "followers": {
+        "href": null,
+        "total": 9544540
+      },
+      "genres": [
+        "electro",
+        "filter house",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi",
+      "id": "4tZwfgrHOc3mvqYlEYSvVi",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eba7bfd7835b5c1eee0c95fa6e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174a7bfd7835b5c1eee0c95fa6e",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178a7bfd7835b5c1eee0c95fa6e",
+          "width": 160
+        }
+      ],
+      "name": "Daft Punk",
+      "popularity": 79,
+      "type": "artist",
+      "uri": "spotify:artist:4tZwfgrHOc3mvqYlEYSvVi"
     }
   ]
 }

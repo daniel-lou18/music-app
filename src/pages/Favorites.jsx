@@ -1,5 +1,11 @@
+import { Outlet } from "react-router-dom";
+
 function Favorites() {
-  return <div>FAVORITES</div>;
+  return (
+    <>
+      <Outlet />
+    </>
+  );
 }
 
 export default Favorites;
