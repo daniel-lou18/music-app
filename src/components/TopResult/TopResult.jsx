@@ -8,8 +8,11 @@ import { useFavorites } from "../../context/FavoritesContext";
 
 function TopResult() {
   const { topResult } = useMusic();
-  const { id: spotifyId } = topResult;
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+
+  if (!topResult) return <div>No results...</div>;
+
+  const { id: spotifyId } = topResult;
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
 
   const handleClick = () => {
@@ -21,10 +24,6 @@ function TopResult() {
       removeFavorite(id);
     }
   };
-
-  if (!topResult) return;
-
-  if (!Object.keys(topResult).length) return <div>No results...</div>;
 
   return (
     <div className={styles.resultContainer}>

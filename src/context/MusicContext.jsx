@@ -12,13 +12,13 @@ export const MusicProvider = ({ children }) => {
 
   const initialState = {
     data: [],
-    query: "coltrane",
+    query: "",
     error: "",
     isLoading: false,
     isPlayingId: "",
     artistId: "",
     albumId: "",
-    topResult: {},
+    topResult: null,
   };
 
   const reducer = (state, action) => {

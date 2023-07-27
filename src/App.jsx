@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./pages/AppLayout";
+import { HomeProvider } from "./context/HomeContext";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Favorites from "./pages/Favorites";
@@ -13,7 +14,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="app" element={<AppLayout />}>
-          <Route path="" element={<Home />} />
+          <Route
+            path=""
+            element={
+              <HomeProvider>
+                <Home />
+              </HomeProvider>
+            }
+          />
           <Route path="search" element={<Search />} />
           <Route element={<Favorites />}>
             <Route path="favorites/songs" element={<FavSongs />} />
