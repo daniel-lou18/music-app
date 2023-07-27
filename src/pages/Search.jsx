@@ -31,7 +31,7 @@ function Search() {
           {!error && data?.tracks?.items.length > 0 && (
             <>
               <ListContainer position="left">
-                <TopResult items={data} query={query} />
+                <TopResult title="Top Result" />
               </ListContainer>
               <ListContainer position="right">
                 <TrackList tracks={data?.tracks?.items} title="Songs" />

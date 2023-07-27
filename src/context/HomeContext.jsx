@@ -44,7 +44,7 @@ export const HomeProvider = ({ children }) => {
       try {
         dispatch({ type: "loading" });
         const res = await fetch(
-          `${BASE_URL}/browse/new-releases?country=FR&limit=5`,
+          `${BASE_URL}/browse/new-releases?country=FR&limit=25`,
           {
             method: "GET",
             headers: {

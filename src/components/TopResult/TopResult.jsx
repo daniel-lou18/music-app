@@ -5,10 +5,20 @@ import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
 import StarRating from "../StarRating/";
 import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
+import { artist } from "../../../data/featuredArtist";
 
-function TopResult() {
-  const { topResult } = useMusic();
+import { useEffect } from "react";
+
+function TopResult({ title, type = "result" }) {
+  const { topResult, dispatch } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  console.log(topResult);
+
+  useEffect(() => {
+    if (type === "featured") {
+      dispatch({ type: "topResult/set", payload: artist });
+    }
+  }, [type, dispatch]);
 
   if (!topResult) return <div>No results...</div>;
 
@@ -27,7 +37,7 @@ function TopResult() {
 
   return (
     <div className={styles.resultContainer}>
-      <h2 className={`section-title ${styles.title}`}>Top Result</h2>
+      <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
         <svg
           onClick={handleClick}

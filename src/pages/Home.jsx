@@ -2,25 +2,39 @@ import { useEffect } from "react";
 import HorizontalList from "../components/HorizontalList";
 import { useHome } from "../context/HomeContext";
 import { useMusic } from "../context/MusicContext";
+import ListContainer from "../components/Containers/ListContainer";
+import TopResult from "../components/TopResult";
+import TrackList from "../components/TrackList";
+import { topTracks } from "../../data/featuredArtist";
+import Results from "../components/Containers/Results";
 
 function Home() {
-  const { dispatch } = useMusic();
+  const { data, dispatch } = useMusic();
   const { newReleases } = useHome();
 
   useEffect(() => {
     dispatch({ type: "playing/set", payload: "" });
+    dispatch({ type: "reset" });
   }, [dispatch]);
 
   return (
-    <div>
+    <Results>
+      <ListContainer position="left">
+        <TopResult title="Featured Artist" type="featured" />
+      </ListContainer>
+      <ListContainer position="right">
+        <TrackList tracks={data?.tracks?.items || topTracks} title="Songs" />
+      </ListContainer>
       {newReleases?.length > 0 && (
-        <HorizontalList
-          type="search"
-          items={newReleases}
-          title="New Releases"
-        />
+        <ListContainer>
+          <HorizontalList
+            type="search"
+            items={newReleases}
+            title="New Releases"
+          />
+        </ListContainer>
       )}
-    </div>
+    </Results>
   );
 }
 

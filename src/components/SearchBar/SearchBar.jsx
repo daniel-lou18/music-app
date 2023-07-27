@@ -21,7 +21,12 @@ function SearchBar({ query, onQuery }) {
           <line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
       </span>
-      <input type="text" value={query} onChange={(e) => onQuery(e)}></input>
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => onQuery(e)}
+        placeholder="What do you want to listen to?"
+      ></input>
     </div>
   );
 }

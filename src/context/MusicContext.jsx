@@ -83,7 +83,8 @@ export const MusicProvider = ({ children }) => {
         return { ...state, isPlayingId: action.payload };
       case "topResult/set":
         return { ...state, topResult: action.payload, isPlayingId: "" };
-
+      case "reset":
+        return { ...state, data: [], query: "" };
       default:
         return state;
     }
@@ -102,6 +103,8 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+
+  console.log(data);
 
   useEffect(() => {
     if (!query || !token) return;
@@ -200,6 +203,7 @@ export const MusicProvider = ({ children }) => {
             return { ...item, album: albumData };
           }),
         };
+        console.log(data);
         dispatch({ type: "albumTracks/loaded", payload: data });
       } catch (err) {
         console.error(err);

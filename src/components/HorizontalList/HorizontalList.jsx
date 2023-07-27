@@ -3,6 +3,7 @@ import styles from "./HorizontalList.module.css";
 import HorizontalListItem from "../HorizontalListItem";
 
 function HorizontalList({ items, title, type = "search", genreNames }) {
+  if (!items || items.length < 1) return;
   return (
     <>
       {type === "search" && (
