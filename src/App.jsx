@@ -5,9 +5,9 @@ import { HomeProvider } from "./context/HomeContext";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Favorites from "./pages/Favorites";
-import FavSongs from "./components/FavSongs";
-import FavArtists from "./components/FavArtists";
-import FavAlbums from "./components/FavAlbums";
+import FavSongs from "./pages/FavSongs";
+import FavArtists from "./pages/FavArtists";
+import FavAlbums from "./pages/FavAlbums";
 
 function App() {
   return (

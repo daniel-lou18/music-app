@@ -9,8 +9,8 @@ import { BrowseProvider } from "../context/BrowseContext";
 import BrowseCategories from "../components/BrowseCategories";
 
 function Search() {
-  const { data, query, error, dispatch } = useMusic();
-  console.log(data);
+  const { data, query, isLoading, error, dispatch } = useMusic();
+  const { tracks, artists, albums } = data;
 
   return (
     <>
@@ -20,30 +20,34 @@ function Search() {
           dispatch({ type: "search/query", payload: e.target.value })
         }
       />
-      {!query && (
+      {(!query || !query.trim() || Object.keys(data).length === 0) && (
         <BrowseProvider>
           <BrowseCategories />
         </BrowseProvider>
       )}
       {query && (
         <Results>
-          {error && <div>Not a valid search query...</div>}
-          {!error && data?.tracks?.items.length > 0 && (
+          {isLoading && <div>Loading...</div>}
+          {!isLoading && error && <div>{error}</div>}
+          {!isLoading &&
+            tracks?.items.length === 0 &&
+            artists?.items.length === 0 &&
+            albums?.items.length === 0 && (
+              <ListContainer>{`No results found for "${query}"`}</ListContainer>
+            )}
+          {!isLoading && !error && tracks?.items.length > 0 && (
             <>
               <ListContainer position="left">
                 <TopResult title="Top Result" />
               </ListContainer>
               <ListContainer position="right">
-                <TrackList tracks={data?.tracks?.items} title="Songs" />
+                <TrackList tracks={tracks?.items} title="Songs" />
               </ListContainer>
               <ListContainer>
-                <HorizontalList
-                  items={data?.artists?.items}
-                  title={"Artists"}
-                />
+                <HorizontalList items={artists?.items} title={"Artists"} />
               </ListContainer>
               <ListContainer>
-                <HorizontalList items={data?.albums?.items} title={"Albums"} />
+                <HorizontalList items={albums?.items} title={"Albums"} />
               </ListContainer>
             </>
           )}

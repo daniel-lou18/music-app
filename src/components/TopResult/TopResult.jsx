@@ -10,7 +10,7 @@ import { artist } from "../../../data/featuredArtist";
 import { useEffect } from "react";
 
 function TopResult({ title, type = "result" }) {
-  const { topResult, dispatch } = useMusic();
+  const { query, topResult, dispatch } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   console.log(topResult);
 
@@ -20,7 +20,15 @@ function TopResult({ title, type = "result" }) {
     }
   }, [type, dispatch]);
 
-  if (!topResult) return <div>No results...</div>;
+  if (!topResult)
+    return (
+      <div className={styles.resultContainer}>
+        <h2 className={`section-title ${styles.title}`}>{title}</h2>
+        <div
+          className={styles.result}
+        >{`No Top Result found for "${query}"`}</div>
+      </div>
+    );
 
   const { id: spotifyId } = topResult;
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;

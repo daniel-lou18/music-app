@@ -1,7 +1,7 @@
 import { useFavorites } from "../../context/FavoritesContext";
-import Results from "../Containers/Results";
-import ListContainer from "../Containers/ListContainer";
-import TrackList from "../TrackList";
+import Results from "../../components/Containers/Results";
+import ListContainer from "../../components/Containers/ListContainer";
+import TrackList from "../../components/TrackList";
 import styles from "./FavSongs.module.css";
 
 function FavSongs() {

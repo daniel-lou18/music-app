@@ -11,7 +11,7 @@ export const MusicProvider = ({ children }) => {
   const { token } = useAuth();
 
   const initialState = {
-    data: [],
+    data: {},
     query: "",
     error: "",
     isLoading: false,
@@ -53,10 +53,18 @@ export const MusicProvider = ({ children }) => {
           artistId: "",
         };
       case "albums/loaded":
-        return { ...state, data: { ...state.data, albums: action.payload } };
+        return {
+          ...state,
+          data: { ...state.data, albums: action.payload },
+          isLoading: false,
+        };
 
       case "albumTracks/loaded":
-        return { ...state, data: { ...state.data, tracks: action.payload } };
+        return {
+          ...state,
+          data: { ...state.data, tracks: action.payload },
+          isLoading: false,
+        };
       case "artists/loaded":
         return {
           ...state,
@@ -67,6 +75,7 @@ export const MusicProvider = ({ children }) => {
               items: action.payload.artists?.slice(0, 5),
             },
           },
+          isLoading: false,
         };
       case "tracks/loaded":
         return {
@@ -82,7 +91,12 @@ export const MusicProvider = ({ children }) => {
       case "playing/set":
         return { ...state, isPlayingId: action.payload };
       case "topResult/set":
-        return { ...state, topResult: action.payload, isPlayingId: "" };
+        return {
+          ...state,
+          topResult: action.payload,
+          isPlayingId: "",
+          isLoading: false,
+        };
       case "reset":
         return { ...state, data: [], query: "" };
       default:
