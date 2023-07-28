@@ -5,7 +5,6 @@ import HorizontalList from "../components/HorizontalList/";
 import TrackList from "../components/TrackList";
 import TopResult from "../components/TopResult";
 import { useMusic } from "../context/MusicContext";
-import { BrowseProvider } from "../context/BrowseContext";
 import BrowseCategories from "../components/BrowseCategories";
 
 function Search() {
@@ -21,9 +20,7 @@ function Search() {
         }
       />
       {(!query || !query.trim() || Object.keys(data).length === 0) && (
-        <BrowseProvider>
-          <BrowseCategories />
-        </BrowseProvider>
+        <BrowseCategories />
       )}
       {query && (
         <Results>

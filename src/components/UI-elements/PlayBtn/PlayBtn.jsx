@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useMusic } from "../../../context/MusicContext";
+import { useBrowse } from "../../../context/BrowseContext";
 import styles from "./PlayBtn.module.css";
 
-function PlayBtn({ type, id }) {
+function PlayBtn({ type, id, genreName }) {
   const { isPlayingId, dispatch } = useMusic();
+  const { dispatch: dispatchBrowse } = useBrowse();
 
   const handleGet = () => {
     if (type === "artist") dispatch({ type: "artist/get", payload: id });
@@ -15,6 +17,10 @@ function PlayBtn({ type, id }) {
     });
   };
 
+  const handleBrowse = () => {
+    dispatchBrowse({ type: "browse/genre", payload: genreName });
+  };
+
   const handlePlay = () => {
     dispatch({ type: "playing/set", payload: id });
   };
@@ -22,7 +28,10 @@ function PlayBtn({ type, id }) {
   return (
     <>
       {(type === "artist" || type === "album") && (
-        <div className={`${styles.playBtn} playBtn`} onClick={handleGet}>
+        <div
+          className={`${styles.playBtn} playBtn`}
+          onClick={genreName ? handleBrowse : handleGet}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

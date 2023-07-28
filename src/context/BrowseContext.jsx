@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import { useAuth } from "./AuthContext";
 
 const BrowseContext = createContext();
@@ -10,7 +10,8 @@ export const BrowseProvider = ({ children }) => {
   const { token } = useAuth();
 
   const initialState = {
-    data: [],
+    genre: "",
+    data: {},
     query: "",
     error: "",
     isLoading: false,
@@ -20,7 +21,7 @@ export const BrowseProvider = ({ children }) => {
     switch (action.type) {
       case "loading":
         return { ...state, error: "", isLoading: true };
-      case "categories/loaded":
+      case "loaded":
         return {
           ...state,
           data: action.payload,
@@ -28,13 +29,45 @@ export const BrowseProvider = ({ children }) => {
         };
       case "error":
         return { ...state, error: action.payload.message, isLoading: false };
+      case "browse/genre":
+        return { ...state, genre: action.payload };
+      case "reset":
+        return { ...state, genre: "", data: {} };
     }
   };
 
-  const [{ data, query }, dispatch] = useReducer(reducer, initialState);
+  const [{ genre, data, query }, dispatch] = useReducer(reducer, initialState);
+
+  useEffect(() => {
+    if (!token || !genre) return;
+
+    const browseMusic = async () => {
+      try {
+        dispatch({ type: "loading" });
+        const res = await fetch(
+          `${BASE_URL}/search?q=genre:${genre}&type=artist,track&limit=20`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token})}`,
+            },
+          }
+        );
+        const data = await res.json();
+        console.log(data);
+        dispatch({ type: "loaded", payload: data });
+      } catch (err) {
+        console.error(err);
+        dispatch({ type: "error", payload: err });
+      }
+    };
+
+    browseMusic();
+  }, [token, genre]);
 
   return (
-    <BrowseContext.Provider value={{ data, query, dispatch }}>
+    <BrowseContext.Provider value={{ genre, data, query, dispatch }}>
       {children}
     </BrowseContext.Provider>
   );

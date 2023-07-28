@@ -6,14 +6,17 @@ import "./index.css";
 import { AuthProvider } from "./context/AuthContext";
 import { MusicProvider } from "./context/MusicContext";
 import { FavoritesProvider } from "./context/FavoritesContext.jsx";
+import { BrowseProvider } from "./context/BrowseContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthProvider>
       <MusicProvider>
-        <FavoritesProvider>
-          <App />
-        </FavoritesProvider>
+        <BrowseProvider>
+          <FavoritesProvider>
+            <App />
+          </FavoritesProvider>
+        </BrowseProvider>
       </MusicProvider>
     </AuthProvider>
   </React.StrictMode>

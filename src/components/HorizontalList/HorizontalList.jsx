@@ -38,6 +38,7 @@ function HorizontalList({ items, title, type = "search", genreNames }) {
                 id={item.id}
                 title={genreNames[i][0].toUpperCase() + genreNames[i].slice(1)}
                 type={item.type}
+                genreName={genreNames[i]}
               />
             ))}
           </ul>

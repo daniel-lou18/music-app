@@ -2,8 +2,11 @@ import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { useState } from "react";
 
+import { useBrowse } from "../../context/BrowseContext";
+
 function NavBar() {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
+  const { dispatch: dispatchBrowse } = useBrowse();
 
   const handleFavorites = () => {
     setFavoritesOpen((prev) => !prev);
@@ -34,7 +37,10 @@ function NavBar() {
             <div className={styles.textWrapper}>Home</div>
           </NavLink>
         </li>
-        <li className={styles.listItem}>
+        <li
+          className={styles.listItem}
+          onClick={() => dispatchBrowse({ type: "reset" })}
+        >
           <NavLink to={"search"} className={styles.navLink}>
             <div className={styles.svgWrapper}>
               <svg
