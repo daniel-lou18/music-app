@@ -3,9 +3,9 @@ import { useMusic } from "../../../context/MusicContext";
 import { useBrowse } from "../../../context/BrowseContext";
 import styles from "./PlayBtn.module.css";
 
-function PlayBtn({ type, id, genreName }) {
+function PlayBtn({ type, id, genreName, itemName }) {
   const { isPlayingId, dispatch } = useMusic();
-  const { dispatch: dispatchBrowse } = useBrowse();
+  const { dispatch: dispatchBrowse, isBrowsing } = useBrowse();
 
   const handleGet = () => {
     if (type === "artist") dispatch({ type: "artist/get", payload: id });
@@ -18,7 +18,8 @@ function PlayBtn({ type, id, genreName }) {
   };
 
   const handleBrowse = () => {
-    dispatchBrowse({ type: "browse/genre", payload: genreName });
+    if (isBrowsing) dispatch({ type: "search/query", payload: itemName });
+    else dispatchBrowse({ type: "browse/genre", payload: genreName });
   };
 
   const handlePlay = () => {

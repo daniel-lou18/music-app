@@ -6,23 +6,23 @@ import TrackList from "../components/TrackList";
 import TopResult from "../components/TopResult";
 import { useMusic } from "../context/MusicContext";
 import BrowseCategories from "../components/BrowseCategories";
-import { useBrowse } from "../context/BrowseContext";
 
 function Search() {
-  const { data, query, isLoading, error, dispatch, artistId, albumId } =
-    useMusic();
-  const { dispatch: dispatchBrowse } = useBrowse();
+  const { data, query, isLoading, error, dispatch } = useMusic();
   const { tracks, artists, albums } = data;
-
-  const handleQuery = (e) => {
-    dispatch({ type: "search/query", payload: e.target.value });
-    dispatchBrowse({ type: "reset" });
-  };
 
   return (
     <>
-      <SearchBar query={query} onQuery={handleQuery} />
-      {(query || artistId || albumId) && (
+      <SearchBar
+        query={query}
+        onQuery={(e) =>
+          dispatch({ type: "search/query", payload: e.target.value })
+        }
+      />
+      {(!query || !query.trim() || Object.keys(data).length === 0) && (
+        <BrowseCategories />
+      )}
+      {query && (
         <Results>
           {isLoading && <div>Loading...</div>}
           {!isLoading && error && <div>{error}</div>}
@@ -50,10 +50,6 @@ function Search() {
           )}
         </Results>
       )}
-      {(!query || !query.trim() || Object.keys(data).length === 0) &&
-        !isLoading &&
-        !artistId &&
-        !albumId && <BrowseCategories />}
     </>
   );
 }

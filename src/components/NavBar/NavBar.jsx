@@ -3,13 +3,20 @@ import styles from "./NavBar.module.css";
 import { useState } from "react";
 
 import { useBrowse } from "../../context/BrowseContext";
+import { useMusic } from "../../context/MusicContext";
 
 function NavBar() {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
+  const { dispatch } = useMusic();
   const { dispatch: dispatchBrowse } = useBrowse();
 
   const handleFavorites = () => {
     setFavoritesOpen((prev) => !prev);
+  };
+
+  const handleSearch = () => {
+    dispatchBrowse({ type: "reset" });
+    dispatch({ type: "reset" });
   };
 
   return (
@@ -37,10 +44,7 @@ function NavBar() {
             <div className={styles.textWrapper}>Home</div>
           </NavLink>
         </li>
-        <li
-          className={styles.listItem}
-          onClick={() => dispatchBrowse({ type: "reset" })}
-        >
+        <li className={styles.listItem} onClick={handleSearch}>
           <NavLink to={"search"} className={styles.navLink}>
             <div className={styles.svgWrapper}>
               <svg

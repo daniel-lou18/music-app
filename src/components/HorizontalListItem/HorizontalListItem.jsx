@@ -3,7 +3,15 @@
 import styles from "./HorizontalListItem.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/";
 
-function HorizontalListItem({ id, imgUrl, title, subtitle, type, genreName }) {
+function HorizontalListItem({
+  id,
+  imgUrl,
+  title,
+  subtitle,
+  type,
+  genreName,
+  itemName,
+}) {
   return (
     <li className={styles.listItem}>
       <div className={styles.imgWrapper}>
@@ -17,7 +25,12 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, genreName }) {
       <div className={styles.textContainer}>
         <h3 className={styles.title}>{title}</h3>
         <h4 className={styles.subtitle}>{subtitle}</h4>
-        <PlayBtn type={type} id={id} genreName={genreName} />
+        <PlayBtn
+          type={type}
+          id={id}
+          genreName={genreName}
+          itemName={itemName}
+        />
       </div>
     </li>
   );

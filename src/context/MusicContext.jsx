@@ -98,7 +98,7 @@ export const MusicProvider = ({ children }) => {
           isLoading: false,
         };
       case "reset":
-        return { ...state, data: [], query: "" };
+        return { ...state, data: [], query: "", albumId: "", artistId: "" };
       default:
         return state;
     }

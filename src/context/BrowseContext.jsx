@@ -15,6 +15,7 @@ export const BrowseProvider = ({ children }) => {
     query: "",
     error: "",
     isLoading: false,
+    isBrowsing: false,
   };
 
   const reducer = (state, action) => {
@@ -26,13 +27,20 @@ export const BrowseProvider = ({ children }) => {
           ...state,
           data: action.payload,
           isLoading: false,
+          isBrowsing: true,
         };
       case "error":
         return { ...state, error: action.payload.message, isLoading: false };
       case "browse/genre":
-        return { ...state, genre: action.payload };
+        return { ...state, genre: action.payload, isBrowsing: false };
       case "reset":
-        return { ...state, genre: "", data: {} };
+        return {
+          ...state,
+          genre: "",
+          data: {},
+          isLoading: false,
+          isBrowsing: false,
+        };
     }
   };
 
