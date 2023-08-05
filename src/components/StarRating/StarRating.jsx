@@ -3,7 +3,15 @@ import { useState } from "react";
 import styles from "./StarRating.module.css";
 import StarItem from "../UI-elements/StarItem";
 
-function StarRating({ color, number, size, text, defaultRating = 0 }) {
+function StarRating({
+  color,
+  number,
+  size,
+  text,
+  defaultRating = 0,
+  callback,
+  item,
+}) {
   const [rating, setRating] = useState(defaultRating);
   const [numHover, setNumHover] = useState(0);
   const numStars = numHover ? numHover : rating;
@@ -18,6 +26,7 @@ function StarRating({ color, number, size, text, defaultRating = 0 }) {
 
   const handleClick = (idx) => {
     setRating(idx + 1);
+    callback(item, idx + 1);
   };
 
   return (

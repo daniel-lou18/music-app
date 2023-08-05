@@ -5,6 +5,7 @@ import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
 import StarRating from "../StarRating/";
 import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
+import { useRated } from "../../context/RatedContext";
 import { artist } from "../../../data/featuredArtist";
 
 import { useEffect } from "react";
@@ -12,6 +13,7 @@ import { useEffect } from "react";
 function TopResult({ title, type = "result" }) {
   const { query, topResult, dispatch } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  const { ratedData, addRated, removeRated } = useRated();
   console.log(topResult);
 
   useEffect(() => {
@@ -31,15 +33,16 @@ function TopResult({ title, type = "result" }) {
     );
 
   const { id: spotifyId } = topResult;
-  const id = favoritesData.find((item) => item.id === spotifyId)?.id;
+  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
+  const ratedItem = ratedData.find((item) => item.id === spotifyId);
 
-  const handleClick = () => {
+  const handleFavorite = () => {
     console.log(favoritesData);
-    console.log(id);
-    if (!id) {
+    console.log(favId);
+    if (!favId) {
       addFavorite(topResult);
     } else {
-      removeFavorite(id);
+      removeFavorite(favId);
     }
   };
 
@@ -48,17 +51,17 @@ function TopResult({ title, type = "result" }) {
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
         <svg
-          onClick={handleClick}
+          onClick={handleFavorite}
           xmlns="http://www.w3.org/2000/svg"
           width="28"
           height="28"
           viewBox="0 0 24 24"
-          fill={id ? "red" : "none"}
-          stroke={id ? "none" : "darkgrey"}
+          fill={favId ? "red" : "none"}
+          stroke={favId ? "none" : "darkgrey"}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className={`feather feather-heart ${id ? styles.redHeart : ""}`}
+          className={`feather feather-heart ${favId ? styles.redHeart : ""}`}
         >
           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
         </svg>
@@ -106,7 +109,15 @@ function TopResult({ title, type = "result" }) {
           }
         />
         <PlayBtn key={topResult.id} type={topResult.type} id={topResult.id} />
-        <StarRating size={24} color="yellow" text="Rating" number={5} />
+        <StarRating
+          size={24}
+          color="yellow"
+          text="Rating"
+          number={5}
+          callback={addRated}
+          item={topResult}
+          defaultRating={ratedItem ? ratedItem.rating : 0}
+        />
       </div>
     </div>
   );

@@ -8,6 +8,10 @@ import Favorites from "./pages/Favorites";
 import FavSongs from "./pages/FavSongs";
 import FavArtists from "./pages/FavArtists";
 import FavAlbums from "./pages/FavAlbums";
+import Rated from "./pages/Rated";
+import RatedSongs from "./pages/RatedSongs/RatedSongs";
+import RatedArtists from "./pages/RatedArtists/RatedArtists";
+import RatedAlbums from "./pages/RatedAlbums/RatedAlbums";
 
 function App() {
   return (
@@ -27,6 +31,11 @@ function App() {
             <Route path="favorites/songs" element={<FavSongs />} />
             <Route path="favorites/artists" element={<FavArtists />} />
             <Route path="favorites/albums" element={<FavAlbums />} />
+          </Route>
+          <Route element={<Rated />}>
+            <Route path="rated/songs" element={<RatedSongs />} />
+            <Route path="rated/artists" element={<RatedArtists />} />
+            <Route path="rated/albums" element={<RatedAlbums />} />
           </Route>
         </Route>
       </Routes>
