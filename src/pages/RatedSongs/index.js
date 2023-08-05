@@ -1,3 +1,3 @@
-import FavSongs from "./FavSongs";
+import RatedSongs from "./RatedSongs";
 
-export default FavSongs;
+export default RatedSongs;

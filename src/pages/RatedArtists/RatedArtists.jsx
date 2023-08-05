@@ -1,6 +1,6 @@
 import Results from "../../components/Containers/Results";
 import ListContainer from "../../components/Containers/ListContainer";
-import HorizontalList from "../../components/HorizontalList";
+import RatedList from "../../components/RatedList";
 import styles from "./RatedArtists.module.css";
 import { useRated } from "../../context/RatedContext";
 
@@ -16,7 +16,7 @@ function RatedArtists() {
       {artists.length > 0 && (
         <>
           <ListContainer className={styles.listContainer}>
-            <HorizontalList items={artists} title="Favorite artists" />
+            <RatedList items={artists} title="Rated artists" />
           </ListContainer>
         </>
       )}

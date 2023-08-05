@@ -16,7 +16,7 @@ function RatedSongs() {
       {tracks.length > 0 && (
         <>
           <ListContainer className={styles.listContainer}>
-            <TrackList tracks={tracks} title="Favorite songs" />
+            <TrackList tracks={tracks} title="Rated songs" />
           </ListContainer>
         </>
       )}

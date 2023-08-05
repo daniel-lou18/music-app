@@ -47,7 +47,7 @@ function TopResult({ title, type = "result" }) {
   };
 
   return (
-    <div className={styles.resultContainer}>
+    <div className={styles.resultContainer} key={topResult.id}>
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
         <svg
@@ -75,7 +75,7 @@ function TopResult({ title, type = "result" }) {
         />
         <h3
           className={`${styles.itemTitle} ${
-            topResult.name.length > 30 ? styles.itemTitleSmall : ""
+            topResult.name.length > 20 ? styles.itemTitleSmall : ""
           }`}
         >
           {topResult.name.length > 30
@@ -115,6 +115,7 @@ function TopResult({ title, type = "result" }) {
           text="Rating"
           number={5}
           callback={addRated}
+          beforeCallback={ratedItem ? removeRated : null}
           item={topResult}
           defaultRating={ratedItem ? ratedItem.rating : 0}
         />

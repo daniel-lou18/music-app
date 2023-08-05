@@ -1,6 +1,6 @@
 import Results from "../../components/Containers/Results";
 import ListContainer from "../../components/Containers/ListContainer";
-import HorizontalList from "../../components/HorizontalList";
+import RatedList from "../../components/RatedList";
 import styles from "./RatedAlbums.module.css";
 import { useRated } from "../../context/RatedContext";
 
@@ -16,7 +16,7 @@ function RatedAlbums() {
       {albums.length > 0 && (
         <>
           <ListContainer className={styles.listContainer}>
-            <HorizontalList items={albums} title="Favorite albums" />
+            <RatedList items={albums} title="Rated albums" />
           </ListContainer>
         </>
       )}

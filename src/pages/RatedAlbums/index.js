@@ -1,3 +1,3 @@
-import FavAlbums from "./FavAlbums";
+import RatedAlbums from "./RatedAlbums";
 
-export default FavAlbums;
+export default RatedAlbums;

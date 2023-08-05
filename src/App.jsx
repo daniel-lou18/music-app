@@ -9,9 +9,9 @@ import FavSongs from "./pages/FavSongs";
 import FavArtists from "./pages/FavArtists";
 import FavAlbums from "./pages/FavAlbums";
 import Rated from "./pages/Rated";
-import RatedSongs from "./pages/RatedSongs/RatedSongs";
-import RatedArtists from "./pages/RatedArtists/RatedArtists";
-import RatedAlbums from "./pages/RatedAlbums/RatedAlbums";
+import RatedSongs from "./pages/RatedSongs";
+import RatedArtists from "./pages/RatedArtists";
+import RatedAlbums from "./pages/RatedAlbums";
 
 function App() {
   return (

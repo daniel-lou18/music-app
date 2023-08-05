@@ -1243,41 +1243,6 @@
       "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
     },
     {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
-      },
-      "followers": {
-        "href": null,
-        "total": 728
-      },
-      "genres": [
-        "belgian jazz"
-      ],
-      "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
-      "id": "1sR6UagoDJiGkAjTmMITg0",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebdfafaa46ea5fbb778f662601",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174dfafaa46ea5fbb778f662601",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178dfafaa46ea5fbb778f662601",
-          "width": 160
-        }
-      ],
-      "name": "Alex Koo",
-      "popularity": 5,
-      "type": "artist",
-      "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
-    },
-    {
       "album": {
         "album_type": "album",
         "artists": [
@@ -3702,75 +3667,280 @@
   ],
   "rated": [
     {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/12GqGscKJx3aE4t07u7eVZ"
-      },
-      "followers": {
-        "href": null,
-        "total": 5975600
-      },
-      "genres": [
-        "sad sierreno"
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5CIMRXgF4GfPlYpKE2DX99"
+          },
+          "href": "https://api.spotify.com/v1/artists/5CIMRXgF4GfPlYpKE2DX99",
+          "id": "5CIMRXgF4GfPlYpKE2DX99",
+          "name": "Dj Nego Beat",
+          "type": "artist",
+          "uri": "spotify:artist:5CIMRXgF4GfPlYpKE2DX99"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/33Mu6Z0Kmdw2eW84lyC1po"
+          },
+          "href": "https://api.spotify.com/v1/artists/33Mu6Z0Kmdw2eW84lyC1po",
+          "id": "33Mu6Z0Kmdw2eW84lyC1po",
+          "name": "Viela Gang",
+          "type": "artist",
+          "uri": "spotify:artist:33Mu6Z0Kmdw2eW84lyC1po"
+        }
       ],
-      "href": "https://api.spotify.com/v1/artists/12GqGscKJx3aE4t07u7eVZ",
-      "id": "12GqGscKJx3aE4t07u7eVZ",
+      "available_markets": [
+        "AD",
+        "AE",
+        "AG",
+        "AL",
+        "AM",
+        "AO",
+        "AR",
+        "AT",
+        "AU",
+        "AZ",
+        "BA",
+        "BB",
+        "BD",
+        "BE",
+        "BF",
+        "BG",
+        "BH",
+        "BI",
+        "BJ",
+        "BN",
+        "BO",
+        "BR",
+        "BS",
+        "BT",
+        "BW",
+        "BY",
+        "BZ",
+        "CA",
+        "CD",
+        "CG",
+        "CH",
+        "CI",
+        "CL",
+        "CM",
+        "CO",
+        "CR",
+        "CV",
+        "CW",
+        "CY",
+        "CZ",
+        "DE",
+        "DJ",
+        "DK",
+        "DM",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "ET",
+        "FI",
+        "FJ",
+        "FM",
+        "FR",
+        "GA",
+        "GB",
+        "GD",
+        "GE",
+        "GH",
+        "GM",
+        "GN",
+        "GQ",
+        "GR",
+        "GT",
+        "GW",
+        "GY",
+        "HK",
+        "HN",
+        "HR",
+        "HT",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IQ",
+        "IS",
+        "IT",
+        "JM",
+        "JO",
+        "JP",
+        "KE",
+        "KG",
+        "KH",
+        "KI",
+        "KM",
+        "KN",
+        "KR",
+        "KW",
+        "KZ",
+        "LA",
+        "LB",
+        "LC",
+        "LI",
+        "LK",
+        "LR",
+        "LS",
+        "LT",
+        "LU",
+        "LV",
+        "LY",
+        "MA",
+        "MC",
+        "MD",
+        "ME",
+        "MG",
+        "MH",
+        "MK",
+        "ML",
+        "MN",
+        "MO",
+        "MR",
+        "MT",
+        "MU",
+        "MV",
+        "MW",
+        "MX",
+        "MY",
+        "MZ",
+        "NA",
+        "NE",
+        "NG",
+        "NI",
+        "NL",
+        "NO",
+        "NP",
+        "NR",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PG",
+        "PH",
+        "PK",
+        "PL",
+        "PS",
+        "PT",
+        "PW",
+        "PY",
+        "QA",
+        "RO",
+        "RS",
+        "RW",
+        "SA",
+        "SB",
+        "SC",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SL",
+        "SM",
+        "SN",
+        "SR",
+        "ST",
+        "SV",
+        "SZ",
+        "TD",
+        "TG",
+        "TH",
+        "TJ",
+        "TL",
+        "TN",
+        "TO",
+        "TR",
+        "TT",
+        "TV",
+        "TW",
+        "TZ",
+        "UA",
+        "UG",
+        "US",
+        "UY",
+        "UZ",
+        "VC",
+        "VE",
+        "VN",
+        "VU",
+        "WS",
+        "XK",
+        "ZA",
+        "ZM",
+        "ZW"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/5jK0j6ZBWA0OrIY5IMoixO"
+      },
+      "href": "https://api.spotify.com/v1/albums/5jK0j6ZBWA0OrIY5IMoixO",
+      "id": "5jK0j6ZBWA0OrIY5IMoixO",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb730e71d60e047f1061a9e697",
+          "url": "https://i.scdn.co/image/ab67616d0000b273f9d0083b8f0d6610ceb80a97",
           "width": 640
         },
         {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174730e71d60e047f1061a9e697",
-          "width": 320
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f9d0083b8f0d6610ceb80a97",
+          "width": 300
         },
         {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178730e71d60e047f1061a9e697",
-          "width": 160
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f9d0083b8f0d6610ceb80a97",
+          "width": 64
         }
       ],
-      "name": "Peso Pluma",
-      "popularity": 93,
-      "type": "artist",
-      "uri": "spotify:artist:12GqGscKJx3aE4t07u7eVZ"
+      "name": "Uol",
+      "release_date": "2019-10-20",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:5jK0j6ZBWA0OrIY5IMoixO",
+      "rating": 3
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+        "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
       },
       "followers": {
         "href": null,
-        "total": 26770315
+        "total": 729
       },
       "genres": [
-        "pop"
+        "belgian jazz"
       ],
-      "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-      "id": "1McMsnEElThX1knmY4oliG",
+      "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+      "id": "1sR6UagoDJiGkAjTmMITg0",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebe03a98785f3658f0b6461ec4",
+          "url": "https://i.scdn.co/image/ab6761610000e5ebdfafaa46ea5fbb778f662601",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174e03a98785f3658f0b6461ec4",
+          "url": "https://i.scdn.co/image/ab67616100005174dfafaa46ea5fbb778f662601",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178e03a98785f3658f0b6461ec4",
+          "url": "https://i.scdn.co/image/ab6761610000f178dfafaa46ea5fbb778f662601",
           "width": 160
         }
       ],
-      "name": "Olivia Rodrigo",
-      "popularity": 84,
+      "name": "Alex Koo",
+      "popularity": 5,
       "type": "artist",
-      "uri": "spotify:artist:1McMsnEElThX1knmY4oliG",
-      "rating": 3
+      "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0",
+      "rating": 5
     },
     {
       "album_type": "album",
@@ -3825,7 +3995,7 @@
       "is_playable": true,
       "label": "Big Loud Records / Mercury Records / Republic Records",
       "name": "One Thing At A Time",
-      "popularity": 94,
+      "popularity": 93,
       "release_date": "2023-03-03",
       "release_date_precision": "day",
       "total_tracks": 36,
@@ -4915,7 +5085,1150 @@
       },
       "type": "album",
       "uri": "spotify:album:6i7mF7whyRJuLJ4ogbH2wh",
-      "rating": 5
+      "rating": 1
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+      },
+      "followers": {
+        "href": null,
+        "total": 1217511
+      },
+      "genres": [
+        "alternative pop rock",
+        "pov: indie"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6USv9qhCn6zfxlBQIYJ9qs",
+      "id": "6USv9qhCn6zfxlBQIYJ9qs",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebbe491d3676793a1697c61254",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174be491d3676793a1697c61254",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178be491d3676793a1697c61254",
+          "width": 160
+        }
+      ],
+      "name": "Dominic Fike",
+      "popularity": 77,
+      "type": "artist",
+      "uri": "spotify:artist:6USv9qhCn6zfxlBQIYJ9qs",
+      "rating": 2
+    },
+    {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+          },
+          "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+          "id": "49jTY62Cpw3RYo4dLuG43W",
+          "name": "Cian Ducrot",
+          "type": "artist",
+          "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "© 2023 Universal Music Operations Limited",
+          "type": "C"
+        },
+        {
+          "text": "℗ 2023 Universal Music Operations Limited",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "00602455512727"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4T0KHJNt0mCuAyXSXfhQc3"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/4T0KHJNt0mCuAyXSXfhQc3",
+      "id": "4T0KHJNt0mCuAyXSXfhQc3",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736d06bb24724f5f0547cb369a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026d06bb24724f5f0547cb369a",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516d06bb24724f5f0547cb369a",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "label": "Polydor Records",
+      "name": "Victory",
+      "popularity": 29,
+      "release_date": "2023-08-04",
+      "release_date_precision": "day",
+      "total_tracks": 14,
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/4T0KHJNt0mCuAyXSXfhQc3/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 191601,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5WIvKzCclkvt7EK89DLttO"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5WIvKzCclkvt7EK89DLttO",
+            "id": "5WIvKzCclkvt7EK89DLttO",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Victory",
+            "preview_url": null,
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:5WIvKzCclkvt7EK89DLttO"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 172547,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/04zpnoSROKFTCfgkoPcZ5A"
+            },
+            "href": "https://api.spotify.com/v1/tracks/04zpnoSROKFTCfgkoPcZ5A",
+            "id": "04zpnoSROKFTCfgkoPcZ5A",
+            "is_local": false,
+            "is_playable": true,
+            "name": "I'll Be Waiting",
+            "preview_url": null,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:04zpnoSROKFTCfgkoPcZ5A"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 174752,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5RweZJHqfLlEoz9rvmGFES"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5RweZJHqfLlEoz9rvmGFES",
+            "id": "5RweZJHqfLlEoz9rvmGFES",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Him",
+            "preview_url": null,
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:5RweZJHqfLlEoz9rvmGFES"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 232944,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2pmZzKAI2ZWCKEiBPTD1fi"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2pmZzKAI2ZWCKEiBPTD1fi",
+            "id": "2pmZzKAI2ZWCKEiBPTD1fi",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Heaven",
+            "preview_url": null,
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:2pmZzKAI2ZWCKEiBPTD1fi"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 240552,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1QiGePKveZjlbyZEcdYyF8"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1QiGePKveZjlbyZEcdYyF8",
+            "id": "1QiGePKveZjlbyZEcdYyF8",
+            "is_local": false,
+            "is_playable": true,
+            "name": "How Do You Know",
+            "preview_url": null,
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:1QiGePKveZjlbyZEcdYyF8"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 221321,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0DuTrWPjPQNgMhar1fkD3C"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0DuTrWPjPQNgMhar1fkD3C",
+            "id": "0DuTrWPjPQNgMhar1fkD3C",
+            "is_local": false,
+            "is_playable": true,
+            "name": "All For You",
+            "preview_url": null,
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:0DuTrWPjPQNgMhar1fkD3C"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 199591,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4h1d5zG9QEDxLfm418gWS6"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4h1d5zG9QEDxLfm418gWS6",
+            "id": "4h1d5zG9QEDxLfm418gWS6",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Step Dad",
+            "preview_url": null,
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:4h1d5zG9QEDxLfm418gWS6"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 171640,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1hHJJGDSRQRuDGMQsNEikT"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1hHJJGDSRQRuDGMQsNEikT",
+            "id": "1hHJJGDSRQRuDGMQsNEikT",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Mama",
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:1hHJJGDSRQRuDGMQsNEikT"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 241055,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3Fl5MQNYh1MIpAOpHYAVpr"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3Fl5MQNYh1MIpAOpHYAVpr",
+            "id": "3Fl5MQNYh1MIpAOpHYAVpr",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Hurt When You Hurt Me",
+            "preview_url": null,
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:3Fl5MQNYh1MIpAOpHYAVpr"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 232932,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/703Mq1V6FuaVu64GDxwbSf"
+            },
+            "href": "https://api.spotify.com/v1/tracks/703Mq1V6FuaVu64GDxwbSf",
+            "id": "703Mq1V6FuaVu64GDxwbSf",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Blame It On You",
+            "preview_url": null,
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:703Mq1V6FuaVu64GDxwbSf"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 191103,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4V50U0qH1s72n2J8Kxavdu"
+            },
+            "href": "https://api.spotify.com/v1/tracks/4V50U0qH1s72n2J8Kxavdu",
+            "id": "4V50U0qH1s72n2J8Kxavdu",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Endless Nights",
+            "preview_url": null,
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:4V50U0qH1s72n2J8Kxavdu"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 202193,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3aOgskwxDLNY9Xz6hE2zzm"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3aOgskwxDLNY9Xz6hE2zzm",
+            "id": "3aOgskwxDLNY9Xz6hE2zzm",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Part Of Me",
+            "preview_url": null,
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:3aOgskwxDLNY9Xz6hE2zzm"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 156627,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3BRI2KJHYRJfse5DYmyoxM"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3BRI2KJHYRJfse5DYmyoxM",
+            "id": "3BRI2KJHYRJfse5DYmyoxM",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Everyone Who Falls In Love (Has Someone Else They’re Thinking Of)",
+            "preview_url": null,
+            "track_number": 13,
+            "type": "track",
+            "uri": "spotify:track:3BRI2KJHYRJfse5DYmyoxM"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
+                },
+                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
+                "id": "49jTY62Cpw3RYo4dLuG43W",
+                "name": "Cian Ducrot",
+                "type": "artist",
+                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 184716,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3lBSPYFej4oBeqRZfbC6Rl"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3lBSPYFej4oBeqRZfbC6Rl",
+            "id": "3lBSPYFej4oBeqRZfbC6Rl",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Thank God You Stayed",
+            "preview_url": null,
+            "track_number": 14,
+            "type": "track",
+            "uri": "spotify:track:3lBSPYFej4oBeqRZfbC6Rl"
+          }
+        ],
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 14
+      },
+      "type": "album",
+      "uri": "spotify:album:4T0KHJNt0mCuAyXSXfhQc3",
+      "rating": 3
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
+      },
+      "followers": {
+        "href": null,
+        "total": 14480186
+      },
+      "genres": [
+        "atl hip hop",
+        "hip hop",
+        "rap",
+        "southern hip hop",
+        "trap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+      "id": "1RyvyyTE3xzB2ZywiAwp0i",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb24e41f491b129093a6fee383",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517424e41f491b129093a6fee383",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17824e41f491b129093a6fee383",
+          "width": 160
+        }
+      ],
+      "name": "Future",
+      "popularity": 88,
+      "type": "artist",
+      "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i",
+      "rating": 3
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6NcwdXsdGwBdI3Wglc526G"
+      },
+      "followers": {
+        "href": null,
+        "total": 1331
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/6NcwdXsdGwBdI3Wglc526G",
+      "id": "6NcwdXsdGwBdI3Wglc526G",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebf776b7d5812d3c7b06cef4d9",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174f776b7d5812d3c7b06cef4d9",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178f776b7d5812d3c7b06cef4d9",
+          "width": 160
+        }
+      ],
+      "name": "I Hate You Just Kidding",
+      "popularity": 6,
+      "type": "artist",
+      "uri": "spotify:artist:6NcwdXsdGwBdI3Wglc526G",
+      "rating": 1
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+      },
+      "followers": {
+        "href": null,
+        "total": 26770315
+      },
+      "genres": [
+        "pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+      "id": "1McMsnEElThX1knmY4oliG",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebe03a98785f3658f0b6461ec4",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174e03a98785f3658f0b6461ec4",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178e03a98785f3658f0b6461ec4",
+          "width": 160
+        }
+      ],
+      "name": "Olivia Rodrigo",
+      "popularity": 84,
+      "type": "artist",
+      "uri": "spotify:artist:1McMsnEElThX1knmY4oliG",
+      "rating": 1
+    },
+    {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+          },
+          "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+          "id": "0IfkFoyLbsgahVvNfPnV2y",
+          "name": "Sylvain Chauveau",
+          "type": "artist",
+          "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "2022 Sub Rosa",
+          "type": "C"
+        },
+        {
+          "text": "2022 Sub Rosa",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "197210897930"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/65rES6o5FJWS0ZqKd1OIlg"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/65rES6o5FJWS0ZqKd1OIlg",
+      "id": "65rES6o5FJWS0ZqKd1OIlg",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27325e7e42f7120ecd514277561",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0225e7e42f7120ecd514277561",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485125e7e42f7120ecd514277561",
+          "width": 64
+        }
+      ],
+      "is_playable": true,
+      "label": "Sub Rosa",
+      "name": "l'effet rebond (version silicium)",
+      "popularity": 15,
+      "release_date": "2022-10-14",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "tracks": {
+        "href": "https://api.spotify.com/v1/albums/65rES6o5FJWS0ZqKd1OIlg/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
+        "items": [
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
+                },
+                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
+                "id": "4Tzunwe7m9sBMSsmEV49Qo",
+                "name": "Machinefabriek",
+                "type": "artist",
+                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 1046532,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3nuJAaZZR9OuTqzPPzAH54"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3nuJAaZZR9OuTqzPPzAH54",
+            "id": "3nuJAaZZR9OuTqzPPzAH54",
+            "is_local": false,
+            "is_playable": true,
+            "name": "SCG",
+            "preview_url": "https://p.scdn.co/mp3-preview/a6068d020691901c71dad8b07e59aaf336632843?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:3nuJAaZZR9OuTqzPPzAH54"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3haVJx9TUcufYl1rPyH0iv"
+                },
+                "href": "https://api.spotify.com/v1/artists/3haVJx9TUcufYl1rPyH0iv",
+                "id": "3haVJx9TUcufYl1rPyH0iv",
+                "name": "Peter Broderick",
+                "type": "artist",
+                "uri": "spotify:artist:3haVJx9TUcufYl1rPyH0iv"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
+                },
+                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
+                "id": "4Tzunwe7m9sBMSsmEV49Qo",
+                "name": "Machinefabriek",
+                "type": "artist",
+                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2We1E7U9a19UsuZPiCcw8O"
+                },
+                "href": "https://api.spotify.com/v1/artists/2We1E7U9a19UsuZPiCcw8O",
+                "id": "2We1E7U9a19UsuZPiCcw8O",
+                "name": "Rainier Lericolais",
+                "type": "artist",
+                "uri": "spotify:artist:2We1E7U9a19UsuZPiCcw8O"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 53298,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5qjvbhcrxRHEApNsbfCjWg"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5qjvbhcrxRHEApNsbfCjWg",
+            "id": "5qjvbhcrxRHEApNsbfCjWg",
+            "is_local": false,
+            "is_playable": true,
+            "name": "DC",
+            "preview_url": "https://p.scdn.co/mp3-preview/8d7cf2ef49d9f5421829722525db62132b14e286?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:5qjvbhcrxRHEApNsbfCjWg"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 43367,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2TwiXciTQ5AyH7IaZss2li"
+            },
+            "href": "https://api.spotify.com/v1/tracks/2TwiXciTQ5AyH7IaZss2li",
+            "id": "2TwiXciTQ5AyH7IaZss2li",
+            "is_local": false,
+            "is_playable": true,
+            "name": "AN",
+            "preview_url": "https://p.scdn.co/mp3-preview/7a1f2057b3a84eb185a5925164989d8107f9b63a?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:2TwiXciTQ5AyH7IaZss2li"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 49059,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0qM3Deq1usl6xbAuSdLgxJ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/0qM3Deq1usl6xbAuSdLgxJ",
+            "id": "0qM3Deq1usl6xbAuSdLgxJ",
+            "is_local": false,
+            "is_playable": true,
+            "name": "LS",
+            "preview_url": "https://p.scdn.co/mp3-preview/ebdec690868da1ec81a3bdf3d5b5e1be1e80f76f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 4,
+            "type": "track",
+            "uri": "spotify:track:0qM3Deq1usl6xbAuSdLgxJ"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3haVJx9TUcufYl1rPyH0iv"
+                },
+                "href": "https://api.spotify.com/v1/artists/3haVJx9TUcufYl1rPyH0iv",
+                "id": "3haVJx9TUcufYl1rPyH0iv",
+                "name": "Peter Broderick",
+                "type": "artist",
+                "uri": "spotify:artist:3haVJx9TUcufYl1rPyH0iv"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
+                },
+                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
+                "id": "4Tzunwe7m9sBMSsmEV49Qo",
+                "name": "Machinefabriek",
+                "type": "artist",
+                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 55718,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5CS6phY74Bdrjc9gPd2C29"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5CS6phY74Bdrjc9gPd2C29",
+            "id": "5CS6phY74Bdrjc9gPd2C29",
+            "is_local": false,
+            "is_playable": true,
+            "name": "TM",
+            "preview_url": "https://p.scdn.co/mp3-preview/0b59c133bb78312a736b6bcec5964c6d6d72a984?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:5CS6phY74Bdrjc9gPd2C29"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 61297,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5qjc3QxoVzIoI2sH7DwyWW"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5qjc3QxoVzIoI2sH7DwyWW",
+            "id": "5qjc3QxoVzIoI2sH7DwyWW",
+            "is_local": false,
+            "is_playable": true,
+            "name": "MB",
+            "preview_url": "https://p.scdn.co/mp3-preview/6367c938f1c5daf61029407f89a7de011af864e2?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:5qjc3QxoVzIoI2sH7DwyWW"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 62488,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/06j1vg3NYCiVg4TPUEDibZ"
+            },
+            "href": "https://api.spotify.com/v1/tracks/06j1vg3NYCiVg4TPUEDibZ",
+            "id": "06j1vg3NYCiVg4TPUEDibZ",
+            "is_local": false,
+            "is_playable": true,
+            "name": "IA",
+            "preview_url": "https://p.scdn.co/mp3-preview/70fae146bdc0ffb48c832026d5dc4d5d46600fd6?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 7,
+            "type": "track",
+            "uri": "spotify:track:06j1vg3NYCiVg4TPUEDibZ"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3haVJx9TUcufYl1rPyH0iv"
+                },
+                "href": "https://api.spotify.com/v1/artists/3haVJx9TUcufYl1rPyH0iv",
+                "id": "3haVJx9TUcufYl1rPyH0iv",
+                "name": "Peter Broderick",
+                "type": "artist",
+                "uri": "spotify:artist:3haVJx9TUcufYl1rPyH0iv"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
+                },
+                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
+                "id": "4Tzunwe7m9sBMSsmEV49Qo",
+                "name": "Machinefabriek",
+                "type": "artist",
+                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 77916,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5RhXln7KYHvOUeRbMNmajP"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5RhXln7KYHvOUeRbMNmajP",
+            "id": "5RhXln7KYHvOUeRbMNmajP",
+            "is_local": false,
+            "is_playable": true,
+            "name": "LN",
+            "preview_url": "https://p.scdn.co/mp3-preview/3fb3b81b99ffef2615318e39e1d0c8e9fe3df220?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:5RhXln7KYHvOUeRbMNmajP"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2We1E7U9a19UsuZPiCcw8O"
+                },
+                "href": "https://api.spotify.com/v1/artists/2We1E7U9a19UsuZPiCcw8O",
+                "id": "2We1E7U9a19UsuZPiCcw8O",
+                "name": "Rainier Lericolais",
+                "type": "artist",
+                "uri": "spotify:artist:2We1E7U9a19UsuZPiCcw8O"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 27697,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1kl7xe04Dvt1l8TQtKHYGY"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1kl7xe04Dvt1l8TQtKHYGY",
+            "id": "1kl7xe04Dvt1l8TQtKHYGY",
+            "is_local": false,
+            "is_playable": true,
+            "name": "JG",
+            "preview_url": "https://p.scdn.co/mp3-preview/4b291194055c195f035bac9da10765740488b007?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:1kl7xe04Dvt1l8TQtKHYGY"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 33529,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7IeDCceFGwu3DBj8O1QHv4"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7IeDCceFGwu3DBj8O1QHv4",
+            "id": "7IeDCceFGwu3DBj8O1QHv4",
+            "is_local": false,
+            "is_playable": true,
+            "name": "EE",
+            "preview_url": "https://p.scdn.co/mp3-preview/da0873245f92a5585c409409cbec2d45dbe33964?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:7IeDCceFGwu3DBj8O1QHv4"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 140952,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5eajiQxYuIGtiKvn1RqtbF"
+            },
+            "href": "https://api.spotify.com/v1/tracks/5eajiQxYuIGtiKvn1RqtbF",
+            "id": "5eajiQxYuIGtiKvn1RqtbF",
+            "is_local": false,
+            "is_playable": true,
+            "name": "PG",
+            "preview_url": "https://p.scdn.co/mp3-preview/8ba1a59c8dd961780adeb680d33799e08a49ae3c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 11,
+            "type": "track",
+            "uri": "spotify:track:5eajiQxYuIGtiKvn1RqtbF"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
+                },
+                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
+                "id": "0IfkFoyLbsgahVvNfPnV2y",
+                "name": "Sylvain Chauveau",
+                "type": "artist",
+                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2y779qDmfBG7mQvsCTLWXw"
+                },
+                "href": "https://api.spotify.com/v1/artists/2y779qDmfBG7mQvsCTLWXw",
+                "id": "2y779qDmfBG7mQvsCTLWXw",
+                "name": "Romke Kleefstra",
+                "type": "artist",
+                "uri": "spotify:artist:2y779qDmfBG7mQvsCTLWXw"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 365909,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6V97VnSk2qOj6fKC6Ghq4M"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6V97VnSk2qOj6fKC6Ghq4M",
+            "id": "6V97VnSk2qOj6fKC6Ghq4M",
+            "is_local": false,
+            "is_playable": true,
+            "name": "CD",
+            "preview_url": "https://p.scdn.co/mp3-preview/71749fff03aca03ba7170e5c584801432b7804ce?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:6V97VnSk2qOj6fKC6Ghq4M"
+          }
+        ],
+        "limit": 50,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 12
+      },
+      "type": "album",
+      "uri": "spotify:album:65rES6o5FJWS0ZqKd1OIlg",
+      "rating": 1
     }
   ]
 }

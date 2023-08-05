@@ -1,3 +1,3 @@
-import FavArtists from "./FavArtists";
+import RatedArtists from "./RatedArtists";
 
-export default FavArtists;
+export default RatedArtists;

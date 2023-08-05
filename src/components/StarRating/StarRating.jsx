@@ -10,6 +10,7 @@ function StarRating({
   text,
   defaultRating = 0,
   callback,
+  beforeCallback,
   item,
 }) {
   const [rating, setRating] = useState(defaultRating);
@@ -24,9 +25,10 @@ function StarRating({
     setNumHover(0);
   };
 
-  const handleClick = (idx) => {
+  const handleClick = async (idx) => {
     setRating(idx + 1);
-    callback(item, idx + 1);
+    if (beforeCallback) await beforeCallback(item.id);
+    await callback(item, idx + 1);
   };
 
   return (
