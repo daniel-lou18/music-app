@@ -1,0 +1,90 @@
+.resultContainer {
+  position: relative;
+  background: linear-gradient(rgb(32, 178, 170, 0.4), rgb(32, 178, 170, 0.1));
+  padding-left: 25px;
+}
+
+.result svg:global(.feather-heart) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.result svg:global(.feather-heart):hover {
+  fill: rgb(255, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.result svg:global(.feather-heart).redHeart:hover {
+  fill: rgb(255, 0, 0);
+}
+
+.redHeart {
+  opacity: 1;
+}
+
+.header {
+}
+
+.result {
+  height: 275px;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 50px;
+  align-content: center;
+  align-items: center;
+}
+
+.header img {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+}
+
+.itemText {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.itemTitle {
+  grid-row: 2 / 3;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.itemTitleSmall {
+  grid-row: 2 / 3;
+  letter-spacing: -1px;
+  font-size: 3.5rem;
+  height: 5rem;
+}
+
+.itemInfo {
+  grid-row: 3 / -1;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.itemSubtitles {
+}
+
+:global(.popularityContainer.header) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+:global(.small-subtext.header) {
+  margin-right: 7px;
+}
+
+:global(.small-subtext.header)::after {
+  content: ":";
+}
+
+@media screen and (max-width: 1200px) {
+  .itemTitleSmall {
+    font-size: 2.5rem;
+  }
+}

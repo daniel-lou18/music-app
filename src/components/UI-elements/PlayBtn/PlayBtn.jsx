@@ -2,29 +2,23 @@
 import { useMusic } from "../../../context/MusicContext";
 import { useBrowse } from "../../../context/BrowseContext";
 import styles from "./PlayBtn.module.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function PlayBtn({ type, id, genreName, itemName }) {
   const { isPlayingId, dispatch } = useMusic();
   const { dispatch: dispatchBrowse, isBrowsing } = useBrowse();
-  const location = useLocation();
   const navigate = useNavigate();
 
   const handleGet = () => {
-    if (type === "artist") dispatch({ type: "artist/get", payload: id });
-    if (type === "album") dispatch({ type: "album/get", payload: id });
-
-    if (
-      location.pathname.includes("favorites/artists") ||
-      location.pathname.includes("favorites/albums")
-    )
-      navigate("/app/search");
-
-    window.scrollTo({
-      top: 60,
-      left: 0,
-      behavior: "smooth",
-    });
+    if (type === "artist") {
+      dispatch({ type: "artist/get", payload: id });
+      navigate("/app/artist");
+    }
+    if (type === "album") {
+      dispatch({ type: "album/get", payload: id });
+      navigate("/app/album");
+    }
+    window.scrollTo(0, 0);
   };
 
   const handleBrowse = () => {

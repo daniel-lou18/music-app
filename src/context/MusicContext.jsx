@@ -187,7 +187,7 @@ export const MusicProvider = ({ children }) => {
       try {
         dispatch({ type: "loading" });
         const trackRes = await fetch(
-          `${BASE_URL}/albums/${albumId}/tracks?market=fr&limit=5`,
+          `${BASE_URL}/albums/${albumId}/tracks?market=fr`,
           {
             method: "GET",
             headers: {

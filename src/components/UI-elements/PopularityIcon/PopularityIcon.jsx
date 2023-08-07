@@ -1,9 +1,13 @@
 /* eslint-disable react/prop-types */
 import styles from "./PopularityIcon.module.css";
 
-function PopularityIcon({ popularity = 3 }) {
+function PopularityIcon({ popularity = 3, type }) {
   return (
-    <div className={styles.popularityContainer}>
+    <div
+      className={`${styles.popularityContainer} popularityContainer ${
+        type === "header" ? "header" : ""
+      }`}
+    >
       <div className={`${styles.popularityLabel} small-subtext`}>
         Popularity:{" "}
       </div>

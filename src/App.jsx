@@ -12,6 +12,8 @@ import Rated from "./pages/Rated";
 import RatedSongs from "./pages/RatedSongs";
 import RatedArtists from "./pages/RatedArtists";
 import RatedAlbums from "./pages/RatedAlbums";
+import Artist from "./pages/Artist";
+import Album from "./pages/Album";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             }
           />
           <Route path="search" element={<Search />} />
+          <Route path="artist" element={<Artist />} />
+          <Route path="album" element={<Album />} />
           <Route element={<Favorites />}>
             <Route path="favorites/songs" element={<FavSongs />} />
             <Route path="favorites/artists" element={<FavArtists />} />

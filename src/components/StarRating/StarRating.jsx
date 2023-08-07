@@ -12,6 +12,7 @@ function StarRating({
   callback,
   beforeCallback,
   item,
+  type,
 }) {
   const [rating, setRating] = useState(defaultRating);
   const [numHover, setNumHover] = useState(0);
@@ -37,7 +38,11 @@ function StarRating({
         rating || numHover ? "" : styles.notRated
       }`}
     >
-      <span className={`small-subtext`}>{text}</span>
+      <span
+        className={`${`small-subtext`} ${type === "header" ? "header" : ""}`}
+      >
+        {text}
+      </span>
       {Array.from({ length: number }, (el, idx) => (
         <StarItem
           key={idx}

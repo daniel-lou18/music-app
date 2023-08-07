@@ -47,7 +47,7 @@ function TopResult({ title, type = "result" }) {
   };
 
   return (
-    <div className={styles.resultContainer} key={topResult.id}>
+    <div className={`${styles.resultContainer}`} key={topResult.id}>
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
         <svg
