@@ -4,9 +4,17 @@ import TrackList from "../components/TrackList";
 import { useMusic } from "../context/MusicContext";
 import AlbumHeader from "../components/AlbumHeader";
 
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+
 function Album() {
-  const { data, isLoading, error } = useMusic();
+  const { data, isLoading, error, albumId, dispatch } = useMusic();
   const { tracks, artists, albums } = data;
+  const { albumId: id } = useParams();
+
+  useEffect(() => {
+    if (!albumId) dispatch({ type: "album/get", payload: id });
+  }, [albumId, id, dispatch]);
 
   return (
     <Results>

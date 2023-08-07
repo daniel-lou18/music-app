@@ -28,7 +28,7 @@ function StarRating({
 
   const handleClick = async (idx) => {
     setRating(idx + 1);
-    if (beforeCallback) await beforeCallback(item.id);
+    if (beforeCallback) await beforeCallback(item?.id);
     await callback(item, idx + 1);
   };
 

@@ -1,8 +1,7 @@
-import Results from "../../components/Containers/Results";
-import ListContainer from "../../components/Containers/ListContainer";
-import RatedList from "../../components/RatedList";
-import styles from "./RatedAlbums.module.css";
-import { useRated } from "../../context/RatedContext";
+import Results from "../components/Containers/Results";
+import ListContainer from "../components/Containers/ListContainer";
+import RatedList from "../components/RatedList";
+import { useRated } from "../context/RatedContext";
 
 function RatedAlbums() {
   const { ratedData } = useRated();
@@ -11,11 +10,11 @@ function RatedAlbums() {
   console.log(albums);
 
   return (
-    <Results className={styles.results}>
+    <Results>
       {albums.length === 0 && <div>No rated albums...</div>}
       {albums.length > 0 && (
         <>
-          <ListContainer className={styles.listContainer}>
+          <ListContainer>
             <RatedList items={albums} title="Rated albums" />
           </ListContainer>
         </>

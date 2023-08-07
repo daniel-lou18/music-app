@@ -7,7 +7,7 @@ import { useRated } from "../../context/RatedContext";
 import styles from "./ArtistHeader.module.css";
 
 function ArtistHeader({ title }) {
-  const { query, topResult } = useMusic();
+  const { topResult } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
   console.log(topResult);
@@ -16,9 +16,7 @@ function ArtistHeader({ title }) {
     return (
       <div className={styles.resultContainer}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
-        <div
-          className={styles.result}
-        >{`No Top Result found for "${query}"`}</div>
+        <div className={styles.result}>{`No result found`}</div>
       </div>
     );
 
@@ -26,9 +24,7 @@ function ArtistHeader({ title }) {
   const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
   const ratedItem = ratedData.find((item) => item.id === spotifyId);
 
-  const name =
-    topResult.name.slice(0, 1).toUpperCase() +
-    topResult.name.slice(1).toLowerCase();
+  const name = topResult.name;
 
   const handleFavorite = () => {
     console.log(favoritesData);

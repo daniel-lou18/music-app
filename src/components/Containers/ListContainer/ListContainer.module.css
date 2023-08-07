@@ -41,6 +41,10 @@
   margin-right: 25px;
 }
 
+.favoritePage:first-child {
+  margin-right: 25px;
+}
+
 @media screen and (max-width: 1200px) {
   .left {
     display: none;

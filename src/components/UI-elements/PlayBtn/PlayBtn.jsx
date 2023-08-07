@@ -12,11 +12,11 @@ function PlayBtn({ type, id, genreName, itemName }) {
   const handleGet = () => {
     if (type === "artist") {
       dispatch({ type: "artist/get", payload: id });
-      navigate("/app/artist");
+      navigate(`/app/artist/${id}`);
     }
     if (type === "album") {
       dispatch({ type: "album/get", payload: id });
-      navigate("/app/album");
+      navigate(`/app/album/${id}`);
     }
     window.scrollTo(0, 0);
   };

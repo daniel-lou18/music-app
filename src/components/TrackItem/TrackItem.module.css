@@ -67,3 +67,15 @@
 
 .iconsContainer svg {
 } */
+
+.trackItem.big {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.trackItem.big > ul:nth-child(2) {
+  justify-self: center;
+}

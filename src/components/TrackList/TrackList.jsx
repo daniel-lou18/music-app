@@ -8,7 +8,7 @@ function TrackList({ tracks, title, type }) {
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <ul className={`${styles.tracklist} ${type === "big" ? styles.big : ""}`}>
         {tracks.map((track) => (
-          <TrackItem key={track.id} track={track} item={track} />
+          <TrackItem key={track.id} track={track} item={track} type={type} />
         ))}
       </ul>
     </>

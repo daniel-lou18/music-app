@@ -5,9 +5,17 @@ import TrackList from "../components/TrackList";
 import { useMusic } from "../context/MusicContext";
 import ArtistHeader from "../components/ArtistHeader";
 
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 function Artist() {
-  const { data, isLoading, error } = useMusic();
+  const { data, isLoading, error, artistId, dispatch } = useMusic();
   const { tracks, artists, albums } = data;
+  const { artistId: id } = useParams();
+
+  useEffect(() => {
+    if (!artistId) dispatch({ type: "artist/get", payload: id });
+  }, [artistId, id, dispatch]);
 
   return (
     <Results>

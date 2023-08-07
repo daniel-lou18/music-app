@@ -6,7 +6,7 @@ import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
 
 function AlbumHeader({ title }) {
-  const { query, topResult } = useMusic();
+  const { topResult } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
   console.log(topResult);
@@ -15,9 +15,7 @@ function AlbumHeader({ title }) {
     return (
       <div className={styles.resultContainer}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
-        <div
-          className={styles.result}
-        >{`No Top Result found for "${query}"`}</div>
+        <div className={styles.result}>{`No result found`}</div>
       </div>
     );
 
