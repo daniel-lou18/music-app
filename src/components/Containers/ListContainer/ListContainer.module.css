@@ -35,6 +35,12 @@
   margin-right: 0;
 }
 
+.albumPage:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 @media screen and (max-width: 1200px) {
   .left {
     display: none;

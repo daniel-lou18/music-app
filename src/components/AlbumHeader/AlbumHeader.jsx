@@ -1,18 +1,17 @@
 /* eslint-disable react/prop-types */
-import PopularityIcon from "../UI-elements/PopularityIcon/";
-import StarRating from "../StarRating/";
+import StarRating from "../StarRating";
 import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
-import styles from "./ArtistHeader.module.css";
+import styles from "./AlbumHeader.module.css";
 
-function ArtistHeader({ title }) {
+function AlbumHeader({ title }) {
   const { query, topResult } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
   console.log(topResult);
 
-  if (!topResult)
+  if (!topResult || !topResult.artists)
     return (
       <div className={styles.resultContainer}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
@@ -77,7 +76,7 @@ function ArtistHeader({ title }) {
               name.length > 15 ? styles.itemTitleSmall : ""
             }`}
           >
-            {name.length > 30 ? name.slice(0, 30) + "..." : name}
+            {name.length > 30 ? name.slice(0, 25) + "..." : name}
           </h3>
           <div className={styles.itemInfo}>
             <div className={styles.secondSubtitleWrapper}>
@@ -88,14 +87,11 @@ function ArtistHeader({ title }) {
                     topResult.type.slice(1)}
               </h4>
             </div>
-            <PopularityIcon
-              popularity={
-                topResult.type === "album"
-                  ? 3
-                  : Math.ceil(topResult.popularity / 20)
-              }
-              type="header"
-            />
+            <div className={styles.albumInfo}>
+              <h4>{topResult.artists[0]?.name}</h4>
+              <h4>{topResult.release_date.slice(0, 4)}</h4>
+              <h4>{topResult.total_tracks} tracks</h4>
+            </div>
             <StarRating
               size={24}
               color="yellow"
@@ -114,4 +110,4 @@ function ArtistHeader({ title }) {
   );
 }
 
-export default ArtistHeader;
+export default AlbumHeader;

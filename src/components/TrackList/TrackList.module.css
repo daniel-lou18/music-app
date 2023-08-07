@@ -8,3 +8,7 @@ h2.title {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.tracklist.big {
+  height: auto;
+}

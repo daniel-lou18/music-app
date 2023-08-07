@@ -3,7 +3,7 @@ import ListContainer from "../components/Containers/ListContainer";
 import HorizontalList from "../components/HorizontalList/";
 import TrackList from "../components/TrackList";
 import { useMusic } from "../context/MusicContext";
-import ArtistHeader from "../components/ArtistHeader/ArtistHeader";
+import ArtistHeader from "../components/ArtistHeader";
 
 function Artist() {
   const { data, isLoading, error } = useMusic();

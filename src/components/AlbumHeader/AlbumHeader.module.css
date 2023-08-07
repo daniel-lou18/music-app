@@ -48,7 +48,7 @@
 }
 
 .secondSubtitleWrapper {
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .secondSubtitle {
@@ -86,6 +86,21 @@
 .itemSubtitles {
 }
 
+.albumInfo {
+  display: flex;
+}
+
+.albumInfo h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.albumInfo h4:first-child::after,
+.albumInfo h4:nth-child(2)::after {
+  content: "•";
+  margin: 0 5px;
+}
+
 :global(.popularityContainer.header) {
   margin-top: 0;
   margin-bottom: 0;
@@ -103,6 +118,10 @@
   .itemTitle {
     font-size: 2.5rem;
     height: 3.5rem;
+  }
+
+  .itemInfo ul:last-child {
+    display: none;
   }
 }
 

@@ -7,7 +7,10 @@ function ContentContainer({ children }) {
   return (
     <div
       className={`content-container ${
-        location.pathname.includes("app/artist") ? "artist-container" : ""
+        location.pathname.includes("app/artist") ||
+        location.pathname.includes("app/album")
+          ? "header-container"
+          : ""
       }`}
     >
       {children}
