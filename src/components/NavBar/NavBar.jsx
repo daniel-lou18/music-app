@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { useState } from "react";
 
@@ -10,6 +10,7 @@ function NavBar() {
   const [ratedOpen, setRatedOpen] = useState(false);
   const { dispatch } = useMusic();
   const { dispatch: dispatchBrowse } = useBrowse();
+  const location = useLocation();
 
   const handleFavorites = () => {
     setFavoritesOpen((prev) => !prev);
@@ -40,7 +41,7 @@ function NavBar() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-home"
+                className="feather feather-home fillable"
               >
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
@@ -62,7 +63,7 @@ function NavBar() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-search"
+                className="feather feather-search fillable"
               >
                 <circle cx="11" cy="11" r="8" />
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -72,10 +73,7 @@ function NavBar() {
           </NavLink>
         </li>
         <li className={styles.listItem} onClick={handleFavorites}>
-          <NavLink
-            // to={"favorites/songs"}
-            className={`${styles.navLink} ${styles.dropdown}`}
-          >
+          <Link className={`${styles.link} ${styles.dropdown}`}>
             <div className={styles.navItem}>
               <div className={styles.svgWrapper}>
                 <svg
@@ -88,7 +86,11 @@ function NavBar() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-heart"
+                  className={`feather feather-heart ${
+                    location.pathname.includes("app/favorites")
+                      ? "fillable"
+                      : ""
+                  }`}
                 >
                   <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                 </svg>
@@ -113,7 +115,7 @@ function NavBar() {
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </div>
-          </NavLink>
+          </Link>
 
           <ul
             className={`${styles.subMenu} ${
@@ -147,7 +149,7 @@ function NavBar() {
           </ul>
         </li>
         <li className={styles.listItem} onClick={handleRated}>
-          <NavLink className={`${styles.navLink} ${styles.dropdown}`}>
+          <Link className={`${styles.link} ${styles.dropdown}`}>
             <div className={styles.navItem}>
               <div className={styles.svgWrapper}>
                 <svg
@@ -160,7 +162,9 @@ function NavBar() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-star"
+                  className={`feather feather-star ${
+                    location.pathname.includes("app/rated") ? "fillable" : ""
+                  }`}
                 >
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
@@ -185,7 +189,7 @@ function NavBar() {
                 <polyline points="6 9 12 15 18 9" />
               </svg>
             </div>
-          </NavLink>
+          </Link>
 
           <ul
             className={`${styles.subMenu} ${

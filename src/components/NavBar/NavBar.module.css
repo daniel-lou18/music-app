@@ -3,7 +3,8 @@
 }
 
 .navLink,
-.navItem {
+.navItem,
+.link {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -11,13 +12,18 @@
   height: 48px;
   font-size: 1.15rem;
   font-weight: 500;
-  color: inherit;
-  opacity: 0.7;
+  color: var(--grey-font-color);
 }
 
 .navLink:hover,
+.link:hover .navItem,
 .navLink:global(.active) {
-  opacity: initial;
+  color: var(--main-font-color);
+}
+
+.navLink:global(.active) svg:global(.fillable),
+.link svg:global(.fillable) {
+  fill: var(--medium-white-color);
 }
 
 .listItem {
@@ -72,13 +78,12 @@
 
 .subNavLink {
   text-decoration: none;
-  color: inherit;
-  opacity: 0.7;
+  color: var(--grey-font-color);
 }
 
 .subNavLink:hover,
 .subNavLink:global(.active) {
-  opacity: initial;
+  color: var(--main-font-color);
 }
 
 .subMenuOpen {
