@@ -24,6 +24,7 @@ function PlayBtn({ type, id, genreName, itemName }) {
   const handleBrowse = () => {
     if (isBrowsing) dispatch({ type: "search/query", payload: itemName });
     else dispatchBrowse({ type: "browse/genre", payload: genreName });
+    window.scrollTo(0, 0);
   };
 
   const handlePlay = () => {

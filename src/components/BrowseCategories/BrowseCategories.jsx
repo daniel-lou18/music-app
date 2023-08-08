@@ -9,7 +9,10 @@ function BrowseCategories() {
   return (
     <>
       {Object.keys(data).length !== 0 && (
-        <HorizontalList items={artists.items} title={genre} />
+        <HorizontalList
+          items={artists.items}
+          title={genre[0].toUpperCase() + genre.slice(1)}
+        />
       )}
       {Object.keys(data).length === 0 && categories.length > 0 && (
         <HorizontalList

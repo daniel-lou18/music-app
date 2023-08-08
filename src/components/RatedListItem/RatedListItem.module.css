@@ -1,10 +1,34 @@
 .imgWrapper {
+  position: relative;
 }
 
 .img {
   width: 100%;
   aspect-ratio: 1 / 1;
   background-color: var(--dark-bg-color);
+}
+
+.imgOverlay:hover {
+  background-color: var(--medium-hover-color);
+  cursor: pointer;
+}
+
+.imgOverlay:hover::after {
+  content: "Reset";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+
+.imgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .listItem {
@@ -61,6 +85,11 @@ li.listItem:hover :global(.playBtn) {
   display: none;
 }
 
+.showReset :global(.feather-star) {
+  opacity: 0.3;
+  fill: none;
+}
+
 @media screen and (max-width: 1200px) {
   .title {
     margin-bottom: 0;
@@ -68,5 +97,11 @@ li.listItem:hover :global(.playBtn) {
 
   .subtitle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .imgOverlay:hover::after {
+    font-size: 0.9rem;
   }
 }
