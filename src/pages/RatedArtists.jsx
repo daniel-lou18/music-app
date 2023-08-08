@@ -2,6 +2,8 @@ import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
 import RatedList from "../components/RatedList";
 import { useRated } from "../context/RatedContext";
+import NavBtns from "../components/UI-elements/NavBtns/";
+import TopBar from "../components/Containers/TopBar";
 
 function RatedArtists() {
   const { ratedData } = useRated();
@@ -11,6 +13,9 @@ function RatedArtists() {
 
   return (
     <Results>
+      <TopBar>
+        <NavBtns />
+      </TopBar>
       {artists.length === 0 && <div>No rated artists...</div>}
       {artists.length > 0 && (
         <>

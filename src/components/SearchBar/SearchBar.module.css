@@ -1,8 +1,18 @@
-.searchField {
-  position: relative;
-  margin-bottom: 10px;
+.searchContainer {
   display: grid;
-  grid-template-columns: 0px repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr) repeat(4, 2fr);
+  margin-right: 25px;
+}
+
+.searchContainer div:first-child {
+  grid-column: 1 / 2;
+}
+
+.searchField {
+  grid-column: 2 / 4;
+  position: relative;
+  top: -6px;
+  padding-right: 10px;
 }
 
 .searchField input:focus {
@@ -15,8 +25,8 @@
 }
 
 .searchField input {
-  grid-column: 1/4;
-  margin-right: 25px;
+  box-sizing: border-box;
+  width: 100%;
   border: none;
   border-radius: 24px;
   background-color: var(--dark-bg-color);

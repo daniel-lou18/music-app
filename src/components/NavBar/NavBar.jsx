@@ -73,7 +73,11 @@ function NavBar() {
           </NavLink>
         </li>
         <li className={styles.listItem} onClick={handleFavorites}>
-          <Link className={`${styles.link} ${styles.dropdown}`}>
+          <Link
+            className={`${styles.link} ${styles.dropdown} ${
+              location.pathname.includes("app/favorites") ? "active" : ""
+            }`}
+          >
             <div className={styles.navItem}>
               <div className={styles.svgWrapper}>
                 <svg
@@ -149,7 +153,11 @@ function NavBar() {
           </ul>
         </li>
         <li className={styles.listItem} onClick={handleRated}>
-          <Link className={`${styles.link} ${styles.dropdown}`}>
+          <Link
+            className={`${styles.link} ${styles.dropdown} ${
+              location.pathname.includes("app/rated") ? "active" : ""
+            }`}
+          >
             <div className={styles.navItem}>
               <div className={styles.svgWrapper}>
                 <svg

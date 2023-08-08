@@ -7,6 +7,8 @@ import TopResult from "../components/TopResult";
 import TrackList from "../components/TrackList";
 import { topTracks } from "../../data/featuredArtist";
 import Results from "../components/Containers/Results";
+import NavBtns from "../components/UI-elements/NavBtns/";
+import TopBar from "../components/Containers/TopBar";
 
 function Home() {
   const { data, dispatch } = useMusic();
@@ -19,6 +21,9 @@ function Home() {
 
   return (
     <Results>
+      <TopBar>
+        <NavBtns />
+      </TopBar>
       <ListContainer position="left">
         <TopResult title="Featured Artist" type="featured" />
       </ListContainer>

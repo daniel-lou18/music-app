@@ -1,0 +1,20 @@
+.navBtns {
+  display: flex;
+  gap: 7px;
+}
+
+.navBtn {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.navBtn:hover {
+  background-color: var(--main-btn-color);
+  cursor: pointer;
+}

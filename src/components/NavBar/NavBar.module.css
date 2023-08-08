@@ -16,8 +16,9 @@
 }
 
 .navLink:hover,
-.link:hover .navItem,
-.navLink:global(.active) {
+.link:hover > *,
+.navLink:global(.active),
+.link:global(.active) > * {
   color: var(--main-font-color);
 }
 
