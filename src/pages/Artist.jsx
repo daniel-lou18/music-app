@@ -33,7 +33,7 @@ function Artist() {
             <ArtistHeader />
           </ListContainer>
           <ListContainer type="artistPage">
-            <TrackList tracks={tracks?.items} title="Top Songs" />
+            <TrackList tracks={tracks?.items} title="Top Songs" type="big" />
           </ListContainer>
           <ListContainer type="artistPage">
             <HorizontalList items={artists?.items} title={"Related artists"} />

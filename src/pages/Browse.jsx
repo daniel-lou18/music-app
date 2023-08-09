@@ -1,57 +1,33 @@
-import SearchBar from "../components/SearchBar";
-import Results from "../components/Containers/Results";
-import ListContainer from "../components/Containers/ListContainer";
-import HorizontalList from "../components/HorizontalList/";
-import TrackList from "../components/TrackList";
-import TopResult from "../components/TopResult";
-import { useMusic } from "../context/MusicContext";
-import BrowseCategories from "../components/BrowseCategories";
+import HorizontalList from "../components/HorizontalList";
+import { useBrowse } from "../context/BrowseContext";
+import TopBar from "../components/Containers/TopBar";
+import NavBtns from "../components/UI-elements/NavBtns";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-function Search() {
-  const { data, query, isLoading, error, dispatch } = useMusic();
-  const { tracks, artists, albums } = data;
+function Browse() {
+  const { data, genre, dispatch, isLoading } = useBrowse();
+  const { artists } = data;
+  const { genre: genreUrl } = useParams();
+
+  useEffect(() => {
+    if (!genre) dispatch({ type: "browse/genre", payload: genreUrl });
+  }, [genre, dispatch, genreUrl]);
 
   return (
     <>
-      <SearchBar
-        query={query}
-        onQuery={(e) =>
-          dispatch({ type: "search/query", payload: e.target.value })
-        }
-      />
-      {(!query || !query.trim() || Object.keys(data).length === 0) && (
-        <BrowseCategories />
-      )}
-      {query && (
-        <Results>
-          {isLoading && <div>Loading...</div>}
-          {!isLoading && error && <div>{error}</div>}
-          {!isLoading &&
-            tracks?.items.length === 0 &&
-            artists?.items.length === 0 &&
-            albums?.items.length === 0 && (
-              <ListContainer>{`No results found for "${query}"`}</ListContainer>
-            )}
-          {!isLoading && !error && tracks?.items.length > 0 && (
-            <>
-              <ListContainer position="left">
-                <TopResult title="Top Result" />
-              </ListContainer>
-              <ListContainer position="right">
-                <TrackList tracks={tracks?.items} title="Songs" />
-              </ListContainer>
-              <ListContainer>
-                <HorizontalList items={artists?.items} title={"Artists"} />
-              </ListContainer>
-              <ListContainer>
-                <HorizontalList items={albums?.items} title={"Albums"} />
-              </ListContainer>
-            </>
-          )}
-        </Results>
+      <TopBar>
+        <NavBtns />
+      </TopBar>
+      {isLoading && <div>Loading...</div>}
+      {!isLoading && Object.keys(data).length !== 0 && (
+        <HorizontalList
+          items={artists.items}
+          title={genre[0].toUpperCase() + genre.slice(1)}
+        />
       )}
     </>
   );
 }
 
-export default Search;
+export default Browse;

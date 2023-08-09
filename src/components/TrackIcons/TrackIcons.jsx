@@ -1,13 +1,20 @@
 /* eslint-disable react/prop-types */
 import styles from "./TrackIcons.module.css";
 import { useFavorites } from "../../context/FavoritesContext";
+import { useNavigate } from "react-router-dom";
 
 function TrackIcons({ track }) {
-  const { id: spotifyId } = track;
+  const {
+    id: spotifyId,
+    artists,
+    album: { id: albumId },
+  } = track;
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
 
-  const handleClick = () => {
+  const navigate = useNavigate();
+
+  const handleFavorite = () => {
     console.log(favoritesData);
     console.log(id);
     if (!id) {
@@ -17,10 +24,20 @@ function TrackIcons({ track }) {
     }
   };
 
+  const handleAlbum = () => {
+    if (!albumId) return;
+    navigate(`/app/album/${albumId}`);
+  };
+
+  const handleArtist = () => {
+    if (!artists || artists.length === 0) return;
+    navigate(`/app/artist/${artists[0].id}`);
+  };
+
   return (
     <div className={styles.iconsContainer}>
       <svg
-        onClick={handleClick}
+        onClick={handleFavorite}
         xmlns="http://www.w3.org/2000/svg"
         width="28"
         height="28"
@@ -35,6 +52,7 @@ function TrackIcons({ track }) {
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
       </svg>
       <svg
+        onClick={handleAlbum}
         xmlns="http://www.w3.org/2000/svg"
         width="28"
         height="28"
@@ -50,6 +68,7 @@ function TrackIcons({ track }) {
         <circle cx="12" cy="12" r="3" />
       </svg>
       <svg
+        onClick={handleArtist}
         xmlns="http://www.w3.org/2000/svg"
         width="28"
         height="28"

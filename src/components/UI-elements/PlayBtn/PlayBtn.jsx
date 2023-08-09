@@ -4,9 +4,9 @@ import { useBrowse } from "../../../context/BrowseContext";
 import styles from "./PlayBtn.module.css";
 import { useNavigate } from "react-router-dom";
 
-function PlayBtn({ type, id, genreName, itemName }) {
+function PlayBtn({ type, id, genreName }) {
   const { isPlayingId, dispatch } = useMusic();
-  const { dispatch: dispatchBrowse, isBrowsing } = useBrowse();
+  const { dispatch: dispatchBrowse } = useBrowse();
   const navigate = useNavigate();
 
   const handleGet = () => {
@@ -22,8 +22,11 @@ function PlayBtn({ type, id, genreName, itemName }) {
   };
 
   const handleBrowse = () => {
-    if (isBrowsing) dispatch({ type: "search/query", payload: itemName });
-    else dispatchBrowse({ type: "browse/genre", payload: genreName });
+    // if (isBrowsing) dispatch({ type: "search/query", payload: itemName });
+
+    dispatchBrowse({ type: "browse/genre", payload: genreName });
+    navigate(`/app/browse/${genreName}`);
+
     window.scrollTo(0, 0);
   };
 

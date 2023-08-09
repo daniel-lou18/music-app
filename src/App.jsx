@@ -14,6 +14,7 @@ import RatedArtists from "./pages/RatedArtists";
 import RatedAlbums from "./pages/RatedAlbums";
 import Artist from "./pages/Artist";
 import Album from "./pages/Album";
+import Browse from "./pages/Browse";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             }
           />
           <Route path="search" element={<Search />} />
+          <Route path="browse/:genre" element={<Browse />} />
           <Route path="artist/:artistId" element={<Artist />} />
           <Route path="album/:albumId" element={<Album />} />
           <Route element={<Favorites />}>

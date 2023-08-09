@@ -4,9 +4,17 @@ import { useNavigate } from "react-router-dom";
 function NavBtns() {
   const navigate = useNavigate();
 
+  const handleBack = () => {
+    navigate(-1);
+  };
+
+  const handleForward = () => {
+    navigate(1);
+  };
+
   return (
     <div className={`${styles.navBtns} navBtns`}>
-      <div className={`${styles.navBtn} navBtn`} onClick={() => navigate(-1)}>
+      <div className={`${styles.navBtn} navBtn`} onClick={handleBack}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -22,7 +30,7 @@ function NavBtns() {
           <polyline points="15 18 9 12 15 6" />
         </svg>
       </div>
-      <div className={`${styles.navBtn} navBtn`} onClick={() => navigate(+1)}>
+      <div className={`${styles.navBtn} navBtn`} onClick={handleForward}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"

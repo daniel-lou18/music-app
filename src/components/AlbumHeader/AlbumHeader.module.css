@@ -1,21 +1,17 @@
 .resultContainer {
-  position: relative;
   background: linear-gradient(rgb(32, 178, 170, 0.4), rgb(32, 178, 170, 0.1));
   padding-left: 25px;
+  padding-top: 15px;
 }
 
-.result svg:global(.feather-heart) {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.result svg:global(.feather-heart):hover {
+.itemInfo svg:global(.feather-heart):hover {
   fill: rgb(255, 0, 0, 0.5);
   cursor: pointer;
+  stroke: lightgray;
+  transform: scale(1.1);
 }
 
-.result svg:global(.feather-heart).redHeart:hover {
+.itemInfo svg:global(.feather-heart).redHeart:hover {
   fill: rgb(255, 0, 0);
 }
 
