@@ -4,6 +4,7 @@ import TopBar from "../components/Containers/TopBar";
 import NavBtns from "../components/UI-elements/NavBtns";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Spinner from "../components/UI-elements/Spinner";
 
 function Browse() {
   const { data, genre, dispatch, isLoading } = useBrowse();
@@ -19,7 +20,7 @@ function Browse() {
       <TopBar>
         <NavBtns />
       </TopBar>
-      {isLoading && <div>Loading...</div>}
+      {isLoading && <Spinner />}
       {!isLoading && Object.keys(data).length !== 0 && (
         <HorizontalList
           items={artists.items}

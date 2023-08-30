@@ -7,6 +7,7 @@ import TopResult from "../components/TopResult";
 import { useMusic } from "../context/MusicContext";
 import BrowseCategories from "../components/BrowseCategories";
 import { useBrowse } from "../context/BrowseContext";
+import Spinner from "../components/UI-elements/Spinner";
 
 function Search() {
   const { data, query, isLoading, error, dispatch, artistId, albumId } =
@@ -24,7 +25,7 @@ function Search() {
       <SearchBar query={query} onQuery={handleQuery} />
       {(query || artistId || albumId) && (
         <Results>
-          {isLoading && <div>Loading...</div>}
+          {isLoading && <Spinner />}
           {!isLoading && error && <div>{error}</div>}
           {!isLoading &&
             tracks?.items.length === 0 &&

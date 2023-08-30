@@ -44,7 +44,8 @@ export const BrowseProvider = ({ children }) => {
     }
   };
 
-  const [{ genre, data, query }, dispatch] = useReducer(reducer, initialState);
+  const [{ genre, data, query, isLoading, isBrowsing, error }, dispatch] =
+    useReducer(reducer, initialState);
 
   useEffect(() => {
     if (!token || !genre) return;
@@ -75,7 +76,9 @@ export const BrowseProvider = ({ children }) => {
   }, [token, genre]);
 
   return (
-    <BrowseContext.Provider value={{ genre, data, query, dispatch }}>
+    <BrowseContext.Provider
+      value={{ genre, data, query, isLoading, isBrowsing, error, dispatch }}
+    >
       {children}
     </BrowseContext.Provider>
   );
