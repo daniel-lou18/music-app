@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+
 import styles from "./PlayThumb.module.css";
 import { useMusic } from "../../context/MusicContext";
 
@@ -132,11 +134,19 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
         <h3 className={`${styles.trackName}`}>
           {name.length > 40 ? `${name.slice(0, 40)}...` : name}
         </h3>
-        <h4 className={styles.trackArtist}>
-          {artists[0].name.length > 40
-            ? `${artists[0].name.slice(0, 40)}...`
-            : artists[0].name}
-        </h4>
+        <Link
+          className="link-no_styling"
+          to={`/app/artist/${artists[0].id}`}
+          onClick={() =>
+            dispatch({ type: "artist/get", payload: artists[0].id })
+          }
+        >
+          <h4 className={styles.trackArtist}>
+            {artists[0].name.length > 40
+              ? `${artists[0].name.slice(0, 40)}...`
+              : artists[0].name}
+          </h4>
+        </Link>
       </div>
       <div className={styles.inputRange}>
         <input

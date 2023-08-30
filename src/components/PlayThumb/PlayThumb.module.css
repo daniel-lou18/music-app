@@ -70,6 +70,7 @@ svg.note {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 10px 0;
   margin-left: 12px;
 }
@@ -85,6 +86,19 @@ svg.note {
 .trackArtist {
   font-size: 0.9rem;
   opacity: 0.7;
+}
+
+:global(.link-no_styling) {
+  text-decoration: none;
+  color: var(--light-white-color);
+}
+
+:global(.link-no_styling):hover {
+  text-decoration: underline;
+}
+
+:global(.link-no_styling):hover .trackArtist {
+  opacity: initial;
 }
 
 .inputRange {
