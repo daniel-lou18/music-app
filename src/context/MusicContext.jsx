@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { createContext, useContext, useEffect, useReducer } from "react";
+import Fuse from 'fuse.js';
 
 import { useAuth } from "./AuthContext";
 
@@ -252,11 +253,22 @@ export const useMusic = () => {
 };
 
 function getTopResult(items, query) {
+
   const itemsArray = [
     ...items.artists.items,
     ...items.tracks.items,
     ...items.albums.items,
   ];
+  const options = {includeScore: true, keys: ['name']}
+  const fuse = new Fuse(itemsArray, options);
+  const result = fuse.search(query);
+  console.log(query, "...", result);
+
+  const exactMatches = itemsArray.filter((item) => item.name.toLowerCase().includes(query)).sort((a,b) => b.popularity - a.popularity);
+  if (exactMatches.length > 0) return exactMatches[0];
+
+  const exactReversedMatches = itemsArray.filter(item => item.name.toLowerCase().includes(query.split(' ').toReversed().join(' '))).sort((a,b) => b.popularity - a.popularity);
+  if (exactReversedMatches.length > 0) return exactReversedMatches[0];
 
   return itemsArray.find((item) => item.name.toLowerCase().includes(query));
 }
