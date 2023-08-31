@@ -21,6 +21,8 @@ function HorizontalList({ items, title, type = "search", genreNames }) {
                   item.type === "artist" ? item.genres[0] : item.artists[0].name
                 }
                 type={item.type}
+                extended={true}
+                item={item}
               />
             ))}
           </ul>
@@ -40,6 +42,7 @@ function HorizontalList({ items, title, type = "search", genreNames }) {
                 type={item.type}
                 genreName={genreNames[i]}
                 itemName={item.name}
+                extended={false}
               />
             ))}
           </ul>

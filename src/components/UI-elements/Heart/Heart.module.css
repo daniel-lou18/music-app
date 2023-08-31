@@ -1,28 +1,25 @@
-.iconsContainer svg:hover {
+svg.heartIcon:hover {
   cursor: pointer;
   stroke: lightgray;
-  fill: rgb(32, 178, 170, 0.3);
   transform: scale(1.1);
-}
-
-.iconsContainer svg:global(.feather-heart):hover {
   fill: rgb(255, 0, 0, 0.5);
 }
 
-.iconsContainer svg:global(.feather-heart).redHeart:hover {
+svg.heartIcon.redHeart:hover {
   fill: rgb(255, 0, 0);
-}
-
-.iconsContainer {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-  gap: 20px;
-}
-
-.iconsContainer svg {
 }
 
 .redHeart {
   opacity: 1;
+}
+
+svg.album {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+svg.artist {
+  margin-left: auto;
+  display: block;
 }

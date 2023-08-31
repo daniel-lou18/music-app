@@ -1,6 +1,3 @@
-.imgWrapper {
-}
-
 .img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -43,6 +40,12 @@ li.listItem:hover :global(.playBtn) {
 
 .subtitle {
   font-size: 0.8rem;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--light-white-color);
 }
 
 .square {
