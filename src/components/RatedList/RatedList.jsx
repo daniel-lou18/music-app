@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./RatedList.module.css";
 import RatedListItem from "../RatedListItem";
 

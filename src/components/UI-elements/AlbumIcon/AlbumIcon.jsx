@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 function AlbumIcon({ onClick }) {
   return (
     <svg

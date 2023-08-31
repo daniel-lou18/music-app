@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./SearchBar.module.css";
 import NavBtns from "../UI-elements/NavBtns";
 

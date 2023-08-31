@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./AudioPlayer.module.css";
 
 function AudioPlayer({ id, preview_url }) {

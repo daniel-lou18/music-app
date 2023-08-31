@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
 import { useMusic } from "../../../context/MusicContext";
 import { useBrowse } from "../../../context/BrowseContext";
 import styles from "./PlayBtn.module.css";
 import { useNavigate } from "react-router-dom";
 
-function PlayBtn({ type, id, genreName }) {
+function PlayBtn({ type, id, genreName, previewUrl }) {
   const { isPlayingId, dispatch } = useMusic();
   const { dispatch: dispatchBrowse } = useBrowse();
   const navigate = useNavigate();
@@ -58,7 +57,26 @@ function PlayBtn({ type, id, genreName }) {
           </svg>
         </div>
       )}
-      {type === "track" && isPlayingId !== id && (
+      {type === "track" && !previewUrl && (
+        <div className={`${styles.playBtn} playBtn`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-lock"
+          >
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+          </svg>
+        </div>
+      )}
+      {type === "track" && previewUrl && isPlayingId !== id && (
         <div className={`${styles.playBtn} playBtn`} onClick={handlePlay}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +94,7 @@ function PlayBtn({ type, id, genreName }) {
           </svg>
         </div>
       )}
-      {type === "track" && isPlayingId === id && (
+      {type === "track" && previewUrl && isPlayingId === id && (
         <div>
           <div
             className={`${styles.btnsContainer} ${styles.pauseContainer} pauseContainer playBtn`}

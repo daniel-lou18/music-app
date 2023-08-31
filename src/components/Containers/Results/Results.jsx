@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./Results.module.css";
 
 function Results({ children }) {

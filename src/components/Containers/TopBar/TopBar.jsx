@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./TopBar.module.css";
 
 function TopBar({ children }) {

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { useAuth } from "./AuthContext";
 
@@ -41,6 +40,8 @@ export const BrowseProvider = ({ children }) => {
           isLoading: false,
           isBrowsing: false,
         };
+      default:
+        return state;
     }
   };
 

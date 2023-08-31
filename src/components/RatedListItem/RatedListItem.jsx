@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import styles from "./RatedListItem.module.css";
 import PlayBtn from "../UI-elements/PlayBtn";
@@ -27,6 +26,7 @@ function RatedListItem({
           className={`${styles.img} ${
             type === "artist" ? styles.circle : styles.square
           }`}
+          alt={title}
         />
         <div
           className={`${styles.imgOverlay} ${

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react";
 import styles from "./StarRating.module.css";
 import StarItem from "../UI-elements/StarItem";

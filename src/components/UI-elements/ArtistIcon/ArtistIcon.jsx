@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 function ArtistIcon({ onClick }) {
   return (
     <svg

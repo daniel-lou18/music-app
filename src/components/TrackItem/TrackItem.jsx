@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import PlayThumb from "../PlayThumb";
 import TrackIcons from "../TrackIcons";
 import styles from "./TrackItem.module.css";

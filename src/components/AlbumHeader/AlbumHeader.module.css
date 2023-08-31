@@ -4,22 +4,8 @@
   padding-top: 15px;
 }
 
-/* .itemInfo svg:global(.feather-heart):hover {
-  fill: rgb(255, 0, 0, 0.5);
-  cursor: pointer;
-  stroke: lightgray;
-  transform: scale(1.1);
-}
-
-.itemInfo svg:global(.feather-heart).redHeart:hover {
-  fill: rgb(255, 0, 0);
-} */
-
 .redHeart {
   opacity: 1;
-}
-
-.header {
 }
 
 .result {
@@ -61,7 +47,7 @@
 
 .itemTitle {
   grid-row: 2 / 3;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -77,9 +63,6 @@
   display: flex;
   align-items: center;
   gap: 25px;
-}
-
-.itemSubtitles {
 }
 
 .albumInfo {

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import TrackItem from "../TrackItem";
 import styles from "./TrackList.module.css";
 

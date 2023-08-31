@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./TrackIcons.module.css";
 import { useFavorites } from "../../context/FavoritesContext";
 import Heart from "../UI-elements/Heart";

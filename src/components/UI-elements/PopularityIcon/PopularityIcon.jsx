@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./PopularityIcon.module.css";
 
 function PopularityIcon({ popularity = 3, type }) {

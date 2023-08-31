@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import styles from "./HorizontalListItem.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/";
@@ -62,6 +61,7 @@ function HorizontalListItem({
           className={`${styles.img} ${
             type === "artist" ? styles.circle : styles.square
           }`}
+          alt={title}
         />
         {type === "album" && extended === true && (
           <Heart id={favId} onClick={handleFavorite} type={type} />

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useContext, createContext, useReducer, useEffect } from "react";
 
 const FavoritesContext = createContext();
@@ -32,6 +31,8 @@ export const FavoritesProvider = ({ children }) => {
           favoritesData: action.payload,
           isLoading: false,
         };
+      default:
+        return state;
     }
   };
 

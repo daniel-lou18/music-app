@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./StarItem.module.css";
 
 function StarItem({ numStars, onHover, onLeave, onClick, idx, size, color }) {

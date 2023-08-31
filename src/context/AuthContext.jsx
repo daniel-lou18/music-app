@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createContext, useContext, useState, useEffect } from "react";
 
 const URL = "https://accounts.spotify.com/api/token";
@@ -40,7 +39,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ token, isLoading }}>
+    <AuthContext.Provider value={{ token, isLoading, error }}>
       {children}
     </AuthContext.Provider>
   );

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import StarRating from "../StarRating";
 import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
@@ -57,6 +56,7 @@ function AlbumHeader({ title }) {
                 ? topResult.album.images[0]?.url
                 : topResult.images[0]?.url
             }
+            alt={name}
           />
         </div>
         <div className={styles.itemText}>
@@ -78,7 +78,7 @@ function AlbumHeader({ title }) {
             </div>
             <div className={styles.albumInfo}>
               <h4>{topResult.artists[0]?.name}</h4>
-              <h4>{topResult.release_date.slice(0, 4)}</h4>
+              <h4>{topResult.release_date?.slice(0, 4)}</h4>
               <h4>{topResult.total_tracks} tracks</h4>
             </div>
             <StarRating

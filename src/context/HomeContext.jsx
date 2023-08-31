@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createContext, useContext, useReducer, useEffect } from "react";
 import { useAuth } from "./AuthContext";
 
@@ -29,6 +28,8 @@ export const HomeProvider = ({ children }) => {
         };
       case "error":
         return { ...state, error: action.payload.message, isLoading: false };
+      default:
+        return state;
     }
   };
 

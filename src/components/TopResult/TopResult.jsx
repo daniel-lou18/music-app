@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import PopularityIcon from "../UI-elements/PopularityIcon/";
 import styles from "./TopResult.module.css";
 import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
@@ -59,6 +58,7 @@ function TopResult({ title, type = "result" }) {
               ? topResult.album.images[0]?.url
               : topResult.images[0]?.url
           }
+          alt={topResult.name}
         />
         <h3
           className={`${styles.itemTitle} ${
@@ -95,7 +95,12 @@ function TopResult({ title, type = "result" }) {
               : Math.ceil(topResult.popularity / 20)
           }
         />
-        <PlayBtn key={topResult.id} type={topResult.type} id={topResult.id} />
+        <PlayBtn
+          key={topResult.id}
+          type={topResult.type}
+          id={topResult.id}
+          previewUrl={topResult.preview_url}
+        />
         <StarRating
           size={24}
           color="yellow"

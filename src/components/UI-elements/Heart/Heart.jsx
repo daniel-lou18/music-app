@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./Heart.module.css";
 
 function Heart({ id, onClick, type, size = 28 }) {

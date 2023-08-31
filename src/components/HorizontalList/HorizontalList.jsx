@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./HorizontalList.module.css";
 import HorizontalListItem from "../HorizontalListItem";
 

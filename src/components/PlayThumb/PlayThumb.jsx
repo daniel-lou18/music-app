@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -44,6 +43,7 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
         <img
           className={styles.img}
           src={album.images[album.images.length - 1].url}
+          alt={name}
         />
         {!preview_url && (
           <div className={`${styles.btnsContainer} btnsContainer`}>

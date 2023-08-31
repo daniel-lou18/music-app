@@ -64,4 +64,26 @@ li.listItem:hover :global(.playBtn) {
   .subtitle {
     display: none;
   }
+
+  .listItem:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .listItem:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .listItem:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .listItem:nth-child(2) {
+    display: none;
+  }
 }

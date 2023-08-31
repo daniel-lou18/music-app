@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import PopularityIcon from "../UI-elements/PopularityIcon/";
 import StarRating from "../StarRating/";
 import { useMusic } from "../../context/MusicContext";
@@ -56,6 +55,7 @@ function ArtistHeader({ title }) {
                 ? topResult.album.images[0]?.url
                 : topResult.images[0]?.url
             }
+            alt={name}
           />
         </div>
         <div className={styles.itemText}>
