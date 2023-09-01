@@ -36,6 +36,7 @@ function Home() {
             type="search"
             items={newReleases}
             title="New Releases"
+            className="releases-albums"
           />
         </ListContainer>
       )}

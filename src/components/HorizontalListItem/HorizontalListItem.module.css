@@ -71,19 +71,19 @@ li.listItem:hover :global(.playBtn) {
 }
 
 @media screen and (max-width: 1050px) {
-  .listItem:nth-child(4) {
+  .listItem:nth-child(4):not(:global(.releases-albums) li) {
     display: none;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .listItem:nth-child(3) {
+  .listItem:nth-child(3):not(:global(.releases-albums) li) {
     display: none;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .listItem:nth-child(2) {
+  .listItem:nth-child(2):not(:global(.releases-albums) li) {
     display: none;
   }
 }

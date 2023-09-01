@@ -1,7 +1,13 @@
 import styles from "./HorizontalList.module.css";
 import HorizontalListItem from "../HorizontalListItem";
 
-function HorizontalList({ items, title, type = "search", genreNames }) {
+function HorizontalList({
+  items,
+  title,
+  type = "search",
+  genreNames,
+  className,
+}) {
   if (!items || items.length < 1) return;
   return (
     <>
@@ -9,7 +15,7 @@ function HorizontalList({ items, title, type = "search", genreNames }) {
         <>
           <h2 className="section-title">{title}</h2>
 
-          <ul className={styles.horList}>
+          <ul className={`${styles.horList} ${className}`}>
             {items.map((item) => (
               <HorizontalListItem
                 key={item.id}

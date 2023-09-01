@@ -1,7 +1,11 @@
 import { useMusic } from "../../../context/MusicContext";
 import { useBrowse } from "../../../context/BrowseContext";
 import styles from "./PlayBtn.module.css";
+import LockIcon from "../LockIcon";
+import ArrowIcon from "../ArrowIcon";
+
 import { useNavigate } from "react-router-dom";
+import PlayIcon from "../PlayIcon/PlayIcon";
 
 function PlayBtn({ type, id, genreName, previewUrl }) {
   const { isPlayingId, dispatch } = useMusic();
@@ -40,58 +44,17 @@ function PlayBtn({ type, id, genreName, previewUrl }) {
           className={`${styles.playBtn} playBtn`}
           onClick={genreName ? handleBrowse : handleGet}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-arrow-right"
-          >
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
-          </svg>
+          <ArrowIcon />
         </div>
       )}
       {type === "track" && !previewUrl && (
         <div className={`${styles.playBtn} playBtn`}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-lock"
-          >
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-          </svg>
+          <LockIcon />
         </div>
       )}
       {type === "track" && previewUrl && isPlayingId !== id && (
         <div className={`${styles.playBtn} playBtn`} onClick={handlePlay}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="#ffffffeb"
-            stroke="#ffffffeb"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className={styles.playBtnIcon}
-          >
-            <polygon points="5 3 19 12 5 21 5 3" />
-          </svg>
+          <PlayIcon />
         </div>
       )}
       {type === "track" && previewUrl && isPlayingId === id && (
