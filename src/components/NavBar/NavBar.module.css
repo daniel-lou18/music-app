@@ -91,3 +91,47 @@
   max-height: 200px;
   transition: max-height 0.3s ease-in;
 }
+
+@media screen and (max-width: 1200px) {
+  .navLink,
+  .navItem,
+  .link {
+    font-size: 1rem;
+    gap: 15px;
+  }
+
+  .subNavLink {
+    font-size: 0.9rem;
+  }
+
+  .subMenu {
+    padding-left: 43px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navLink,
+  .navItem,
+  .link {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  .subNavLink {
+    font-size: 0.8rem;
+  }
+
+  .subMenu {
+    padding-left: 38px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textWrapper {
+    display: none;
+  }
+
+  .subMenu {
+    padding-left: 3px;
+  }
+}

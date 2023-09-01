@@ -172,3 +172,13 @@ table {
 .link-no_style {
   text-decoration: none;
 }
+
+@media screen and (max-width: 750px) {
+  .small-subtext {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}

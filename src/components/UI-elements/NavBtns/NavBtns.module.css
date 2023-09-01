@@ -18,3 +18,9 @@
   background-color: var(--main-btn-color);
   cursor: pointer;
 }
+
+@media screen and (max-width: 750px) {
+  .navBtns {
+    display: none;
+  }
+}

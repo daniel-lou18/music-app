@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import { useBrowse } from "../../context/BrowseContext";
 import { useMusic } from "../../context/MusicContext";
+import HomeIcon from "../UI-elements/HomeIcon";
+import SearchIcon from "../UI-elements/SearchIcon";
 
 function NavBar() {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
@@ -31,21 +33,7 @@ function NavBar() {
         <li className={styles.listItem}>
           <NavLink to={""} end className={styles.navLink}>
             <div className={styles.svgWrapper}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="feather feather-home fillable"
-              >
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>
+              <HomeIcon />
             </div>
             <div className={styles.textWrapper}>Home</div>
           </NavLink>
@@ -53,21 +41,7 @@ function NavBar() {
         <li className={styles.listItem} onClick={handleSearch}>
           <NavLink to={"search"} className={styles.navLink}>
             <div className={styles.svgWrapper}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="feather feather-search fillable"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
+              <SearchIcon />
             </div>
             <div className={styles.textWrapper}>Search</div>
           </NavLink>

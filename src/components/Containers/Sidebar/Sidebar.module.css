@@ -4,3 +4,21 @@
   background-color: var(--darkest-bg-color);
   border-radius: 4px;
 }
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    padding-left: 5px;
+  }
+}

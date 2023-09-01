@@ -24,7 +24,7 @@ function TopResult({ title, type = "result" }) {
 
   if (!topResult)
     return (
-      <div className={styles.resultContainer}>
+      <div className={`result-container ${styles.resultContainer}`}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
         <div
           className={styles.result}
@@ -47,7 +47,10 @@ function TopResult({ title, type = "result" }) {
   };
 
   return (
-    <div className={`${styles.resultContainer}`} key={topResult.id}>
+    <div
+      className={`result-container ${styles.resultContainer}`}
+      key={topResult.id}
+    >
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
         <Heart id={favId} onClick={handleFavorite} />

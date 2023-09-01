@@ -18,3 +18,9 @@
 .five {
   fill: var(--medium-bg-color);
 }
+
+@media screen and (max-width: 750px) {
+  .popularityContainer {
+    display: none;
+  }
+}

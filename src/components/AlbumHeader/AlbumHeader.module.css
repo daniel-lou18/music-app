@@ -102,6 +102,10 @@
   .itemInfo ul:last-child {
     display: none;
   }
+
+  .albumInfo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {

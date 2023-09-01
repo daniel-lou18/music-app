@@ -15,4 +15,14 @@
   .starList {
     display: none;
   }
+
+  :global(.result-container) .starList {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :global(.result-container) .starList {
+    display: none;
+  }
 }

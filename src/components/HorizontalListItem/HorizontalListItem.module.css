@@ -77,13 +77,13 @@ li.listItem:hover :global(.playBtn) {
 }
 
 @media screen and (max-width: 900px) {
-  .listItem:nth-child(3):not(:global(.releases-albums) li) {
-    display: none;
+  .listItem:nth-child(4):not(:global(.releases-albums) li) {
+    display: unset;
   }
 }
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   .listItem:nth-child(2):not(:global(.releases-albums) li) {
     display: none;
   }
-}
+} */

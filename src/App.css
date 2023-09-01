@@ -18,3 +18,48 @@
   padding: 0;
   overflow: hidden;
 }
+
+@media screen and (max-width: 1200px) {
+  .app-container {
+    grid-template-columns: 200px auto;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .content-container h3 {
+    font-size: 0.9rem;
+  }
+
+  .content-container h4 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app-container {
+    grid-template-columns: 150px auto;
+  }
+
+  .content-container h3 {
+    font-size: unset;
+  }
+
+  .content-container h4 {
+    font-size: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app-container {
+    grid-template-columns: 75px auto;
+  }
+
+  .content-container h3 {
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .content-container h4 {
+    font-size: 0.7rem;
+  }
+}
