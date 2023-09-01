@@ -11,3 +11,9 @@
   margin-left: 30px;
   gap: 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .iconsContainer {
+    display: none;
+  }
+}

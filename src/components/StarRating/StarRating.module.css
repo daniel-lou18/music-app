@@ -10,3 +10,9 @@
 .notRated li {
   opacity: 0.3;
 }
+
+@media screen and (max-width: 1050px) {
+  .starList {
+    display: none;
+  }
+}
