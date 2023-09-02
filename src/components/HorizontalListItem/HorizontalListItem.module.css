@@ -82,8 +82,8 @@ li.listItem:hover :global(.playBtn) {
   }
 }
 
-/* @media screen and (max-width: 750px) {
-  .listItem:nth-child(2):not(:global(.releases-albums) li) {
-    display: none;
+@media screen and (max-width: 360px) {
+  .listItem {
+    margin-right: 10px;
   }
-} */
+}

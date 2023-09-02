@@ -134,4 +134,8 @@
   .subMenu {
     padding-left: 3px;
   }
+
+  .chevron {
+    display: none;
+  }
 }

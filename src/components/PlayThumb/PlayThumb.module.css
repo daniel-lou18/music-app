@@ -80,7 +80,13 @@ svg.note {
 }
 
 .textContainer.trackNameSmall {
-  padding: 0;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .textContainer.trackNameSmall .trackName {
+    font-size: 0.9rem;
+  }
 }
 
 .trackArtist {

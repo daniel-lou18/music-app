@@ -8,7 +8,7 @@ h2.title {
 
 .result {
   position: relative;
-  height: 310px;
+  min-height: 310px;
   width: calc(100% - 40px);
   padding: 20px;
   background-color: var(--darker-bg-color);
@@ -17,19 +17,19 @@ h2.title {
 
 @media screen and (max-width: 900px) {
   .result {
-    height: 265px;
+    min-height: 265px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .result {
-    height: 240px;
+    min-height: 240px;
   }
 }
 
 @media screen and (max-width: 750px) {
   .result {
-    height: 190px;
+    min-height: 190px;
   }
 }
 
@@ -137,7 +137,7 @@ h2.title {
 .itemSubtitles > * {
   padding-top: 6px;
   padding-bottom: 6px;
-  height: 1.1rem;
+  /* height: 1.1rem; */
 }
 
 .firstSubtitle {

@@ -10,6 +10,15 @@
   border-radius: 8px;
 }
 
+@media screen and (max-width: 900px) {
+  .trackItem {
+    padding-left: 0;
+  }
+  .trackItem:first-child {
+    padding-top: 5px;
+  }
+}
+
 .trackItem:hover {
   background-color: var(--darker-bg-color);
   outline: 1px solid var(--medium-outline-color);

@@ -120,7 +120,7 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
       </div>
       <div
         className={`${styles.textContainer} ${
-          name.length > 30 ? styles.trackNameSmall : ""
+          name.length > 25 ? styles.trackNameSmall : ""
         }`}
       >
         <h3 className={`${styles.trackName}`}>

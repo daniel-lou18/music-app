@@ -20,5 +20,6 @@
 @media screen and (max-width: 600px) {
   .sidebar {
     padding-left: 5px;
+    padding-right: 5px;
   }
 }

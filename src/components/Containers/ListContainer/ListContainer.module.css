@@ -61,12 +61,8 @@
   }
 }
 
-/* @media screen and (max-width: 1200px) {
-  .left {
-    display: none;
-  }
-
+@media screen and (max-width: 360px) {
   .right {
-    grid-column: 1 / -1;
+    margin-right: 10px;
   }
-} */
+}

@@ -18,7 +18,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  .logoContainer {
+    display: block;
+  }
+
   .logoContainer h1 {
     display: none;
+  }
+
+  .logoContainer svg {
+    width: 28px;
+    height: 28px;
   }
 }

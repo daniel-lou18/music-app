@@ -51,11 +51,30 @@
 
 @media screen and (max-width: 600px) {
   .app-container {
-    grid-template-columns: 75px auto;
+    grid-template-columns: auto auto;
   }
 
   .content-container h3 {
     font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .content-container h4 {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .app-container {
+    padding: 0;
+  }
+
+  .content-container {
+    padding-left: 10px;
+  }
+
+  .content-container h3 {
+    font-size: 0.7rem;
     font-weight: normal;
   }
 
