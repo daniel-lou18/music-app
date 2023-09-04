@@ -7,7 +7,7 @@ import { useMusic } from "../../context/MusicContext";
 import HomeIcon from "../UI-elements/HomeIcon";
 import SearchIcon from "../UI-elements/SearchIcon";
 
-function NavBar() {
+function NavBar({ closeHamburger }) {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
   const [ratedOpen, setRatedOpen] = useState(false);
   const { dispatch } = useMusic();
@@ -25,12 +25,18 @@ function NavBar() {
   const handleSearch = () => {
     dispatchBrowse({ type: "reset" });
     dispatch({ type: "reset" });
+    closeHamburger();
+  };
+
+  const handleSubMenuClick = (e) => {
+    e.stopPropagation();
+    closeHamburger();
   };
 
   return (
     <nav className={styles.navBar}>
       <ul>
-        <li className={styles.listItem}>
+        <li className={styles.listItem} onClick={closeHamburger}>
           <NavLink to={""} end className={styles.navLink}>
             <div className={styles.svgWrapper}>
               <HomeIcon />
@@ -100,26 +106,17 @@ function NavBar() {
               favoritesOpen ? styles.subMenuOpen : ""
             }`}
           >
-            <li
-              className={styles.subMenuItem}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
               <NavLink to={"favorites/songs"} className={styles.subNavLink}>
                 Songs
               </NavLink>
             </li>
-            <li
-              className={styles.subMenuItem}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
               <NavLink to={"favorites/artists"} className={styles.subNavLink}>
                 Artists
               </NavLink>
             </li>
-            <li
-              className={styles.subMenuItem}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
               <NavLink to={"favorites/albums"} className={styles.subNavLink}>
                 Albums
               </NavLink>
@@ -178,26 +175,17 @@ function NavBar() {
               ratedOpen ? styles.subMenuOpen : ""
             }`}
           >
-            <li
-              className={styles.subMenuItem}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
               <NavLink to={"rated/songs"} className={styles.subNavLink}>
                 Songs
               </NavLink>
             </li>
-            <li
-              className={styles.subMenuItem}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
               <NavLink to={"rated/artists"} className={styles.subNavLink}>
                 Artists
               </NavLink>
             </li>
-            <li
-              className={styles.subMenuItem}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
               <NavLink to={"rated/albums"} className={styles.subNavLink}>
                 Albums
               </NavLink>

@@ -14,6 +14,11 @@
   position: relative;
 }
 
+.content-container.hamburgerIsOpen {
+  height: calc(100vh - 32px);
+  overflow: hidden;
+}
+
 .content-container.header-container {
   padding: 0;
   overflow: hidden;
@@ -51,7 +56,14 @@
 
 @media screen and (max-width: 600px) {
   .app-container {
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
+    display: block;
+    padding: 0;
+  }
+
+  .content-container {
+    padding: 16px;
+    margin-left: 0;
   }
 
   .content-container h3 {
@@ -69,9 +81,9 @@
     padding: 0;
   }
 
-  .content-container {
+  /* .content-container {
     padding-left: 10px;
-  }
+  } */
 
   .content-container h3 {
     font-size: 0.7rem;

@@ -18,3 +18,9 @@
   background-color: var(--main-btn-color);
   cursor: pointer;
 }
+
+@media (hover: none) {
+  :global(.playBtn) {
+    display: none;
+  }
+}

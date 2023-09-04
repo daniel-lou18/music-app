@@ -1,7 +1,11 @@
 import styles from "./Sidebar.module.css";
 
-function Sidebar({ children }) {
-  return <div className={styles.sidebar}>{children}</div>;
+function Sidebar({ children, isVisible }) {
+  return (
+    <div className={`${styles.sidebar} ${isVisible ? styles.visible : ""}`}>
+      {children}
+    </div>
+  );
 }
 
 export default Sidebar;

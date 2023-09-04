@@ -5,6 +5,10 @@
   border-radius: 4px;
 }
 
+.sidebar.visible {
+  left: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .sidebar {
     padding-left: 20px;
@@ -19,7 +23,18 @@
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    padding-left: 5px;
+    padding-top: 16px;
     padding-right: 5px;
+    padding-left: 16px;
+
+    background-color: var(--darker-bg-color);
+    position: fixed;
+    z-index: 49;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    transition: left 1s;
   }
 }

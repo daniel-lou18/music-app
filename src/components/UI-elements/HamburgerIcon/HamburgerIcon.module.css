@@ -1,0 +1,44 @@
+.hamburgerWrapper {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 50;
+
+  background: transparent;
+}
+
+.hamburgerSvg {
+  /* outline: 3px solid var(--light-white-color); */
+  fill: var(--light-white-color);
+}
+
+.line {
+  transition: transform 225ms ease-in 225ms, rotate 225ms ease-in,
+    opacity 0ms 225ms;
+  transform-origin: center;
+}
+
+.isOpen .line {
+  transition: transform 225ms ease-in, rotate 225ms ease-in 225ms,
+    opacity 0ms 225ms;
+}
+
+.isOpen .top {
+  rotate: 45deg;
+  transform: translateY(20%);
+}
+
+.isOpen .bottom {
+  rotate: -45deg;
+  transform: translateY(-20%);
+}
+
+.isOpen .middle {
+  opacity: 0;
+}
+
+@media screen and (min-width: 601px) {
+  .hamburgerWrapper {
+    display: none;
+  }
+}

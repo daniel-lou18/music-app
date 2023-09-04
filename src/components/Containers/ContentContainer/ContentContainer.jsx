@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 
-function ContentContainer({ children }) {
+function ContentContainer({ children, hamburgerIsOpen }) {
   const location = useLocation();
 
   return (
@@ -10,7 +10,7 @@ function ContentContainer({ children }) {
         location.pathname.includes("app/album")
           ? "header-container"
           : ""
-      }`}
+      } ${hamburgerIsOpen ? "hamburgerIsOpen" : ""}`}
     >
       {children}
     </div>

@@ -127,15 +127,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  .textWrapper {
+  /* .textWrapper {
     display: none;
-  }
+  } */
 
   .subMenu {
     padding-left: 3px;
   }
 
-  .chevron {
+  /* .chevron {
     display: none;
-  }
+  } */
 }

@@ -31,7 +31,8 @@
 
 @media screen and (max-width: 600px) {
   .searchField {
-    grid-column: 1 / -1;
+    grid-column: 1 / 6;
+    top: 0;
   }
 }
 
@@ -55,6 +56,12 @@
   vertical-align: middle;
   font-size: 1rem;
   color: var(--light-white-color);
+}
+
+@media screen and (max-width: 600px) {
+  .searchField input {
+    height: 32px;
+  }
 }
 
 .searchField svg {
