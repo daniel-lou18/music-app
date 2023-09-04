@@ -15,7 +15,8 @@
 }
 
 .content-container.hamburgerIsOpen {
-  height: calc(100vh - 32px);
+  box-sizing: border-box;
+  height: 100%;
   overflow: hidden;
 }
 

@@ -50,8 +50,21 @@ function HorizontalListItem({
     }
   };
 
+  const handleNoHoverNavigate = function () {
+    const regexMobile =
+      /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    if (!regexMobile.test(navigator.userAgent)) return;
+
+    handleFromArtistNavigate();
+    if (type === "album") {
+      dispatch({ type: "album/get", payload: id });
+      navigate(`/app/album/${id}`);
+      window.scrollTo(0, 0);
+    }
+  };
+
   return (
-    <li className={styles.listItem}>
+    <li className={styles.listItem} onClick={handleNoHoverNavigate}>
       {type === "artist" && extended === true && (
         <Heart id={favId} onClick={handleFavorite} type={type} />
       )}
