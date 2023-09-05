@@ -106,12 +106,16 @@
     height: 3.5rem;
   }
 
-  /* .itemInfo ul:last-child {
+  .itemInfo ul:nth-child(3) {
     display: none;
-  } */
+  }
 
-  .albumInfo {
+  .albumInfo > :last-child {
     display: none;
+  }
+
+  .albumInfo h4:nth-child(2)::after {
+    content: "";
   }
 }
 
@@ -153,6 +157,14 @@
   .itemInfo > :nth-child(3) {
     display: none;
   }
+
+  .albumInfo > :nth-child(2) {
+    display: none;
+  }
+
+  .albumInfo h4:first-child::after {
+    content: "";
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -162,6 +174,14 @@
 
   .secondSubtitleWrapper {
     padding-top: 0;
+  }
+
+  .itemInfo {
+    gap: 15px;
+  }
+
+  .albumInfo {
+    display: none;
   }
 }
 
@@ -185,6 +205,18 @@
     font-weight: normal;
   }
 
+  .albumInfo {
+    display: flex;
+  }
+
+  .albumInfo h4 {
+    font-weight: normal;
+  }
+
+  .resultContainer {
+    padding-left: 16px;
+  }
+
   .result {
     gap: 20px;
   }
@@ -201,6 +233,7 @@
 
   .itemInfo {
     grid-row: 2 / -1;
+    gap: 10px;
   }
 
   .header img {
@@ -212,7 +245,8 @@
     font-size: 1rem;
   }
 
-  h4.secondSubtitle {
+  h4.secondSubtitle,
+  .albumInfo h4 {
     font-size: 0.8rem;
   }
 

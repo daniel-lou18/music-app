@@ -11,13 +11,14 @@ function AppLayout() {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
 
   const handleClickHamburger = () => setHamburgerIsOpen((val) => !val);
+  const handleCloseHamburger = () => setHamburgerIsOpen(false);
 
   return (
     <AppContainer hamburgerIsOpen={hamburgerIsOpen}>
       <HamburgerIcon onClick={handleClickHamburger} isOpen={hamburgerIsOpen} />
       <Sidebar isVisible={hamburgerIsOpen}>
         <Logo />
-        <NavBar closeHamburger={handleClickHamburger} />
+        <NavBar closeHamburger={handleCloseHamburger} />
       </Sidebar>
       <ContentContainer>
         <Outlet />

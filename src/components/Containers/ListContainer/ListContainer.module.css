@@ -59,10 +59,20 @@
   .left {
     display: none;
   }
+
+  .artistPage {
+    margin-left: 16px;
+  }
+
+  .artistPage:nth-child(2),
+  .albumPage:nth-child(2) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   .right {
     margin-right: 10px;
   }
-}
+} */

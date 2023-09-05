@@ -82,8 +82,14 @@ li.listItem:hover :global(.playBtn) {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
+  .listItem {
+    margin-right: 16px;
+  }
+}
+
+/* @media screen and (max-width: 360px) {
   .listItem {
     margin-right: 10px;
   }
-}
+} */

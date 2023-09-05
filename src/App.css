@@ -63,7 +63,7 @@
   }
 
   .content-container {
-    padding: 16px;
+    padding: 16px 0 16px 16px;
     margin-left: 0;
   }
 

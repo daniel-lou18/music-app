@@ -61,6 +61,7 @@
 @media screen and (max-width: 600px) {
   .searchField input {
     height: 32px;
+    font-size: 0.9rem;
   }
 }
 

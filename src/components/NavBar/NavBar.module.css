@@ -8,7 +8,6 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 20px;
   height: 48px;
   font-size: 1.15rem;
   font-weight: 500;
@@ -45,6 +44,7 @@
 }
 
 .textWrapper {
+  margin-left: 20px;
 }
 
 .dropdown {
@@ -97,7 +97,10 @@
   .navItem,
   .link {
     font-size: 1rem;
-    gap: 15px;
+  }
+
+  .textWrapper {
+    margin-left: 15px;
   }
 
   .subNavLink {
@@ -114,7 +117,20 @@
   .navItem,
   .link {
     font-size: 0.9rem;
-    gap: 10px;
+  }
+
+  .svgWrapper {
+    height: 26px;
+    width: 26px;
+  }
+
+  .svgWrapper svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .textWrapper {
+    margin-left: 5px;
   }
 
   .subNavLink {
@@ -122,17 +138,17 @@
   }
 
   .subMenu {
-    padding-left: 38px;
+    padding-left: 31px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* .textWrapper {
-    display: none;
-  } */
+  .textWrapper {
+    margin-left: 12px;
+  }
 
   .subMenu {
-    padding-left: 3px;
+    padding-left: 38px;
   }
 
   /* .chevron {
