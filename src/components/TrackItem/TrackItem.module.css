@@ -79,7 +79,7 @@
 
 .trackItem.big {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 2fr 1fr auto;
   margin-bottom: 5px;
   padding: 5px;
   border-radius: 8px;
@@ -89,8 +89,36 @@
   justify-self: center;
 }
 
+@media screen and (max-width: 900px) {
+  .trackItem.big {
+    grid-template-columns: 1fr auto;
+  }
+
+  .trackItem.big > ul:nth-child(2) {
+    display: none;
+  }
+
+  .trackItem.big > :last-child {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .trackItem.big {
-    display: block;
+    grid-template-columns: 1fr auto;
+  }
+
+  .trackItem.big > :last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trackItem.big h3 {
+    font-size: 0.9rem;
+  }
+
+  .trackItem.big h4 {
+    font-size: 0.8rem;
   }
 }

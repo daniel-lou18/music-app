@@ -43,7 +43,7 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
       <div className={styles.imgWrapper}>
         <img
           className={styles.img}
-          src={album.images[album.images.length - 1].url}
+          src={album.images[album.images.length - 1]?.url}
           alt={name}
         />
         {!preview_url && (

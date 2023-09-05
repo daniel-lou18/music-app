@@ -11,7 +11,7 @@
   opacity: 0.3;
 }
 
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
   .starList {
     display: none;
   }
@@ -19,9 +19,9 @@
   :global(.result-container) .starList {
     display: flex;
   }
-}
+} */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   :global(.result-container) .starList {
     display: none;
   }

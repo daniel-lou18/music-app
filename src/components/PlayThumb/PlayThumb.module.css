@@ -110,6 +110,7 @@ svg.note {
 .inputRange {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1200px) {

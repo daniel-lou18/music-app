@@ -46,13 +46,13 @@
 }
 
 .secondSubtitleWrapper {
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .secondSubtitle {
   padding-top: 6px;
   padding-bottom: 6px;
-  height: 1.1rem;
+  /* height: 1.1rem; */
   padding-left: 12px;
   padding-right: 12px;
   border-radius: 15px;
@@ -79,9 +79,6 @@
   display: flex;
   align-items: center;
   gap: 25px;
-}
-
-.itemSubtitles {
 }
 
 :global(.popularityContainer.header) {
@@ -123,6 +120,10 @@
   .result {
     gap: 40px;
   }
+
+  h4.secondSubtitle {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -138,5 +139,81 @@
 
   .result {
     gap: 30px;
+  }
+
+  .itemInfo > :nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .resultContainer {
+    padding-top: 0;
+  }
+
+  .secondSubtitleWrapper {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h3.itemTitle {
+    font-size: 1.1rem;
+    height: auto;
+    font-weight: bold;
+  }
+
+  h4.secondSubtitle {
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: normal;
+  }
+
+  .result {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .itemText {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .itemTitle {
+    grid-row: 1 / 2;
+  }
+
+  .itemInfo {
+    grid-row: 2 / -1;
+  }
+
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h3.itemTitle.itemTitleSmall {
+    font-size: 1rem;
+  }
+
+  h4.secondSubtitle {
+    font-size: 0.8rem;
+  }
+
+  .result {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+
+  .itemInfo svg {
+    height: 24px;
+    width: 24px;
   }
 }
