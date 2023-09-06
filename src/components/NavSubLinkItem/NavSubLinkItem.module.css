@@ -1,0 +1,25 @@
+.subMenuItem {
+  padding-bottom: 12px;
+}
+
+.subNavLink {
+  text-decoration: none;
+  color: var(--grey-font-color);
+}
+
+.subNavLink:hover,
+.subNavLink:global(.active) {
+  color: var(--main-font-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .subNavLink {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .subNavLink {
+    font-size: 0.8rem;
+  }
+}

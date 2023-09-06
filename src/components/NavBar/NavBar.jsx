@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { useState } from "react";
 
@@ -6,6 +6,8 @@ import { useBrowse } from "../../context/BrowseContext";
 import { useMusic } from "../../context/MusicContext";
 import HomeIcon from "../UI-elements/HomeIcon";
 import SearchIcon from "../UI-elements/SearchIcon";
+import NavLinkItem from "../NavLinkItem/NavLinkItem";
+import NavSubLinkItem from "../NavSubLinkItem/NavSubLinkItem";
 
 function NavBar({ closeHamburger }) {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
@@ -36,22 +38,20 @@ function NavBar({ closeHamburger }) {
   return (
     <nav className={styles.navBar}>
       <ul>
-        <li className={styles.listItem} onClick={closeHamburger}>
-          <NavLink to={""} end className={styles.navLink}>
-            <div className={styles.svgWrapper}>
-              <HomeIcon />
-            </div>
-            <div className={styles.textWrapper}>Home</div>
-          </NavLink>
-        </li>
-        <li className={styles.listItem} onClick={handleSearch}>
-          <NavLink to={"search"} className={styles.navLink}>
-            <div className={styles.svgWrapper}>
-              <SearchIcon />
-            </div>
-            <div className={styles.textWrapper}>Search</div>
-          </NavLink>
-        </li>
+        <NavLinkItem
+          to={""}
+          onClick={closeHamburger}
+          icon={<HomeIcon />}
+          text={"Home"}
+          end={true}
+        />
+        <NavLinkItem
+          to={"search"}
+          onClick={handleSearch}
+          icon={<SearchIcon />}
+          text={"Search"}
+          end={false}
+        />
         <li className={styles.listItem} onClick={handleFavorites}>
           <Link
             className={`${styles.link} ${styles.dropdown} ${
@@ -106,21 +106,21 @@ function NavBar({ closeHamburger }) {
               favoritesOpen ? styles.subMenuOpen : ""
             }`}
           >
-            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
-              <NavLink to={"favorites/songs"} className={styles.subNavLink}>
-                Songs
-              </NavLink>
-            </li>
-            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
-              <NavLink to={"favorites/artists"} className={styles.subNavLink}>
-                Artists
-              </NavLink>
-            </li>
-            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
-              <NavLink to={"favorites/albums"} className={styles.subNavLink}>
-                Albums
-              </NavLink>
-            </li>
+            <NavSubLinkItem
+              to="favorites/songs"
+              onClick={handleSubMenuClick}
+              text="Songs"
+            />
+            <NavSubLinkItem
+              to="favorites/artists"
+              onClick={handleSubMenuClick}
+              text="Artists"
+            />
+            <NavSubLinkItem
+              to="favorites/albums"
+              onClick={handleSubMenuClick}
+              text="Albums"
+            />
           </ul>
         </li>
         <li className={styles.listItem} onClick={handleRated}>
@@ -175,21 +175,21 @@ function NavBar({ closeHamburger }) {
               ratedOpen ? styles.subMenuOpen : ""
             }`}
           >
-            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
-              <NavLink to={"rated/songs"} className={styles.subNavLink}>
-                Songs
-              </NavLink>
-            </li>
-            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
-              <NavLink to={"rated/artists"} className={styles.subNavLink}>
-                Artists
-              </NavLink>
-            </li>
-            <li className={styles.subMenuItem} onClick={handleSubMenuClick}>
-              <NavLink to={"rated/albums"} className={styles.subNavLink}>
-                Albums
-              </NavLink>
-            </li>
+            <NavSubLinkItem
+              to="rated/songs"
+              onClick={handleSubMenuClick}
+              text="Songs"
+            />
+            <NavSubLinkItem
+              to="rated/artists"
+              onClick={handleSubMenuClick}
+              text="Artists"
+            />
+            <NavSubLinkItem
+              to="rated/albums"
+              onClick={handleSubMenuClick}
+              text="Albums"
+            />
           </ul>
         </li>
       </ul>

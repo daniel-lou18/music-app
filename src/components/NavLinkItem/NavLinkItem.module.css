@@ -1,0 +1,75 @@
+.navLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--grey-font-color);
+}
+
+.navLink:hover,
+.navLink:global(.active) {
+  color: var(--main-font-color);
+}
+
+.navLink:global(.active) svg:global(.fillable) {
+  fill: var(--medium-white-color);
+}
+
+.listItem {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.svgWrapper {
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+
+.svgWrapper svg {
+  position: absolute;
+  left: 2px;
+  top: 3px;
+}
+
+.textWrapper {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navLink {
+    font-size: 1rem;
+  }
+
+  .textWrapper {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navLink {
+    font-size: 0.9rem;
+  }
+
+  .svgWrapper {
+    height: 26px;
+    width: 26px;
+  }
+
+  .svgWrapper svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .textWrapper {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textWrapper {
+    margin-left: 12px;
+  }
+}
