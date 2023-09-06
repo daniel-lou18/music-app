@@ -1,0 +1,12 @@
+:global(.btnsContainer):hover svg.pauseBtn {
+  stroke: lightseagreen;
+  transform: scale(1.1);
+}
+
+:global(.noteContainer):hover svg.note {
+  opacity: 0;
+}
+
+svg.note {
+  opacity: 1;
+}

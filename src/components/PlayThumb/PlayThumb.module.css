@@ -30,7 +30,7 @@
 
 .btnsContainer {
   position: absolute;
-  /* z-index: 5; */
+  z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,27 +44,13 @@
   align-items: center;
 }
 
-.imgWrapper:hover svg.pauseBtn,
-.imgWrapper:hover svg.playBtn {
-  stroke: lightseagreen;
-  transform: scale(1.1);
-}
-
-.imgWrapper:hover svg.note {
-  opacity: 0;
+.btnsContainer:global(.noteContainer) {
+  z-index: 3;
 }
 
 :global(.noteContainer) {
   opacity: 1;
 }
-
-svg.note {
-  opacity: 1;
-}
-
-/* li:not(:hover) .pauseBtn {
-  opacity: 0;
-} */
 
 .textContainer {
   display: flex;

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "./PlayThumb.module.css";
 import { useMusic } from "../../context/MusicContext";
 import LockIcon from "../UI-elements/LockIcon";
+import PlayIcon from "../UI-elements/PlayIcon";
+import IsPlayingIcon from "../UI-elements/IsPlayingIcon/IsPlayingIcon";
 
 function PlayThumb({ album, id, name, artists, preview_url }) {
   const { isPlayingId, dispatch } = useMusic();
@@ -47,75 +49,21 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
           alt={name}
         />
         {!preview_url && (
-          // <div className={`${styles.btnsContainer} btnsContainer`}>
           <LockIcon classNames={[styles.btnsContainer, "btnsContainer"]} />
-          // </div>
         )}
         {preview_url && !isPlaying && (
-          <div
-            className={`${styles.btnsContainer} btnsContainer`}
-            onClick={() => dispatch({ type: "playing/set", payload: id })}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className={`${styles.playerBtn} ${styles.playBtn}`}
-            >
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
-          </div>
+          <PlayIcon
+            classNames={[styles.btnsContainer, "btnsContainer"]}
+            id={id}
+            width={28}
+            height={28}
+          />
         )}
         {preview_url && isPlaying && (
-          <div>
-            <div
-              className={`${styles.btnsContainer} ${styles.pauseContainer} pauseContainer btnsContainer`}
-              onClick={() => dispatch({ type: "playing/set", payload: "" })}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`${styles.playerBtn} ${styles.pauseBtn}`}
-              >
-                <rect x="6" y="4" width="4" height="16" />
-                <rect x="14" y="4" width="4" height="16" />
-              </svg>
-            </div>
-            <div
-              className={`${styles.btnsContainer} ${styles.noteContainer} noteContainer`}
-              onClick={() => dispatch({ type: "playing/set", payload: "" })}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`${styles.playerBtn} ${styles.note} note`}
-              >
-                <path d="M9 18V5l12-2v13" />
-                <circle cx="6" cy="18" r="3" />
-                <circle cx="18" cy="16" r="3" />
-              </svg>
-            </div>
-          </div>
+          <IsPlayingIcon
+            classNamesPause={[styles.btnsContainer, "btnsContainer"]}
+            classNamesPlaying={[styles.btnsContainer, "noteContainer"]}
+          />
         )}
       </div>
       <div
