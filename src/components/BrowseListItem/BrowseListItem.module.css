@@ -46,7 +46,7 @@
 }
 
 .title {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 1rem;
   font-weight: bold;
 }
@@ -69,32 +69,6 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1200px) {
-  .title {
-    margin-bottom: 0;
-  }
-
-  .subtitle {
-    display: none;
-  }
-
-  .listItemWrapper:last-child {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .listItemWrapper:nth-child(4):not(:global(.releases-albums) li) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .listItemWrapper:nth-child(4):not(:global(.releases-albums) li) {
-    display: unset;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .listItemWrapper {
     margin-right: 16px;
@@ -102,7 +76,7 @@
 }
 
 /* @media screen and (max-width: 360px) {
-  .listItem {
-    margin-right: 10px;
-  }
-} */
+    .listItem {
+      margin-right: 10px;
+    }
+  } */

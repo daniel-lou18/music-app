@@ -1,35 +1,21 @@
-// eslint-disable-next-line no-unused-vars
 import styles from "./HorizontalListItem.module.css";
-import PlayBtn from "../UI-elements/PlayBtn/";
 import Heart from "../UI-elements/Heart";
 import { useFavorites } from "../../context/FavoritesContext";
 
 import { useNavigate } from "react-router-dom";
 import { useMusic } from "../../context/MusicContext";
-import { useBrowse } from "../../context/BrowseContext";
 import ImgPlaceholder from "../UI-elements/ImgPlaceholder/ImgPlaceholder";
+import GoToBtn from "../UI-elements/GoToBtn";
 
-function HorizontalListItem({
-  id,
-  imgUrl,
-  title,
-  subtitle,
-  type,
-  genreName,
-  itemName,
-  extended,
-  item,
-}) {
+function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   const navigate = useNavigate();
 
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const favId = favoritesData.find((item) => item.id === id)?.id;
   const { dispatch } = useMusic();
-  const { dispatch: dispatchBrowse } = useBrowse();
 
   const handleFavorite = () => {
     console.log(favoritesData);
-    console.log(favId);
     if (!favId) {
       addFavorite(item);
     } else {
@@ -53,19 +39,10 @@ function HorizontalListItem({
     }
   };
 
-  const handleBrowse = () => {
-    dispatchBrowse({ type: "browse/genre", payload: genreName });
-    navigate(`/app/browse/${genreName}`);
-
-    window.scrollTo(0, 0);
-  };
-
   const handleNoHoverNavigate = function () {
     const regexMobile =
       /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
     if (!regexMobile.test(navigator.userAgent)) return;
-
-    if (!extended) return handleBrowse();
 
     handleFromArtistNavigate();
     if (type === "album") {
@@ -76,49 +53,46 @@ function HorizontalListItem({
   };
 
   return (
-    <li className={styles.listItem} onClick={handleNoHoverNavigate}>
-      {type === "artist" && extended && (
-        <Heart id={favId} onClick={handleFavorite} type={type} />
-      )}
-      <div className={styles.imgWrapper}>
-        {imgUrl && (
-          <img
-            src={imgUrl}
-            className={`${styles.img} ${
-              type === "artist" ? styles.circle : styles.square
-            }`}
-            alt={title}
-          />
-        )}
-        {!imgUrl && <ImgPlaceholder />}
-        {type === "album" && extended && (
+    <li className={styles.listItemWrapper}>
+      <button className={styles.listItem} onClick={handleNoHoverNavigate}>
+        {type === "artist" && (
           <Heart id={favId} onClick={handleFavorite} type={type} />
         )}
-      </div>
-      <div className={styles.textContainer}>
-        <h3
-          className={`${styles.title} ${
-            type === "artist" && extended ? styles.link : ""
-          }`}
-          onClick={handleFromArtistNavigate}
-        >
-          {title}
-        </h3>
-        <h4
-          className={`${styles.subtitle} ${
-            type === "album" && extended ? styles.link : ""
-          }`}
-          onClick={handleFromAlbumNavigate}
-        >
-          {subtitle}
-        </h4>
-        <PlayBtn
-          type={type}
-          id={id}
-          genreName={genreName}
-          itemName={itemName}
-        />
-      </div>
+        <div className={styles.imgWrapper}>
+          {imgUrl && (
+            <img
+              src={imgUrl}
+              className={`${styles.img} ${
+                type === "artist" ? styles.circle : styles.square
+              }`}
+              alt={title}
+            />
+          )}
+          {!imgUrl && <ImgPlaceholder />}
+          {type === "album" && (
+            <Heart id={favId} onClick={handleFavorite} type={type} />
+          )}
+        </div>
+        <div className={styles.textContainer}>
+          <h3
+            className={`${styles.title} ${
+              type === "artist" ? styles.link : ""
+            }`}
+            onClick={handleFromArtistNavigate}
+          >
+            {title}
+          </h3>
+          <h4
+            className={`${styles.subtitle} ${
+              type === "album" ? styles.link : ""
+            }`}
+            onClick={handleFromAlbumNavigate}
+          >
+            {subtitle}
+          </h4>
+          <GoToBtn type={type} id={id} />
+        </div>
+      </button>
     </li>
   );
 }

@@ -47,9 +47,9 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
           alt={name}
         />
         {!preview_url && (
-          <div className={`${styles.btnsContainer} btnsContainer`}>
-            <LockIcon />
-          </div>
+          // <div className={`${styles.btnsContainer} btnsContainer`}>
+          <LockIcon classNames={[styles.btnsContainer, "btnsContainer"]} />
+          // </div>
         )}
         {preview_url && !isPlaying && (
           <div

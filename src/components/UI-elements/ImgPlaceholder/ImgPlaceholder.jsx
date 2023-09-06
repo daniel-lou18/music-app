@@ -1,13 +1,11 @@
-function ImgPlaceholder({ width, height }) {
+function ImgPlaceholder() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
-      strokeWidth="1"
+      stroke="darkgrey"
+      strokeWidth="0.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       className="feather feather-image"

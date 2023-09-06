@@ -25,6 +25,33 @@
   overflow: hidden;
 }
 
+.playBtn {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  opacity: 0;
+  margin-left: auto;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: var(--transp-btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.playBtn:hover {
+  background-color: var(--main-btn-color);
+  cursor: pointer;
+}
+
+@media (hover: none) {
+  .playBtn {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .app-container {
     grid-template-columns: 200px auto;

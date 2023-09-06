@@ -1,5 +1,6 @@
 import styles from "./HorizontalList.module.css";
 import HorizontalListItem from "../HorizontalListItem";
+import BrowseListItem from "../BrowseListItem/BrowseListItem";
 
 function HorizontalList({
   items,
@@ -26,7 +27,6 @@ function HorizontalList({
                   item.type === "artist" ? item.genres[0] : item.artists[0].name
                 }
                 type={item.type}
-                extended={true}
                 item={item}
               />
             ))}
@@ -39,15 +39,11 @@ function HorizontalList({
 
           <ul className={styles.horList}>
             {items.map((item, i) => (
-              <HorizontalListItem
+              <BrowseListItem
                 key={i}
                 imgUrl={item?.images[0]?.url}
-                id={item.id}
                 title={genreNames[i][0].toUpperCase() + genreNames[i].slice(1)}
-                type={item.type}
                 genreName={genreNames[i]}
-                itemName={item.name}
-                extended={false}
               />
             ))}
           </ul>
