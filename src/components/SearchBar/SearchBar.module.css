@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr) repeat(4, 2fr);
   margin-right: 25px;
+  margin-bottom: -5px;
 }
 
 .searchContainer div:first-child {

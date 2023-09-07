@@ -15,6 +15,8 @@
 }
 
 html {
+  box-sizing: border-box;
+
   --darkest-bg-color: rgb(20, 20, 20);
   --darker-bg-color: rgb(30, 30, 30);
   --dark-bg-color: rgb(60, 60, 60);
@@ -30,6 +32,12 @@ html {
 
   --main-font-color: rgba(255, 255, 255, 0.92);
   --grey-font-color: rgba(255, 255, 255, 0.7);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html,

@@ -1,6 +1,6 @@
 .sidebar {
   box-sizing: border-box;
-  padding: 8px 10px 8px 25px;
+  padding: 15px 10px 8px 25px;
   background-color: var(--darkest-bg-color);
   border-radius: 4px;
 }

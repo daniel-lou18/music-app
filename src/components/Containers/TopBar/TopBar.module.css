@@ -1,4 +1,4 @@
 .topBar {
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
+  margin-bottom: 7px;
 }

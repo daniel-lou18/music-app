@@ -1,20 +1,22 @@
-import { Link, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import { useState } from "react";
 
 import { useBrowse } from "../../context/BrowseContext";
 import { useMusic } from "../../context/MusicContext";
+import LogoIcon from "../../components/UI-elements/LogoIcon";
 import HomeIcon from "../UI-elements/HomeIcon";
 import SearchIcon from "../UI-elements/SearchIcon";
 import NavLinkItem from "./NavLinkItem";
 import NavSubLinkItem from "./NavSubLinkItem";
+import NavLinkCollapsible from "./NavLinkCollapsible/NavLinkCollapsible";
+import HeartNavIcon from "../UI-elements/HeartNavIcon/HeartNavIcon";
+import StarNavIcon from "../UI-elements/StarNavIcon/StarNavIcon";
 
 function NavBar({ closeHamburger }) {
   const [favoritesOpen, setFavoritesOpen] = useState(false);
   const [ratedOpen, setRatedOpen] = useState(false);
   const { dispatch } = useMusic();
   const { dispatch: dispatchBrowse } = useBrowse();
-  const location = useLocation();
 
   const handleFavorites = () => {
     setFavoritesOpen((prev) => !prev);
@@ -41,6 +43,17 @@ function NavBar({ closeHamburger }) {
         <NavLinkItem
           to={""}
           onClick={closeHamburger}
+          icon={<LogoIcon />}
+          text={
+            <h1>
+              Spoti<span>Lite</span>
+            </h1>
+          }
+          end={true}
+        />
+        <NavLinkItem
+          to={""}
+          onClick={closeHamburger}
           icon={<HomeIcon />}
           text={"Home"}
           end={true}
@@ -52,7 +65,53 @@ function NavBar({ closeHamburger }) {
           text={"Search"}
           end={false}
         />
-        <li className={styles.listItem} onClick={handleFavorites}>
+        <NavLinkCollapsible
+          isOpen={favoritesOpen}
+          onClick={handleFavorites}
+          pathname="app/favorites"
+          icon={<HeartNavIcon pathname="app/favorites" />}
+          text="Favorites"
+        >
+          <NavSubLinkItem
+            to="favorites/songs"
+            onClick={handleSubMenuClick}
+            text="Songs"
+          />
+          <NavSubLinkItem
+            to="favorites/artists"
+            onClick={handleSubMenuClick}
+            text="Artists"
+          />
+          <NavSubLinkItem
+            to="favorites/albums"
+            onClick={handleSubMenuClick}
+            text="Albums"
+          />
+        </NavLinkCollapsible>
+        <NavLinkCollapsible
+          isOpen={ratedOpen}
+          onClick={handleRated}
+          pathname="app/rated"
+          icon={<StarNavIcon pathname="app/rated" />}
+          text="Rated"
+        >
+          <NavSubLinkItem
+            to="rated/songs"
+            onClick={handleSubMenuClick}
+            text="Songs"
+          />
+          <NavSubLinkItem
+            to="rated/artists"
+            onClick={handleSubMenuClick}
+            text="Artists"
+          />
+          <NavSubLinkItem
+            to="rated/albums"
+            onClick={handleSubMenuClick}
+            text="Albums"
+          />
+        </NavLinkCollapsible>
+        {/* <li className={styles.listItem} onClick={handleFavorites}>
           <Link
             className={`${styles.link} ${styles.dropdown} ${
               location.pathname.includes("app/favorites") ? "active" : ""
@@ -122,8 +181,8 @@ function NavBar({ closeHamburger }) {
               text="Albums"
             />
           </ul>
-        </li>
-        <li className={styles.listItem} onClick={handleRated}>
+        </li> */}
+        {/* <li className={styles.listItem} onClick={handleRated}>
           <Link
             className={`${styles.link} ${styles.dropdown} ${
               location.pathname.includes("app/rated") ? "active" : ""
@@ -191,7 +250,7 @@ function NavBar({ closeHamburger }) {
               text="Albums"
             />
           </ul>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

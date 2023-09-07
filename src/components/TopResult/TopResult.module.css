@@ -2,14 +2,14 @@
   position: relative;
 }
 
-h2.title {
+/* h2.title {
   margin-top: 20px;
-}
+} */
 
 .result {
   position: relative;
   min-height: 310px;
-  width: calc(100% - 40px);
+  /* width: calc(100% - 40px); */
   padding: 20px;
   background-color: var(--darker-bg-color);
   border-radius: 5px;

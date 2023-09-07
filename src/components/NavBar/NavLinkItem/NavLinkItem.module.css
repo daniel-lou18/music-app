@@ -1,3 +1,13 @@
+.listItem {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.listItem:first-child {
+  margin-top: -9px;
+  margin-bottom: 20px;
+}
+
 .navLink {
   text-decoration: none;
   display: flex;
@@ -8,6 +18,38 @@
   color: var(--grey-font-color);
 }
 
+.listItem:first-child .navLink {
+  height: 50px;
+  color: var(--main-font-color);
+}
+
+.listItem:first-child .navLink .svgWrapper {
+  height: 36px;
+  width: 36px;
+}
+
+.listItem:first-child .navLink .svgWrapper svg {
+  left: -10%;
+  top: 0;
+}
+
+.listItem:first-child .navLink .textWrapper {
+  margin-left: 12px;
+}
+
+.listItem:first-child .navLink h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.listItem:first-child .navLink span {
+  color: lightgreen;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.listItem:first-child .navLink:global(.active) {
+}
 .navLink:hover,
 .navLink:global(.active) {
   color: var(--main-font-color);
@@ -15,11 +57,6 @@
 
 .navLink:global(.active) svg:global(.fillable) {
   fill: var(--medium-white-color);
-}
-
-.listItem {
-  position: relative;
-  margin-bottom: 10px;
 }
 
 .svgWrapper {
@@ -39,6 +76,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .listItem:first-child .navLink h1 {
+    font-size: 1.3rem;
+  }
+
   .navLink {
     font-size: 1rem;
   }
@@ -46,9 +87,17 @@
   .textWrapper {
     margin-left: 15px;
   }
+
+  .listItem:first-child .navLink .textWrapper {
+    margin-left: 7px;
+  }
 }
 
 @media screen and (max-width: 900px) {
+  .listItem:first-child .navLink h1 {
+    font-size: 1.2rem;
+  }
+
   .navLink {
     font-size: 0.9rem;
   }
@@ -58,18 +107,41 @@
     width: 26px;
   }
 
+  .listItem:first-child .navLink .svgWrapper {
+    height: 28px;
+    width: 28px;
+  }
+
   .svgWrapper svg {
     height: 20px;
     width: 20px;
   }
 
+  .listItem:first-child .navLink .svgWrapper svg {
+    height: 28px;
+    width: 28px;
+    left: -8%;
+  }
+
   .textWrapper {
     margin-left: 5px;
+  }
+
+  .listItem:first-child .navLink .textWrapper {
+    margin-left: 3px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .textWrapper {
     margin-left: 12px;
+  }
+
+  .listItem:first-child .navLink .textWrapper {
+    margin-left: 10px;
+  }
+
+  .listItem:first-child .navLink .svgWrapper svg {
+    left: -6%;
   }
 }
