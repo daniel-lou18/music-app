@@ -1,6 +1,6 @@
 import styles from "./HorizontalList.module.css";
-import HorizontalListItem from "../HorizontalListItem";
-import BrowseListItem from "../BrowseListItem/BrowseListItem";
+import HorizontalListItem from "./HorizontalListItem";
+import BrowseListItem from "./BrowseListItem/BrowseListItem";
 
 function HorizontalList({
   items,

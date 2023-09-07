@@ -1,8 +1,8 @@
 import styles from "./TrackIcons.module.css";
-import { useFavorites } from "../../context/FavoritesContext";
-import Heart from "../UI-elements/Heart";
-import AlbumIcon from "../UI-elements/AlbumIcon";
-import ArtistIcon from "../UI-elements/ArtistIcon/ArtistIcon";
+import { useFavorites } from "../../../../context/FavoritesContext";
+import Heart from "../../../UI-elements/Heart";
+import AlbumIcon from "../../../UI-elements/AlbumIcon";
+import ArtistIcon from "../../../UI-elements/ArtistIcon/ArtistIcon";
 
 import { useNavigate } from "react-router-dom";
 

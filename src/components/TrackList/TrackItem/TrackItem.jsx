@@ -1,8 +1,8 @@
-import PlayThumb from "../PlayThumb";
-import TrackIcons from "../TrackIcons";
+import PlayThumb from "./PlayThumb";
+import TrackIcons from "./TrackIcons";
 import styles from "./TrackItem.module.css";
-import StarRating from "../StarRating";
-import { useRated } from "../../context/RatedContext";
+import StarRating from "../../StarRating";
+import { useRated } from "../../../context/RatedContext";
 
 function TrackItem({ track, type }) {
   const { id, preview_url, name, artists, album } = track;

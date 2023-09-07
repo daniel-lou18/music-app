@@ -1,8 +1,8 @@
 import styles from "./BrowseListItem.module.css";
 import { useNavigate } from "react-router-dom";
-import { useBrowse } from "../../context/BrowseContext";
-import ImgPlaceholder from "../UI-elements/ImgPlaceholder";
-import BrowseBtn from "../UI-elements/BrowseBtn";
+import { useBrowse } from "../../../context/BrowseContext";
+import ImgPlaceholder from "../../UI-elements/ImgPlaceholder";
+import BrowseBtn from "../../UI-elements/BrowseBtn";
 
 function BrowseListItem({ imgUrl, title, genreName }) {
   const navigate = useNavigate();

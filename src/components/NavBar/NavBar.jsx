@@ -6,8 +6,8 @@ import { useBrowse } from "../../context/BrowseContext";
 import { useMusic } from "../../context/MusicContext";
 import HomeIcon from "../UI-elements/HomeIcon";
 import SearchIcon from "../UI-elements/SearchIcon";
-import NavLinkItem from "../NavLinkItem/NavLinkItem";
-import NavSubLinkItem from "../NavSubLinkItem/NavSubLinkItem";
+import NavLinkItem from "./NavLinkItem";
+import NavSubLinkItem from "./NavSubLinkItem";
 
 function NavBar({ closeHamburger }) {
   const [favoritesOpen, setFavoritesOpen] = useState(false);

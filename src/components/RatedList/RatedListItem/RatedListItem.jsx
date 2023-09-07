@@ -1,19 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import styles from "./RatedListItem.module.css";
-import PlayBtn from "../UI-elements/PlayBtn";
-import { useRated } from "../../context/RatedContext";
-import StarRating from "../StarRating";
+import PlayBtn from "../../../components/UI-elements/PlayBtn";
+import { useRated } from "../../../context/RatedContext";
+import StarRating from "../../StarRating";
 import { useState } from "react";
 
-function RatedListItem({
-  id,
-  imgUrl,
-  title,
-  // subtitle,
-  type,
-  genreName,
-  itemName,
-}) {
+function RatedListItem({ id, imgUrl, title, type, genreName, itemName }) {
   const { ratedData, addRated, removeRated } = useRated();
   const ratedItem = ratedData.find((item) => item.id === id);
   const [showReset, setShowReset] = useState(false);

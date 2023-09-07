@@ -1,11 +1,11 @@
 import styles from "./HorizontalListItem.module.css";
-import Heart from "../UI-elements/Heart";
-import { useFavorites } from "../../context/FavoritesContext";
+import Heart from "../../UI-elements/Heart";
+import { useFavorites } from "../../../context/FavoritesContext";
 
 import { useNavigate } from "react-router-dom";
-import { useMusic } from "../../context/MusicContext";
-import ImgPlaceholder from "../UI-elements/ImgPlaceholder/ImgPlaceholder";
-import GoToBtn from "../UI-elements/GoToBtn";
+import { useMusic } from "../../../context/MusicContext";
+import ImgPlaceholder from "../../UI-elements/ImgPlaceholder/ImgPlaceholder";
+import GoToBtn from "../../UI-elements/GoToBtn";
 
 function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   const navigate = useNavigate();

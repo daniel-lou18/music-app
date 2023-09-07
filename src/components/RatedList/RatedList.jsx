@@ -1,5 +1,5 @@
 import styles from "./RatedList.module.css";
-import RatedListItem from "../RatedListItem";
+import RatedListItem from "./RatedListItem";
 
 function RatedList({ items, title }) {
   if (!items || items.length < 1) return;

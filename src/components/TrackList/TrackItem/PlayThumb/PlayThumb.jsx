@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./PlayThumb.module.css";
-import { useMusic } from "../../context/MusicContext";
-import LockIcon from "../UI-elements/LockIcon";
-import PlayIcon from "../UI-elements/PlayIcon";
-import IsPlayingIcon from "../UI-elements/IsPlayingIcon/IsPlayingIcon";
+import { useMusic } from "../../../../context/MusicContext";
+import LockIcon from "../../../UI-elements/LockIcon";
+import PlayIcon from "../../../UI-elements/PlayIcon";
+import IsPlayingIcon from "../../../UI-elements/IsPlayingIcon/IsPlayingIcon";
 
 function PlayThumb({ album, id, name, artists, preview_url }) {
   const { isPlayingId, dispatch } = useMusic();

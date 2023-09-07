@@ -1,4 +1,4 @@
-import TrackItem from "../TrackItem";
+import TrackItem from "./TrackItem";
 import styles from "./TrackList.module.css";
 
 function TrackList({ tracks, title, type }) {
