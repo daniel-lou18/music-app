@@ -24,3 +24,7 @@
 .tracklist.big {
   height: auto;
 }
+
+.popularTracks {
+  position: relative;
+}

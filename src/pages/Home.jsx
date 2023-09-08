@@ -5,14 +5,20 @@ import { useMusic } from "../context/MusicContext";
 import ListContainer from "../components/Containers/ListContainer";
 import TopResult from "../components/TopResult";
 import TrackList from "../components/TrackList";
-import { topTracks } from "../../data/featuredArtist";
 import Results from "../components/Containers/Results";
 import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
 
 function Home() {
-  const { data, dispatch } = useMusic();
-  const { newReleases } = useHome();
+  const { dispatch } = useMusic();
+  const {
+    newReleasesData,
+    popularTracksData,
+    isLoadingTracks,
+    isLoadingReleases,
+    errorReleases,
+    errorTracks,
+  } = useHome();
 
   useEffect(() => {
     dispatch({ type: "playing/set", payload: "" });
@@ -28,18 +34,24 @@ function Home() {
         <TopResult title="Featured Artist" type="featured" />
       </ListContainer>
       <ListContainer position="right">
-        <TrackList tracks={data?.tracks?.items || topTracks} title="Songs" />
+        <TrackList
+          tracks={popularTracksData}
+          title="Popular Songs"
+          className="popularTracks"
+          isLoading={isLoadingTracks}
+          error={errorTracks}
+        />
       </ListContainer>
-      {newReleases?.length > 0 && (
-        <ListContainer>
-          <HorizontalList
-            type="search"
-            items={newReleases}
-            title="New Releases"
-            className="releases-albums"
-          />
-        </ListContainer>
-      )}
+      <ListContainer>
+        <HorizontalList
+          type="search"
+          items={newReleasesData}
+          title="New Releases"
+          className="releases-albums"
+          isLoading={isLoadingReleases}
+          error={errorReleases}
+        />
+      </ListContainer>
     </Results>
   );
 }

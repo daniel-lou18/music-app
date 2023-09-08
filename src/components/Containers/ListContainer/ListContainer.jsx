@@ -6,7 +6,7 @@ function ListContainer({ children, position = "horizontal", type }) {
       className={`${styles.listContainer} ${styles[position]} ${
         type === "artistPage" ? styles.artistPage : ""
       } ${type === "albumPage" ? styles.albumPage : ""} ${
-        type === "favoritePage" ? styles.favoritePage : ""
+        type === "favoritePage" ? "favoritePage" : ""
       }`}
     >
       {children}

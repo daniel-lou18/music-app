@@ -1,6 +1,5 @@
-import styles from "./NavBar.module.css";
+// import styles from "./NavBar.module.css";
 import { useState } from "react";
-
 import { useBrowse } from "../../context/BrowseContext";
 import { useMusic } from "../../context/MusicContext";
 import LogoIcon from "../../components/UI-elements/LogoIcon";
@@ -38,7 +37,7 @@ function NavBar({ closeHamburger }) {
   };
 
   return (
-    <nav className={styles.navBar}>
+    <nav className={`navBar`}>
       <ul>
         <NavLinkItem
           to={""}

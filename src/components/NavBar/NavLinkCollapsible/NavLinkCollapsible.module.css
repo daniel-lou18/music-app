@@ -20,6 +20,7 @@
 
 .link svg:global(.fillable) {
   fill: var(--medium-white-color);
+  animation: 0.2s linear alternate scale-up-down;
 }
 
 .listItem {
@@ -72,6 +73,12 @@
 .subMenuOpen {
   max-height: 200px;
   transition: max-height 0.3s ease-in;
+}
+
+@keyframes scale-up-down {
+  to {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (max-width: 1200px) {

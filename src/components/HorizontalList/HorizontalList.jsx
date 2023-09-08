@@ -1,6 +1,7 @@
 import styles from "./HorizontalList.module.css";
 import HorizontalListItem from "./HorizontalListItem";
 import BrowseListItem from "./BrowseListItem/BrowseListItem";
+import Spinner from "../UI-elements/Spinner";
 
 function HorizontalList({
   items,
@@ -8,28 +9,36 @@ function HorizontalList({
   type = "search",
   genreNames,
   className,
+  isLoading,
+  error,
 }) {
-  if (!items || items.length < 1) return;
   return (
     <>
       {type === "search" && (
         <>
           <h2 className="section-title title-horizontal-list">{title}</h2>
 
-          <ul className={`${styles.horList} ${className}`}>
-            {items.map((item) => (
-              <HorizontalListItem
-                key={item.id}
-                imgUrl={item?.images[0]?.url}
-                id={item.id}
-                title={item.name}
-                subtitle={
-                  item.type === "artist" ? item.genres[0] : item.artists[0].name
-                }
-                type={item.type}
-                item={item}
-              />
-            ))}
+          <ul className={`${styles.horList} ${className} ${styles[className]}`}>
+            {isLoading && <Spinner />}
+            {!isLoading &&
+              !error &&
+              items &&
+              items.length > 0 &&
+              items.map((item) => (
+                <HorizontalListItem
+                  key={item.id}
+                  imgUrl={item?.images[0]?.url}
+                  id={item.id}
+                  title={item.name}
+                  subtitle={
+                    item.type === "artist"
+                      ? item.genres[0]
+                      : item.artists[0].name
+                  }
+                  type={item.type}
+                  item={item}
+                />
+              ))}
           </ul>
         </>
       )}
@@ -38,14 +47,18 @@ function HorizontalList({
           <h2 className="section-title title-browse-categories">{title}</h2>
 
           <ul className={styles.horList}>
-            {items.map((item, i) => (
-              <BrowseListItem
-                key={i}
-                imgUrl={item?.images[0]?.url}
-                title={genreNames[i][0].toUpperCase() + genreNames[i].slice(1)}
-                genreName={genreNames[i]}
-              />
-            ))}
+            {items &&
+              items.length > 0 &&
+              items.map((item, i) => (
+                <BrowseListItem
+                  key={i}
+                  imgUrl={item?.images[0]?.url}
+                  title={
+                    genreNames[i][0].toUpperCase() + genreNames[i].slice(1)
+                  }
+                  genreName={genreNames[i]}
+                />
+              ))}
           </ul>
         </>
       )}

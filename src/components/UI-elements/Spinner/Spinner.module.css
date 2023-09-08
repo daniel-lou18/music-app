@@ -14,6 +14,10 @@
   animation: spin 1s ease infinite;
 }
 
+:global(.releases-albums) .spinner {
+  top: 100px;
+}
+
 @media screen and (max-width: 600px) {
   .spinner {
     top: 50vh;

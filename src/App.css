@@ -7,6 +7,7 @@
 }
 
 .content-container {
+  min-height: 100vh;
   padding: 15px 0px 8px 25px;
   background-color: var(--darkest-bg-color);
   margin-left: 8px;

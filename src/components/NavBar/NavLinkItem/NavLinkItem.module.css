@@ -48,8 +48,6 @@
   font-weight: 500;
 }
 
-.listItem:first-child .navLink:global(.active) {
-}
 .navLink:hover,
 .navLink:global(.active) {
   color: var(--main-font-color);
@@ -73,6 +71,16 @@
 
 .textWrapper {
   margin-left: 20px;
+}
+
+.listItem:not(:first-child) .navLink:global(.active) svg {
+  animation: 0.2s linear alternate scale-up-down;
+}
+
+@keyframes scale-up-down {
+  to {
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (max-width: 1200px) {

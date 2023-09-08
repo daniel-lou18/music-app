@@ -9,41 +9,67 @@ export const HomeProvider = ({ children }) => {
   const { token } = useAuth();
 
   const initialState = {
-    data: [],
-    newReleases: [],
-    query: "",
-    error: "",
-    isLoading: false,
+    newReleasesData: [],
+    popularTracksData: [],
+    errorReleases: "",
+    errorTracks: "",
+    isLoadingReleases: false,
+    isLoadingTracks: false,
   };
 
   const reducer = (state, action) => {
     switch (action.type) {
-      case "loading":
-        return { ...state, error: "", isLoading: true };
+      case "new-releases/loading":
+        return { ...state, errorReleases: "", isLoadingReleases: true };
+      case "popular-tracks/loading":
+        return { ...state, errorTracks: "", isLoadingTracks: true };
       case "new-releases/loaded":
         return {
           ...state,
-          newReleases: action.payload,
-          isLoading: false,
+          newReleasesData: action.payload,
+          isLoadingReleases: false,
         };
-      case "error":
-        return { ...state, error: action.payload.message, isLoading: false };
+      case "popular-tracks/loaded":
+        return {
+          ...state,
+          popularTracksData: action.payload,
+          isLoadingTracks: false,
+        };
+      case "new-releases/error":
+        return {
+          ...state,
+          errorReleases: action.payload.message,
+          isLoadingReleases: false,
+        };
+      case "popular-tracks/error":
+        return {
+          ...state,
+          errorTracks: action.payload.message,
+          isLoadingTracks: false,
+        };
       default:
         return state;
     }
   };
 
-  const [{ data, newReleases, query, error }, dispatch] = useReducer(
-    reducer,
-    initialState
-  );
+  const [
+    {
+      newReleasesData,
+      popularTracksData,
+      isLoadingTracks,
+      isLoadingReleases,
+      errorTracks,
+      errorReleases,
+    },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   useEffect(() => {
     if (!token) return;
 
     const getNewReleases = async () => {
       try {
-        dispatch({ type: "loading" });
+        dispatch({ type: "new-releases/loading" });
         const res = await fetch(
           `${BASE_URL}/browse/new-releases?country=FR&limit=25`,
           {
@@ -55,19 +81,58 @@ export const HomeProvider = ({ children }) => {
           }
         );
         const data = await res.json();
-        console.log(data);
         dispatch({ type: "new-releases/loaded", payload: data.albums.items });
       } catch (err) {
         console.error(err);
-        dispatch({ type: "error", payload: err });
+        dispatch({ type: "new-releases/error", payload: err });
       }
     };
 
     getNewReleases();
   }, [token]);
 
+  useEffect(() => {
+    if (!token) return;
+
+    const getPopularTracks = async () => {
+      try {
+        dispatch({ type: "popular-tracks/loading" });
+        const res = await fetch(
+          `${BASE_URL}/recommendations?limit=25&market=FR&seed_genres=pop&target_popularity=90`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
+        const data = await res.json();
+        const dataWithAudio = data.tracks
+          .filter((track) => track.preview_url)
+          .slice(0, 5);
+        dispatch({ type: "popular-tracks/loaded", payload: dataWithAudio });
+      } catch (err) {
+        console.error(err);
+        dispatch({ type: "popular-tracks/error", payload: err });
+      }
+    };
+
+    getPopularTracks();
+  }, [token]);
+
   return (
-    <HomeContext.Provider value={{ data, newReleases, query, error, dispatch }}>
+    <HomeContext.Provider
+      value={{
+        newReleasesData,
+        popularTracksData,
+        isLoadingReleases,
+        isLoadingTracks,
+        errorReleases,
+        errorTracks,
+        dispatch,
+      }}
+    >
       {children}
     </HomeContext.Provider>
   );

@@ -4,6 +4,10 @@
   row-gap: 20px;
 }
 
+.releases-albums {
+  position: relative;
+}
+
 @media screen and (max-width: 1200px) {
   .horList {
     grid-template-columns: repeat(4, 1fr);

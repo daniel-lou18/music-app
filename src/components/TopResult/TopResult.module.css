@@ -149,6 +149,7 @@
 
 @media screen and (max-width: 1200px) {
   h3.itemTitle {
+    line-height: 1.8rem;
     font-size: 1.2rem;
   }
 
@@ -178,6 +179,12 @@
 
   h4.secondSubtitle {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h3.itemTitle {
+    line-height: 1rem;
   }
 }
 
