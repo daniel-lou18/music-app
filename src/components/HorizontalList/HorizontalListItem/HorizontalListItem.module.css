@@ -4,13 +4,21 @@
   background-color: var(--dark-bg-color);
 }
 
+.imgWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .listItemWrapper {
   margin-right: 25px;
 }
 
 .listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   color: inherit;
-  display: block;
   height: 100%;
   width: 100%;
   position: relative;
@@ -22,10 +30,7 @@
   transition: background-color 0.3s;
 }
 
-.listItem:hover {
-  background-color: var(--medium-hover-color);
-}
-
+.listItem:hover,
 .listItem:active {
   background-color: var(--medium-hover-color);
 }

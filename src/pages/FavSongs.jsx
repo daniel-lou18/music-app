@@ -31,7 +31,10 @@ function FavSongs() {
       {tracks.length === 0 && <div>No favorite tracks...</div>}
       {tracks.length > 0 && (
         <>
-          <ListContainer type="favoritePage">
+          <ListContainer
+            type="favoritePage"
+            className="container-favorite-songs"
+          >
             <TrackList tracks={tracks} title="Favorite songs" type="big" />
           </ListContainer>
         </>

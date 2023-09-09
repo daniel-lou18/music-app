@@ -37,6 +37,7 @@ export const RatedProvider = ({ children }) => {
   };
 
   const [{ ratedData }, dispatchRated] = useReducer(reducer, initialState);
+  console.log(ratedData);
 
   useEffect(() => {
     const fetchRated = async () => {
@@ -44,7 +45,6 @@ export const RatedProvider = ({ children }) => {
         dispatchRated({ type: "loading" });
         const res = await fetch(`${BASE_URL}/rated`);
         const data = await res.json();
-        console.log(data);
         dispatchRated({ type: "loaded", payload: data });
       } catch (err) {
         console.error(err);
@@ -66,7 +66,6 @@ export const RatedProvider = ({ children }) => {
         body: JSON.stringify({ ...item, rating }),
       });
       const data = await res.json();
-      console.log(data);
       dispatchRated({ type: "added", payload: data });
     } catch (err) {
       console.error(err);

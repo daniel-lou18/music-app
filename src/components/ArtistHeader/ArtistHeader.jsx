@@ -12,7 +12,6 @@ function ArtistHeader({ title }) {
   const { topResult } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
-  console.log(topResult);
 
   if (!topResult)
     return (

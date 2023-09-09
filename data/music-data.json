@@ -4528,1266 +4528,6 @@
   ],
   "rated": [
     {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-          },
-          "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-          "id": "49jTY62Cpw3RYo4dLuG43W",
-          "name": "Cian Ducrot",
-          "type": "artist",
-          "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-        }
-      ],
-      "copyrights": [
-        {
-          "text": "© 2023 Universal Music Operations Limited",
-          "type": "C"
-        },
-        {
-          "text": "℗ 2023 Universal Music Operations Limited",
-          "type": "P"
-        }
-      ],
-      "external_ids": {
-        "upc": "00602455512727"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/4T0KHJNt0mCuAyXSXfhQc3"
-      },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/albums/4T0KHJNt0mCuAyXSXfhQc3",
-      "id": "4T0KHJNt0mCuAyXSXfhQc3",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b2736d06bb24724f5f0547cb369a",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e026d06bb24724f5f0547cb369a",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d000048516d06bb24724f5f0547cb369a",
-          "width": 64
-        }
-      ],
-      "is_playable": true,
-      "label": "Polydor Records",
-      "name": "Victory",
-      "popularity": 29,
-      "release_date": "2023-08-04",
-      "release_date_precision": "day",
-      "total_tracks": 14,
-      "tracks": {
-        "href": "https://api.spotify.com/v1/albums/4T0KHJNt0mCuAyXSXfhQc3/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
-        "items": [
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 191601,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5WIvKzCclkvt7EK89DLttO"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5WIvKzCclkvt7EK89DLttO",
-            "id": "5WIvKzCclkvt7EK89DLttO",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Victory",
-            "preview_url": null,
-            "track_number": 1,
-            "type": "track",
-            "uri": "spotify:track:5WIvKzCclkvt7EK89DLttO"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 172547,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/04zpnoSROKFTCfgkoPcZ5A"
-            },
-            "href": "https://api.spotify.com/v1/tracks/04zpnoSROKFTCfgkoPcZ5A",
-            "id": "04zpnoSROKFTCfgkoPcZ5A",
-            "is_local": false,
-            "is_playable": true,
-            "name": "I'll Be Waiting",
-            "preview_url": null,
-            "track_number": 2,
-            "type": "track",
-            "uri": "spotify:track:04zpnoSROKFTCfgkoPcZ5A"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 174752,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5RweZJHqfLlEoz9rvmGFES"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5RweZJHqfLlEoz9rvmGFES",
-            "id": "5RweZJHqfLlEoz9rvmGFES",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Him",
-            "preview_url": null,
-            "track_number": 3,
-            "type": "track",
-            "uri": "spotify:track:5RweZJHqfLlEoz9rvmGFES"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 232944,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2pmZzKAI2ZWCKEiBPTD1fi"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2pmZzKAI2ZWCKEiBPTD1fi",
-            "id": "2pmZzKAI2ZWCKEiBPTD1fi",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Heaven",
-            "preview_url": null,
-            "track_number": 4,
-            "type": "track",
-            "uri": "spotify:track:2pmZzKAI2ZWCKEiBPTD1fi"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 240552,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1QiGePKveZjlbyZEcdYyF8"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1QiGePKveZjlbyZEcdYyF8",
-            "id": "1QiGePKveZjlbyZEcdYyF8",
-            "is_local": false,
-            "is_playable": true,
-            "name": "How Do You Know",
-            "preview_url": null,
-            "track_number": 5,
-            "type": "track",
-            "uri": "spotify:track:1QiGePKveZjlbyZEcdYyF8"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 221321,
-            "explicit": true,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0DuTrWPjPQNgMhar1fkD3C"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0DuTrWPjPQNgMhar1fkD3C",
-            "id": "0DuTrWPjPQNgMhar1fkD3C",
-            "is_local": false,
-            "is_playable": true,
-            "name": "All For You",
-            "preview_url": null,
-            "track_number": 6,
-            "type": "track",
-            "uri": "spotify:track:0DuTrWPjPQNgMhar1fkD3C"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 199591,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4h1d5zG9QEDxLfm418gWS6"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4h1d5zG9QEDxLfm418gWS6",
-            "id": "4h1d5zG9QEDxLfm418gWS6",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Step Dad",
-            "preview_url": null,
-            "track_number": 7,
-            "type": "track",
-            "uri": "spotify:track:4h1d5zG9QEDxLfm418gWS6"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 171640,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1hHJJGDSRQRuDGMQsNEikT"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1hHJJGDSRQRuDGMQsNEikT",
-            "id": "1hHJJGDSRQRuDGMQsNEikT",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Mama",
-            "preview_url": null,
-            "track_number": 8,
-            "type": "track",
-            "uri": "spotify:track:1hHJJGDSRQRuDGMQsNEikT"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 241055,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3Fl5MQNYh1MIpAOpHYAVpr"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3Fl5MQNYh1MIpAOpHYAVpr",
-            "id": "3Fl5MQNYh1MIpAOpHYAVpr",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Hurt When You Hurt Me",
-            "preview_url": null,
-            "track_number": 9,
-            "type": "track",
-            "uri": "spotify:track:3Fl5MQNYh1MIpAOpHYAVpr"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 232932,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/703Mq1V6FuaVu64GDxwbSf"
-            },
-            "href": "https://api.spotify.com/v1/tracks/703Mq1V6FuaVu64GDxwbSf",
-            "id": "703Mq1V6FuaVu64GDxwbSf",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Blame It On You",
-            "preview_url": null,
-            "track_number": 10,
-            "type": "track",
-            "uri": "spotify:track:703Mq1V6FuaVu64GDxwbSf"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 191103,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4V50U0qH1s72n2J8Kxavdu"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4V50U0qH1s72n2J8Kxavdu",
-            "id": "4V50U0qH1s72n2J8Kxavdu",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Endless Nights",
-            "preview_url": null,
-            "track_number": 11,
-            "type": "track",
-            "uri": "spotify:track:4V50U0qH1s72n2J8Kxavdu"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 202193,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3aOgskwxDLNY9Xz6hE2zzm"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3aOgskwxDLNY9Xz6hE2zzm",
-            "id": "3aOgskwxDLNY9Xz6hE2zzm",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Part Of Me",
-            "preview_url": null,
-            "track_number": 12,
-            "type": "track",
-            "uri": "spotify:track:3aOgskwxDLNY9Xz6hE2zzm"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 156627,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3BRI2KJHYRJfse5DYmyoxM"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3BRI2KJHYRJfse5DYmyoxM",
-            "id": "3BRI2KJHYRJfse5DYmyoxM",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Everyone Who Falls In Love (Has Someone Else They’re Thinking Of)",
-            "preview_url": null,
-            "track_number": 13,
-            "type": "track",
-            "uri": "spotify:track:3BRI2KJHYRJfse5DYmyoxM"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/49jTY62Cpw3RYo4dLuG43W"
-                },
-                "href": "https://api.spotify.com/v1/artists/49jTY62Cpw3RYo4dLuG43W",
-                "id": "49jTY62Cpw3RYo4dLuG43W",
-                "name": "Cian Ducrot",
-                "type": "artist",
-                "uri": "spotify:artist:49jTY62Cpw3RYo4dLuG43W"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 184716,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3lBSPYFej4oBeqRZfbC6Rl"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3lBSPYFej4oBeqRZfbC6Rl",
-            "id": "3lBSPYFej4oBeqRZfbC6Rl",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Thank God You Stayed",
-            "preview_url": null,
-            "track_number": 14,
-            "type": "track",
-            "uri": "spotify:track:3lBSPYFej4oBeqRZfbC6Rl"
-          }
-        ],
-        "limit": 50,
-        "next": null,
-        "offset": 0,
-        "previous": null,
-        "total": 14
-      },
-      "type": "album",
-      "uri": "spotify:album:4T0KHJNt0mCuAyXSXfhQc3",
-      "rating": 3
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6NcwdXsdGwBdI3Wglc526G"
-      },
-      "followers": {
-        "href": null,
-        "total": 1331
-      },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/artists/6NcwdXsdGwBdI3Wglc526G",
-      "id": "6NcwdXsdGwBdI3Wglc526G",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebf776b7d5812d3c7b06cef4d9",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174f776b7d5812d3c7b06cef4d9",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178f776b7d5812d3c7b06cef4d9",
-          "width": 160
-        }
-      ],
-      "name": "I Hate You Just Kidding",
-      "popularity": 6,
-      "type": "artist",
-      "uri": "spotify:artist:6NcwdXsdGwBdI3Wglc526G",
-      "rating": 1
-    },
-    {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-          },
-          "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-          "id": "0IfkFoyLbsgahVvNfPnV2y",
-          "name": "Sylvain Chauveau",
-          "type": "artist",
-          "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-        }
-      ],
-      "copyrights": [
-        {
-          "text": "2022 Sub Rosa",
-          "type": "C"
-        },
-        {
-          "text": "2022 Sub Rosa",
-          "type": "P"
-        }
-      ],
-      "external_ids": {
-        "upc": "197210897930"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/65rES6o5FJWS0ZqKd1OIlg"
-      },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/albums/65rES6o5FJWS0ZqKd1OIlg",
-      "id": "65rES6o5FJWS0ZqKd1OIlg",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b27325e7e42f7120ecd514277561",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e0225e7e42f7120ecd514277561",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d0000485125e7e42f7120ecd514277561",
-          "width": 64
-        }
-      ],
-      "is_playable": true,
-      "label": "Sub Rosa",
-      "name": "l'effet rebond (version silicium)",
-      "popularity": 15,
-      "release_date": "2022-10-14",
-      "release_date_precision": "day",
-      "total_tracks": 12,
-      "tracks": {
-        "href": "https://api.spotify.com/v1/albums/65rES6o5FJWS0ZqKd1OIlg/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
-        "items": [
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
-                },
-                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
-                "id": "4Tzunwe7m9sBMSsmEV49Qo",
-                "name": "Machinefabriek",
-                "type": "artist",
-                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 1046532,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3nuJAaZZR9OuTqzPPzAH54"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3nuJAaZZR9OuTqzPPzAH54",
-            "id": "3nuJAaZZR9OuTqzPPzAH54",
-            "is_local": false,
-            "is_playable": true,
-            "name": "SCG",
-            "preview_url": "https://p.scdn.co/mp3-preview/a6068d020691901c71dad8b07e59aaf336632843?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 1,
-            "type": "track",
-            "uri": "spotify:track:3nuJAaZZR9OuTqzPPzAH54"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/3haVJx9TUcufYl1rPyH0iv"
-                },
-                "href": "https://api.spotify.com/v1/artists/3haVJx9TUcufYl1rPyH0iv",
-                "id": "3haVJx9TUcufYl1rPyH0iv",
-                "name": "Peter Broderick",
-                "type": "artist",
-                "uri": "spotify:artist:3haVJx9TUcufYl1rPyH0iv"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
-                },
-                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
-                "id": "4Tzunwe7m9sBMSsmEV49Qo",
-                "name": "Machinefabriek",
-                "type": "artist",
-                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2We1E7U9a19UsuZPiCcw8O"
-                },
-                "href": "https://api.spotify.com/v1/artists/2We1E7U9a19UsuZPiCcw8O",
-                "id": "2We1E7U9a19UsuZPiCcw8O",
-                "name": "Rainier Lericolais",
-                "type": "artist",
-                "uri": "spotify:artist:2We1E7U9a19UsuZPiCcw8O"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 53298,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5qjvbhcrxRHEApNsbfCjWg"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5qjvbhcrxRHEApNsbfCjWg",
-            "id": "5qjvbhcrxRHEApNsbfCjWg",
-            "is_local": false,
-            "is_playable": true,
-            "name": "DC",
-            "preview_url": "https://p.scdn.co/mp3-preview/8d7cf2ef49d9f5421829722525db62132b14e286?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 2,
-            "type": "track",
-            "uri": "spotify:track:5qjvbhcrxRHEApNsbfCjWg"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 43367,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2TwiXciTQ5AyH7IaZss2li"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2TwiXciTQ5AyH7IaZss2li",
-            "id": "2TwiXciTQ5AyH7IaZss2li",
-            "is_local": false,
-            "is_playable": true,
-            "name": "AN",
-            "preview_url": "https://p.scdn.co/mp3-preview/7a1f2057b3a84eb185a5925164989d8107f9b63a?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 3,
-            "type": "track",
-            "uri": "spotify:track:2TwiXciTQ5AyH7IaZss2li"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 49059,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0qM3Deq1usl6xbAuSdLgxJ"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0qM3Deq1usl6xbAuSdLgxJ",
-            "id": "0qM3Deq1usl6xbAuSdLgxJ",
-            "is_local": false,
-            "is_playable": true,
-            "name": "LS",
-            "preview_url": "https://p.scdn.co/mp3-preview/ebdec690868da1ec81a3bdf3d5b5e1be1e80f76f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 4,
-            "type": "track",
-            "uri": "spotify:track:0qM3Deq1usl6xbAuSdLgxJ"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/3haVJx9TUcufYl1rPyH0iv"
-                },
-                "href": "https://api.spotify.com/v1/artists/3haVJx9TUcufYl1rPyH0iv",
-                "id": "3haVJx9TUcufYl1rPyH0iv",
-                "name": "Peter Broderick",
-                "type": "artist",
-                "uri": "spotify:artist:3haVJx9TUcufYl1rPyH0iv"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
-                },
-                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
-                "id": "4Tzunwe7m9sBMSsmEV49Qo",
-                "name": "Machinefabriek",
-                "type": "artist",
-                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 55718,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5CS6phY74Bdrjc9gPd2C29"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5CS6phY74Bdrjc9gPd2C29",
-            "id": "5CS6phY74Bdrjc9gPd2C29",
-            "is_local": false,
-            "is_playable": true,
-            "name": "TM",
-            "preview_url": "https://p.scdn.co/mp3-preview/0b59c133bb78312a736b6bcec5964c6d6d72a984?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 5,
-            "type": "track",
-            "uri": "spotify:track:5CS6phY74Bdrjc9gPd2C29"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 61297,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5qjc3QxoVzIoI2sH7DwyWW"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5qjc3QxoVzIoI2sH7DwyWW",
-            "id": "5qjc3QxoVzIoI2sH7DwyWW",
-            "is_local": false,
-            "is_playable": true,
-            "name": "MB",
-            "preview_url": "https://p.scdn.co/mp3-preview/6367c938f1c5daf61029407f89a7de011af864e2?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 6,
-            "type": "track",
-            "uri": "spotify:track:5qjc3QxoVzIoI2sH7DwyWW"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 62488,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/06j1vg3NYCiVg4TPUEDibZ"
-            },
-            "href": "https://api.spotify.com/v1/tracks/06j1vg3NYCiVg4TPUEDibZ",
-            "id": "06j1vg3NYCiVg4TPUEDibZ",
-            "is_local": false,
-            "is_playable": true,
-            "name": "IA",
-            "preview_url": "https://p.scdn.co/mp3-preview/70fae146bdc0ffb48c832026d5dc4d5d46600fd6?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 7,
-            "type": "track",
-            "uri": "spotify:track:06j1vg3NYCiVg4TPUEDibZ"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/3haVJx9TUcufYl1rPyH0iv"
-                },
-                "href": "https://api.spotify.com/v1/artists/3haVJx9TUcufYl1rPyH0iv",
-                "id": "3haVJx9TUcufYl1rPyH0iv",
-                "name": "Peter Broderick",
-                "type": "artist",
-                "uri": "spotify:artist:3haVJx9TUcufYl1rPyH0iv"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4Tzunwe7m9sBMSsmEV49Qo"
-                },
-                "href": "https://api.spotify.com/v1/artists/4Tzunwe7m9sBMSsmEV49Qo",
-                "id": "4Tzunwe7m9sBMSsmEV49Qo",
-                "name": "Machinefabriek",
-                "type": "artist",
-                "uri": "spotify:artist:4Tzunwe7m9sBMSsmEV49Qo"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 77916,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5RhXln7KYHvOUeRbMNmajP"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5RhXln7KYHvOUeRbMNmajP",
-            "id": "5RhXln7KYHvOUeRbMNmajP",
-            "is_local": false,
-            "is_playable": true,
-            "name": "LN",
-            "preview_url": "https://p.scdn.co/mp3-preview/3fb3b81b99ffef2615318e39e1d0c8e9fe3df220?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 8,
-            "type": "track",
-            "uri": "spotify:track:5RhXln7KYHvOUeRbMNmajP"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2We1E7U9a19UsuZPiCcw8O"
-                },
-                "href": "https://api.spotify.com/v1/artists/2We1E7U9a19UsuZPiCcw8O",
-                "id": "2We1E7U9a19UsuZPiCcw8O",
-                "name": "Rainier Lericolais",
-                "type": "artist",
-                "uri": "spotify:artist:2We1E7U9a19UsuZPiCcw8O"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 27697,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1kl7xe04Dvt1l8TQtKHYGY"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1kl7xe04Dvt1l8TQtKHYGY",
-            "id": "1kl7xe04Dvt1l8TQtKHYGY",
-            "is_local": false,
-            "is_playable": true,
-            "name": "JG",
-            "preview_url": "https://p.scdn.co/mp3-preview/4b291194055c195f035bac9da10765740488b007?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 9,
-            "type": "track",
-            "uri": "spotify:track:1kl7xe04Dvt1l8TQtKHYGY"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 33529,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7IeDCceFGwu3DBj8O1QHv4"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7IeDCceFGwu3DBj8O1QHv4",
-            "id": "7IeDCceFGwu3DBj8O1QHv4",
-            "is_local": false,
-            "is_playable": true,
-            "name": "EE",
-            "preview_url": "https://p.scdn.co/mp3-preview/da0873245f92a5585c409409cbec2d45dbe33964?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 10,
-            "type": "track",
-            "uri": "spotify:track:7IeDCceFGwu3DBj8O1QHv4"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 140952,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5eajiQxYuIGtiKvn1RqtbF"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5eajiQxYuIGtiKvn1RqtbF",
-            "id": "5eajiQxYuIGtiKvn1RqtbF",
-            "is_local": false,
-            "is_playable": true,
-            "name": "PG",
-            "preview_url": "https://p.scdn.co/mp3-preview/8ba1a59c8dd961780adeb680d33799e08a49ae3c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 11,
-            "type": "track",
-            "uri": "spotify:track:5eajiQxYuIGtiKvn1RqtbF"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0IfkFoyLbsgahVvNfPnV2y"
-                },
-                "href": "https://api.spotify.com/v1/artists/0IfkFoyLbsgahVvNfPnV2y",
-                "id": "0IfkFoyLbsgahVvNfPnV2y",
-                "name": "Sylvain Chauveau",
-                "type": "artist",
-                "uri": "spotify:artist:0IfkFoyLbsgahVvNfPnV2y"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2y779qDmfBG7mQvsCTLWXw"
-                },
-                "href": "https://api.spotify.com/v1/artists/2y779qDmfBG7mQvsCTLWXw",
-                "id": "2y779qDmfBG7mQvsCTLWXw",
-                "name": "Romke Kleefstra",
-                "type": "artist",
-                "uri": "spotify:artist:2y779qDmfBG7mQvsCTLWXw"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 365909,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/6V97VnSk2qOj6fKC6Ghq4M"
-            },
-            "href": "https://api.spotify.com/v1/tracks/6V97VnSk2qOj6fKC6Ghq4M",
-            "id": "6V97VnSk2qOj6fKC6Ghq4M",
-            "is_local": false,
-            "is_playable": true,
-            "name": "CD",
-            "preview_url": "https://p.scdn.co/mp3-preview/71749fff03aca03ba7170e5c584801432b7804ce?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 12,
-            "type": "track",
-            "uri": "spotify:track:6V97VnSk2qOj6fKC6Ghq4M"
-          }
-        ],
-        "limit": 50,
-        "next": null,
-        "offset": 0,
-        "previous": null,
-        "total": 12
-      },
-      "type": "album",
-      "uri": "spotify:album:65rES6o5FJWS0ZqKd1OIlg",
-      "rating": 1
-    },
-    {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1tIVczyxv0fjSTCGBKyG60"
-          },
-          "href": "https://api.spotify.com/v1/artists/1tIVczyxv0fjSTCGBKyG60",
-          "id": "1tIVczyxv0fjSTCGBKyG60",
-          "name": "Sarah",
-          "type": "artist",
-          "uri": "spotify:artist:1tIVczyxv0fjSTCGBKyG60"
-        }
-      ],
-      "available_markets": [
-        "AD",
-        "AE",
-        "AG",
-        "AL",
-        "AM",
-        "AO",
-        "AR",
-        "AT",
-        "AU",
-        "AZ",
-        "BA",
-        "BB",
-        "BD",
-        "BE",
-        "BF",
-        "BG",
-        "BH",
-        "BI",
-        "BJ",
-        "BN",
-        "BO",
-        "BR",
-        "BS",
-        "BT",
-        "BW",
-        "BY",
-        "BZ",
-        "CA",
-        "CD",
-        "CG",
-        "CH",
-        "CI",
-        "CL",
-        "CM",
-        "CO",
-        "CR",
-        "CV",
-        "CW",
-        "CY",
-        "CZ",
-        "DE",
-        "DJ",
-        "DK",
-        "DM",
-        "DO",
-        "DZ",
-        "EC",
-        "EE",
-        "EG",
-        "ES",
-        "ET",
-        "FI",
-        "FJ",
-        "FM",
-        "FR",
-        "GA",
-        "GB",
-        "GD",
-        "GE",
-        "GH",
-        "GM",
-        "GN",
-        "GQ",
-        "GR",
-        "GT",
-        "GW",
-        "GY",
-        "HK",
-        "HN",
-        "HR",
-        "HT",
-        "HU",
-        "ID",
-        "IE",
-        "IL",
-        "IN",
-        "IQ",
-        "IS",
-        "IT",
-        "JM",
-        "JO",
-        "JP",
-        "KE",
-        "KG",
-        "KH",
-        "KI",
-        "KM",
-        "KN",
-        "KR",
-        "KW",
-        "KZ",
-        "LA",
-        "LB",
-        "LC",
-        "LI",
-        "LK",
-        "LR",
-        "LS",
-        "LT",
-        "LU",
-        "LV",
-        "LY",
-        "MA",
-        "MC",
-        "MD",
-        "ME",
-        "MG",
-        "MH",
-        "MK",
-        "ML",
-        "MN",
-        "MO",
-        "MR",
-        "MT",
-        "MU",
-        "MV",
-        "MW",
-        "MX",
-        "MY",
-        "MZ",
-        "NA",
-        "NE",
-        "NG",
-        "NI",
-        "NL",
-        "NO",
-        "NP",
-        "NR",
-        "NZ",
-        "OM",
-        "PA",
-        "PE",
-        "PG",
-        "PH",
-        "PK",
-        "PL",
-        "PS",
-        "PT",
-        "PW",
-        "PY",
-        "QA",
-        "RO",
-        "RS",
-        "RW",
-        "SA",
-        "SB",
-        "SC",
-        "SE",
-        "SG",
-        "SI",
-        "SK",
-        "SL",
-        "SM",
-        "SN",
-        "SR",
-        "ST",
-        "SV",
-        "SZ",
-        "TD",
-        "TG",
-        "TH",
-        "TJ",
-        "TL",
-        "TN",
-        "TO",
-        "TR",
-        "TT",
-        "TV",
-        "TW",
-        "TZ",
-        "UA",
-        "UG",
-        "US",
-        "UY",
-        "UZ",
-        "VC",
-        "VE",
-        "VN",
-        "VU",
-        "WS",
-        "XK",
-        "ZA",
-        "ZM",
-        "ZW"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/0gc4dbWwUaEh1wyP90o8IZ"
-      },
-      "href": "https://api.spotify.com/v1/albums/0gc4dbWwUaEh1wyP90o8IZ",
-      "id": "0gc4dbWwUaEh1wyP90o8IZ",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b273f74f0b00db9409b5e8a83c78",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e02f74f0b00db9409b5e8a83c78",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d00004851f74f0b00db9409b5e8a83c78",
-          "width": 64
-        }
-      ],
-      "name": "Sarah zingt de leukste kinderliedjes",
-      "release_date": "2021-04-02",
-      "release_date_precision": "day",
-      "total_tracks": 32,
-      "type": "album",
-      "uri": "spotify:album:0gc4dbWwUaEh1wyP90o8IZ",
-      "rating": 5
-    },
-    {
       "album": {
         "album_type": "single",
         "artists": [
@@ -7457,355 +6197,6 @@
       "rating": 4
     },
     {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-          },
-          "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-          "id": "2hGh5VOeeqimQFxqXvfCUf",
-          "name": "John Coltrane",
-          "type": "artist",
-          "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-        }
-      ],
-      "copyrights": [
-        {
-          "text": "© 2005 Atlantic Recording Corp. Manufactured & Marketed by Warner Strategic Marketing",
-          "type": "C"
-        },
-        {
-          "text": "℗ 2005 Atlantic Recording Corp. Manufactured & Marketed by Warner Strategic Marketing",
-          "type": "P"
-        }
-      ],
-      "external_ids": {
-        "upc": "081227558864"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/2h8x8HL7N3grURq1OM77ja"
-      },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/albums/2h8x8HL7N3grURq1OM77ja",
-      "id": "2h8x8HL7N3grURq1OM77ja",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b27367b13bfccfa3e7458b8ac3dc",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e0267b13bfccfa3e7458b8ac3dc",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d0000485167b13bfccfa3e7458b8ac3dc",
-          "width": 64
-        }
-      ],
-      "is_playable": true,
-      "label": "Rhino Atlantic",
-      "name": "Coltrane's Sound",
-      "popularity": 40,
-      "release_date": "1964-06",
-      "release_date_precision": "month",
-      "total_tracks": 8,
-      "tracks": {
-        "href": "https://api.spotify.com/v1/albums/2h8x8HL7N3grURq1OM77ja/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
-        "items": [
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 411293,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5rVVbOL9bl2RmAh9aNqPp8"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5rVVbOL9bl2RmAh9aNqPp8",
-            "id": "5rVVbOL9bl2RmAh9aNqPp8",
-            "is_local": false,
-            "is_playable": true,
-            "name": "The Night Has a Thousand Eyes",
-            "preview_url": "https://p.scdn.co/mp3-preview/b8263ff37722e07b946eca4d6a9568ad2d487da5?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 1,
-            "type": "track",
-            "uri": "spotify:track:5rVVbOL9bl2RmAh9aNqPp8"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 251293,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0Ve1sQdEcXQe0ZpS8AWDPC"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0Ve1sQdEcXQe0ZpS8AWDPC",
-            "id": "0Ve1sQdEcXQe0ZpS8AWDPC",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Central Park West",
-            "preview_url": "https://p.scdn.co/mp3-preview/eea736452b0750ce3c8612badc953d3e3c244f46?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 2,
-            "type": "track",
-            "uri": "spotify:track:0Ve1sQdEcXQe0ZpS8AWDPC"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 411306,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/08fPORjYOPjT9Vu6MVrlB5"
-            },
-            "href": "https://api.spotify.com/v1/tracks/08fPORjYOPjT9Vu6MVrlB5",
-            "id": "08fPORjYOPjT9Vu6MVrlB5",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Liberia",
-            "preview_url": "https://p.scdn.co/mp3-preview/ebf3101a24f4c9e1ed7ffffc0e1622a738eab67c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 3,
-            "type": "track",
-            "uri": "spotify:track:08fPORjYOPjT9Vu6MVrlB5"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 337133,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/26bnmztmGcY03sO1uWmoTd"
-            },
-            "href": "https://api.spotify.com/v1/tracks/26bnmztmGcY03sO1uWmoTd",
-            "id": "26bnmztmGcY03sO1uWmoTd",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Body and Soul",
-            "preview_url": "https://p.scdn.co/mp3-preview/d46d8cc88fa09ed8b002fb79b3b6c9d60b577767?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 4,
-            "type": "track",
-            "uri": "spotify:track:26bnmztmGcY03sO1uWmoTd"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 487279,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1OtISG0K02k06m1BENey4H"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1OtISG0K02k06m1BENey4H",
-            "id": "1OtISG0K02k06m1BENey4H",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Equinox",
-            "preview_url": "https://p.scdn.co/mp3-preview/bf9bd3fea3c76904f96de0aec143eaa1e788b9e3?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 5,
-            "type": "track",
-            "uri": "spotify:track:1OtISG0K02k06m1BENey4H"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 351373,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3aEshDcbhyoOtsxbP0RYoQ"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3aEshDcbhyoOtsxbP0RYoQ",
-            "id": "3aEshDcbhyoOtsxbP0RYoQ",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Satellite",
-            "preview_url": "https://p.scdn.co/mp3-preview/8d59c561a3c70d06db03297ed5ce4f2e6fc76577?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 6,
-            "type": "track",
-            "uri": "spotify:track:3aEshDcbhyoOtsxbP0RYoQ"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 373000,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3m88YPqvxIj4VV0JJKR5FZ"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3m88YPqvxIj4VV0JJKR5FZ",
-            "id": "3m88YPqvxIj4VV0JJKR5FZ",
-            "is_local": false,
-            "is_playable": true,
-            "name": "26-2",
-            "preview_url": "https://p.scdn.co/mp3-preview/4bc95fee4cb297d761752d7bd414b9fa79747c76?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 7,
-            "type": "track",
-            "uri": "spotify:track:3m88YPqvxIj4VV0JJKR5FZ"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2hGh5VOeeqimQFxqXvfCUf"
-                },
-                "href": "https://api.spotify.com/v1/artists/2hGh5VOeeqimQFxqXvfCUf",
-                "id": "2hGh5VOeeqimQFxqXvfCUf",
-                "name": "John Coltrane",
-                "type": "artist",
-                "uri": "spotify:artist:2hGh5VOeeqimQFxqXvfCUf"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 359640,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4houPiSUb7mgV4bzIsLDjX"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4houPiSUb7mgV4bzIsLDjX",
-            "id": "4houPiSUb7mgV4bzIsLDjX",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Body and Soul - Alternate Take",
-            "preview_url": "https://p.scdn.co/mp3-preview/f2faf99a518f3cc41e3c6c0be8cc7b608866cc83?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 8,
-            "type": "track",
-            "uri": "spotify:track:4houPiSUb7mgV4bzIsLDjX"
-          }
-        ],
-        "limit": 50,
-        "next": null,
-        "offset": 0,
-        "previous": null,
-        "total": 8
-      },
-      "type": "album",
-      "uri": "spotify:album:2h8x8HL7N3grURq1OM77ja",
-      "rating": 5
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/60df5JBRRPcnSpsIMxxwQm"
-      },
-      "followers": {
-        "href": null,
-        "total": 2124964
-      },
-      "genres": [
-        "classic soul",
-        "memphis soul",
-        "soul",
-        "soul blues",
-        "southern soul",
-        "vocal jazz"
-      ],
-      "href": "https://api.spotify.com/v1/artists/60df5JBRRPcnSpsIMxxwQm",
-      "id": "60df5JBRRPcnSpsIMxxwQm",
-      "images": [
-        {
-          "height": 751,
-          "url": "https://i.scdn.co/image/4ad89c805aff0fb76b01b6b62b39e21fcd8943c3",
-          "width": 1000
-        },
-        {
-          "height": 481,
-          "url": "https://i.scdn.co/image/a5897eff01844c42d894a586e618ebc4aa0b9d2f",
-          "width": 640
-        },
-        {
-          "height": 150,
-          "url": "https://i.scdn.co/image/49d904a0628ef52dc280b5320bb6538b1c9e6877",
-          "width": 200
-        },
-        {
-          "height": 48,
-          "url": "https://i.scdn.co/image/7f1d2125c3968d0f631f4995ec51a76f2206ecff",
-          "width": 64
-        }
-      ],
-      "name": "Otis Redding",
-      "popularity": 68,
-      "type": "artist",
-      "uri": "spotify:artist:60df5JBRRPcnSpsIMxxwQm",
-      "rating": 5
-    },
-    {
       "album": {
         "album_type": "album",
         "artists": [
@@ -8330,1735 +6721,6 @@
       "type": "track",
       "uri": "spotify:track:3fW5FIbfxeizEcK7EyFWad",
       "rating": 1
-    },
-    {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-          },
-          "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-          "id": "4oUHIQIBe0LHzYfvXNW4QM",
-          "name": "Morgan Wallen",
-          "type": "artist",
-          "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-        }
-      ],
-      "copyrights": [
-        {
-          "text": "© 2023 Big Loud Records, under exclusive license to Mercury Records/Republic Records, a division of UMG Recordings, Inc.",
-          "type": "C"
-        },
-        {
-          "text": "℗ 2023 Big Loud Records, under exclusive license to Mercury Records/Republic Records, a division of UMG Recordings, Inc.",
-          "type": "P"
-        }
-      ],
-      "external_ids": {
-        "upc": "00602455241344"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/6i7mF7whyRJuLJ4ogbH2wh"
-      },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/albums/6i7mF7whyRJuLJ4ogbH2wh",
-      "id": "6i7mF7whyRJuLJ4ogbH2wh",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b273705079df9a25a28b452c1fc9",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e02705079df9a25a28b452c1fc9",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d00004851705079df9a25a28b452c1fc9",
-          "width": 64
-        }
-      ],
-      "is_playable": true,
-      "label": "Big Loud Records / Mercury Records / Republic Records",
-      "name": "One Thing At A Time",
-      "popularity": 93,
-      "release_date": "2023-03-03",
-      "release_date_precision": "day",
-      "total_tracks": 36,
-      "tracks": {
-        "href": "https://api.spotify.com/v1/albums/6i7mF7whyRJuLJ4ogbH2wh/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
-        "items": [
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 188523,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1BAU6v0fuAV914qMUEESR1"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1BAU6v0fuAV914qMUEESR1",
-            "id": "1BAU6v0fuAV914qMUEESR1",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Born With A Beer In My Hand",
-            "preview_url": null,
-            "track_number": 1,
-            "type": "track",
-            "uri": "spotify:track:1BAU6v0fuAV914qMUEESR1"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 163854,
-            "explicit": true,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7K3BhSpAxZBznislvUMVtn"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7K3BhSpAxZBznislvUMVtn",
-            "id": "7K3BhSpAxZBznislvUMVtn",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Last Night",
-            "preview_url": null,
-            "track_number": 2,
-            "type": "track",
-            "uri": "spotify:track:7K3BhSpAxZBznislvUMVtn"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 187047,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/03fs6oV5JAlbytRYf3371S"
-            },
-            "href": "https://api.spotify.com/v1/tracks/03fs6oV5JAlbytRYf3371S",
-            "id": "03fs6oV5JAlbytRYf3371S",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Everything I Love",
-            "preview_url": null,
-            "track_number": 3,
-            "type": "track",
-            "uri": "spotify:track:03fs6oV5JAlbytRYf3371S"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/2IvkS5MXK0vPGnwyJsrEyV"
-                },
-                "href": "https://api.spotify.com/v1/artists/2IvkS5MXK0vPGnwyJsrEyV",
-                "id": "2IvkS5MXK0vPGnwyJsrEyV",
-                "name": "Eric Church",
-                "type": "artist",
-                "uri": "spotify:artist:2IvkS5MXK0vPGnwyJsrEyV"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 191231,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/73zawW1ttszLRgT9By826D"
-            },
-            "href": "https://api.spotify.com/v1/tracks/73zawW1ttszLRgT9By826D",
-            "id": "73zawW1ttszLRgT9By826D",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Man Made A Bar (feat. Eric Church)",
-            "preview_url": null,
-            "track_number": 4,
-            "type": "track",
-            "uri": "spotify:track:73zawW1ttszLRgT9By826D"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 205182,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2PsbT927UanvyH9VprlNOu"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2PsbT927UanvyH9VprlNOu",
-            "id": "2PsbT927UanvyH9VprlNOu",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Devil Don’t Know",
-            "preview_url": null,
-            "track_number": 5,
-            "type": "track",
-            "uri": "spotify:track:2PsbT927UanvyH9VprlNOu"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 206864,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1rXq0uoV4KTgRN64jXzIxo"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1rXq0uoV4KTgRN64jXzIxo",
-            "id": "1rXq0uoV4KTgRN64jXzIxo",
-            "is_local": false,
-            "is_playable": true,
-            "name": "One Thing At A Time",
-            "preview_url": null,
-            "track_number": 6,
-            "type": "track",
-            "uri": "spotify:track:1rXq0uoV4KTgRN64jXzIxo"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 178704,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3oZ6dlSfCE9gZ55MGPJctc"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3oZ6dlSfCE9gZ55MGPJctc",
-            "id": "3oZ6dlSfCE9gZ55MGPJctc",
-            "is_local": false,
-            "is_playable": true,
-            "name": "’98 Braves",
-            "preview_url": null,
-            "track_number": 7,
-            "type": "track",
-            "uri": "spotify:track:3oZ6dlSfCE9gZ55MGPJctc"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 158003,
-            "explicit": true,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2YVlDlk2zRceefo6XlC6DX"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2YVlDlk2zRceefo6XlC6DX",
-            "id": "2YVlDlk2zRceefo6XlC6DX",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Ain’t That Some",
-            "preview_url": null,
-            "track_number": 8,
-            "type": "track",
-            "uri": "spotify:track:2YVlDlk2zRceefo6XlC6DX"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 181766,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7phmBo7bB9I9YifAXqnlqV"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7phmBo7bB9I9YifAXqnlqV",
-            "id": "7phmBo7bB9I9YifAXqnlqV",
-            "is_local": false,
-            "is_playable": true,
-            "name": "I Wrote The Book",
-            "preview_url": null,
-            "track_number": 9,
-            "type": "track",
-            "uri": "spotify:track:7phmBo7bB9I9YifAXqnlqV"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 225127,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5NzfnUyVaNrxa2VtoyBWlR"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5NzfnUyVaNrxa2VtoyBWlR",
-            "id": "5NzfnUyVaNrxa2VtoyBWlR",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Tennessee Numbers",
-            "preview_url": null,
-            "track_number": 10,
-            "type": "track",
-            "uri": "spotify:track:5NzfnUyVaNrxa2VtoyBWlR"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 186465,
-            "explicit": true,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2Ej3iV0nulryy9S3UQvjSx"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2Ej3iV0nulryy9S3UQvjSx",
-            "id": "2Ej3iV0nulryy9S3UQvjSx",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Hope That’s True",
-            "preview_url": null,
-            "track_number": 11,
-            "type": "track",
-            "uri": "spotify:track:2Ej3iV0nulryy9S3UQvjSx"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 205579,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2ewSCWOL7EAjgmgqfI1UlS"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2ewSCWOL7EAjgmgqfI1UlS",
-            "id": "2ewSCWOL7EAjgmgqfI1UlS",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Whiskey Friends",
-            "preview_url": null,
-            "track_number": 12,
-            "type": "track",
-            "uri": "spotify:track:2ewSCWOL7EAjgmgqfI1UlS"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 182522,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0JtgoDDf0ggWaoXCGhcOoT"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0JtgoDDf0ggWaoXCGhcOoT",
-            "id": "0JtgoDDf0ggWaoXCGhcOoT",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Sunrise",
-            "preview_url": null,
-            "track_number": 13,
-            "type": "track",
-            "uri": "spotify:track:0JtgoDDf0ggWaoXCGhcOoT"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 187518,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1vcJdUJDM2NVXBsGncmLyh"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1vcJdUJDM2NVXBsGncmLyh",
-            "id": "1vcJdUJDM2NVXBsGncmLyh",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Keith Whitley",
-            "preview_url": null,
-            "track_number": 14,
-            "type": "track",
-            "uri": "spotify:track:1vcJdUJDM2NVXBsGncmLyh"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/5QNm7E7RU2m64l6Gliu8Oy"
-                },
-                "href": "https://api.spotify.com/v1/artists/5QNm7E7RU2m64l6Gliu8Oy",
-                "id": "5QNm7E7RU2m64l6Gliu8Oy",
-                "name": "HARDY",
-                "type": "artist",
-                "uri": "spotify:artist:5QNm7E7RU2m64l6Gliu8Oy"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 195326,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2aw1aEAxMe05MZIS5XiK8U"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2aw1aEAxMe05MZIS5XiK8U",
-            "id": "2aw1aEAxMe05MZIS5XiK8U",
-            "is_local": false,
-            "is_playable": true,
-            "name": "In The Bible (feat. HARDY)",
-            "preview_url": null,
-            "track_number": 15,
-            "type": "track",
-            "uri": "spotify:track:2aw1aEAxMe05MZIS5XiK8U"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 157477,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5W4kiM2cUYBJXKRudNyxjW"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5W4kiM2cUYBJXKRudNyxjW",
-            "id": "5W4kiM2cUYBJXKRudNyxjW",
-            "is_local": false,
-            "is_playable": true,
-            "name": "You Proof",
-            "preview_url": null,
-            "track_number": 16,
-            "type": "track",
-            "uri": "spotify:track:5W4kiM2cUYBJXKRudNyxjW"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 215571,
-            "explicit": true,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3Qu3Zh4WTKhP9GEXo0aDnb"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3Qu3Zh4WTKhP9GEXo0aDnb",
-            "id": "3Qu3Zh4WTKhP9GEXo0aDnb",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Thought You Should Know",
-            "preview_url": null,
-            "track_number": 17,
-            "type": "track",
-            "uri": "spotify:track:3Qu3Zh4WTKhP9GEXo0aDnb"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 191634,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/77kye8TttXpEbvgoiVjZdo"
-            },
-            "href": "https://api.spotify.com/v1/tracks/77kye8TttXpEbvgoiVjZdo",
-            "id": "77kye8TttXpEbvgoiVjZdo",
-            "is_local": false,
-            "is_playable": true,
-            "name": "F150-50",
-            "preview_url": null,
-            "track_number": 18,
-            "type": "track",
-            "uri": "spotify:track:77kye8TttXpEbvgoiVjZdo"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 171495,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1GiwvmI57OTGcKGNigZFJb"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1GiwvmI57OTGcKGNigZFJb",
-            "id": "1GiwvmI57OTGcKGNigZFJb",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Neon Star (Country Boy Lullaby)",
-            "preview_url": null,
-            "track_number": 19,
-            "type": "track",
-            "uri": "spotify:track:1GiwvmI57OTGcKGNigZFJb"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 206137,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7u2iWRkkz8GBYFe4apxVBl"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7u2iWRkkz8GBYFe4apxVBl",
-            "id": "7u2iWRkkz8GBYFe4apxVBl",
-            "is_local": false,
-            "is_playable": true,
-            "name": "I Deserve A Drink",
-            "preview_url": null,
-            "track_number": 20,
-            "type": "track",
-            "uri": "spotify:track:7u2iWRkkz8GBYFe4apxVBl"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 223968,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0oPRfdP48RM4bd3xBFyiRo"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0oPRfdP48RM4bd3xBFyiRo",
-            "id": "0oPRfdP48RM4bd3xBFyiRo",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Wine Into Water",
-            "preview_url": null,
-            "track_number": 21,
-            "type": "track",
-            "uri": "spotify:track:0oPRfdP48RM4bd3xBFyiRo"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 174741,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/68eDGmSTQgxJde9JTG7b71"
-            },
-            "href": "https://api.spotify.com/v1/tracks/68eDGmSTQgxJde9JTG7b71",
-            "id": "68eDGmSTQgxJde9JTG7b71",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Me + All Your Reasons",
-            "preview_url": null,
-            "track_number": 22,
-            "type": "track",
-            "uri": "spotify:track:68eDGmSTQgxJde9JTG7b71"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 198255,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7ya4zrCKDslIfrztqglRIP"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7ya4zrCKDslIfrztqglRIP",
-            "id": "7ya4zrCKDslIfrztqglRIP",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Tennessee Fan",
-            "preview_url": null,
-            "track_number": 23,
-            "type": "track",
-            "uri": "spotify:track:7ya4zrCKDslIfrztqglRIP"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 175158,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/09UUDUFaudMcUkocm2iqR8"
-            },
-            "href": "https://api.spotify.com/v1/tracks/09UUDUFaudMcUkocm2iqR8",
-            "id": "09UUDUFaudMcUkocm2iqR8",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Money On Me",
-            "preview_url": null,
-            "track_number": 24,
-            "type": "track",
-            "uri": "spotify:track:09UUDUFaudMcUkocm2iqR8"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 177387,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0PAcdVzhPO4gq1Iym9ESnK"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0PAcdVzhPO4gq1Iym9ESnK",
-            "id": "0PAcdVzhPO4gq1Iym9ESnK",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Thinkin’ Bout Me",
-            "preview_url": null,
-            "track_number": 25,
-            "type": "track",
-            "uri": "spotify:track:0PAcdVzhPO4gq1Iym9ESnK"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 160347,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/12BjylmI6NS7ydikIzbuD0"
-            },
-            "href": "https://api.spotify.com/v1/tracks/12BjylmI6NS7ydikIzbuD0",
-            "id": "12BjylmI6NS7ydikIzbuD0",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Single Than She Was",
-            "preview_url": null,
-            "track_number": 26,
-            "type": "track",
-            "uri": "spotify:track:12BjylmI6NS7ydikIzbuD0"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 162475,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4FhxN8PTyjkBVfwlCnr9Om"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4FhxN8PTyjkBVfwlCnr9Om",
-            "id": "4FhxN8PTyjkBVfwlCnr9Om",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Days That End In Why",
-            "preview_url": null,
-            "track_number": 27,
-            "type": "track",
-            "uri": "spotify:track:4FhxN8PTyjkBVfwlCnr9Om"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 193163,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3NsqLy0x8l9VyNfOHQTNHs"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3NsqLy0x8l9VyNfOHQTNHs",
-            "id": "3NsqLy0x8l9VyNfOHQTNHs",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Last Drive Down Main",
-            "preview_url": null,
-            "track_number": 28,
-            "type": "track",
-            "uri": "spotify:track:3NsqLy0x8l9VyNfOHQTNHs"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 138958,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3CqT9ajcy6pY7TonEPiV4H"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3CqT9ajcy6pY7TonEPiV4H",
-            "id": "3CqT9ajcy6pY7TonEPiV4H",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Me To Me",
-            "preview_url": null,
-            "track_number": 29,
-            "type": "track",
-            "uri": "spotify:track:3CqT9ajcy6pY7TonEPiV4H"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 225665,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/77qpDGhjN7Hdp12JkPpHvY"
-            },
-            "href": "https://api.spotify.com/v1/tracks/77qpDGhjN7Hdp12JkPpHvY",
-            "id": "77qpDGhjN7Hdp12JkPpHvY",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Don't Think Jesus",
-            "preview_url": null,
-            "track_number": 30,
-            "type": "track",
-            "uri": "spotify:track:77qpDGhjN7Hdp12JkPpHvY"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 189157,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4Q6LSSmQwn94hioXfvzdbU"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4Q6LSSmQwn94hioXfvzdbU",
-            "id": "4Q6LSSmQwn94hioXfvzdbU",
-            "is_local": false,
-            "is_playable": true,
-            "name": "180 (Lifestyle)",
-            "preview_url": null,
-            "track_number": 31,
-            "type": "track",
-            "uri": "spotify:track:4Q6LSSmQwn94hioXfvzdbU"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 199108,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5sUjBX08aJ1XdMw7p2SXgq"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5sUjBX08aJ1XdMw7p2SXgq",
-            "id": "5sUjBX08aJ1XdMw7p2SXgq",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Had It",
-            "preview_url": null,
-            "track_number": 32,
-            "type": "track",
-            "uri": "spotify:track:5sUjBX08aJ1XdMw7p2SXgq"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4GGfAshSkqoxpZdoaHm7ky"
-                },
-                "href": "https://api.spotify.com/v1/artists/4GGfAshSkqoxpZdoaHm7ky",
-                "id": "4GGfAshSkqoxpZdoaHm7ky",
-                "name": "ERNEST",
-                "type": "artist",
-                "uri": "spotify:artist:4GGfAshSkqoxpZdoaHm7ky"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 181621,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7fveJ3pk1eSfxBdVkzdXZ0"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7fveJ3pk1eSfxBdVkzdXZ0",
-            "id": "7fveJ3pk1eSfxBdVkzdXZ0",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Cowgirls (feat. ERNEST)",
-            "preview_url": null,
-            "track_number": 33,
-            "type": "track",
-            "uri": "spotify:track:7fveJ3pk1eSfxBdVkzdXZ0"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 175031,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5LisHkYlpdkqNYl1HZ5cKd"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5LisHkYlpdkqNYl1HZ5cKd",
-            "id": "5LisHkYlpdkqNYl1HZ5cKd",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Good Girl Gone Missin’",
-            "preview_url": null,
-            "track_number": 34,
-            "type": "track",
-            "uri": "spotify:track:5LisHkYlpdkqNYl1HZ5cKd"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 193712,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3uKJ1sSJXGLCMItH0YNPkh"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3uKJ1sSJXGLCMItH0YNPkh",
-            "id": "3uKJ1sSJXGLCMItH0YNPkh",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Outlook",
-            "preview_url": null,
-            "track_number": 35,
-            "type": "track",
-            "uri": "spotify:track:3uKJ1sSJXGLCMItH0YNPkh"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-                },
-                "href": "https://api.spotify.com/v1/artists/4oUHIQIBe0LHzYfvXNW4QM",
-                "id": "4oUHIQIBe0LHzYfvXNW4QM",
-                "name": "Morgan Wallen",
-                "type": "artist",
-                "uri": "spotify:artist:4oUHIQIBe0LHzYfvXNW4QM"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 183466,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4kvjThnfQIsPOKjxx0aZDu"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4kvjThnfQIsPOKjxx0aZDu",
-            "id": "4kvjThnfQIsPOKjxx0aZDu",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Dying Man",
-            "preview_url": null,
-            "track_number": 36,
-            "type": "track",
-            "uri": "spotify:track:4kvjThnfQIsPOKjxx0aZDu"
-          }
-        ],
-        "limit": 50,
-        "next": null,
-        "offset": 0,
-        "previous": null,
-        "total": 36
-      },
-      "type": "album",
-      "uri": "spotify:album:6i7mF7whyRJuLJ4ogbH2wh",
-      "rating": 4
-    },
-    {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-          },
-          "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-          "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-          "name": "Selena Gomez",
-          "type": "artist",
-          "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-        }
-      ],
-      "copyrights": [
-        {
-          "text": "© 2020 Interscope Records",
-          "type": "C"
-        },
-        {
-          "text": "℗ 2020 Interscope Records",
-          "type": "P"
-        }
-      ],
-      "external_ids": {
-        "upc": "00602508871146"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/5obQ9rPASQW2mLxYM8Ko6Z"
-      },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/albums/5obQ9rPASQW2mLxYM8Ko6Z",
-      "id": "5obQ9rPASQW2mLxYM8Ko6Z",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b27359e699338051e7fec4f2139a",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e0259e699338051e7fec4f2139a",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d0000485159e699338051e7fec4f2139a",
-          "width": 64
-        }
-      ],
-      "is_playable": true,
-      "label": "Interscope Records",
-      "name": "Rare (Deluxe)",
-      "popularity": 68,
-      "release_date": "2020-04-09",
-      "release_date_precision": "day",
-      "total_tracks": 17,
-      "tracks": {
-        "href": "https://api.spotify.com/v1/albums/5obQ9rPASQW2mLxYM8Ko6Z/tracks?offset=0&limit=50&market=fr&locale=fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7,nl;q=0.6",
-        "items": [
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 161188,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5EBtY2shIV1vmY4bnvvV6T"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5EBtY2shIV1vmY4bnvvV6T",
-            "id": "5EBtY2shIV1vmY4bnvvV6T",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Boyfriend",
-            "preview_url": null,
-            "track_number": 1,
-            "type": "track",
-            "uri": "spotify:track:5EBtY2shIV1vmY4bnvvV6T"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 206458,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3RKywhObU25JLEypRY6HWx"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3RKywhObU25JLEypRY6HWx",
-            "id": "3RKywhObU25JLEypRY6HWx",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Lose You To Love Me",
-            "preview_url": null,
-            "track_number": 2,
-            "type": "track",
-            "uri": "spotify:track:3RKywhObU25JLEypRY6HWx"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 220589,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/33iba4j2ywXqTQNEpGbfra"
-            },
-            "href": "https://api.spotify.com/v1/tracks/33iba4j2ywXqTQNEpGbfra",
-            "id": "33iba4j2ywXqTQNEpGbfra",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Rare",
-            "preview_url": null,
-            "track_number": 3,
-            "type": "track",
-            "uri": "spotify:track:33iba4j2ywXqTQNEpGbfra"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 161605,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3ZCBSFcZSRM9Z48ew28Zrf"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3ZCBSFcZSRM9Z48ew28Zrf",
-            "id": "3ZCBSFcZSRM9Z48ew28Zrf",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Souvenir",
-            "preview_url": null,
-            "track_number": 4,
-            "type": "track",
-            "uri": "spotify:track:3ZCBSFcZSRM9Z48ew28Zrf"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 162595,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4sUWh0WAFyla5vjEYRrIGz"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4sUWh0WAFyla5vjEYRrIGz",
-            "id": "4sUWh0WAFyla5vjEYRrIGz",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Look At Her Now",
-            "preview_url": null,
-            "track_number": 5,
-            "type": "track",
-            "uri": "spotify:track:4sUWh0WAFyla5vjEYRrIGz"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 172999,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1z1ztKUrDr09ZSMDnN3QIG"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1z1ztKUrDr09ZSMDnN3QIG",
-            "id": "1z1ztKUrDr09ZSMDnN3QIG",
-            "is_local": false,
-            "is_playable": true,
-            "name": "She",
-            "preview_url": null,
-            "track_number": 6,
-            "type": "track",
-            "uri": "spotify:track:1z1ztKUrDr09ZSMDnN3QIG"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/4IVAbR2w4JJNJDDRFP3E83"
-                },
-                "href": "https://api.spotify.com/v1/artists/4IVAbR2w4JJNJDDRFP3E83",
-                "id": "4IVAbR2w4JJNJDDRFP3E83",
-                "name": "6LACK",
-                "type": "artist",
-                "uri": "spotify:artist:4IVAbR2w4JJNJDDRFP3E83"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 186459,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/6VKmaZrS8jnbfWXEk3aiUw"
-            },
-            "href": "https://api.spotify.com/v1/tracks/6VKmaZrS8jnbfWXEk3aiUw",
-            "id": "6VKmaZrS8jnbfWXEk3aiUw",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Crowded Room (feat. 6LACK)",
-            "preview_url": null,
-            "track_number": 7,
-            "type": "track",
-            "uri": "spotify:track:6VKmaZrS8jnbfWXEk3aiUw"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 192172,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/2zxSwkWX6VX72dzT7EVa9s"
-            },
-            "href": "https://api.spotify.com/v1/tracks/2zxSwkWX6VX72dzT7EVa9s",
-            "id": "2zxSwkWX6VX72dzT7EVa9s",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Vulnerable",
-            "preview_url": null,
-            "track_number": 8,
-            "type": "track",
-            "uri": "spotify:track:2zxSwkWX6VX72dzT7EVa9s"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 170498,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5tJVdHErWeof8gCXJCtDDk"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5tJVdHErWeof8gCXJCtDDk",
-            "id": "5tJVdHErWeof8gCXJCtDDk",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Dance Again",
-            "preview_url": null,
-            "track_number": 9,
-            "type": "track",
-            "uri": "spotify:track:5tJVdHErWeof8gCXJCtDDk"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 148776,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/36Hgj5atzs02g05HAYCg1m"
-            },
-            "href": "https://api.spotify.com/v1/tracks/36Hgj5atzs02g05HAYCg1m",
-            "id": "36Hgj5atzs02g05HAYCg1m",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Ring",
-            "preview_url": null,
-            "track_number": 10,
-            "type": "track",
-            "uri": "spotify:track:36Hgj5atzs02g05HAYCg1m"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-                },
-                "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
-                "id": "0fA0VVWsXO9YnASrzqfmYu",
-                "name": "Kid Cudi",
-                "type": "artist",
-                "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 263305,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/1z6CcHAbPpw2R23jDJmW1T"
-            },
-            "href": "https://api.spotify.com/v1/tracks/1z6CcHAbPpw2R23jDJmW1T",
-            "id": "1z6CcHAbPpw2R23jDJmW1T",
-            "is_local": false,
-            "is_playable": true,
-            "name": "A Sweeter Place (feat. Kid Cudi)",
-            "preview_url": null,
-            "track_number": 11,
-            "type": "track",
-            "uri": "spotify:track:1z6CcHAbPpw2R23jDJmW1T"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 194900,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/5UqZDGclEuq7g3sgUFad0J"
-            },
-            "href": "https://api.spotify.com/v1/tracks/5UqZDGclEuq7g3sgUFad0J",
-            "id": "5UqZDGclEuq7g3sgUFad0J",
-            "is_local": false,
-            "is_playable": true,
-            "name": "People You Know",
-            "preview_url": null,
-            "track_number": 12,
-            "type": "track",
-            "uri": "spotify:track:5UqZDGclEuq7g3sgUFad0J"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 182016,
-            "explicit": true,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0he909ZlMUk631mzXeSgq4"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0he909ZlMUk631mzXeSgq4",
-            "id": "0he909ZlMUk631mzXeSgq4",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Cut You Off",
-            "preview_url": null,
-            "track_number": 13,
-            "type": "track",
-            "uri": "spotify:track:0he909ZlMUk631mzXeSgq4"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 189145,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/35KIxWjS8oMkAYG3K7RegO"
-            },
-            "href": "https://api.spotify.com/v1/tracks/35KIxWjS8oMkAYG3K7RegO",
-            "id": "35KIxWjS8oMkAYG3K7RegO",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Let Me Get Me",
-            "preview_url": null,
-            "track_number": 14,
-            "type": "track",
-            "uri": "spotify:track:35KIxWjS8oMkAYG3K7RegO"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 212436,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/7tU2wWq28P5ytOZ9diWnMy"
-            },
-            "href": "https://api.spotify.com/v1/tracks/7tU2wWq28P5ytOZ9diWnMy",
-            "id": "7tU2wWq28P5ytOZ9diWnMy",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Kinda Crazy",
-            "preview_url": null,
-            "track_number": 15,
-            "type": "track",
-            "uri": "spotify:track:7tU2wWq28P5ytOZ9diWnMy"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 189382,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/0MC9g3xUfrHQBmTbXsjkU7"
-            },
-            "href": "https://api.spotify.com/v1/tracks/0MC9g3xUfrHQBmTbXsjkU7",
-            "id": "0MC9g3xUfrHQBmTbXsjkU7",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Fun",
-            "preview_url": null,
-            "track_number": 16,
-            "type": "track",
-            "uri": "spotify:track:0MC9g3xUfrHQBmTbXsjkU7"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx"
-                },
-                "href": "https://api.spotify.com/v1/artists/0C8ZW7ezQVs4URX5aX7Kqx",
-                "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-                "name": "Selena Gomez",
-                "type": "artist",
-                "uri": "spotify:artist:0C8ZW7ezQVs4URX5aX7Kqx"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 226002,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/4mt7C6wYeTUWDDk7xKym9w"
-            },
-            "href": "https://api.spotify.com/v1/tracks/4mt7C6wYeTUWDDk7xKym9w",
-            "id": "4mt7C6wYeTUWDDk7xKym9w",
-            "is_local": false,
-            "is_playable": true,
-            "name": "Feel Me",
-            "preview_url": null,
-            "track_number": 17,
-            "type": "track",
-            "uri": "spotify:track:4mt7C6wYeTUWDDk7xKym9w"
-          }
-        ],
-        "limit": 50,
-        "next": null,
-        "offset": 0,
-        "previous": null,
-        "total": 17
-      },
-      "type": "album",
-      "uri": "spotify:album:5obQ9rPASQW2mLxYM8Ko6Z",
-      "rating": 4
     },
     {
       "artists": [
@@ -11514,83 +8176,6 @@
       "rating": 1
     },
     {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4NJhFmfw43RLBLjQvxDuRS"
-      },
-      "followers": {
-        "href": null,
-        "total": 5125289
-      },
-      "genres": [
-        "classical",
-        "classical era"
-      ],
-      "href": "https://api.spotify.com/v1/artists/4NJhFmfw43RLBLjQvxDuRS",
-      "id": "4NJhFmfw43RLBLjQvxDuRS",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb7fa9108c6dadb8c3ec21da88",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051747fa9108c6dadb8c3ec21da88",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1787fa9108c6dadb8c3ec21da88",
-          "width": 160
-        }
-      ],
-      "name": "Wolfgang Amadeus Mozart",
-      "popularity": 71,
-      "type": "artist",
-      "uri": "spotify:artist:4NJhFmfw43RLBLjQvxDuRS",
-      "rating": 1
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
-      },
-      "followers": {
-        "href": null,
-        "total": 14504808
-      },
-      "genres": [
-        "atl hip hop",
-        "hip hop",
-        "rap",
-        "southern hip hop",
-        "trap"
-      ],
-      "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
-      "id": "1RyvyyTE3xzB2ZywiAwp0i",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb24e41f491b129093a6fee383",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517424e41f491b129093a6fee383",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17824e41f491b129093a6fee383",
-          "width": 160
-        }
-      ],
-      "name": "Future",
-      "popularity": 88,
-      "type": "artist",
-      "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i",
-      "rating": 1
-    },
-    {
       "album": {
         "album_type": "album",
         "artists": [
@@ -11669,410 +8254,1433 @@
       "rating": 5
     },
     {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
-          },
-          "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-          "id": "1koutXdSFq2PHqtxSWj9tK",
-          "name": "Hot Milk",
-          "type": "artist",
-          "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
-        }
-      ],
-      "copyrights": [
-        {
-          "text": "(P) 2023 Music For Nations",
-          "type": "P"
-        }
-      ],
-      "external_ids": {
-        "upc": "196589942098"
-      },
       "external_urls": {
-        "spotify": "https://open.spotify.com/album/3zhyT62LXkBpycohrjER5s"
+        "spotify": "https://open.spotify.com/artist/5lTjv8Ag00qHSGhvK4JbeF"
       },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/albums/3zhyT62LXkBpycohrjER5s",
-      "id": "3zhyT62LXkBpycohrjER5s",
+      "followers": {
+        "href": null,
+        "total": 40931
+      },
+      "genres": [
+        "melanesian pop",
+        "pacific islands pop",
+        "png pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/5lTjv8Ag00qHSGhvK4JbeF",
+      "id": "5lTjv8Ag00qHSGhvK4JbeF",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b2732b609296e144e7a3fd329c59",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb2aa11c45d04a93ff90c6cdc9",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051742aa11c45d04a93ff90c6cdc9",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1782aa11c45d04a93ff90c6cdc9",
+          "width": 160
+        }
+      ],
+      "name": "Justin Wellington",
+      "popularity": 53,
+      "type": "artist",
+      "uri": "spotify:artist:5lTjv8Ag00qHSGhvK4JbeF",
+      "rating": 3
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6G5yOLeVrk0u0ABIwVzdcZ"
+      },
+      "followers": {
+        "href": null,
+        "total": 12619
+      },
+      "genres": [
+        "kaneka",
+        "melanesian pop",
+        "pacific islands pop",
+        "solomon islands pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6G5yOLeVrk0u0ABIwVzdcZ",
+      "id": "6G5yOLeVrk0u0ABIwVzdcZ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273fa2e041eb280b5306c1ac7a4",
           "width": 640
         },
         {
           "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e022b609296e144e7a3fd329c59",
+          "url": "https://i.scdn.co/image/ab67616d00001e02fa2e041eb280b5306c1ac7a4",
           "width": 300
         },
         {
           "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d000048512b609296e144e7a3fd329c59",
+          "url": "https://i.scdn.co/image/ab67616d00004851fa2e041eb280b5306c1ac7a4",
+          "width": 64
+        }
+      ],
+      "name": "Sharzy",
+      "popularity": 28,
+      "type": "artist",
+      "uri": "spotify:artist:6G5yOLeVrk0u0ABIwVzdcZ",
+      "rating": 1
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+      },
+      "followers": {
+        "href": null,
+        "total": 4007
+      },
+      "genres": [
+        "fijian pop",
+        "pacific islands pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
+      "id": "3iYIsGMIzYj4NFKgvhgey5",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734101d0e40bee07a5ec829d4f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024101d0e40bee07a5ec829d4f",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514101d0e40bee07a5ec829d4f",
+          "width": 64
+        }
+      ],
+      "name": "Savu Ni Delai Lomai",
+      "popularity": 12,
+      "type": "artist",
+      "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5",
+      "rating": 5
+    },
+    {
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+          },
+          "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+          "id": "1McMsnEElThX1knmY4oliG",
+          "name": "Olivia Rodrigo",
+          "type": "artist",
+          "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 165833,
+      "explicit": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/34sOdxWu9FljH84UXdRwu1"
+      },
+      "href": "https://api.spotify.com/v1/tracks/34sOdxWu9FljH84UXdRwu1",
+      "id": "34sOdxWu9FljH84UXdRwu1",
+      "is_local": false,
+      "is_playable": true,
+      "name": "all-american bitch",
+      "preview_url": null,
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:34sOdxWu9FljH84UXdRwu1",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+            },
+            "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+            "id": "1McMsnEElThX1knmY4oliG",
+            "name": "Olivia Rodrigo",
+            "type": "artist",
+            "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "© 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+            "type": "C"
+          },
+          {
+            "text": "℗ 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "00602458374483"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp",
+        "id": "1xJHno7SmdVtZAtXbdbDZp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02e85259a1cae29a8d91f2093d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851e85259a1cae29a8d91f2093d",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "label": "Olivia Rodrigo PS",
+        "name": "GUTS",
+        "popularity": 63,
+        "release_date": "2023-09-08",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp/tracks?offset=0&limit=50&market=fr&locale=nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 165833,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/34sOdxWu9FljH84UXdRwu1"
+              },
+              "href": "https://api.spotify.com/v1/tracks/34sOdxWu9FljH84UXdRwu1",
+              "id": "34sOdxWu9FljH84UXdRwu1",
+              "is_local": false,
+              "is_playable": true,
+              "name": "all-american bitch",
+              "preview_url": null,
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:34sOdxWu9FljH84UXdRwu1"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 184783,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3IX0yuEVvDbnqUwMBB3ouC"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3IX0yuEVvDbnqUwMBB3ouC",
+              "id": "3IX0yuEVvDbnqUwMBB3ouC",
+              "is_local": false,
+              "is_playable": true,
+              "name": "bad idea right?",
+              "preview_url": null,
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:3IX0yuEVvDbnqUwMBB3ouC"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 219724,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
+              "id": "1kuGVB7EU95pJObxwvfwKS",
+              "is_local": false,
+              "is_playable": true,
+              "name": "vampire",
+              "preview_url": null,
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 177212,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6QT6j7rKt7Vk3IuV2AUO9W"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6QT6j7rKt7Vk3IuV2AUO9W",
+              "id": "6QT6j7rKt7Vk3IuV2AUO9W",
+              "is_local": false,
+              "is_playable": true,
+              "name": "lacy",
+              "preview_url": null,
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:6QT6j7rKt7Vk3IuV2AUO9W"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 203369,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5sp71CUt0jXRNqHblPGp7b"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5sp71CUt0jXRNqHblPGp7b",
+              "id": "5sp71CUt0jXRNqHblPGp7b",
+              "is_local": false,
+              "is_playable": true,
+              "name": "ballad of a homeschooled girl",
+              "preview_url": null,
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:5sp71CUt0jXRNqHblPGp7b"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 198866,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5CscrLqFBgPfZR8fGtikov"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5CscrLqFBgPfZR8fGtikov",
+              "id": "5CscrLqFBgPfZR8fGtikov",
+              "is_local": false,
+              "is_playable": true,
+              "name": "making the bed",
+              "preview_url": null,
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:5CscrLqFBgPfZR8fGtikov"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 231907,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/53dtP2iUMvaF28JZcHnFuU"
+              },
+              "href": "https://api.spotify.com/v1/tracks/53dtP2iUMvaF28JZcHnFuU",
+              "id": "53dtP2iUMvaF28JZcHnFuU",
+              "is_local": false,
+              "is_playable": true,
+              "name": "logical",
+              "preview_url": null,
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:53dtP2iUMvaF28JZcHnFuU"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 211141,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2gyxAWHebV7xPYVxqoi86f"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2gyxAWHebV7xPYVxqoi86f",
+              "id": "2gyxAWHebV7xPYVxqoi86f",
+              "is_local": false,
+              "is_playable": true,
+              "name": "get him back!",
+              "preview_url": null,
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:2gyxAWHebV7xPYVxqoi86f"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 154516,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/26QLJMK8G0M06sk7h7Fkse"
+              },
+              "href": "https://api.spotify.com/v1/tracks/26QLJMK8G0M06sk7h7Fkse",
+              "id": "26QLJMK8G0M06sk7h7Fkse",
+              "is_local": false,
+              "is_playable": true,
+              "name": "love is embarrassing",
+              "preview_url": null,
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:26QLJMK8G0M06sk7h7Fkse"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 189386,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3Nl5OkkmS5DaBZvuYofpAt"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3Nl5OkkmS5DaBZvuYofpAt",
+              "id": "3Nl5OkkmS5DaBZvuYofpAt",
+              "is_local": false,
+              "is_playable": true,
+              "name": "the grudge",
+              "preview_url": null,
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:3Nl5OkkmS5DaBZvuYofpAt"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 199422,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6W9l02gRsXVxzIuQC1oc1X"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6W9l02gRsXVxzIuQC1oc1X",
+              "id": "6W9l02gRsXVxzIuQC1oc1X",
+              "is_local": false,
+              "is_playable": true,
+              "name": "pretty isn’t pretty",
+              "preview_url": null,
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:6W9l02gRsXVxzIuQC1oc1X"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 222358,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7fesNTgTEMEH0ye8MOgEDY"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7fesNTgTEMEH0ye8MOgEDY",
+              "id": "7fesNTgTEMEH0ye8MOgEDY",
+              "is_local": false,
+              "is_playable": true,
+              "name": "teenage dream",
+              "preview_url": null,
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:7fesNTgTEMEH0ye8MOgEDY"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 12
+        },
+        "type": "album",
+        "uri": "spotify:album:1xJHno7SmdVtZAtXbdbDZp"
+      },
+      "rating": 2
+    },
+    {
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+          },
+          "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+          "id": "1McMsnEElThX1knmY4oliG",
+          "name": "Olivia Rodrigo",
+          "type": "artist",
+          "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 219724,
+      "explicit": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
+      "id": "1kuGVB7EU95pJObxwvfwKS",
+      "is_local": false,
+      "is_playable": true,
+      "name": "vampire",
+      "preview_url": null,
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+            },
+            "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+            "id": "1McMsnEElThX1knmY4oliG",
+            "name": "Olivia Rodrigo",
+            "type": "artist",
+            "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "© 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+            "type": "C"
+          },
+          {
+            "text": "℗ 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "00602458374483"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp",
+        "id": "1xJHno7SmdVtZAtXbdbDZp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02e85259a1cae29a8d91f2093d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851e85259a1cae29a8d91f2093d",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "label": "Olivia Rodrigo PS",
+        "name": "GUTS",
+        "popularity": 63,
+        "release_date": "2023-09-08",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp/tracks?offset=0&limit=50&market=fr&locale=nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 165833,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/34sOdxWu9FljH84UXdRwu1"
+              },
+              "href": "https://api.spotify.com/v1/tracks/34sOdxWu9FljH84UXdRwu1",
+              "id": "34sOdxWu9FljH84UXdRwu1",
+              "is_local": false,
+              "is_playable": true,
+              "name": "all-american bitch",
+              "preview_url": null,
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:34sOdxWu9FljH84UXdRwu1"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 184783,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3IX0yuEVvDbnqUwMBB3ouC"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3IX0yuEVvDbnqUwMBB3ouC",
+              "id": "3IX0yuEVvDbnqUwMBB3ouC",
+              "is_local": false,
+              "is_playable": true,
+              "name": "bad idea right?",
+              "preview_url": null,
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:3IX0yuEVvDbnqUwMBB3ouC"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 219724,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
+              "id": "1kuGVB7EU95pJObxwvfwKS",
+              "is_local": false,
+              "is_playable": true,
+              "name": "vampire",
+              "preview_url": null,
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 177212,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6QT6j7rKt7Vk3IuV2AUO9W"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6QT6j7rKt7Vk3IuV2AUO9W",
+              "id": "6QT6j7rKt7Vk3IuV2AUO9W",
+              "is_local": false,
+              "is_playable": true,
+              "name": "lacy",
+              "preview_url": null,
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:6QT6j7rKt7Vk3IuV2AUO9W"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 203369,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5sp71CUt0jXRNqHblPGp7b"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5sp71CUt0jXRNqHblPGp7b",
+              "id": "5sp71CUt0jXRNqHblPGp7b",
+              "is_local": false,
+              "is_playable": true,
+              "name": "ballad of a homeschooled girl",
+              "preview_url": null,
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:5sp71CUt0jXRNqHblPGp7b"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 198866,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5CscrLqFBgPfZR8fGtikov"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5CscrLqFBgPfZR8fGtikov",
+              "id": "5CscrLqFBgPfZR8fGtikov",
+              "is_local": false,
+              "is_playable": true,
+              "name": "making the bed",
+              "preview_url": null,
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:5CscrLqFBgPfZR8fGtikov"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 231907,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/53dtP2iUMvaF28JZcHnFuU"
+              },
+              "href": "https://api.spotify.com/v1/tracks/53dtP2iUMvaF28JZcHnFuU",
+              "id": "53dtP2iUMvaF28JZcHnFuU",
+              "is_local": false,
+              "is_playable": true,
+              "name": "logical",
+              "preview_url": null,
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:53dtP2iUMvaF28JZcHnFuU"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 211141,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2gyxAWHebV7xPYVxqoi86f"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2gyxAWHebV7xPYVxqoi86f",
+              "id": "2gyxAWHebV7xPYVxqoi86f",
+              "is_local": false,
+              "is_playable": true,
+              "name": "get him back!",
+              "preview_url": null,
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:2gyxAWHebV7xPYVxqoi86f"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 154516,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/26QLJMK8G0M06sk7h7Fkse"
+              },
+              "href": "https://api.spotify.com/v1/tracks/26QLJMK8G0M06sk7h7Fkse",
+              "id": "26QLJMK8G0M06sk7h7Fkse",
+              "is_local": false,
+              "is_playable": true,
+              "name": "love is embarrassing",
+              "preview_url": null,
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:26QLJMK8G0M06sk7h7Fkse"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 189386,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3Nl5OkkmS5DaBZvuYofpAt"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3Nl5OkkmS5DaBZvuYofpAt",
+              "id": "3Nl5OkkmS5DaBZvuYofpAt",
+              "is_local": false,
+              "is_playable": true,
+              "name": "the grudge",
+              "preview_url": null,
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:3Nl5OkkmS5DaBZvuYofpAt"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 199422,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6W9l02gRsXVxzIuQC1oc1X"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6W9l02gRsXVxzIuQC1oc1X",
+              "id": "6W9l02gRsXVxzIuQC1oc1X",
+              "is_local": false,
+              "is_playable": true,
+              "name": "pretty isn’t pretty",
+              "preview_url": null,
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:6W9l02gRsXVxzIuQC1oc1X"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 222358,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7fesNTgTEMEH0ye8MOgEDY"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7fesNTgTEMEH0ye8MOgEDY",
+              "id": "7fesNTgTEMEH0ye8MOgEDY",
+              "is_local": false,
+              "is_playable": true,
+              "name": "teenage dream",
+              "preview_url": null,
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:7fesNTgTEMEH0ye8MOgEDY"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 12
+        },
+        "type": "album",
+        "uri": "spotify:album:1xJHno7SmdVtZAtXbdbDZp"
+      },
+      "rating": 4
+    },
+    {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+          },
+          "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+          "id": "1McMsnEElThX1knmY4oliG",
+          "name": "Olivia Rodrigo",
+          "type": "artist",
+          "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+        }
+      ],
+      "copyrights": [
+        {
+          "text": "© 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+          "type": "C"
+        },
+        {
+          "text": "℗ 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+          "type": "P"
+        }
+      ],
+      "external_ids": {
+        "upc": "00602458374483"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp"
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp",
+      "id": "1xJHno7SmdVtZAtXbdbDZp",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e85259a1cae29a8d91f2093d",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e85259a1cae29a8d91f2093d",
           "width": 64
         }
       ],
       "is_playable": true,
-      "label": "Music For Nations",
-      "name": "A Call To The Void",
-      "popularity": 52,
-      "release_date": "2023-08-25",
+      "label": "Olivia Rodrigo PS",
+      "name": "GUTS",
+      "popularity": 63,
+      "release_date": "2023-09-08",
       "release_date_precision": "day",
-      "total_tracks": 11,
+      "total_tracks": 12,
       "tracks": {
-        "href": "https://api.spotify.com/v1/albums/3zhyT62LXkBpycohrjER5s/tracks?offset=0&limit=50&market=fr&locale=nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6",
+        "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp/tracks?offset=0&limit=50&market=fr&locale=nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6",
         "items": [
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 76579,
-            "explicit": false,
+            "duration_ms": 165833,
+            "explicit": true,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/4RrI6GsMFdS9Li9zTK4PVI"
+              "spotify": "https://open.spotify.com/track/34sOdxWu9FljH84UXdRwu1"
             },
-            "href": "https://api.spotify.com/v1/tracks/4RrI6GsMFdS9Li9zTK4PVI",
-            "id": "4RrI6GsMFdS9Li9zTK4PVI",
+            "href": "https://api.spotify.com/v1/tracks/34sOdxWu9FljH84UXdRwu1",
+            "id": "34sOdxWu9FljH84UXdRwu1",
             "is_local": false,
             "is_playable": true,
-            "name": "WELCOME TO THE...",
-            "preview_url": "https://p.scdn.co/mp3-preview/027d1b3a492f6af6fc506664a1b8847be65f1988?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "all-american bitch",
+            "preview_url": null,
             "track_number": 1,
             "type": "track",
-            "uri": "spotify:track:4RrI6GsMFdS9Li9zTK4PVI"
+            "uri": "spotify:track:34sOdxWu9FljH84UXdRwu1"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 195646,
+            "duration_ms": 184783,
             "explicit": true,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/3h4cGjCg42zmzZrivWtQJS"
+              "spotify": "https://open.spotify.com/track/3IX0yuEVvDbnqUwMBB3ouC"
             },
-            "href": "https://api.spotify.com/v1/tracks/3h4cGjCg42zmzZrivWtQJS",
-            "id": "3h4cGjCg42zmzZrivWtQJS",
+            "href": "https://api.spotify.com/v1/tracks/3IX0yuEVvDbnqUwMBB3ouC",
+            "id": "3IX0yuEVvDbnqUwMBB3ouC",
             "is_local": false,
             "is_playable": true,
-            "name": "HORROR SHOW",
-            "preview_url": "https://p.scdn.co/mp3-preview/7706360bd6719d285d2166540cfdfa7975026e0e?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "bad idea right?",
+            "preview_url": null,
             "track_number": 2,
             "type": "track",
-            "uri": "spotify:track:3h4cGjCg42zmzZrivWtQJS"
+            "uri": "spotify:track:3IX0yuEVvDbnqUwMBB3ouC"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 189312,
+            "duration_ms": 219724,
             "explicit": true,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/5wENYXb7MHmlAuKvqxYdbs"
+              "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
             },
-            "href": "https://api.spotify.com/v1/tracks/5wENYXb7MHmlAuKvqxYdbs",
-            "id": "5wENYXb7MHmlAuKvqxYdbs",
+            "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
+            "id": "1kuGVB7EU95pJObxwvfwKS",
             "is_local": false,
             "is_playable": true,
-            "name": "BLOODSTREAM",
-            "preview_url": "https://p.scdn.co/mp3-preview/ba6312514b8023d8b53915987f65c2ea52fc6d52?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "vampire",
+            "preview_url": null,
             "track_number": 3,
             "type": "track",
-            "uri": "spotify:track:5wENYXb7MHmlAuKvqxYdbs"
+            "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 208125,
+            "duration_ms": 177212,
             "explicit": false,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/6JgiByhbuHVAYvVQSColpN"
+              "spotify": "https://open.spotify.com/track/6QT6j7rKt7Vk3IuV2AUO9W"
             },
-            "href": "https://api.spotify.com/v1/tracks/6JgiByhbuHVAYvVQSColpN",
-            "id": "6JgiByhbuHVAYvVQSColpN",
+            "href": "https://api.spotify.com/v1/tracks/6QT6j7rKt7Vk3IuV2AUO9W",
+            "id": "6QT6j7rKt7Vk3IuV2AUO9W",
             "is_local": false,
             "is_playable": true,
-            "name": "PARTY ON MY DEATHBED",
-            "preview_url": "https://p.scdn.co/mp3-preview/22d3d08c8e63dba0aa739998383d07f06f2c460e?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "lacy",
+            "preview_url": null,
             "track_number": 4,
             "type": "track",
-            "uri": "spotify:track:6JgiByhbuHVAYvVQSColpN"
+            "uri": "spotify:track:6QT6j7rKt7Vk3IuV2AUO9W"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 231263,
+            "duration_ms": 203369,
             "explicit": false,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/4uhTUUwApKTOa6gacO6q1a"
+              "spotify": "https://open.spotify.com/track/5sp71CUt0jXRNqHblPGp7b"
             },
-            "href": "https://api.spotify.com/v1/tracks/4uhTUUwApKTOa6gacO6q1a",
-            "id": "4uhTUUwApKTOa6gacO6q1a",
+            "href": "https://api.spotify.com/v1/tracks/5sp71CUt0jXRNqHblPGp7b",
+            "id": "5sp71CUt0jXRNqHblPGp7b",
             "is_local": false,
             "is_playable": true,
-            "name": "ALICE COOPER'S POOL HOUSE",
-            "preview_url": "https://p.scdn.co/mp3-preview/be8cc65795def029b4b41d6f1694c9821c680ea9?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "ballad of a homeschooled girl",
+            "preview_url": null,
             "track_number": 5,
             "type": "track",
-            "uri": "spotify:track:4uhTUUwApKTOa6gacO6q1a"
+            "uri": "spotify:track:5sp71CUt0jXRNqHblPGp7b"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 198349,
+            "duration_ms": 198866,
             "explicit": false,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/3hgh7IdXe2JohZZJPHrbzB"
+              "spotify": "https://open.spotify.com/track/5CscrLqFBgPfZR8fGtikov"
             },
-            "href": "https://api.spotify.com/v1/tracks/3hgh7IdXe2JohZZJPHrbzB",
-            "id": "3hgh7IdXe2JohZZJPHrbzB",
+            "href": "https://api.spotify.com/v1/tracks/5CscrLqFBgPfZR8fGtikov",
+            "id": "5CscrLqFBgPfZR8fGtikov",
             "is_local": false,
             "is_playable": true,
-            "name": "ZONED OUT",
-            "preview_url": "https://p.scdn.co/mp3-preview/1b0bbc0589a13a657ee1060c1ae764add10d92a3?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "making the bed",
+            "preview_url": null,
             "track_number": 6,
             "type": "track",
-            "uri": "spotify:track:3hgh7IdXe2JohZZJPHrbzB"
+            "uri": "spotify:track:5CscrLqFBgPfZR8fGtikov"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 225360,
-            "explicit": true,
+            "duration_ms": 231907,
+            "explicit": false,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/33SO5use9IdF2g0lrcSj3l"
+              "spotify": "https://open.spotify.com/track/53dtP2iUMvaF28JZcHnFuU"
             },
-            "href": "https://api.spotify.com/v1/tracks/33SO5use9IdF2g0lrcSj3l",
-            "id": "33SO5use9IdF2g0lrcSj3l",
+            "href": "https://api.spotify.com/v1/tracks/53dtP2iUMvaF28JZcHnFuU",
+            "id": "53dtP2iUMvaF28JZcHnFuU",
             "is_local": false,
             "is_playable": true,
-            "name": "OVER YOUR DEAD BODY",
-            "preview_url": "https://p.scdn.co/mp3-preview/2a90e14c7b7d804d873cf442c9469481a50c6c8c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "logical",
+            "preview_url": null,
             "track_number": 7,
             "type": "track",
-            "uri": "spotify:track:33SO5use9IdF2g0lrcSj3l"
+            "uri": "spotify:track:53dtP2iUMvaF28JZcHnFuU"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 165612,
+            "duration_ms": 211141,
             "explicit": true,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/5zsWMC2KXG3Q2cFmllP5KO"
+              "spotify": "https://open.spotify.com/track/2gyxAWHebV7xPYVxqoi86f"
             },
-            "href": "https://api.spotify.com/v1/tracks/5zsWMC2KXG3Q2cFmllP5KO",
-            "id": "5zsWMC2KXG3Q2cFmllP5KO",
+            "href": "https://api.spotify.com/v1/tracks/2gyxAWHebV7xPYVxqoi86f",
+            "id": "2gyxAWHebV7xPYVxqoi86f",
             "is_local": false,
             "is_playable": true,
-            "name": "MIGRAINE",
-            "preview_url": "https://p.scdn.co/mp3-preview/4e11283d93c81d41dbcf1fe0451288590e83d91a?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "get him back!",
+            "preview_url": null,
             "track_number": 8,
             "type": "track",
-            "uri": "spotify:track:5zsWMC2KXG3Q2cFmllP5KO"
+            "uri": "spotify:track:2gyxAWHebV7xPYVxqoi86f"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 177782,
-            "explicit": false,
-            "external_urls": {
-              "spotify": "https://open.spotify.com/track/3CooKxVlbaWSKre1oQXeRZ"
-            },
-            "href": "https://api.spotify.com/v1/tracks/3CooKxVlbaWSKre1oQXeRZ",
-            "id": "3CooKxVlbaWSKre1oQXeRZ",
-            "is_local": false,
-            "is_playable": true,
-            "name": "BREATHING UNDERWATER",
-            "preview_url": "https://p.scdn.co/mp3-preview/db8cfb40b96f58cf4fe600e3dae97e7b27a56a27?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 9,
-            "type": "track",
-            "uri": "spotify:track:3CooKxVlbaWSKre1oQXeRZ"
-          },
-          {
-            "artists": [
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
-                },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
-                "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/7eQUEyGU2hIAYOnChFWC1r"
-                },
-                "href": "https://api.spotify.com/v1/artists/7eQUEyGU2hIAYOnChFWC1r",
-                "id": "7eQUEyGU2hIAYOnChFWC1r",
-                "name": "Julian Comeau",
-                "type": "artist",
-                "uri": "spotify:artist:7eQUEyGU2hIAYOnChFWC1r"
-              },
-              {
-                "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1MP7xlABJ13LtmHfG77SCJ"
-                },
-                "href": "https://api.spotify.com/v1/artists/1MP7xlABJ13LtmHfG77SCJ",
-                "id": "1MP7xlABJ13LtmHfG77SCJ",
-                "name": "Loveless",
-                "type": "artist",
-                "uri": "spotify:artist:1MP7xlABJ13LtmHfG77SCJ"
-              }
-            ],
-            "disc_number": 1,
-            "duration_ms": 178517,
+            "duration_ms": 154516,
             "explicit": true,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/7dQQTSh3iq7KlfSjc6jBj7"
+              "spotify": "https://open.spotify.com/track/26QLJMK8G0M06sk7h7Fkse"
             },
-            "href": "https://api.spotify.com/v1/tracks/7dQQTSh3iq7KlfSjc6jBj7",
-            "id": "7dQQTSh3iq7KlfSjc6jBj7",
+            "href": "https://api.spotify.com/v1/tracks/26QLJMK8G0M06sk7h7Fkse",
+            "id": "26QLJMK8G0M06sk7h7Fkse",
             "is_local": false,
             "is_playable": true,
-            "name": "AMPHETAMINE (feat. Julian Comeau & Loveless)",
-            "preview_url": "https://p.scdn.co/mp3-preview/96e63cf0c03464da07c70c41ba7d299cd6cb6c78?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-            "track_number": 10,
+            "name": "love is embarrassing",
+            "preview_url": null,
+            "track_number": 9,
             "type": "track",
-            "uri": "spotify:track:7dQQTSh3iq7KlfSjc6jBj7"
+            "uri": "spotify:track:26QLJMK8G0M06sk7h7Fkse"
           },
           {
             "artists": [
               {
                 "external_urls": {
-                  "spotify": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK"
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
                 },
-                "href": "https://api.spotify.com/v1/artists/1koutXdSFq2PHqtxSWj9tK",
-                "id": "1koutXdSFq2PHqtxSWj9tK",
-                "name": "Hot Milk",
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
                 "type": "artist",
-                "uri": "spotify:artist:1koutXdSFq2PHqtxSWj9tK"
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
               }
             ],
             "disc_number": 1,
-            "duration_ms": 190378,
-            "explicit": false,
+            "duration_ms": 189386,
+            "explicit": true,
             "external_urls": {
-              "spotify": "https://open.spotify.com/track/2bk5qAWYlhUw8IyFSTA0pg"
+              "spotify": "https://open.spotify.com/track/3Nl5OkkmS5DaBZvuYofpAt"
             },
-            "href": "https://api.spotify.com/v1/tracks/2bk5qAWYlhUw8IyFSTA0pg",
-            "id": "2bk5qAWYlhUw8IyFSTA0pg",
+            "href": "https://api.spotify.com/v1/tracks/3Nl5OkkmS5DaBZvuYofpAt",
+            "id": "3Nl5OkkmS5DaBZvuYofpAt",
             "is_local": false,
             "is_playable": true,
-            "name": "FORGET ME NOT",
-            "preview_url": "https://p.scdn.co/mp3-preview/c5a43fcb336970bdda43d55efea33944f55f337f?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+            "name": "the grudge",
+            "preview_url": null,
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:3Nl5OkkmS5DaBZvuYofpAt"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                },
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
+                "type": "artist",
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 199422,
+            "explicit": true,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6W9l02gRsXVxzIuQC1oc1X"
+            },
+            "href": "https://api.spotify.com/v1/tracks/6W9l02gRsXVxzIuQC1oc1X",
+            "id": "6W9l02gRsXVxzIuQC1oc1X",
+            "is_local": false,
+            "is_playable": true,
+            "name": "pretty isn’t pretty",
+            "preview_url": null,
             "track_number": 11,
             "type": "track",
-            "uri": "spotify:track:2bk5qAWYlhUw8IyFSTA0pg"
+            "uri": "spotify:track:6W9l02gRsXVxzIuQC1oc1X"
+          },
+          {
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                },
+                "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                "id": "1McMsnEElThX1knmY4oliG",
+                "name": "Olivia Rodrigo",
+                "type": "artist",
+                "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 222358,
+            "explicit": false,
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7fesNTgTEMEH0ye8MOgEDY"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7fesNTgTEMEH0ye8MOgEDY",
+            "id": "7fesNTgTEMEH0ye8MOgEDY",
+            "is_local": false,
+            "is_playable": true,
+            "name": "teenage dream",
+            "preview_url": null,
+            "track_number": 12,
+            "type": "track",
+            "uri": "spotify:track:7fesNTgTEMEH0ye8MOgEDY"
           }
         ],
         "limit": 50,
         "next": null,
         "offset": 0,
         "previous": null,
-        "total": 11
+        "total": 12
       },
       "type": "album",
-      "uri": "spotify:album:3zhyT62LXkBpycohrjER5s",
-      "rating": 3
+      "uri": "spotify:album:1xJHno7SmdVtZAtXbdbDZp",
+      "rating": 4
     }
   ]
 }

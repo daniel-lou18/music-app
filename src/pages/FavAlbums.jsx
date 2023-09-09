@@ -31,7 +31,7 @@ function FavAlbums() {
       {albums.length === 0 && <div>No favorite albums...</div>}
       {albums.length > 0 && (
         <>
-          <ListContainer>
+          <ListContainer type="favoritePage">
             <HorizontalList items={albums} title="Favorite albums" />
           </ListContainer>
         </>

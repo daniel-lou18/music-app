@@ -38,7 +38,7 @@
   margin-right: 25px;
 }
 
-:global(.favoritePage) {
+:global(.favoritePage).container-favorite-songs {
   margin-right: 25px;
 }
 
@@ -52,12 +52,19 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  :global(.favoritePage) h2:global(.section-title) {
+    margin-top: 7px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .left {
     display: none;
   }
 
-  .right.home-container-tracks h2:global(.section-title) {
+  .right.home-container-tracks h2:global(.section-title),
+  :global(.favoritePage) h2:global(.section-title) {
     margin-top: 10px;
   }
 

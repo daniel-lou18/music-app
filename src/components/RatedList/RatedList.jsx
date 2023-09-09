@@ -18,6 +18,7 @@ function RatedList({ items, title }) {
               item.type === "artist" ? item.genres[0] : item.artists[0].name
             }
             type={item.type}
+            item={item}
           />
         ))}
       </ul>

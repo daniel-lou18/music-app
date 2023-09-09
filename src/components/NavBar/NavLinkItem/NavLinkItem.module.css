@@ -69,7 +69,7 @@
 }
 
 .listItem:not(:first-child) .navLink:global(.active) svg {
-  animation: 0.1s linear alternate scale-up-down;
+  animation: 0.15s linear alternate scale-up-down;
 }
 
 .logoMobile {
@@ -78,7 +78,7 @@
 
 @keyframes scale-up-down {
   to {
-    transform: scale(1.1);
+    transform: scale(1.07);
   }
 }
 

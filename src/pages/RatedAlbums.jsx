@@ -32,7 +32,7 @@ function RatedAlbums() {
       {albums.length === 0 && <div>No rated albums...</div>}
       {albums.length > 0 && (
         <>
-          <ListContainer>
+          <ListContainer type="favoritePage">
             <RatedList items={albums} title="Rated albums" />
           </ListContainer>
         </>

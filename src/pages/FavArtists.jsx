@@ -31,7 +31,7 @@ function FavArtists() {
       {artists.length === 0 && <div>No favorite artists...</div>}
       {artists.length > 0 && (
         <>
-          <ListContainer>
+          <ListContainer type="favoritePage">
             <HorizontalList items={artists} title="Favorite artists" />
           </ListContainer>
         </>

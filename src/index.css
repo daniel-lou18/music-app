@@ -16,6 +16,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-BoldItalic.woff2") format("woff2"),
+    url("assets/fonts/Inter-BoldItalic.woff") format("woff"),
+    url("assets/fonts/Inter-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
 :root {
   font-family: "Inter", Helvetica, system-ui, Avenir, Arial, sans-serif;
   line-height: 1.5;

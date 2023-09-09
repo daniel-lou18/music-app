@@ -32,7 +32,10 @@ function RatedSongs() {
       {tracks.length === 0 && <div>No rated tracks...</div>}
       {tracks.length > 0 && (
         <>
-          <ListContainer type="favoritePage">
+          <ListContainer
+            type="favoritePage"
+            className="container-favorite-songs"
+          >
             <TrackList tracks={tracks} title="Rated songs" type="big" />
           </ListContainer>
         </>
