@@ -4,6 +4,8 @@ import TrackList from "../components/TrackList";
 import { useRated } from "../context/RatedContext";
 import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
+import NavLinkItem from "../components/NavBar/NavLinkItem";
+import LogoIcon from "../components/UI-elements/LogoIcon";
 
 function RatedSongs() {
   const { ratedData } = useRated();
@@ -13,6 +15,17 @@ function RatedSongs() {
 
   return (
     <Results>
+      <NavLinkItem
+        to={""}
+        icon={<LogoIcon />}
+        text={
+          <h1>
+            Spoti<span>Lite</span>
+          </h1>
+        }
+        end={true}
+        className="logoMobile"
+      />
       <TopBar>
         <NavBtns />
       </TopBar>

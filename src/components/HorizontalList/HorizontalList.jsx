@@ -16,7 +16,13 @@ function HorizontalList({
     <>
       {type === "search" && (
         <>
-          <h2 className="section-title title-horizontal-list">{title}</h2>
+          <h2
+            className={`section-title title-horizontal-list ${
+              styles[`title-${className}`]
+            }`}
+          >
+            {title}
+          </h2>
 
           <ul className={`${styles.horList} ${className} ${styles[className]}`}>
             {isLoading && <Spinner />}
@@ -44,9 +50,15 @@ function HorizontalList({
       )}
       {type === "browse" && (
         <>
-          <h2 className="section-title title-browse-categories">{title}</h2>
+          <h2
+            className={`section-title title-browse-categories ${
+              styles[`title-${className}`]
+            }`}
+          >
+            {title}
+          </h2>
 
-          <ul className={styles.horList}>
+          <ul className={`${styles.horList} ${className} ${styles[className]}`}>
             {items &&
               items.length > 0 &&
               items.map((item, i) => (

@@ -8,6 +8,7 @@ function BrowseCategories() {
       title="Browse genres"
       type="browse"
       genreNames={genres}
+      className="browse-categories"
     />
   );
 }

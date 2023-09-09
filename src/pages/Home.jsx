@@ -8,6 +8,8 @@ import TrackList from "../components/TrackList";
 import Results from "../components/Containers/Results";
 import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
+import NavLinkItem from "../components/NavBar/NavLinkItem";
+import LogoIcon from "../components/UI-elements/LogoIcon";
 
 function Home() {
   const { dispatch } = useMusic();
@@ -27,13 +29,24 @@ function Home() {
 
   return (
     <Results>
+      <NavLinkItem
+        to={""}
+        icon={<LogoIcon />}
+        text={
+          <h1>
+            Spoti<span>Lite</span>
+          </h1>
+        }
+        end={true}
+        className="logoMobile"
+      />
       <TopBar>
         <NavBtns />
       </TopBar>
       <ListContainer position="left">
         <TopResult title="Featured Artist" type="featured" />
       </ListContainer>
-      <ListContainer position="right">
+      <ListContainer position="right" className={"home-container-tracks"}>
         <TrackList
           tracks={popularTracksData}
           title="Popular Songs"

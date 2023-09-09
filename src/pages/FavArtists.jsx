@@ -4,6 +4,8 @@ import ListContainer from "../components/Containers/ListContainer";
 import HorizontalList from "../components/HorizontalList";
 import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
+import NavLinkItem from "../components/NavBar/NavLinkItem";
+import LogoIcon from "../components/UI-elements/LogoIcon";
 
 function FavArtists() {
   const { favoritesData } = useFavorites();
@@ -12,6 +14,17 @@ function FavArtists() {
 
   return (
     <Results>
+      <NavLinkItem
+        to={""}
+        icon={<LogoIcon />}
+        text={
+          <h1>
+            Spoti<span>Lite</span>
+          </h1>
+        }
+        end={true}
+        className="logoMobile"
+      />
       <TopBar>
         <NavBtns />
       </TopBar>

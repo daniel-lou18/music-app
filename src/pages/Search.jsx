@@ -8,6 +8,7 @@ import { useMusic } from "../context/MusicContext";
 import BrowseCategories from "../components/BrowseCategories";
 import { useBrowse } from "../context/BrowseContext";
 import Spinner from "../components/UI-elements/Spinner";
+import ErrorMsg from "../components/ErrorMsg";
 
 function Search() {
   const { data, query, isLoading, error, dispatch, artistId, albumId } =
@@ -26,7 +27,7 @@ function Search() {
       {(query || artistId || albumId) && (
         <Results>
           {isLoading && <Spinner />}
-          {!isLoading && error && <div>{error}</div>}
+          {!isLoading && error && <ErrorMsg errorMsg={error} />}
           {!isLoading &&
             tracks?.items.length === 0 &&
             artists?.items.length === 0 &&
@@ -38,7 +39,10 @@ function Search() {
               <ListContainer position="left">
                 <TopResult title="Top Result" />
               </ListContainer>
-              <ListContainer position="right">
+              <ListContainer
+                position="right"
+                className="search-container-tracks"
+              >
                 <TrackList tracks={tracks?.items} title="Songs" />
               </ListContainer>
               <ListContainer>

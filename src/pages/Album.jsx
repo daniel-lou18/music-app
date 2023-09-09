@@ -7,6 +7,7 @@ import AlbumHeader from "../components/AlbumHeader";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Spinner from "../components/UI-elements/Spinner";
+import ErrorMsg from "../components/ErrorMsg";
 
 function Album() {
   const { data, isLoading, error, albumId, dispatch } = useMusic();
@@ -20,7 +21,7 @@ function Album() {
   return (
     <Results>
       {isLoading && <Spinner />}
-      {!isLoading && error && <div>{error}</div>}
+      {!isLoading && error && <ErrorMsg errorMsg={error} />}
       {!isLoading &&
         tracks?.items.length === 0 &&
         artists?.items.length === 0 &&

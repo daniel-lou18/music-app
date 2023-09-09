@@ -20,24 +20,23 @@
 
 .link svg:global(.fillable) {
   fill: var(--medium-white-color);
-  animation: 0.2s linear alternate scale-up-down;
+  animation: 0.1s linear alternate scale-up-down;
 }
 
 .listItem {
   position: relative;
   margin-bottom: 10px;
+  list-style: none;
 }
 
 .svgWrapper {
-  height: 28px;
-  width: 28px;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .svgWrapper svg {
-  position: absolute;
-  left: 2px;
-  top: 3px;
+  height: 26px;
+  width: 26px;
 }
 
 .textWrapper {
@@ -49,13 +48,16 @@
 }
 
 .chevron {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   height: 22px;
   width: 22px;
-  padding-top: 4px;
+  padding-top: 4px; */
+  display: flex;
+  align-items: center;
 }
 
 .chevron svg {
+  margin-top: 15%;
   transition: 0.3s ease-out;
 }
 
@@ -64,7 +66,7 @@
 }
 
 .subMenu {
-  padding-left: 48px;
+  padding-left: 46px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -96,7 +98,7 @@
   }
 
   .subMenu {
-    padding-left: 43px;
+    padding-left: 41px;
   }
 }
 
@@ -106,22 +108,17 @@
     font-size: 0.9rem;
   }
 
-  .svgWrapper {
-    height: 26px;
-    width: 26px;
-  }
-
   .svgWrapper svg {
     height: 20px;
     width: 20px;
   }
 
   .textWrapper {
-    margin-left: 5px;
+    margin-left: 8px;
   }
 
   .subMenu {
-    padding-left: 31px;
+    padding-left: 28px;
   }
 }
 
@@ -131,6 +128,6 @@
   }
 
   .subMenu {
-    padding-left: 38px;
+    padding-left: 32px;
   }
 }

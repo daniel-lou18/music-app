@@ -8,6 +8,7 @@ import ArtistHeader from "../components/ArtistHeader";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Spinner from "../components/UI-elements/Spinner";
+import ErrorMsg from "../components/ErrorMsg";
 
 function Artist() {
   const { data, isLoading, error, artistId, dispatch } = useMusic();
@@ -21,7 +22,7 @@ function Artist() {
   return (
     <Results>
       {isLoading && <Spinner />}
-      {!isLoading && error && <div>{error}</div>}
+      {!isLoading && error && <ErrorMsg errorMsg={error} />}
       {!isLoading &&
         tracks?.items.length === 0 &&
         artists?.items.length === 0 &&

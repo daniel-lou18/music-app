@@ -5,6 +5,8 @@ import NavBtns from "../components/UI-elements/NavBtns";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Spinner from "../components/UI-elements/Spinner";
+import NavLinkItem from "../components/NavBar/NavLinkItem";
+import LogoIcon from "../components/UI-elements/LogoIcon";
 
 function Browse() {
   const { data, genre, dispatch, isLoading } = useBrowse();
@@ -17,6 +19,17 @@ function Browse() {
 
   return (
     <>
+      <NavLinkItem
+        to={""}
+        icon={<LogoIcon />}
+        text={
+          <h1>
+            Spoti<span>Lite</span>
+          </h1>
+        }
+        end={true}
+        className="logoMobile"
+      />
       <TopBar>
         <NavBtns />
       </TopBar>
@@ -25,6 +38,7 @@ function Browse() {
         <HorizontalList
           items={artists.items}
           title={genre[0].toUpperCase() + genre.slice(1)}
+          className="browse-category"
         />
       )}
     </>

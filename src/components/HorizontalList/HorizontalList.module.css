@@ -8,6 +8,10 @@
   position: relative;
 }
 
+h2.title-browse-categories {
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 1200px) {
   .horList {
     grid-template-columns: repeat(4, 1fr);
@@ -23,6 +27,18 @@
 @media screen and (max-width: 900px) {
   .horList {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h2.title-browse-category {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2.title-browse-category {
+    margin-top: 10px;
   }
 }
 

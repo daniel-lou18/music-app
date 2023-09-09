@@ -47,12 +47,12 @@
   justify-content: space-between;
 }
 
-.chevron {
+/* .chevron {
   box-sizing: border-box;
   height: 22px;
   width: 22px;
   padding-top: 4px;
-}
+} */
 
 .chevron svg {
   transition: 0.3s ease-out;
@@ -146,8 +146,4 @@
   .subMenu {
     padding-left: 38px;
   }
-
-  /* .chevron {
-    display: none;
-  } */
 }

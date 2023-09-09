@@ -2,3 +2,9 @@
   display: inline-block;
   margin-bottom: 7px;
 }
+
+@media screen and (max-width: 750px) {
+  .topBar {
+    display: none;
+  }
+}

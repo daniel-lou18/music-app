@@ -1,9 +1,9 @@
 .listItem {
-  position: relative;
   margin-bottom: 8px;
+  list-style: none;
 }
 
-.listItem:first-child {
+.listItem:first-child:not(.logoMobile) {
   margin-top: -9px;
   margin-bottom: 20px;
 }
@@ -23,18 +23,20 @@
   color: var(--main-font-color);
 }
 
-.listItem:first-child .navLink .svgWrapper {
+.listItem:first-child:not(.logoMobile) .navLink .svgWrapper {
+  position: relative;
   height: 36px;
   width: 36px;
 }
 
-.listItem:first-child .navLink .svgWrapper svg {
-  left: -10%;
+.listItem:first-child:not(.logoMobile) .navLink .svgWrapper svg {
+  position: absolute;
+  left: -13%;
   top: 0;
 }
 
-.listItem:first-child .navLink .textWrapper {
-  margin-left: 12px;
+.listItem:first-child:not(.logoMobile) .navLink .textWrapper {
+  margin-left: 10px;
 }
 
 .listItem:first-child .navLink h1 {
@@ -45,7 +47,7 @@
 .listItem:first-child .navLink span {
   color: lightgreen;
   font-style: italic;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .navLink:hover,
@@ -57,24 +59,21 @@
   fill: var(--medium-white-color);
 }
 
-.svgWrapper {
-  height: 28px;
-  width: 28px;
-  position: relative;
-}
-
-.svgWrapper svg {
-  position: absolute;
-  left: 2px;
-  top: 3px;
-}
-
 .textWrapper {
   margin-left: 20px;
 }
 
+.listItem:not(:first-child) .svgWrapper svg {
+  height: 26px;
+  width: 26px;
+}
+
 .listItem:not(:first-child) .navLink:global(.active) svg {
-  animation: 0.2s linear alternate scale-up-down;
+  animation: 0.1s linear alternate scale-up-down;
+}
+
+.logoMobile {
+  display: none;
 }
 
 @keyframes scale-up-down {
@@ -84,7 +83,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .listItem:first-child .navLink h1 {
+  .listItem:first-child:not(.logoMobile) .navLink h1 {
     font-size: 1.3rem;
   }
 
@@ -96,13 +95,13 @@
     margin-left: 15px;
   }
 
-  .listItem:first-child .navLink .textWrapper {
-    margin-left: 7px;
+  .listItem:first-child:not(.logoMobile) .navLink .textWrapper {
+    margin-left: 5px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .listItem:first-child .navLink h1 {
+  .listItem:first-child:not(.logoMobile) .navLink h1 {
     font-size: 1.2rem;
   }
 
@@ -110,46 +109,58 @@
     font-size: 0.9rem;
   }
 
-  .svgWrapper {
-    height: 26px;
-    width: 26px;
-  }
-
-  .listItem:first-child .navLink .svgWrapper {
+  .listItem:first-child:not(.logoMobile) .navLink .svgWrapper {
     height: 28px;
     width: 28px;
   }
 
-  .svgWrapper svg {
+  .listItem:not(:first-child) .svgWrapper svg {
     height: 20px;
     width: 20px;
   }
 
-  .listItem:first-child .navLink .svgWrapper svg {
+  .listItem:first-child:not(.logoMobile) .navLink .svgWrapper svg {
     height: 28px;
     width: 28px;
-    left: -8%;
   }
 
   .textWrapper {
-    margin-left: 5px;
+    margin-left: 8px;
   }
 
-  .listItem:first-child .navLink .textWrapper {
-    margin-left: 3px;
+  .listItem:first-child:not(.logoMobile) .navLink .textWrapper {
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .logoMobile {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .logoMobile .navLink {
+    align-items: flex-start;
+  }
+
+  .logoMobile svg {
+    margin-top: -8px;
+  }
+
   .textWrapper {
     margin-left: 12px;
   }
 
-  .listItem:first-child .navLink .textWrapper {
+  .listItem:first-child:not(.logoMobile) {
+    display: none;
+  }
+
+  /* .listItem:first-child .navLink .textWrapper {
     margin-left: 10px;
   }
 
   .listItem:first-child .navLink .svgWrapper svg {
     left: -6%;
-  }
+  } */
 }

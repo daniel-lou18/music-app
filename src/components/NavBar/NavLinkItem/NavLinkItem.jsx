@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./NavLinkItem.module.css";
 
-function NavLinkItem({ to, onClick, icon, text, end = false }) {
+function NavLinkItem({ to, onClick, icon, text, end = false, className }) {
   return (
-    <li className={styles.listItem} onClick={onClick}>
+    <li className={`${styles.listItem} ${styles[className]}`} onClick={onClick}>
       {end && (
         <NavLink to={to} end className={styles.navLink}>
           <div className={styles.svgWrapper}>{icon}</div>
