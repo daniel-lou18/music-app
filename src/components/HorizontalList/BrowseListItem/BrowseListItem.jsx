@@ -35,10 +35,10 @@ function BrowseListItem({ imgUrl, title, genreName }) {
             />
           )}
           {!imgUrl && <ImgPlaceholder />}
+          <BrowseBtn genreName={genreName} />
         </div>
         <div className={styles.textContainer}>
           <h3 className={`${styles.title} `}>{title}</h3>
-          <BrowseBtn genreName={genreName} />
         </div>
       </button>
     </li>

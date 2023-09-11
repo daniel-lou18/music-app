@@ -1,12 +1,19 @@
-.img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background-color: var(--dark-bg-color);
+.imgWrapper {
+  display: inline-flex;
+  position: relative;
 }
 
-.imgWrapper {
+.imgWrapper svg:global(.placeholder-image) {
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background-color: var(--dark-bg-color);
 }
 
 .listItemWrapper {
@@ -17,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: space-between; */
 
   color: inherit;
   height: 100%;
@@ -42,7 +50,11 @@
 }
 
 .textContainer {
+  flex: 1;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title,
@@ -52,7 +64,7 @@
 
 .title {
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 

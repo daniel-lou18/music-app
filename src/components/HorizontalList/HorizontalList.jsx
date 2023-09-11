@@ -2,6 +2,7 @@ import styles from "./HorizontalList.module.css";
 import HorizontalListItem from "./HorizontalListItem";
 import BrowseListItem from "./BrowseListItem/BrowseListItem";
 import Spinner from "../UI-elements/Spinner";
+import ErrorMsg from "../ErrorMsg";
 
 function HorizontalList({
   items,
@@ -26,6 +27,7 @@ function HorizontalList({
 
           <ul className={`${styles.horList} ${className} ${styles[className]}`}>
             {isLoading && <Spinner />}
+            {!isLoading && error && <ErrorMsg errorMsg={error} />}
             {!isLoading &&
               !error &&
               items &&
@@ -59,7 +61,11 @@ function HorizontalList({
           </h2>
 
           <ul className={`${styles.horList} ${className} ${styles[className]}`}>
-            {items &&
+            {isLoading && <Spinner />}
+            {!isLoading && error && <ErrorMsg errorMsg={error} />}
+            {!isLoading &&
+              !error &&
+              items &&
               items.length > 0 &&
               items.map((item, i) => (
                 <BrowseListItem

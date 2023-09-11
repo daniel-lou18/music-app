@@ -1,7 +1,7 @@
 :global(.playBtn) {
   position: absolute;
   right: 5%;
-  bottom: 0;
+  bottom: 5%;
   opacity: 0;
   margin-left: auto;
   height: 48px;

@@ -1,5 +1,7 @@
 .imgWrapper {
   position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .img {
@@ -8,7 +10,7 @@
   background-color: var(--dark-bg-color);
 }
 
-.imgOverlay:hover {
+/* .imgOverlay:hover {
   background-color: var(--medium-hover-color);
   cursor: pointer;
 }
@@ -29,7 +31,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
-}
+} */
 
 .listItemWrapper {
   margin-right: 25px;
@@ -44,12 +46,10 @@
   color: inherit;
   height: 100%;
   width: 100%;
-  position: relative;
   padding: 15px 15px 20px 15px;
   border: none;
   border-radius: 5px;
   background-color: var(--darker-bg-color);
-  /* margin-right: 25px; */
   transition: background-color 0.3s;
 }
 
@@ -70,9 +70,9 @@ li.listItem:hover :global(.playBtn) {
   bottom: 5%;
 }
 
-.listItem > :last-child {
+/* .listItem > :last-child {
   align-self: flex-start;
-}
+} */
 
 .textContainer {
   margin-top: 25px;

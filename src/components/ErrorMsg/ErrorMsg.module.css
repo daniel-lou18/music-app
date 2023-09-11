@@ -1,5 +1,6 @@
 .errorContainer {
   grid-column: 2 / 5;
+  padding-top: 5px;
 }
 
 .errorContainer,

@@ -1,3 +1,4 @@
+import ErrorMsg from "../ErrorMsg";
 import Spinner from "../UI-elements/Spinner";
 import TrackItem from "./TrackItem";
 import styles from "./TrackList.module.css";
@@ -12,6 +13,7 @@ function TrackList({ tracks, title, type, className, isLoading, error }) {
         }`}
       >
         {isLoading && <Spinner />}
+        {!isLoading && error && <ErrorMsg errorMsg={error} />}
         {!isLoading &&
           !error &&
           tracks.map((track) => (

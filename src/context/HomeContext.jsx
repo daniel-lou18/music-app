@@ -80,6 +80,8 @@ export const HomeProvider = ({ children }) => {
             },
           }
         );
+        if (!res.ok)
+          throw new Error(`Could not retrieve new releases (${res.status})`);
         const data = await res.json();
         dispatch({ type: "new-releases/loaded", payload: data.albums.items });
       } catch (err) {
@@ -107,6 +109,8 @@ export const HomeProvider = ({ children }) => {
             },
           }
         );
+        if (!res.ok)
+          throw new Error(`Could not retrieve popular songs (${res.status})`);
         const data = await res.json();
         const dataWithAudio = data.tracks
           .filter((track) => track.preview_url)

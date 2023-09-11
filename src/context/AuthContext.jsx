@@ -24,7 +24,8 @@ export const AuthProvider = ({ children }) => {
           },
           body: body,
         });
-        if (!res.ok) throw new Error("Could not get an access token");
+        if (!res.ok)
+          throw new Error(`${res.status} Could not get an access token`);
         const data = await res.json();
         console.log(data);
         setToken(data.access_token);

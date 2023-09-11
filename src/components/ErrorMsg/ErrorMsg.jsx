@@ -4,7 +4,7 @@ import Button from "../UI-elements/Button";
 
 function ErrorMsg({ errorMsg }) {
   return (
-    <div className={styles.errorContainer}>
+    <div className={`${styles.errorContainer} errorContainer`}>
       <AlertIcon />
       <h2 className={styles.errorTitle}>Something went wrong</h2>
       <p className={styles.errorMsg}>{errorMsg}</p>

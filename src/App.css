@@ -29,13 +29,13 @@
 .playBtn {
   position: absolute;
   right: 5%;
-  bottom: 0;
+  bottom: 5%;
   opacity: 0;
   margin-left: auto;
   height: 48px;
   width: 48px;
   border-radius: 50%;
-  background-color: var(--transp-btn-color);
+  background-color: var(--main-btn-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .playBtn:hover {
-  background-color: var(--main-btn-color);
+  background-color: var(--highlight-btn-color);
   cursor: pointer;
 }
 
@@ -61,11 +61,11 @@
 
 @media screen and (max-width: 1050px) {
   .content-container h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .content-container h4 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 

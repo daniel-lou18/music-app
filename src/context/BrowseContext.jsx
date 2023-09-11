@@ -64,6 +64,7 @@ export const BrowseProvider = ({ children }) => {
             },
           }
         );
+        if (!res.ok) throw new Error(`Something went wrong (${res.status}) `);
         const data = await res.json();
         console.log(data);
         dispatch({ type: "loaded", payload: data });

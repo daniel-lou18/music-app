@@ -15,8 +15,8 @@ svg.heartIcon.redHeart:hover {
 
 svg.album {
   position: absolute;
-  top: 18px;
-  right: 20px;
+  top: 5%;
+  right: 5%;
 }
 
 svg.artist {

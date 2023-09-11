@@ -118,8 +118,6 @@ export const MusicProvider = ({ children }) => {
     dispatch,
   ] = useReducer(reducer, initialState);
 
-  console.log(data);
-
   useEffect(() => {
     if (!query || !token) return;
     const controller = new AbortController();
@@ -138,6 +136,8 @@ export const MusicProvider = ({ children }) => {
             signal: controller.signal,
           }
         );
+        if (!res.ok)
+          throw new Error(`Could not get music data (${res.status})`);
         const data = await res.json();
         console.log(data);
         dispatch({ type: "loaded", payload: data });
@@ -165,6 +165,8 @@ export const MusicProvider = ({ children }) => {
             Authorization: `Bearer ${token})}`,
           },
         });
+        if (!res.ok)
+          throw new Error(`Could not get artist data (${res.status})`);
         const data = await res.json();
         console.log(data);
         dispatch({ type: actionType, payload: data });
@@ -196,6 +198,8 @@ export const MusicProvider = ({ children }) => {
             },
           }
         );
+        if (!trackRes.ok)
+          throw new Error(`Could not get album tracks (${trackRes.status})`);
         const trackData = await trackRes.json();
 
         const albumRes = await fetch(
@@ -208,6 +212,8 @@ export const MusicProvider = ({ children }) => {
             },
           }
         );
+        if (!albumRes.ok)
+          throw new Error(`Could not get album data (${albumRes.status})`);
         const albumData = await albumRes.json();
         dispatch({ type: "topResult/set", payload: albumData });
 

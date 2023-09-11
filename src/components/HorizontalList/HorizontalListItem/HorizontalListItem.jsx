@@ -72,6 +72,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
           {type === "album" && (
             <Heart id={favId} onClick={handleFavorite} type={type} />
           )}
+          <GoToBtn type={type} id={id} />
         </div>
         <div className={styles.textContainer}>
           <h3
@@ -80,7 +81,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
             }`}
             onClick={handleFromArtistNavigate}
           >
-            {title}
+            {title.length > 30 ? title.slice(0, 35) + "..." : title}
           </h3>
           <h4
             className={`${styles.subtitle} ${
@@ -90,7 +91,6 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
           >
             {subtitle}
           </h4>
-          <GoToBtn type={type} id={id} />
         </div>
       </button>
     </li>

@@ -58,10 +58,10 @@ function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
             onMouseLeave={() => setShowReset(false)}
             onClick={() => removeRated(id)}
           ></div>
+          <GoToBtn type={type} id={id} />
         </div>
         <div className={styles.textContainer}>
           <h3 className={styles.title}>{title}</h3>
-          <GoToBtn type={type} id={id} />
         </div>
         <StarRating
           size={24}
