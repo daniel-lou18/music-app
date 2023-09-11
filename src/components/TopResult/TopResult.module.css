@@ -2,20 +2,20 @@
   position: relative;
 }
 
-/* h2.title {
-  margin-top: 20px;
-} */
-
 .result {
   position: relative;
-  min-height: 310px;
+  min-height: 350px;
   /* width: calc(100% - 40px); */
   padding: 20px;
   background-color: var(--darker-bg-color);
   border-radius: 5px;
 }
 
-@media screen and (max-width: 900px) {
+.result:hover {
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 900px) {
   .result {
     min-height: 265px;
   }
@@ -31,7 +31,7 @@
   .result {
     min-height: 190px;
   }
-}
+} */
 
 .result:hover {
   background-color: rgba(60, 60, 60, 0.7);
@@ -83,13 +83,6 @@
   display: none;
 }
 
-/* .result :global(.pauseNoteContainer) {
-  opacity: 1;
-  right: 5%;
-  bottom: 5%;
-  background-color: rgb(49, 49, 49, 0.5);
-} */
-
 .img {
   height: 125px;
   width: 125px;
@@ -117,7 +110,7 @@
   margin-bottom: 33px;
 }
 
-.itemSubtitles {
+/* .itemSubtitles {
   display: flex;
   align-items: center;
 }
@@ -125,7 +118,6 @@
 .itemSubtitles > * {
   padding-top: 6px;
   padding-bottom: 6px;
-  /* height: 1.1rem; */
 }
 
 .firstSubtitle {
@@ -145,7 +137,7 @@
   background-color: var(--darkest-bg-color);
   font-size: 0.9rem;
   font-weight: bold;
-}
+} */
 
 @media screen and (max-width: 1200px) {
   h3.itemTitle {
@@ -165,20 +157,6 @@
 
   h3.itemTitleSmall {
     font-size: 1rem;
-  }
-
-  h4.secondSubtitle {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  h3.firstSubtitle {
-    font-size: 0.9rem;
-  }
-
-  h4.secondSubtitle {
-    font-size: 0.9rem;
   }
 }
 
@@ -202,9 +180,6 @@
     font-size: 0.8rem;
   }
 } */
-
-@media screen and (max-width: 600px) {
-}
 
 /* .lastLine {
   display: flex;

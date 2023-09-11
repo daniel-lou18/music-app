@@ -30,7 +30,6 @@ function AlbumHeader({ title }) {
 
   const handleFavorite = () => {
     console.log(favoritesData);
-    console.log(favId);
     if (!favId) {
       addFavorite(topResult);
     } else {

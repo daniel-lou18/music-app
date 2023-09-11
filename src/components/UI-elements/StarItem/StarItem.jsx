@@ -8,7 +8,7 @@ function StarItem({ numStars, onHover, onLeave, onClick, idx, size, color }) {
       style={{ height: size, width: size }}
       onMouseEnter={() => onHover(idx)}
       onMouseLeave={onLeave}
-      onClick={() => onClick(idx)}
+      onClick={(e) => onClick(e, idx)}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

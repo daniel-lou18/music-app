@@ -14,8 +14,9 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   const favId = favoritesData.find((item) => item.id === id)?.id;
   const { dispatch } = useMusic();
 
-  const handleFavorite = () => {
+  const handleFavorite = (e) => {
     console.log(favoritesData);
+    e.stopPropagation();
     if (!favId) {
       addFavorite(item);
     } else {
@@ -23,7 +24,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
     }
   };
 
-  const handleFromArtistNavigate = function () {
+  const handleFromArtistToArtist = () => {
     if (type === "artist") {
       dispatch({ type: "artist/get", payload: id });
       navigate(`/app/artist/${id}`);
@@ -31,7 +32,8 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
     }
   };
 
-  const handleFromAlbumNavigate = function () {
+  const handleFromAlbumToArtist = (e) => {
+    e.stopPropagation();
     if (type === "album") {
       dispatch({ type: "artist/get", payload: item.artists[0].id });
       navigate(`/app/artist/${item.artists[0].id}`);
@@ -39,12 +41,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
     }
   };
 
-  const handleNoHoverNavigate = function () {
-    const regexMobile =
-      /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    if (!regexMobile.test(navigator.userAgent)) return;
-
-    handleFromArtistNavigate();
+  const handleFromAlbumToAlbum = () => {
     if (type === "album") {
       dispatch({ type: "album/get", payload: id });
       navigate(`/app/album/${id}`);
@@ -52,9 +49,14 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
     }
   };
 
+  const handleNavigate = function () {
+    handleFromArtistToArtist();
+    handleFromAlbumToAlbum();
+  };
+
   return (
     <li className={styles.listItemWrapper}>
-      <button className={styles.listItem} onClick={handleNoHoverNavigate}>
+      <button className={styles.listItem} onClick={handleNavigate}>
         {type === "artist" && (
           <Heart id={favId} onClick={handleFavorite} type={type} />
         )}
@@ -72,14 +74,14 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
           {type === "album" && (
             <Heart id={favId} onClick={handleFavorite} type={type} />
           )}
-          <GoToBtn type={type} id={id} />
+          <GoToBtn />
         </div>
         <div className={styles.textContainer}>
           <h3
             className={`${styles.title} ${
               type === "artist" ? styles.link : ""
             }`}
-            onClick={handleFromArtistNavigate}
+            onClick={handleFromArtistToArtist}
           >
             {title.length > 30 ? title.slice(0, 35) + "..." : title}
           </h3>
@@ -87,7 +89,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
             className={`${styles.subtitle} ${
               type === "album" ? styles.link : ""
             }`}
-            onClick={handleFromAlbumNavigate}
+            onClick={handleFromAlbumToArtist}
           >
             {subtitle}
           </h4>

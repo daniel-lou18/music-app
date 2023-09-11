@@ -12,20 +12,12 @@ function BrowseListItem({ imgUrl, title, genreName }) {
   const handleBrowse = () => {
     dispatchBrowse({ type: "browse/genre", payload: genreName });
     navigate(`/app/browse/${genreName}`);
-
     window.scrollTo(0, 0);
-  };
-
-  const handleNoHoverNavigate = function () {
-    const regexMobile =
-      /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    if (!regexMobile.test(navigator.userAgent)) return;
-    handleBrowse();
   };
 
   return (
     <li className={styles.listItemWrapper}>
-      <button className={styles.listItem} onClick={handleNoHoverNavigate}>
+      <button className={styles.listItem} onClick={handleBrowse}>
         <div className={styles.imgWrapper}>
           {imgUrl && (
             <img
@@ -35,7 +27,7 @@ function BrowseListItem({ imgUrl, title, genreName }) {
             />
           )}
           {!imgUrl && <ImgPlaceholder />}
-          <BrowseBtn genreName={genreName} />
+          <BrowseBtn />
         </div>
         <div className={styles.textContainer}>
           <h3 className={`${styles.title} `}>{title}</h3>

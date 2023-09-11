@@ -42,10 +42,10 @@
   transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-.playBtn:hover {
+/* .playBtn:hover {
   background-color: var(--highlight-btn-color);
   cursor: pointer;
-}
+} */
 
 @media (hover: none) {
   .playBtn {

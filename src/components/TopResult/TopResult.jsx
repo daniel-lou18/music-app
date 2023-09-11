@@ -7,14 +7,17 @@ import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import { artist } from "../../../data/featuredArtist";
+import Subtitles from "./Subtitles";
+import ErrorMsg from "../ErrorMsg";
 
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function TopResult({ title, type = "result" }) {
-  const { query, topResult, dispatch } = useMusic();
+  const navigate = useNavigate();
+  const { query, topResult, dispatch, isPlayingId } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
-  console.log(topResult);
 
   useEffect(() => {
     if (type === "featured") {
@@ -26,9 +29,9 @@ function TopResult({ title, type = "result" }) {
     return (
       <div className={`result-container ${styles.resultContainer}`}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
-        <div
-          className={styles.result}
-        >{`No Top Result found for "${query}"`}</div>
+        <div className={styles.result}>
+          <ErrorMsg errorMsg={`No Top Result found for "${query}"`} />
+        </div>
       </div>
     );
 
@@ -36,9 +39,50 @@ function TopResult({ title, type = "result" }) {
   const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
   const ratedItem = ratedData.find((item) => item.id === spotifyId);
 
-  const handleFavorite = () => {
+  const handlePlay = () => {
+    if (
+      topResult.type === "track" &&
+      topResult.preview_url &&
+      isPlayingId !== spotifyId
+    )
+      dispatch({ type: "playing/set", payload: spotifyId });
+  };
+
+  const handlePause = () => {
+    if (
+      topResult.type === "track" &&
+      topResult.preview_url &&
+      isPlayingId === spotifyId
+    )
+      dispatch({ type: "playing/set", payload: "" });
+  };
+
+  const handleFromArtistToArtist = () => {
+    if (topResult.type === "artist") {
+      dispatch({ type: "artist/get", payload: spotifyId });
+      navigate(`/app/artist/${spotifyId}`);
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handleFromAlbumToAlbum = () => {
+    if (topResult.type === "album") {
+      dispatch({ type: "album/get", payload: spotifyId });
+      navigate(`/app/album/${spotifyId}`);
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handleClick = () => {
+    handlePlay();
+    handlePause();
+    handleFromAlbumToAlbum();
+    handleFromArtistToArtist();
+  };
+
+  const handleFavorite = (e) => {
     console.log(favoritesData);
-    console.log(favId);
+    e.stopPropagation();
     if (!favId) {
       addFavorite(topResult);
     } else {
@@ -50,6 +94,7 @@ function TopResult({ title, type = "result" }) {
     <div
       className={`result-container ${styles.resultContainer}`}
       key={topResult.id}
+      onClick={handleClick}
     >
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
@@ -72,25 +117,7 @@ function TopResult({ title, type = "result" }) {
             ? topResult.name.slice(0, 30) + "..."
             : topResult.name}
         </h3>
-        <div className={styles.itemSubtitles}>
-          <h3
-            className={`${styles.firstSubtitle} small-subtext ${
-              topResult.type === "artist" && topResult.genres.length === 0
-                ? styles.firstSubtitleHidden
-                : ""
-            } `}
-          >
-            {topResult.type === "track" || topResult.type === "album"
-              ? topResult.artists[0]?.name
-              : topResult.genres[0]}
-          </h3>
-          <h4 className={`${styles.secondSubtitle}`}>
-            {topResult.type === "track"
-              ? "Song"
-              : topResult.type.slice(0, 1).toUpperCase() +
-                topResult.type.slice(1)}
-          </h4>
-        </div>
+        <Subtitles topResult={topResult} />
         <PopularityIcon
           popularity={
             topResult.type === "album"

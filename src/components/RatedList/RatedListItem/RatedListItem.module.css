@@ -10,29 +10,6 @@
   background-color: var(--dark-bg-color);
 }
 
-/* .imgOverlay:hover {
-  background-color: var(--medium-hover-color);
-  cursor: pointer;
-}
-
-.imgOverlay:hover::after {
-  content: "Unrate";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1rem;
-}
-
-.imgOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-} */
-
 .listItemWrapper {
   margin-right: 25px;
 }
@@ -50,7 +27,7 @@
   border: none;
   border-radius: 5px;
   background-color: var(--darker-bg-color);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .listItem:hover :global(.playBtn) {
@@ -62,6 +39,7 @@
 .listItem:hover,
 .listItem:active {
   background-color: var(--medium-hover-color);
+  cursor: pointer;
 }
 
 li.listItem:hover :global(.playBtn) {

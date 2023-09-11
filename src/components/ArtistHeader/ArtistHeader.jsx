@@ -29,7 +29,6 @@ function ArtistHeader({ title }) {
 
   const handleFavorite = () => {
     console.log(favoritesData);
-    console.log(favId);
     if (!favId) {
       addFavorite(topResult);
     } else {

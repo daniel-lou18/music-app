@@ -25,11 +25,12 @@
   border-radius: 5px;
   background-color: var(--darker-bg-color);
   /* margin-right: 25px; */
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .listItem:hover {
   background-color: var(--medium-hover-color);
+  cursor: pointer;
 }
 
 .listItem:active {

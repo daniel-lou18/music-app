@@ -25,7 +25,8 @@ function StarRating({
     setNumHover(0);
   };
 
-  const handleClick = async (idx) => {
+  const handleClick = async (e, idx) => {
+    e.stopPropagation();
     if (beforeCallback) {
       await beforeCallback(item?.id);
       if (rating === 1 && idx === 0) {

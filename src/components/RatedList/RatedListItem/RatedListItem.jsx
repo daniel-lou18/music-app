@@ -14,7 +14,7 @@ function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
   const ratedItem = ratedData.find((item) => item.id === id);
   const [showReset, setShowReset] = useState(false);
 
-  const handleFromArtistNavigate = function () {
+  const handleFromArtistToArtist = () => {
     if (type === "artist") {
       dispatch({ type: "artist/get", payload: id });
       navigate(`/app/artist/${id}`);
@@ -22,17 +22,17 @@ function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
     }
   };
 
-  const handleNoHoverNavigate = function () {
-    const regexMobile =
-      /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    if (!regexMobile.test(navigator.userAgent)) return;
-
-    handleFromArtistNavigate();
+  const handleFromAlbumToAlbum = () => {
     if (type === "album") {
       dispatch({ type: "album/get", payload: id });
       navigate(`/app/album/${id}`);
       window.scrollTo(0, 0);
     }
+  };
+
+  const handleNavigate = () => {
+    handleFromAlbumToAlbum();
+    handleFromArtistToArtist();
   };
 
   return (
@@ -41,7 +41,7 @@ function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
         showReset ? styles.showReset : ""
       }`}
     >
-      <button className={styles.listItem} onClick={handleNoHoverNavigate}>
+      <button className={styles.listItem} onClick={handleNavigate}>
         <div className={styles.imgWrapper}>
           <img
             src={imgUrl}
@@ -58,7 +58,7 @@ function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
             onMouseLeave={() => setShowReset(false)}
             onClick={() => removeRated(id)}
           ></div>
-          <GoToBtn type={type} id={id} />
+          <GoToBtn />
         </div>
         <div className={styles.textContainer}>
           <h3 className={styles.title}>{title}</h3>

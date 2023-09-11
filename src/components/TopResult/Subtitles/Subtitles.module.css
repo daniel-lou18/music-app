@@ -1,0 +1,39 @@
+.itemSubtitles {
+  display: flex;
+  align-items: center;
+}
+
+.itemSubtitles > * {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  /* height: 1.1rem; */
+}
+
+.firstSubtitle {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-right: 15px;
+}
+
+.firstSubtitleHidden {
+  display: none;
+}
+
+.secondSubtitle {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 15px;
+  background-color: var(--darkest-bg-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1050px) {
+  h3.firstSubtitle {
+    font-size: 0.9rem;
+  }
+
+  h4.secondSubtitle {
+    font-size: 0.9rem;
+  }
+}
