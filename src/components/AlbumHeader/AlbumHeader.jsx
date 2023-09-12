@@ -8,11 +8,11 @@ import NavBtns from "../UI-elements/NavBtns/NavBtns";
 import Heart from "../UI-elements/Heart";
 
 function AlbumHeader({ title }) {
-  const { topResult } = useMusic();
+  const { currentAlbum } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
 
-  if (!topResult || !topResult.artists)
+  if (!currentAlbum || !currentAlbum.artists)
     return (
       <div className={styles.resultContainer}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
@@ -20,18 +20,18 @@ function AlbumHeader({ title }) {
       </div>
     );
 
-  const { id: spotifyId } = topResult;
+  const { id: spotifyId } = currentAlbum;
   const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
   const ratedItem = ratedData.find((item) => item.id === spotifyId);
 
   const name =
-    topResult.name.slice(0, 1).toUpperCase() +
-    topResult.name.slice(1).toLowerCase();
+    currentAlbum.name.slice(0, 1).toUpperCase() +
+    currentAlbum.name.slice(1).toLowerCase();
 
   const handleFavorite = () => {
     console.log(favoritesData);
     if (!favId) {
-      addFavorite(topResult);
+      addFavorite(currentAlbum);
     } else {
       removeFavorite(favId);
     }
@@ -40,7 +40,7 @@ function AlbumHeader({ title }) {
   return (
     <div
       className={`${styles.resultContainer} ${styles.header}`}
-      key={topResult.id}
+      key={currentAlbum.id}
     >
       <TopBar>
         <NavBtns />
@@ -50,9 +50,9 @@ function AlbumHeader({ title }) {
           <img
             className={styles.img}
             src={
-              topResult.type === "track"
-                ? topResult.album.images[0]?.url
-                : topResult.images[0]?.url
+              currentAlbum.type === "track"
+                ? currentAlbum.album.images[0]?.url
+                : currentAlbum.images[0]?.url
             }
             alt={name}
           />
@@ -68,16 +68,16 @@ function AlbumHeader({ title }) {
           <div className={styles.itemInfo}>
             <div className={styles.secondSubtitleWrapper}>
               <h4 className={`${styles.secondSubtitle}`}>
-                {topResult.type === "track"
+                {currentAlbum.type === "track"
                   ? "Song"
-                  : topResult.type.slice(0, 1).toUpperCase() +
-                    topResult.type.slice(1)}
+                  : currentAlbum.type.slice(0, 1).toUpperCase() +
+                    currentAlbum.type.slice(1)}
               </h4>
             </div>
             <div className={styles.albumInfo}>
-              <h4>{topResult.artists[0]?.name}</h4>
-              <h4>{topResult.release_date?.slice(0, 4)}</h4>
-              <h4>{topResult.total_tracks} tracks</h4>
+              <h4>{currentAlbum.artists[0]?.name}</h4>
+              <h4>{currentAlbum.release_date?.slice(0, 4)}</h4>
+              <h4>{currentAlbum.total_tracks} tracks</h4>
             </div>
             <StarRating
               size={24}
@@ -86,7 +86,7 @@ function AlbumHeader({ title }) {
               number={5}
               callback={addRated}
               beforeCallback={ratedItem ? removeRated : null}
-              item={topResult}
+              item={currentAlbum}
               defaultRating={ratedItem ? ratedItem.rating : 0}
               type="header"
             />

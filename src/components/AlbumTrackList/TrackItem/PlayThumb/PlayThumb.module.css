@@ -1,0 +1,174 @@
+.playerContainer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.imgWrapper {
+  position: relative;
+  height: 55px;
+  width: 55px;
+}
+.imgWrapper:hover {
+  cursor: pointer;
+}
+
+.img {
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+  background-color: var(--dark-bg-color);
+}
+
+.audio {
+  display: none;
+}
+
+.svgWrapper {
+  height: 25px;
+  width: 25px;
+}
+
+.btnsContainer {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: rgb(49, 49, 49, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnsContainer:global(.noteContainer) {
+  z-index: 3;
+}
+
+:global(.noteContainer) {
+  opacity: 1;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  margin-left: 12px;
+}
+
+.trackName {
+  font-size: 0.9rem;
+}
+
+.textContainer.trackNameSmall {
+  padding: 5px 0;
+}
+
+/* @media screen and (min-width: 600px) {
+  .textContainer.trackNameSmall .trackName {
+    font-size: 0.8rem;
+  }
+} */
+
+.trackArtist {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+:global(.link-no_styling) {
+  text-decoration: none;
+  color: var(--light-white-color);
+}
+
+:global(.link-no_styling):hover {
+  text-decoration: underline;
+}
+
+:global(.link-no_styling):hover .trackArtist {
+  opacity: initial;
+}
+
+.inputRange {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inputRange {
+    display: none;
+  }
+}
+
+/*********** Baseline,
+  reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 7rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #999999;
+  border-radius: 1px;
+  height: 2px;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -6px; /* Centers thumb on the track */
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background-color: lightseagreen;
+  /* outline: 3px solid lightseagreen;
+  outline-offset: 0.125rem; */
+}
+
+/* input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #ffffff;
+  outline-offset: 0.125rem;
+} */
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #999999;
+  border-radius: 1px;
+  height: 2px;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #ffffff;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.4rem;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #ffffff;
+  outline-offset: 0.125rem;
+}

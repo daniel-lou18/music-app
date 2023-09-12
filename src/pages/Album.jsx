@@ -1,6 +1,6 @@
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
-import TrackList from "../components/TrackList";
+import AlbumTrackList from "../components/AlbumTrackList";
 import { useMusic } from "../context/MusicContext";
 import AlbumHeader from "../components/AlbumHeader";
 
@@ -10,31 +10,33 @@ import Spinner from "../components/UI-elements/Spinner";
 import ErrorMsg from "../components/ErrorMsg";
 
 function Album() {
-  const { data, isLoading, error, albumId, dispatch } = useMusic();
-  const { tracks, artists, albums } = data;
-  const { albumId: id } = useParams();
+  const { currentAlbum, isLoading, error, getAlbum } = useMusic();
+  const trackItems = currentAlbum?.tracks?.items;
+  const { albumId } = useParams();
 
   useEffect(() => {
-    if (!albumId) dispatch({ type: "album/get", payload: id });
-  }, [albumId, id, dispatch]);
+    getAlbum(albumId);
+  }, [albumId]);
+
+  // useEffect(() => {
+  //   if (!albumId) dispatch({ type: "album/get", payload: id });
+  // }, [albumId, id, dispatch]);
+  if (!trackItems || trackItems.length < 1) return null;
 
   return (
     <Results>
       {isLoading && <Spinner />}
       {!isLoading && error && <ErrorMsg errorMsg={error} />}
-      {!isLoading &&
-        tracks?.items.length === 0 &&
-        artists?.items.length === 0 &&
-        albums?.items.length === 0 && (
-          <ListContainer>{`No results found`}</ListContainer>
-        )}
-      {!isLoading && !error && tracks?.items.length > 0 && (
+      {/* {!isLoading && trackItems.length === 0 && (
+        <ListContainer>{`No results found`}</ListContainer>
+      )} */}
+      {!isLoading && !error && (
         <>
           <ListContainer type="albumPage">
             <AlbumHeader />
           </ListContainer>
           <ListContainer type="albumPage">
-            <TrackList tracks={tracks?.items} title="Songs" type="big" />
+            <AlbumTrackList title="Songs" type="big" />
           </ListContainer>
         </>
       )}

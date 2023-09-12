@@ -78,6 +78,8 @@ export const MusicProvider = ({ children }) => {
           },
           isLoading: false,
         };
+      case "currentAlbum/loaded":
+        return { ...state, currentAlbum: action.payload, isLoading: false };
       case "albums/loaded":
         return {
           ...state,
@@ -145,7 +147,7 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
-  console.log(currentArtist);
+  console.log(currentAlbum);
 
   useEffect(() => {
     if (!query || !token) return;
@@ -211,56 +213,48 @@ export const MusicProvider = ({ children }) => {
     fetchArtist("top-tracks?market=Fr", "currentArtist/top-tracks/loaded");
   };
 
-  const getAlbum = (albumId) => {
+  const getAlbum = async (albumId) => {
     if (!token || !albumId) return;
 
-    async function fetchAlbum() {
-      try {
-        dispatch({ type: "loading" });
-        const trackRes = await fetch(
-          `${BASE_URL}/albums/${albumId}/tracks?market=fr`,
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token})}`,
-            },
-          }
-        );
-        if (!trackRes.ok)
-          throw new Error(`Could not get album tracks (${trackRes.status})`);
-        const trackData = await trackRes.json();
+    try {
+      dispatch({ type: "loading" });
+      // const trackRes = await fetch(
+      //   `${BASE_URL}/albums/${albumId}/tracks?market=fr`,
+      //   {
+      //     method: "GET",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //       Authorization: `Bearer ${token})}`,
+      //     },
+      //   }
+      // );
+      // if (!trackRes.ok)
+      //   throw new Error(`Could not get album tracks (${trackRes.status})`);
+      // const trackData = await trackRes.json();
 
-        const albumRes = await fetch(
-          `${BASE_URL}/albums/${albumId}?market=fr`,
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${token})}`,
-            },
-          }
-        );
-        if (!albumRes.ok)
-          throw new Error(`Could not get album data (${albumRes.status})`);
-        const albumData = await albumRes.json();
-        dispatch({ type: "topResult/set", payload: albumData });
+      const res = await fetch(`${BASE_URL}/albums/${albumId}?market=fr`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token})}`,
+        },
+      });
+      if (!res.ok) throw new Error(`Could not get album data (${res.status})`);
+      const data = await res.json();
+      console.log(data);
+      dispatch({ type: "topResult/set", payload: data });
+      dispatch({ type: "currentAlbum/loaded", payload: data });
 
-        const data = {
-          ...trackData,
-          items: trackData.items.map((item) => {
-            return { ...item, album: albumData };
-          }),
-        };
-        console.log(data);
-        dispatch({ type: "albumTracks/loaded", payload: data });
-      } catch (err) {
-        console.error(err);
-        dispatch({ type: "error", payload: err });
-      }
+      // const data_ = {
+      //   ...trackData,
+      //   items: trackData.items.map((item) => {
+      //     return { ...item, album: data };
+      //   }),
+      // };
+    } catch (err) {
+      console.error(err);
+      dispatch({ type: "error", payload: err });
     }
-
-    fetchAlbum();
   };
 
   return (

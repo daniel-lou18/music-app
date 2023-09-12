@@ -1,0 +1,19 @@
+.iconsContainer svg:not(:global(.feather-heart)):hover {
+  cursor: pointer;
+  stroke: lightgray;
+  fill: rgb(32, 178, 170, 0.3);
+  transform: scale(1.1);
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .iconsContainer {
+    display: none;
+  }
+}
