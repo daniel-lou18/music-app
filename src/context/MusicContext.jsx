@@ -12,6 +12,8 @@ export const MusicProvider = ({ children }) => {
 
   const initialState = {
     data: {},
+    currentArtist: {},
+    currentAlbum: {},
     query: "",
     error: "",
     isLoading: false,
@@ -51,6 +53,30 @@ export const MusicProvider = ({ children }) => {
           albumId: action.payload,
           isPlayingId: "",
           artistId: "",
+        };
+      case "currentArtist/albums/loaded":
+        return {
+          ...state,
+          currentArtist: { ...state.currentArtist, albums: action.payload },
+          isLoading: false,
+        };
+      case "currentArtist/related-artists/loaded":
+        return {
+          ...state,
+          currentArtist: {
+            ...state.currentArtist,
+            artists: action.payload.artists,
+          },
+          isLoading: false,
+        };
+      case "currentArtist/top-tracks/loaded":
+        return {
+          ...state,
+          currentArtist: {
+            ...state.currentArtist,
+            tracks: action.payload.tracks,
+          },
+          isLoading: false,
         };
       case "albums/loaded":
         return {
@@ -107,6 +133,8 @@ export const MusicProvider = ({ children }) => {
   const [
     {
       data,
+      currentArtist,
+      currentAlbum,
       query,
       error,
       isLoading,
@@ -117,6 +145,7 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+  console.log(currentArtist);
 
   useEffect(() => {
     if (!query || !token) return;
@@ -152,7 +181,7 @@ export const MusicProvider = ({ children }) => {
     return () => controller.abort();
   }, [token, query]);
 
-  useEffect(() => {
+  const getArtist = (artistId) => {
     if (!token || !artistId) return;
 
     async function fetchArtist(source, actionType) {
@@ -177,12 +206,12 @@ export const MusicProvider = ({ children }) => {
     }
 
     fetchArtist("", "topResult/set");
-    fetchArtist("albums?limit=5", "albums/loaded");
-    fetchArtist("related-artists", "artists/loaded");
-    fetchArtist("top-tracks?market=Fr", "tracks/loaded");
-  }, [artistId, token]);
+    fetchArtist("albums?limit=5", "currentArtist/albums/loaded");
+    fetchArtist("related-artists", "currentArtist/related-artists/loaded");
+    fetchArtist("top-tracks?market=Fr", "currentArtist/top-tracks/loaded");
+  };
 
-  useEffect(() => {
+  const getAlbum = (albumId) => {
     if (!token || !albumId) return;
 
     async function fetchAlbum() {
@@ -232,12 +261,14 @@ export const MusicProvider = ({ children }) => {
     }
 
     fetchAlbum();
-  }, [albumId, token]);
+  };
 
   return (
     <MusicContext.Provider
       value={{
         data,
+        currentArtist,
+        currentAlbum,
         query,
         error,
         isLoading,
@@ -245,6 +276,8 @@ export const MusicProvider = ({ children }) => {
         artistId,
         albumId,
         topResult,
+        getArtist,
+        getAlbum,
         dispatch,
       }}
     >

@@ -118,13 +118,11 @@ function TopResult({ title, type = "result" }) {
             : topResult.name}
         </h3>
         <Subtitles topResult={topResult} />
-        <PopularityIcon
-          popularity={
-            topResult.type === "album"
-              ? 3
-              : Math.ceil(topResult.popularity / 20)
-          }
-        />
+        {topResult.type === "album" ? (
+          <div>{topResult.release_date.slice(0, 4)}</div>
+        ) : (
+          <PopularityIcon popularity={Math.ceil(topResult.popularity / 20)} />
+        )}
         <PlayBtn
           key={topResult.id}
           type={topResult.type}

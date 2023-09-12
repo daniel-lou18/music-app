@@ -32,6 +32,7 @@
   position: relative;
   padding: 15px 15px 20px 15px;
   border: none;
+  text-decoration: none;
   border-radius: 5px;
   background-color: var(--darker-bg-color);
   /* margin-right: 25px; */
@@ -58,9 +59,10 @@
   justify-content: space-between;
 }
 
-.title,
-.subtitle {
-  word-break: break-word;
+.title > a,
+.subtitle > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .title {

@@ -11,37 +11,43 @@ import Spinner from "../components/UI-elements/Spinner";
 import ErrorMsg from "../components/ErrorMsg";
 
 function Artist() {
-  const { data, isLoading, error, artistId, dispatch } = useMusic();
-  const { tracks, artists, albums } = data;
-  const { artistId: id } = useParams();
+  const { currentArtist, isLoading, error, getArtist } = useMusic();
+  const { tracks, artists, albums } = currentArtist;
+  const { artistId } = useParams();
+  console.log(currentArtist);
 
   useEffect(() => {
-    if (!artistId) dispatch({ type: "artist/get", payload: id });
-  }, [artistId, id, dispatch]);
+    getArtist(artistId);
+  }, [artistId]);
+
+  // useEffect(() => {
+  //   if (!artistId) dispatch({ type: "artist/get", payload: id });
+  // }, [artistId, id, dispatch]);
+  if (!tracks || !artists || !albums) return null;
 
   return (
     <Results>
       {isLoading && <Spinner />}
       {!isLoading && error && <ErrorMsg errorMsg={error} />}
       {!isLoading &&
-        tracks?.items.length === 0 &&
-        artists?.items.length === 0 &&
-        albums?.items.length === 0 && (
+        tracks.length === 0 &&
+        artists.length === 0 &&
+        albums.items.length === 0 && (
           <ListContainer>{`No results found`}</ListContainer>
         )}
-      {!isLoading && !error && tracks?.items.length > 0 && (
+      {!isLoading && !error && tracks.length > 0 && (
         <>
           <ListContainer>
             <ArtistHeader />
           </ListContainer>
           <ListContainer type="artistPage">
-            <TrackList tracks={tracks?.items} title="Top Songs" type="big" />
+            <TrackList tracks={tracks} title="Top Songs" type="big" />
           </ListContainer>
           <ListContainer type="artistPage">
-            <HorizontalList items={artists?.items} title={"Related artists"} />
+            <HorizontalList items={artists} title={"Related artists"} />
           </ListContainer>
           <ListContainer type="artistPage">
-            <HorizontalList items={albums?.items} title={"Albums"} />
+            <HorizontalList items={albums.items} title={"Albums"} />
           </ListContainer>
         </>
       )}
