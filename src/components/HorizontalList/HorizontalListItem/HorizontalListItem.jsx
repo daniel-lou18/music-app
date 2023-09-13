@@ -6,9 +6,11 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ImgPlaceholder from "../../UI-elements/ImgPlaceholder/ImgPlaceholder";
 import GoToBtn from "../../UI-elements/GoToBtn";
+import { useState } from "react";
 
 function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   const navigate = useNavigate();
+  const [imgLoaded, setImgLoaded] = useState(false);
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const favId = favoritesData.find((item) => item.id === id)?.id;
 
@@ -38,17 +40,16 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
           <Heart id={favId} onClick={handleFavorite} type={type} />
         )}
         <div className={styles.imgWrapper}>
-          {imgUrl && (
-            <img
-              src={imgUrl}
-              className={`${styles.img} ${
-                type === "artist" ? styles.circle : styles.square
-              }`}
-              alt={title}
-            />
-          )}
-          {!imgUrl && <ImgPlaceholder />}
-          {type === "album" && (
+          <img
+            src={imgUrl}
+            className={`${styles.img} ${
+              type === "artist" ? styles.circle : styles.square
+            } ${imgLoaded ? "" : styles.imgLoading}`}
+            alt={title}
+            onLoad={() => setImgLoaded(true)}
+          />
+          {!imgLoaded && <ImgPlaceholder />}
+          {type === "album" && imgLoaded && (
             <Heart id={favId} onClick={handleFavorite} type={type} />
           )}
           <GoToBtn />

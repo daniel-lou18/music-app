@@ -46,7 +46,7 @@
 }
 
 .secondSubtitleWrapper {
-  padding-top: 3px;
+  /* padding-top: 3px; */
 }
 
 .secondSubtitle {
@@ -92,6 +92,10 @@
 
 :global(.small-subtext.header)::after {
   content: ":";
+}
+
+.header svg:global(.feather-heart) {
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 1200px) {

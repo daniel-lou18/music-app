@@ -28,7 +28,6 @@ function ArtistHeader({ title }) {
   const name = currentArtist.name;
 
   const handleFavorite = () => {
-    console.log(favoritesData);
     if (!favId) {
       addFavorite(currentArtist);
     } else {

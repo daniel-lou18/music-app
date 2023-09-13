@@ -10,7 +10,6 @@ import LogoIcon from "../components/UI-elements/LogoIcon";
 function FavSongs() {
   const { favoritesData } = useFavorites();
   const tracks = favoritesData.filter((item) => item.type === "track");
-  console.log(tracks);
 
   return (
     <Results>

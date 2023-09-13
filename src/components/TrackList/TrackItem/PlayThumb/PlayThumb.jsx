@@ -6,8 +6,10 @@ import { useMusic } from "../../../../context/MusicContext";
 import LockIcon from "../../../UI-elements/LockIcon";
 import PlayIcon from "../../../UI-elements/PlayIcon";
 import IsPlayingIcon from "../../../UI-elements/IsPlayingIcon";
+import ImgPlaceholder from "../../../UI-elements/ImgPlaceholder/ImgPlaceholder";
 
 function PlayThumb({ album, id, name, artists, preview_url }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
   const { isPlayingId, dispatch } = useMusic();
   const isPlaying = isPlayingId === id ? true : false;
   const [currentTime, setCurrentTime] = useState(0);
@@ -39,10 +41,12 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
     <div className={styles.playerContainer}>
       <div className={styles.imgWrapper}>
         <img
-          className={styles.img}
+          className={`${styles.img} ${imgLoaded ? "" : styles.imgLoading}`}
           src={album.images[album.images.length - 1]?.url}
           alt={name}
+          onLoad={() => setImgLoaded(true)}
         />
+        {!imgLoaded && <ImgPlaceholder />}
         {!preview_url && (
           <LockIcon classNames={[styles.btnsContainer, "btnsContainer"]} />
         )}

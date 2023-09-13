@@ -8,7 +8,7 @@ function PopularityIcon({ popularity = 3, type }) {
       }`}
     >
       <div className={`${styles.popularityLabel} small-subtext`}>
-        Popularity:
+        Popularity
       </div>
       {/* <div className={`${styles.svgWrapper}`}> */}
       <svg

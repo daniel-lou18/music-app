@@ -16,6 +16,10 @@
   background-color: var(--dark-bg-color);
 }
 
+.imgLoading {
+  display: none;
+}
+
 .listItemWrapper {
   margin-right: 25px;
 }
@@ -57,12 +61,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title > a,
 .subtitle > a {
   text-decoration: none;
   color: inherit;
+}
+
+.title,
+.subtitle {
+  text-align: center;
 }
 
 .title {
@@ -98,21 +108,27 @@
     display: none;
   }
 
-  .listItemWrapper:last-child {
+  .listItemWrapper:nth-child(9):not(:global(.releases-albums) li),
+  .listItemWrapper:nth-child(10):not(:global(.releases-albums) li) {
+    display: none;
+  }
+
+  :global(.releases-albums) li.listItemWrapper:nth-child(10) {
     display: none;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  .listItemWrapper:nth-child(4):not(:global(.releases-albums) li) {
+  .listItemWrapper:nth-child(7):not(:global(.releases-albums) li),
+  .listItemWrapper:nth-child(8):not(:global(.releases-albums) li) {
     display: none;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .listItemWrapper:nth-child(4):not(:global(.releases-albums) li) {
+  /* .listItemWrapper:nth-child(4):not(:global(.releases-albums) li) {
     display: unset;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {

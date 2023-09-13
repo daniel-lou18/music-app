@@ -47,7 +47,6 @@ export const FavoritesProvider = ({ children }) => {
         dispatchFavorites({ type: "loading" });
         const res = await fetch(`${BASE_URL}/favorites`);
         const data = await res.json();
-        console.log(data);
         dispatchFavorites({ type: "loaded", payload: data });
       } catch (err) {
         console.error(err);
@@ -69,7 +68,6 @@ export const FavoritesProvider = ({ children }) => {
         body: JSON.stringify({ ...item }),
       });
       const data = await res.json();
-      console.log(data);
       dispatchFavorites({ type: "added", payload: data });
     } catch (err) {
       console.error(err);

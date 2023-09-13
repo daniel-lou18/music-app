@@ -3,8 +3,11 @@ import { useRated } from "../../../context/RatedContext";
 import StarRating from "../../StarRating";
 import { Link } from "react-router-dom";
 import GoToBtn from "../../UI-elements/GoToBtn";
+import ImgPlaceholder from "../../UI-elements/ImgPlaceholder/ImgPlaceholder";
+import { useState } from "react";
 
 function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
   const { ratedData, addRated, removeRated } = useRated();
   const ratedItem = ratedData.find((item) => item.id === id);
 
@@ -16,9 +19,11 @@ function RatedListItem({ id, imgUrl, title, type, itemName, item }) {
             src={imgUrl}
             className={`${styles.img} ${
               type === "artist" ? styles.circle : styles.square
-            }`}
+            } ${imgLoaded ? "" : styles.imgLoading}`}
             alt={title}
+            onLoad={() => setImgLoaded(true)}
           />
+          {!imgLoaded && <ImgPlaceholder />}
           <div
             className={`${styles.imgOverlay} ${
               type === "artist" ? styles.circle : styles.square

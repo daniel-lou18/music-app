@@ -18,8 +18,6 @@ function TrackIcons({ track }) {
   const navigate = useNavigate();
 
   const handleFavorite = () => {
-    console.log(favoritesData);
-    console.log(id);
     if (!id) {
       addFavorite(track);
     } else {

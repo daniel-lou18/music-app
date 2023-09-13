@@ -9039,6 +9039,42 @@
       "type": "track",
       "uri": "spotify:track:4gfMy1g8KrfSiUTz6AZTYX",
       "rating": 1
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
+      },
+      "followers": {
+        "href": null,
+        "total": 728
+      },
+      "genres": [
+        "belgian jazz"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
+      "id": "1sR6UagoDJiGkAjTmMITg0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebdfafaa46ea5fbb778f662601",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174dfafaa46ea5fbb778f662601",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178dfafaa46ea5fbb778f662601",
+          "width": 160
+        }
+      ],
+      "name": "Alex Koo",
+      "popularity": 5,
+      "type": "artist",
+      "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0",
+      "rating": 3
     }
   ]
 }

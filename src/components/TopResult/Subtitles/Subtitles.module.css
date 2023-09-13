@@ -13,6 +13,7 @@
   font-size: 0.9rem;
   opacity: 0.7;
   margin-right: 15px;
+  min-width: 72px;
 }
 
 .firstSubtitleHidden {

@@ -99,7 +99,6 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
-  console.log(currentArtist);
 
   useEffect(() => {
     if (!query || !token) return;
@@ -109,7 +108,7 @@ export const MusicProvider = ({ children }) => {
       try {
         dispatch({ type: "loading" });
         const res = await fetch(
-          `${BASE_URL}/search?q=${query}&type=artist,track,album&limit=5`,
+          `${BASE_URL}/search?q=${query}&type=artist,track,album&limit=10`,
           {
             method: "GET",
             headers: {
@@ -122,7 +121,6 @@ export const MusicProvider = ({ children }) => {
         if (!res.ok)
           throw new Error(`Could not get music data (${res.status})`);
         const data = await res.json();
-        console.log(data);
         dispatch({ type: "loaded", payload: data });
         dispatch({ type: "topResult/set", payload: getTopResult(data, query) });
       } catch (err) {
@@ -151,7 +149,6 @@ export const MusicProvider = ({ children }) => {
         if (!res.ok)
           throw new Error(`Could not get artist data (${res.status})`);
         const data = await res.json();
-        console.log(data);
         dispatch({ type: actionType, payload: data });
       } catch (err) {
         console.error(err);
@@ -185,7 +182,6 @@ export const MusicProvider = ({ children }) => {
       });
       if (!res.ok) throw new Error(`Could not get album data (${res.status})`);
       const data = await res.json();
-      console.log(data);
       dispatch({ type: "currentAlbum/loaded", payload: data });
     } catch (err) {
       console.error(err);
@@ -229,7 +225,6 @@ function getTopResult(items, query) {
   const options = { includeScore: true, keys: ["name"] };
   const fuse = new Fuse(itemsArray, options);
   const result = fuse.search(query);
-  console.log(query, "...", result);
 
   const exactMatches = itemsArray
     .filter((item) => item.name.toLowerCase().includes(query))

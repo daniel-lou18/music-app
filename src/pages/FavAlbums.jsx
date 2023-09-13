@@ -10,7 +10,6 @@ import LogoIcon from "../components/UI-elements/LogoIcon";
 function FavAlbums() {
   const { favoritesData } = useFavorites();
   const albums = favoritesData.filter((item) => item.type === "album");
-  console.log(albums);
 
   return (
     <Results>

@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useBrowse } from "../../../context/BrowseContext";
 import ImgPlaceholder from "../../UI-elements/ImgPlaceholder";
 import BrowseBtn from "../../UI-elements/BrowseBtn";
+import { useState } from "react";
 
 function BrowseListItem({ imgUrl, title, genreName }) {
   const navigate = useNavigate();
-
+  const [imgLoaded, setImgLoaded] = useState(false);
   const { dispatch: dispatchBrowse } = useBrowse();
 
   const handleBrowse = () => {
@@ -19,14 +20,15 @@ function BrowseListItem({ imgUrl, title, genreName }) {
     <li className={styles.listItemWrapper}>
       <button className={styles.listItem} onClick={handleBrowse}>
         <div className={styles.imgWrapper}>
-          {imgUrl && (
-            <img
-              src={imgUrl}
-              className={`${styles.img} ${styles.circle}`}
-              alt={title}
-            />
-          )}
-          {!imgUrl && <ImgPlaceholder />}
+          <img
+            src={imgUrl}
+            className={`${styles.img} ${styles.circle} ${
+              imgLoaded ? "" : styles.imgLoading
+            }`}
+            alt={title}
+            onLoad={() => setImgLoaded(true)}
+          />
+          {!imgLoaded && <ImgPlaceholder />}
           <BrowseBtn />
         </div>
         <div className={styles.textContainer}>

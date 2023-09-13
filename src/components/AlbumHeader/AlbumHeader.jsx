@@ -29,7 +29,6 @@ function AlbumHeader({ title }) {
     currentAlbum.name.slice(1).toLowerCase();
 
   const handleFavorite = () => {
-    console.log(favoritesData);
     if (!favId) {
       addFavorite(currentAlbum);
     } else {

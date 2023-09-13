@@ -43,7 +43,7 @@ function Search() {
                 position="right"
                 className="search-container-tracks"
               >
-                <TrackList tracks={tracks?.items} title="Songs" />
+                <TrackList tracks={tracks?.items.slice(0, 5)} title="Songs" />
               </ListContainer>
               <ListContainer>
                 <HorizontalList items={artists?.items} title={"Artists"} />

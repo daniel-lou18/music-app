@@ -1,0 +1,14 @@
+.releaseDateContainer {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.releaseDateNumber {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--light-white-color);
+}

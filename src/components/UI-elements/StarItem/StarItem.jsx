@@ -14,7 +14,7 @@ function StarItem({ numStars, onHover, onLeave, onClick, idx, size, color }) {
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
-        viewBox="0 0 24 24"
+        viewBox="0 2 24 24"
         fill={idx < numStars ? color : "none"}
         stroke={color}
         strokeWidth="2"

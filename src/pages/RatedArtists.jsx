@@ -11,7 +11,6 @@ function RatedArtists() {
   const { ratedData } = useRated();
   if (ratedData.length === 0) return <div>No rated artists...</div>;
   const artists = ratedData.filter((item) => item.type === "artist");
-  console.log(artists);
 
   return (
     <Results>

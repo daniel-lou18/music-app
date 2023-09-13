@@ -37,7 +37,6 @@ export const RatedProvider = ({ children }) => {
   };
 
   const [{ ratedData }, dispatchRated] = useReducer(reducer, initialState);
-  console.log(ratedData);
 
   useEffect(() => {
     const fetchRated = async () => {

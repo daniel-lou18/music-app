@@ -11,7 +11,6 @@ function RatedSongs() {
   const { ratedData } = useRated();
   if (ratedData.length === 0) return <div>No rated tracks...</div>;
   const tracks = ratedData.filter((item) => item.type === "track");
-  console.log(tracks);
 
   return (
     <Results>

@@ -1,9 +1,13 @@
 .popularityContainer {
   margin-top: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
   height: 36px;
+}
+
+.popularityLabel {
+  margin-right: 3px;
 }
 
 .one,

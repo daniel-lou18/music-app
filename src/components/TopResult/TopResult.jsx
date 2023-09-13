@@ -12,6 +12,7 @@ import ErrorMsg from "../ErrorMsg";
 
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ReleaseDate from "./ReleaseDate/ReleaseDate";
 
 function TopResult({ title, type = "result" }) {
   const navigate = useNavigate();
@@ -116,7 +117,7 @@ function TopResult({ title, type = "result" }) {
         </h3>
         <Subtitles topResult={topResult} />
         {topResult.type === "album" ? (
-          <div>{topResult.release_date.slice(0, 4)}</div>
+          <ReleaseDate releaseDate={topResult.release_date} />
         ) : (
           <PopularityIcon popularity={Math.ceil(topResult.popularity / 20)} />
         )}
