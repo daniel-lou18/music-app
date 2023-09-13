@@ -9,11 +9,11 @@ import NavBtns from "../UI-elements/NavBtns";
 import Heart from "../UI-elements/Heart";
 
 function ArtistHeader({ title }) {
-  const { topResult } = useMusic();
+  const { currentArtist } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
 
-  if (!topResult)
+  if (!currentArtist)
     return (
       <div className={styles.resultContainer}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
@@ -21,16 +21,16 @@ function ArtistHeader({ title }) {
       </div>
     );
 
-  const { id: spotifyId } = topResult;
+  const { id: spotifyId } = currentArtist;
   const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
   const ratedItem = ratedData.find((item) => item.id === spotifyId);
 
-  const name = topResult.name;
+  const name = currentArtist.name;
 
   const handleFavorite = () => {
     console.log(favoritesData);
     if (!favId) {
-      addFavorite(topResult);
+      addFavorite(currentArtist);
     } else {
       removeFavorite(favId);
     }
@@ -39,7 +39,7 @@ function ArtistHeader({ title }) {
   return (
     <div
       className={`${styles.resultContainer} ${styles.header}`}
-      key={topResult.id}
+      key={currentArtist.id}
     >
       <TopBar>
         <NavBtns />
@@ -48,11 +48,7 @@ function ArtistHeader({ title }) {
         <div>
           <img
             className={styles.img}
-            src={
-              topResult.type === "track"
-                ? topResult.album.images[0]?.url
-                : topResult.images[0]?.url
-            }
+            src={currentArtist.images[0]?.url}
             alt={name}
           />
         </div>
@@ -67,18 +63,12 @@ function ArtistHeader({ title }) {
           <div className={styles.itemInfo}>
             <div className={styles.secondSubtitleWrapper}>
               <h4 className={`${styles.secondSubtitle}`}>
-                {topResult.type === "track"
-                  ? "Song"
-                  : topResult.type.slice(0, 1).toUpperCase() +
-                    topResult.type.slice(1)}
+                {currentArtist.type.slice(0, 1).toUpperCase() +
+                  currentArtist.type.slice(1)}
               </h4>
             </div>
             <PopularityIcon
-              popularity={
-                topResult.type === "album"
-                  ? 3
-                  : Math.ceil(topResult.popularity / 20)
-              }
+              popularity={Math.ceil(currentArtist.popularity / 20)}
               type="header"
             />
             <StarRating
@@ -88,7 +78,7 @@ function ArtistHeader({ title }) {
               number={5}
               callback={addRated}
               beforeCallback={ratedItem ? removeRated : null}
-              item={topResult}
+              item={currentArtist}
               defaultRating={ratedItem ? ratedItem.rating : 0}
               type="header"
             />

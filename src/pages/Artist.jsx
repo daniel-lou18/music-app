@@ -11,18 +11,18 @@ import Spinner from "../components/UI-elements/Spinner";
 import ErrorMsg from "../components/ErrorMsg";
 
 function Artist() {
-  const { currentArtist, isLoading, error, getArtist } = useMusic();
-  const { tracks, artists, albums } = currentArtist;
+  const {
+    currentArtist: { tracks, artists, albums },
+    isLoading,
+    error,
+    getArtist,
+  } = useMusic();
   const { artistId } = useParams();
-  console.log(currentArtist);
 
   useEffect(() => {
     getArtist(artistId);
   }, [artistId]);
 
-  // useEffect(() => {
-  //   if (!artistId) dispatch({ type: "artist/get", payload: id });
-  // }, [artistId, id, dispatch]);
   if (!tracks || !artists || !albums) return null;
 
   return (
@@ -41,10 +41,17 @@ function Artist() {
             <ArtistHeader />
           </ListContainer>
           <ListContainer type="artistPage">
-            <TrackList tracks={tracks} title="Top Songs" type="big" />
+            <TrackList
+              tracks={tracks.slice(0, 5)}
+              title="Top Songs"
+              type="big"
+            />
           </ListContainer>
           <ListContainer type="artistPage">
-            <HorizontalList items={artists} title={"Related artists"} />
+            <HorizontalList
+              items={artists.slice(0, 10)}
+              title={"Related artists"}
+            />
           </ListContainer>
           <ListContainer type="artistPage">
             <HorizontalList items={albums.items} title={"Albums"} />

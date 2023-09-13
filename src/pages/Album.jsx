@@ -18,18 +18,12 @@ function Album() {
     getAlbum(albumId);
   }, [albumId]);
 
-  // useEffect(() => {
-  //   if (!albumId) dispatch({ type: "album/get", payload: id });
-  // }, [albumId, id, dispatch]);
   if (!trackItems || trackItems.length < 1) return null;
 
   return (
     <Results>
       {isLoading && <Spinner />}
       {!isLoading && error && <ErrorMsg errorMsg={error} />}
-      {/* {!isLoading && trackItems.length === 0 && (
-        <ListContainer>{`No results found`}</ListContainer>
-      )} */}
       {!isLoading && !error && (
         <>
           <ListContainer type="albumPage">

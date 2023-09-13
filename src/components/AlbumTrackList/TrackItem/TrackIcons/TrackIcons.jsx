@@ -5,13 +5,13 @@ import AlbumIcon from "../../../UI-elements/AlbumIcon";
 import ArtistIcon from "../../../UI-elements/ArtistIcon/ArtistIcon";
 
 import { useNavigate } from "react-router-dom";
+import { useMusic } from "../../../../context/MusicContext";
 
 function TrackIcons({ track }) {
+  const { id: spotifyId, artists } = track;
   const {
-    id: spotifyId,
-    artists,
-    album: { id: albumId },
-  } = track;
+    currentAlbum: { id: albumId },
+  } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
 

@@ -1,6 +1,6 @@
 import PopularityIcon from "../UI-elements/PopularityIcon/";
 import styles from "./TopResult.module.css";
-import PlayBtn from "../UI-elements/PlayBtn/PlayBtn";
+import PlayBtn from "../UI-elements/PlayBtn";
 import StarRating from "../StarRating/";
 import Heart from "../UI-elements/Heart";
 import { useMusic } from "../../context/MusicContext";
@@ -59,7 +59,6 @@ function TopResult({ title, type = "result" }) {
 
   const handleFromArtistToArtist = () => {
     if (topResult.type === "artist") {
-      dispatch({ type: "artist/get", payload: spotifyId });
       navigate(`/app/artist/${spotifyId}`);
       window.scrollTo(0, 0);
     }
@@ -67,7 +66,6 @@ function TopResult({ title, type = "result" }) {
 
   const handleFromAlbumToAlbum = () => {
     if (topResult.type === "album") {
-      dispatch({ type: "album/get", payload: spotifyId });
       navigate(`/app/album/${spotifyId}`);
       window.scrollTo(0, 0);
     }
@@ -81,7 +79,6 @@ function TopResult({ title, type = "result" }) {
   };
 
   const handleFavorite = (e) => {
-    console.log(favoritesData);
     e.stopPropagation();
     if (!favId) {
       addFavorite(topResult);

@@ -5,7 +5,7 @@ import styles from "./PlayThumb.module.css";
 import { useMusic } from "../../../../context/MusicContext";
 import LockIcon from "../../../UI-elements/LockIcon";
 import PlayIcon from "../../../UI-elements/PlayIcon";
-import IsPlayingIcon from "../../../UI-elements/IsPlayingIcon/IsPlayingIcon";
+import IsPlayingIcon from "../../../UI-elements/IsPlayingIcon";
 
 function PlayThumb({ album, id, name, artists, preview_url }) {
   const { isPlayingId, dispatch } = useMusic();
@@ -33,11 +33,6 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
   const handleSlider = (e) => {
     audioEl.current.currentTime = e.target.value;
     setCurrentTime(audioEl.current.currentTime);
-  };
-
-  const handleArtistLink = () => {
-    dispatch({ type: "artist/get", payload: artists[0].id });
-    window.scrollTo(0, 0);
   };
 
   return (
@@ -74,11 +69,7 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
         <h3 className={`${styles.trackName}`}>
           {name.length > 40 ? `${name.slice(0, 40)}...` : name}
         </h3>
-        <Link
-          className="link-no_styling"
-          to={`/app/artist/${artists[0].id}`}
-          onClick={handleArtistLink}
-        >
+        <Link className="link-no_styling" to={`/app/artist/${artists[0].id}`}>
           <h4 className={styles.trackArtist}>
             {artists[0].name.length > 40
               ? `${artists[0].name.slice(0, 40)}...`

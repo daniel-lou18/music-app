@@ -40,20 +40,8 @@ export const MusicProvider = ({ children }) => {
       case "error":
         if (action.payload.name === "AbortError") return state;
         return { ...state, error: action.payload.message, isLoading: false };
-      case "artist/get":
-        return {
-          ...state,
-          artistId: action.payload,
-          isPlayingId: "",
-          albumId: "",
-        };
-      case "album/get":
-        return {
-          ...state,
-          albumId: action.payload,
-          isPlayingId: "",
-          artistId: "",
-        };
+      case "currentArtist/artist-info/loaded":
+        return { ...state, currentArtist: action.payload, isLoading: false };
       case "currentArtist/albums/loaded":
         return {
           ...state,
@@ -80,42 +68,6 @@ export const MusicProvider = ({ children }) => {
         };
       case "currentAlbum/loaded":
         return { ...state, currentAlbum: action.payload, isLoading: false };
-      case "albums/loaded":
-        return {
-          ...state,
-          data: { ...state.data, albums: action.payload },
-          isLoading: false,
-        };
-
-      case "albumTracks/loaded":
-        return {
-          ...state,
-          data: { ...state.data, tracks: action.payload },
-          isLoading: false,
-        };
-      case "artists/loaded":
-        return {
-          ...state,
-          data: {
-            ...state.data,
-            artists: {
-              ...state.data.artists,
-              items: action.payload.artists?.slice(0, 5),
-            },
-          },
-          isLoading: false,
-        };
-      case "tracks/loaded":
-        return {
-          ...state,
-          data: {
-            ...state.data,
-            tracks: {
-              ...state.data.tracks,
-              items: action.payload.tracks?.slice(0, 5),
-            },
-          },
-        };
       case "playing/set":
         return { ...state, isPlayingId: action.payload };
       case "topResult/set":
@@ -147,7 +99,7 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
-  console.log(currentAlbum);
+  console.log(currentArtist);
 
   useEffect(() => {
     if (!query || !token) return;
@@ -183,7 +135,7 @@ export const MusicProvider = ({ children }) => {
     return () => controller.abort();
   }, [token, query]);
 
-  const getArtist = (artistId) => {
+  const getArtist = async (artistId) => {
     if (!token || !artistId) return;
 
     async function fetchArtist(source, actionType) {
@@ -207,10 +159,16 @@ export const MusicProvider = ({ children }) => {
       }
     }
 
-    fetchArtist("", "topResult/set");
-    fetchArtist("albums?limit=5", "currentArtist/albums/loaded");
-    fetchArtist("related-artists", "currentArtist/related-artists/loaded");
-    fetchArtist("top-tracks?market=Fr", "currentArtist/top-tracks/loaded");
+    await fetchArtist("", "currentArtist/artist-info/loaded");
+    await fetchArtist("albums?limit=10", "currentArtist/albums/loaded");
+    await fetchArtist(
+      "related-artists",
+      "currentArtist/related-artists/loaded"
+    );
+    await fetchArtist(
+      "top-tracks?market=Fr",
+      "currentArtist/top-tracks/loaded"
+    );
   };
 
   const getAlbum = async (albumId) => {
@@ -218,20 +176,6 @@ export const MusicProvider = ({ children }) => {
 
     try {
       dispatch({ type: "loading" });
-      // const trackRes = await fetch(
-      //   `${BASE_URL}/albums/${albumId}/tracks?market=fr`,
-      //   {
-      //     method: "GET",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //       Authorization: `Bearer ${token})}`,
-      //     },
-      //   }
-      // );
-      // if (!trackRes.ok)
-      //   throw new Error(`Could not get album tracks (${trackRes.status})`);
-      // const trackData = await trackRes.json();
-
       const res = await fetch(`${BASE_URL}/albums/${albumId}?market=fr`, {
         method: "GET",
         headers: {
@@ -242,15 +186,7 @@ export const MusicProvider = ({ children }) => {
       if (!res.ok) throw new Error(`Could not get album data (${res.status})`);
       const data = await res.json();
       console.log(data);
-      dispatch({ type: "topResult/set", payload: data });
       dispatch({ type: "currentAlbum/loaded", payload: data });
-
-      // const data_ = {
-      //   ...trackData,
-      //   items: trackData.items.map((item) => {
-      //     return { ...item, album: data };
-      //   }),
-      // };
     } catch (err) {
       console.error(err);
       dispatch({ type: "error", payload: err });

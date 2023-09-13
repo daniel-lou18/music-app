@@ -4,7 +4,7 @@ import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
 import TopBar from "../Containers/TopBar";
-import NavBtns from "../UI-elements/NavBtns/NavBtns";
+import NavBtns from "../UI-elements/NavBtns";
 import Heart from "../UI-elements/Heart";
 
 function AlbumHeader({ title }) {
@@ -49,11 +49,7 @@ function AlbumHeader({ title }) {
         <div>
           <img
             className={styles.img}
-            src={
-              currentAlbum.type === "track"
-                ? currentAlbum.album.images[0]?.url
-                : currentAlbum.images[0]?.url
-            }
+            src={currentAlbum.images[0]?.url}
             alt={name}
           />
         </div>
@@ -68,10 +64,8 @@ function AlbumHeader({ title }) {
           <div className={styles.itemInfo}>
             <div className={styles.secondSubtitleWrapper}>
               <h4 className={`${styles.secondSubtitle}`}>
-                {currentAlbum.type === "track"
-                  ? "Song"
-                  : currentAlbum.type.slice(0, 1).toUpperCase() +
-                    currentAlbum.type.slice(1)}
+                {currentAlbum.type.slice(0, 1).toUpperCase() +
+                  currentAlbum.type.slice(1)}
               </h4>
             </div>
             <div className={styles.albumInfo}>

@@ -35,11 +35,6 @@ function PlayThumb({ id, name, artists, preview_url }) {
     setCurrentTime(audioEl.current.currentTime);
   };
 
-  const handleArtistLink = () => {
-    dispatch({ type: "artist/get", payload: artists[0].id });
-    window.scrollTo(0, 0);
-  };
-
   return (
     <div className={styles.playerContainer}>
       <div className={styles.imgWrapper}>
@@ -74,11 +69,7 @@ function PlayThumb({ id, name, artists, preview_url }) {
         <h3 className={`${styles.trackName}`}>
           {name.length > 40 ? `${name.slice(0, 40)}...` : name}
         </h3>
-        <Link
-          className="link-no_styling"
-          to={`/app/artist/${artists[0].id}`}
-          onClick={handleArtistLink}
-        >
+        <Link className="link-no_styling" to={`/app/artist/${artists[0].id}`}>
           <h4 className={styles.trackArtist}>
             {artists[0].name.length > 40
               ? `${artists[0].name.slice(0, 40)}...`

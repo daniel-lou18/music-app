@@ -2450,123 +2450,6 @@
           "name": "Alex Koo",
           "type": "artist",
           "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/36kfddkWcVc6XrzNN9BsTP"
-          },
-          "href": "https://api.spotify.com/v1/artists/36kfddkWcVc6XrzNN9BsTP",
-          "id": "36kfddkWcVc6XrzNN9BsTP",
-          "name": "Mark Turner",
-          "type": "artist",
-          "uri": "spotify:artist:36kfddkWcVc6XrzNN9BsTP"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
-          },
-          "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
-          "id": "2yHcAgHAPUdUhVuiIWWcba",
-          "name": "Ralph Alessi",
-          "type": "artist",
-          "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 63143,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "BEAR51800001"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/5ks5cTsc2CKIzH7u4R0Ilg"
-      },
-      "href": "https://api.spotify.com/v1/tracks/5ks5cTsc2CKIzH7u4R0Ilg",
-      "id": "5ks5cTsc2CKIzH7u4R0Ilg",
-      "is_local": false,
-      "is_playable": true,
-      "name": "Enud",
-      "popularity": 8,
-      "preview_url": "https://p.scdn.co/mp3-preview/3233959853fdb882ff36f1593a1a450c65a342d5?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-      "track_number": 1,
-      "type": "track",
-      "uri": "spotify:track:5ks5cTsc2CKIzH7u4R0Ilg"
-    },
-    {
-      "album": {
-        "album_type": "album",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
-            },
-            "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
-            "id": "1sR6UagoDJiGkAjTmMITg0",
-            "name": "Alex Koo",
-            "type": "artist",
-            "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/36kfddkWcVc6XrzNN9BsTP"
-            },
-            "href": "https://api.spotify.com/v1/artists/36kfddkWcVc6XrzNN9BsTP",
-            "id": "36kfddkWcVc6XrzNN9BsTP",
-            "name": "Mark Turner",
-            "type": "artist",
-            "uri": "spotify:artist:36kfddkWcVc6XrzNN9BsTP"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/2yHcAgHAPUdUhVuiIWWcba"
-            },
-            "href": "https://api.spotify.com/v1/artists/2yHcAgHAPUdUhVuiIWWcba",
-            "id": "2yHcAgHAPUdUhVuiIWWcba",
-            "name": "Ralph Alessi",
-            "type": "artist",
-            "uri": "spotify:artist:2yHcAgHAPUdUhVuiIWWcba"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/1v3ctKOGurzwt4JGR9yQl8"
-        },
-        "href": "https://api.spotify.com/v1/albums/1v3ctKOGurzwt4JGR9yQl8",
-        "id": "1v3ctKOGurzwt4JGR9yQl8",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273ae1e09b3f67b7df9e7a17b85",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02ae1e09b3f67b7df9e7a17b85",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851ae1e09b3f67b7df9e7a17b85",
-            "width": 64
-          }
-        ],
-        "is_playable": true,
-        "name": "Appleblueseagreen",
-        "release_date": "2019-02-18",
-        "release_date_precision": "day",
-        "total_tracks": 12,
-        "type": "album",
-        "uri": "spotify:album:1v3ctKOGurzwt4JGR9yQl8"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1sR6UagoDJiGkAjTmMITg0"
-          },
-          "href": "https://api.spotify.com/v1/artists/1sR6UagoDJiGkAjTmMITg0",
-          "id": "1sR6UagoDJiGkAjTmMITg0",
-          "name": "Alex Koo",
-          "type": "artist",
-          "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
         }
       ],
       "disc_number": 1,
@@ -3061,44 +2944,6 @@
       "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4"
     },
     {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/5sXaGoRLSpd7VeyZrLkKwt"
-      },
-      "followers": {
-        "href": null,
-        "total": 783939
-      },
-      "genres": [
-        "indie folk",
-        "pop folk",
-        "stomp and flutter",
-        "stomp and holler"
-      ],
-      "href": "https://api.spotify.com/v1/artists/5sXaGoRLSpd7VeyZrLkKwt",
-      "id": "5sXaGoRLSpd7VeyZrLkKwt",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb4528d0f9bb51b241561a16f3",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051744528d0f9bb51b241561a16f3",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1784528d0f9bb51b241561a16f3",
-          "width": 160
-        }
-      ],
-      "name": "Gregory Alan Isakov",
-      "popularity": 67,
-      "type": "artist",
-      "uri": "spotify:artist:5sXaGoRLSpd7VeyZrLkKwt"
-    },
-    {
       "album_type": "album",
       "artists": [
         {
@@ -3445,365 +3290,6 @@
       "popularity": 4,
       "type": "artist",
       "uri": "spotify:artist:1sR6UagoDJiGkAjTmMITg0"
-    },
-    {
-      "album": {
-        "album_type": "album",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/62GnBjssWSXBlKvQohT2Bk"
-            },
-            "href": "https://api.spotify.com/v1/artists/62GnBjssWSXBlKvQohT2Bk",
-            "id": "62GnBjssWSXBlKvQohT2Bk",
-            "name": "The Chordettes",
-            "type": "artist",
-            "uri": "spotify:artist:62GnBjssWSXBlKvQohT2Bk"
-          }
-        ],
-        "available_markets": [
-          "AR",
-          "AU",
-          "BO",
-          "BR",
-          "CA",
-          "CL",
-          "CO",
-          "CR",
-          "CY",
-          "DO",
-          "EC",
-          "SV",
-          "GT",
-          "HN",
-          "HK",
-          "MY",
-          "MX",
-          "NZ",
-          "NI",
-          "PA",
-          "PY",
-          "PE",
-          "PH",
-          "SG",
-          "TW",
-          "TR",
-          "UY",
-          "US",
-          "ID",
-          "TH",
-          "VN",
-          "IL",
-          "ZA",
-          "SA",
-          "AE",
-          "BH",
-          "QA",
-          "OM",
-          "KW",
-          "EG",
-          "MA",
-          "DZ",
-          "TN",
-          "LB",
-          "JO",
-          "PS",
-          "IN",
-          "KZ",
-          "KR",
-          "BD",
-          "PK",
-          "LK",
-          "GH",
-          "KE",
-          "NG",
-          "TZ",
-          "UG",
-          "AG",
-          "AM",
-          "BS",
-          "BB",
-          "BZ",
-          "BT",
-          "BW",
-          "BF",
-          "CV",
-          "CW",
-          "DM",
-          "FJ",
-          "GM",
-          "GE",
-          "GD",
-          "GW",
-          "GY",
-          "HT",
-          "JM",
-          "KI",
-          "LS",
-          "LR",
-          "MW",
-          "MV",
-          "ML",
-          "MH",
-          "FM",
-          "NA",
-          "NR",
-          "NE",
-          "PW",
-          "PG",
-          "WS",
-          "ST",
-          "SN",
-          "SC",
-          "SL",
-          "SB",
-          "KN",
-          "LC",
-          "VC",
-          "SR",
-          "TL",
-          "TO",
-          "TT",
-          "TV",
-          "VU",
-          "AZ",
-          "BN",
-          "BI",
-          "KH",
-          "CM",
-          "TD",
-          "KM",
-          "GQ",
-          "SZ",
-          "GA",
-          "GN",
-          "KG",
-          "LA",
-          "MO",
-          "MR",
-          "MN",
-          "NP",
-          "RW",
-          "TG",
-          "UZ",
-          "ZW",
-          "BJ",
-          "MG",
-          "MU",
-          "MZ",
-          "AO",
-          "CI",
-          "DJ",
-          "ZM",
-          "CD",
-          "CG",
-          "IQ",
-          "LY",
-          "TJ",
-          "VE",
-          "ET"
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/2lWhM9NDUKCfyZ9Ze27XYl"
-        },
-        "href": "https://api.spotify.com/v1/albums/2lWhM9NDUKCfyZ9Ze27XYl",
-        "id": "2lWhM9NDUKCfyZ9Ze27XYl",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2734dafc693fd369457726d5c4e",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e024dafc693fd369457726d5c4e",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048514dafc693fd369457726d5c4e",
-            "width": 64
-          }
-        ],
-        "name": "The Chordettes' Best",
-        "release_date": "2010-04-20",
-        "release_date_precision": "day",
-        "total_tracks": 21,
-        "type": "album",
-        "uri": "spotify:album:2lWhM9NDUKCfyZ9Ze27XYl"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/62GnBjssWSXBlKvQohT2Bk"
-          },
-          "href": "https://api.spotify.com/v1/artists/62GnBjssWSXBlKvQohT2Bk",
-          "id": "62GnBjssWSXBlKvQohT2Bk",
-          "name": "The Chordettes",
-          "type": "artist",
-          "uri": "spotify:artist:62GnBjssWSXBlKvQohT2Bk"
-        }
-      ],
-      "available_markets": [
-        "AR",
-        "AU",
-        "BO",
-        "BR",
-        "CA",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "DO",
-        "EC",
-        "SV",
-        "GT",
-        "HN",
-        "HK",
-        "MY",
-        "MX",
-        "NZ",
-        "NI",
-        "PA",
-        "PY",
-        "PE",
-        "PH",
-        "SG",
-        "TW",
-        "TR",
-        "UY",
-        "US",
-        "ID",
-        "TH",
-        "VN",
-        "IL",
-        "ZA",
-        "SA",
-        "AE",
-        "BH",
-        "QA",
-        "OM",
-        "KW",
-        "EG",
-        "MA",
-        "DZ",
-        "TN",
-        "LB",
-        "JO",
-        "PS",
-        "IN",
-        "KZ",
-        "KR",
-        "BD",
-        "PK",
-        "LK",
-        "GH",
-        "KE",
-        "NG",
-        "TZ",
-        "UG",
-        "AG",
-        "AM",
-        "BS",
-        "BB",
-        "BZ",
-        "BT",
-        "BW",
-        "BF",
-        "CV",
-        "CW",
-        "DM",
-        "FJ",
-        "GM",
-        "GE",
-        "GD",
-        "GW",
-        "GY",
-        "HT",
-        "JM",
-        "KI",
-        "LS",
-        "LR",
-        "MW",
-        "MV",
-        "ML",
-        "MH",
-        "FM",
-        "NA",
-        "NR",
-        "NE",
-        "PW",
-        "PG",
-        "WS",
-        "ST",
-        "SN",
-        "SC",
-        "SL",
-        "SB",
-        "KN",
-        "LC",
-        "VC",
-        "SR",
-        "TL",
-        "TO",
-        "TT",
-        "TV",
-        "VU",
-        "AZ",
-        "BN",
-        "BI",
-        "KH",
-        "CM",
-        "TD",
-        "KM",
-        "GQ",
-        "SZ",
-        "GA",
-        "GN",
-        "KG",
-        "LA",
-        "MO",
-        "MR",
-        "MN",
-        "NP",
-        "RW",
-        "TG",
-        "UZ",
-        "ZW",
-        "BJ",
-        "MG",
-        "MU",
-        "MZ",
-        "AO",
-        "CI",
-        "DJ",
-        "ZM",
-        "CD",
-        "CG",
-        "IQ",
-        "LY",
-        "TJ",
-        "VE",
-        "ET"
-      ],
-      "disc_number": 1,
-      "duration_ms": 130533,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "USZZM1010645"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/1hFB1obL3dCyIDigkojSTm"
-      },
-      "href": "https://api.spotify.com/v1/tracks/1hFB1obL3dCyIDigkojSTm",
-      "id": "1hFB1obL3dCyIDigkojSTm",
-      "is_local": false,
-      "name": "Lollipop",
-      "popularity": 59,
-      "preview_url": "https://p.scdn.co/mp3-preview/cf5f92e4677c4c38fb64f076ae02ee86d0b32fed?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-      "track_number": 1,
-      "type": "track",
-      "uri": "spotify:track:1hFB1obL3dCyIDigkojSTm"
     },
     {
       "album_type": "album",
@@ -4264,1233 +3750,44 @@
       "uri": "spotify:album:3G1jxG3M4rwWm3CZG4S1Wq"
     },
     {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5Nq9MbzweBc5oL4WzsECx4"
-          },
-          "href": "https://api.spotify.com/v1/artists/5Nq9MbzweBc5oL4WzsECx4",
-          "id": "5Nq9MbzweBc5oL4WzsECx4",
-          "name": "Calogero",
-          "type": "artist",
-          "uri": "spotify:artist:5Nq9MbzweBc5oL4WzsECx4"
-        }
-      ],
-      "available_markets": [
-        "AR",
-        "AU",
-        "AT",
-        "BE",
-        "BO",
-        "BR",
-        "BG",
-        "CA",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DK",
-        "DO",
-        "DE",
-        "EC",
-        "EE",
-        "SV",
-        "FI",
-        "FR",
-        "GR",
-        "GT",
-        "HN",
-        "HK",
-        "HU",
-        "IS",
-        "IE",
-        "IT",
-        "LV",
-        "LT",
-        "LU",
-        "MY",
-        "MT",
-        "MX",
-        "NL",
-        "NZ",
-        "NI",
-        "NO",
-        "PA",
-        "PY",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "SG",
-        "SK",
-        "ES",
-        "SE",
-        "CH",
-        "TW",
-        "TR",
-        "UY",
-        "US",
-        "GB",
-        "AD",
-        "LI",
-        "MC",
-        "ID",
-        "JP",
-        "TH",
-        "VN",
-        "RO",
-        "IL",
-        "ZA",
-        "SA",
-        "AE",
-        "BH",
-        "QA",
-        "OM",
-        "KW",
-        "EG",
-        "MA",
-        "DZ",
-        "TN",
-        "LB",
-        "JO",
-        "PS",
-        "IN",
-        "KZ",
-        "MD",
-        "UA",
-        "AL",
-        "BA",
-        "HR",
-        "ME",
-        "MK",
-        "RS",
-        "SI",
-        "KR",
-        "BD",
-        "PK",
-        "LK",
-        "GH",
-        "KE",
-        "NG",
-        "TZ",
-        "UG",
-        "AG",
-        "AM",
-        "BS",
-        "BB",
-        "BZ",
-        "BT",
-        "BW",
-        "BF",
-        "CV",
-        "CW",
-        "DM",
-        "FJ",
-        "GM",
-        "GE",
-        "GD",
-        "GW",
-        "GY",
-        "HT",
-        "JM",
-        "KI",
-        "LS",
-        "LR",
-        "MW",
-        "MV",
-        "ML",
-        "MH",
-        "FM",
-        "NA",
-        "NR",
-        "NE",
-        "PW",
-        "PG",
-        "WS",
-        "SM",
-        "ST",
-        "SN",
-        "SC",
-        "SL",
-        "SB",
-        "KN",
-        "LC",
-        "VC",
-        "SR",
-        "TL",
-        "TO",
-        "TT",
-        "TV",
-        "VU",
-        "AZ",
-        "BN",
-        "BI",
-        "KH",
-        "CM",
-        "TD",
-        "KM",
-        "GQ",
-        "SZ",
-        "GA",
-        "GN",
-        "KG",
-        "LA",
-        "MO",
-        "MR",
-        "MN",
-        "NP",
-        "RW",
-        "TG",
-        "UZ",
-        "ZW",
-        "BJ",
-        "MG",
-        "MU",
-        "MZ",
-        "AO",
-        "CI",
-        "DJ",
-        "ZM",
-        "CD",
-        "CG",
-        "IQ",
-        "LY",
-        "TJ",
-        "VE",
-        "ET",
-        "XK"
-      ],
       "external_urls": {
-        "spotify": "https://open.spotify.com/album/3LwsjIHgP08344cotAfY0N"
-      },
-      "href": "https://api.spotify.com/v1/albums/3LwsjIHgP08344cotAfY0N",
-      "id": "3LwsjIHgP08344cotAfY0N",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b2739712c0c82aa799f00b231946",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e029712c0c82aa799f00b231946",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d000048519712c0c82aa799f00b231946",
-          "width": 64
-        }
-      ],
-      "name": "A.M.O.U.R",
-      "release_date": "2023-09-08",
-      "release_date_precision": "day",
-      "total_tracks": 11,
-      "type": "album",
-      "uri": "spotify:album:3LwsjIHgP08344cotAfY0N"
-    },
-    {
-      "album_type": "album",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-          },
-          "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-          "id": "1McMsnEElThX1knmY4oliG",
-          "name": "Olivia Rodrigo",
-          "type": "artist",
-          "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-        }
-      ],
-      "available_markets": [
-        "AR",
-        "AU",
-        "AT",
-        "BE",
-        "BO",
-        "BR",
-        "BG",
-        "CA",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DK",
-        "DO",
-        "DE",
-        "EC",
-        "EE",
-        "SV",
-        "FI",
-        "FR",
-        "GR",
-        "GT",
-        "HN",
-        "HK",
-        "HU",
-        "IS",
-        "IE",
-        "IT",
-        "LV",
-        "LT",
-        "LU",
-        "MY",
-        "MT",
-        "MX",
-        "NL",
-        "NZ",
-        "NI",
-        "NO",
-        "PA",
-        "PY",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "SG",
-        "SK",
-        "ES",
-        "SE",
-        "CH",
-        "TW",
-        "TR",
-        "UY",
-        "US",
-        "GB",
-        "AD",
-        "LI",
-        "MC",
-        "ID",
-        "JP",
-        "TH",
-        "VN",
-        "RO",
-        "IL",
-        "ZA",
-        "SA",
-        "AE",
-        "BH",
-        "QA",
-        "OM",
-        "KW",
-        "EG",
-        "MA",
-        "DZ",
-        "TN",
-        "LB",
-        "JO",
-        "PS",
-        "IN",
-        "KZ",
-        "MD",
-        "UA",
-        "AL",
-        "BA",
-        "HR",
-        "ME",
-        "MK",
-        "RS",
-        "SI",
-        "KR",
-        "BD",
-        "PK",
-        "LK",
-        "GH",
-        "KE",
-        "NG",
-        "TZ",
-        "UG",
-        "AG",
-        "AM",
-        "BS",
-        "BB",
-        "BZ",
-        "BT",
-        "BW",
-        "BF",
-        "CV",
-        "CW",
-        "DM",
-        "FJ",
-        "GM",
-        "GE",
-        "GD",
-        "GW",
-        "GY",
-        "HT",
-        "JM",
-        "KI",
-        "LS",
-        "LR",
-        "MW",
-        "MV",
-        "ML",
-        "MH",
-        "FM",
-        "NA",
-        "NR",
-        "NE",
-        "PW",
-        "PG",
-        "WS",
-        "SM",
-        "ST",
-        "SN",
-        "SC",
-        "SL",
-        "SB",
-        "KN",
-        "LC",
-        "VC",
-        "SR",
-        "TL",
-        "TO",
-        "TT",
-        "TV",
-        "VU",
-        "AZ",
-        "BN",
-        "BI",
-        "KH",
-        "CM",
-        "TD",
-        "KM",
-        "GQ",
-        "SZ",
-        "GA",
-        "GN",
-        "KG",
-        "LA",
-        "MO",
-        "MR",
-        "MN",
-        "NP",
-        "RW",
-        "TG",
-        "UZ",
-        "ZW",
-        "BJ",
-        "MG",
-        "MU",
-        "MZ",
-        "AO",
-        "CI",
-        "DJ",
-        "ZM",
-        "CD",
-        "CG",
-        "IQ",
-        "LY",
-        "TJ",
-        "VE",
-        "ET",
-        "XK"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp"
-      },
-      "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp",
-      "id": "1xJHno7SmdVtZAtXbdbDZp",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e02e85259a1cae29a8d91f2093d",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d00004851e85259a1cae29a8d91f2093d",
-          "width": 64
-        }
-      ],
-      "name": "GUTS",
-      "release_date": "2023-09-08",
-      "release_date_precision": "day",
-      "total_tracks": 12,
-      "type": "album",
-      "uri": "spotify:album:1xJHno7SmdVtZAtXbdbDZp"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1qDK6LhZ26Z6od4yq1VBKT"
+        "spotify": "https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR"
       },
       "followers": {
         "href": null,
-        "total": 31843
+        "total": 12429629
       },
-      "genres": [],
-      "href": "https://api.spotify.com/v1/artists/1qDK6LhZ26Z6od4yq1VBKT",
-      "id": "1qDK6LhZ26Z6od4yq1VBKT",
+      "genres": [
+        "dance pop",
+        "pop",
+        "urban contemporary"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR",
+      "id": "2DlGxzQSjYe5N6G9nkYghR",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb31204a70b8c596eaa25b968a",
+          "url": "https://i.scdn.co/image/ab6761610000e5ebce391c85fb87d67d316d1413",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517431204a70b8c596eaa25b968a",
+          "url": "https://i.scdn.co/image/ab67616100005174ce391c85fb87d67d316d1413",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17831204a70b8c596eaa25b968a",
+          "url": "https://i.scdn.co/image/ab6761610000f178ce391c85fb87d67d316d1413",
           "width": 160
         }
       ],
-      "name": "Lola",
-      "popularity": 46,
+      "name": "Jennifer Lopez",
+      "popularity": 73,
       "type": "artist",
-      "uri": "spotify:artist:1qDK6LhZ26Z6od4yq1VBKT"
-    },
-    {
-      "album_type": "single",
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/0JyS4TI8NZcjQJl1Y5jscE"
-          },
-          "href": "https://api.spotify.com/v1/artists/0JyS4TI8NZcjQJl1Y5jscE",
-          "id": "0JyS4TI8NZcjQJl1Y5jscE",
-          "name": "Aleica",
-          "type": "artist",
-          "uri": "spotify:artist:0JyS4TI8NZcjQJl1Y5jscE"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5DbHAUWNEMwhEUSC4UwcKH"
-          },
-          "href": "https://api.spotify.com/v1/artists/5DbHAUWNEMwhEUSC4UwcKH",
-          "id": "5DbHAUWNEMwhEUSC4UwcKH",
-          "name": "Mestizo Is Back",
-          "type": "artist",
-          "uri": "spotify:artist:5DbHAUWNEMwhEUSC4UwcKH"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/7kezrkuYBnE989Mv0gmIZ6"
-          },
-          "href": "https://api.spotify.com/v1/artists/7kezrkuYBnE989Mv0gmIZ6",
-          "id": "7kezrkuYBnE989Mv0gmIZ6",
-          "name": "Zunna",
-          "type": "artist",
-          "uri": "spotify:artist:7kezrkuYBnE989Mv0gmIZ6"
-        }
-      ],
-      "available_markets": [
-        "AR",
-        "AU",
-        "AT",
-        "BE",
-        "BO",
-        "BR",
-        "BG",
-        "CA",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DK",
-        "DO",
-        "DE",
-        "EC",
-        "EE",
-        "SV",
-        "FI",
-        "FR",
-        "GR",
-        "GT",
-        "HN",
-        "HK",
-        "HU",
-        "IS",
-        "IE",
-        "IT",
-        "LV",
-        "LT",
-        "LU",
-        "MY",
-        "MT",
-        "MX",
-        "NL",
-        "NZ",
-        "NI",
-        "NO",
-        "PA",
-        "PY",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "SG",
-        "SK",
-        "ES",
-        "SE",
-        "CH",
-        "TW",
-        "TR",
-        "UY",
-        "US",
-        "GB",
-        "AD",
-        "LI",
-        "MC",
-        "ID",
-        "JP",
-        "TH",
-        "VN",
-        "RO",
-        "IL",
-        "ZA",
-        "SA",
-        "AE",
-        "BH",
-        "QA",
-        "OM",
-        "KW",
-        "EG",
-        "MA",
-        "DZ",
-        "TN",
-        "LB",
-        "JO",
-        "PS",
-        "IN",
-        "BY",
-        "KZ",
-        "MD",
-        "UA",
-        "AL",
-        "BA",
-        "HR",
-        "ME",
-        "MK",
-        "RS",
-        "SI",
-        "KR",
-        "BD",
-        "PK",
-        "LK",
-        "GH",
-        "KE",
-        "NG",
-        "TZ",
-        "UG",
-        "AG",
-        "AM",
-        "BS",
-        "BB",
-        "BZ",
-        "BT",
-        "BW",
-        "BF",
-        "CV",
-        "CW",
-        "DM",
-        "FJ",
-        "GM",
-        "GE",
-        "GD",
-        "GW",
-        "GY",
-        "HT",
-        "JM",
-        "KI",
-        "LS",
-        "LR",
-        "MW",
-        "MV",
-        "ML",
-        "MH",
-        "FM",
-        "NA",
-        "NR",
-        "NE",
-        "PW",
-        "PG",
-        "WS",
-        "SM",
-        "ST",
-        "SN",
-        "SC",
-        "SL",
-        "SB",
-        "KN",
-        "LC",
-        "VC",
-        "SR",
-        "TL",
-        "TO",
-        "TT",
-        "TV",
-        "VU",
-        "AZ",
-        "BN",
-        "BI",
-        "KH",
-        "CM",
-        "TD",
-        "KM",
-        "GQ",
-        "SZ",
-        "GA",
-        "GN",
-        "KG",
-        "LA",
-        "MO",
-        "MR",
-        "MN",
-        "NP",
-        "RW",
-        "TG",
-        "UZ",
-        "ZW",
-        "BJ",
-        "MG",
-        "MU",
-        "MZ",
-        "AO",
-        "CI",
-        "DJ",
-        "ZM",
-        "CD",
-        "CG",
-        "IQ",
-        "LY",
-        "TJ",
-        "VE",
-        "ET",
-        "XK"
-      ],
-      "external_urls": {
-        "spotify": "https://open.spotify.com/album/6GmeJiUw8He3doBKBXkCRT"
-      },
-      "href": "https://api.spotify.com/v1/albums/6GmeJiUw8He3doBKBXkCRT",
-      "id": "6GmeJiUw8He3doBKBXkCRT",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b27383d0dfcd6d112f9c62387b33",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e0283d0dfcd6d112f9c62387b33",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d0000485183d0dfcd6d112f9c62387b33",
-          "width": 64
-        }
-      ],
-      "name": "Lola",
-      "release_date": "2023-07-06",
-      "release_date_precision": "day",
-      "total_tracks": 1,
-      "type": "album",
-      "uri": "spotify:album:6GmeJiUw8He3doBKBXkCRT"
+      "uri": "spotify:artist:2DlGxzQSjYe5N6G9nkYghR"
     }
   ],
   "rated": [
-    {
-      "album": {
-        "album_type": "single",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
-            },
-            "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
-            "id": "68CRxZTAqk19AznItZInip",
-            "name": "Swifty Blue",
-            "type": "artist",
-            "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/27OdVby2oeFjM1C5XvC3hC"
-            },
-            "href": "https://api.spotify.com/v1/artists/27OdVby2oeFjM1C5XvC3hC",
-            "id": "27OdVby2oeFjM1C5XvC3hC",
-            "name": "Peysoh",
-            "type": "artist",
-            "uri": "spotify:artist:27OdVby2oeFjM1C5XvC3hC"
-          },
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/5w61NhDHxboaPUjFZ9r2vh"
-            },
-            "href": "https://api.spotify.com/v1/artists/5w61NhDHxboaPUjFZ9r2vh",
-            "id": "5w61NhDHxboaPUjFZ9r2vh",
-            "name": "MoneySign Suede",
-            "type": "artist",
-            "uri": "spotify:artist:5w61NhDHxboaPUjFZ9r2vh"
-          }
-        ],
-        "available_markets": [
-          "AD",
-          "AE",
-          "AG",
-          "AL",
-          "AM",
-          "AO",
-          "AR",
-          "AT",
-          "AU",
-          "AZ",
-          "BA",
-          "BB",
-          "BD",
-          "BE",
-          "BF",
-          "BG",
-          "BH",
-          "BI",
-          "BJ",
-          "BN",
-          "BO",
-          "BR",
-          "BS",
-          "BT",
-          "BW",
-          "BY",
-          "BZ",
-          "CA",
-          "CD",
-          "CG",
-          "CH",
-          "CI",
-          "CL",
-          "CM",
-          "CO",
-          "CR",
-          "CV",
-          "CW",
-          "CY",
-          "CZ",
-          "DE",
-          "DJ",
-          "DK",
-          "DM",
-          "DO",
-          "DZ",
-          "EC",
-          "EE",
-          "EG",
-          "ES",
-          "ET",
-          "FI",
-          "FJ",
-          "FM",
-          "FR",
-          "GA",
-          "GB",
-          "GD",
-          "GE",
-          "GH",
-          "GM",
-          "GN",
-          "GQ",
-          "GR",
-          "GT",
-          "GW",
-          "GY",
-          "HK",
-          "HN",
-          "HR",
-          "HT",
-          "HU",
-          "ID",
-          "IE",
-          "IL",
-          "IN",
-          "IQ",
-          "IS",
-          "IT",
-          "JM",
-          "JO",
-          "JP",
-          "KE",
-          "KG",
-          "KH",
-          "KI",
-          "KM",
-          "KN",
-          "KR",
-          "KW",
-          "KZ",
-          "LA",
-          "LB",
-          "LC",
-          "LI",
-          "LK",
-          "LR",
-          "LS",
-          "LT",
-          "LU",
-          "LV",
-          "LY",
-          "MA",
-          "MC",
-          "MD",
-          "ME",
-          "MG",
-          "MH",
-          "MK",
-          "ML",
-          "MN",
-          "MO",
-          "MR",
-          "MT",
-          "MU",
-          "MV",
-          "MW",
-          "MX",
-          "MY",
-          "MZ",
-          "NA",
-          "NE",
-          "NG",
-          "NI",
-          "NL",
-          "NO",
-          "NP",
-          "NR",
-          "NZ",
-          "OM",
-          "PA",
-          "PE",
-          "PG",
-          "PH",
-          "PK",
-          "PL",
-          "PS",
-          "PT",
-          "PW",
-          "PY",
-          "QA",
-          "RO",
-          "RS",
-          "RW",
-          "SA",
-          "SB",
-          "SC",
-          "SE",
-          "SG",
-          "SI",
-          "SK",
-          "SL",
-          "SM",
-          "SN",
-          "SR",
-          "ST",
-          "SV",
-          "SZ",
-          "TD",
-          "TG",
-          "TH",
-          "TJ",
-          "TL",
-          "TN",
-          "TO",
-          "TR",
-          "TT",
-          "TV",
-          "TW",
-          "TZ",
-          "UA",
-          "UG",
-          "US",
-          "UY",
-          "UZ",
-          "VC",
-          "VE",
-          "VN",
-          "VU",
-          "WS",
-          "XK",
-          "ZA",
-          "ZM",
-          "ZW"
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/1IhrrkevqxaxKpylbMfSzF"
-        },
-        "href": "https://api.spotify.com/v1/albums/1IhrrkevqxaxKpylbMfSzF",
-        "id": "1IhrrkevqxaxKpylbMfSzF",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2734417eb0e17bb7225e0ad37ee",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e024417eb0e17bb7225e0ad37ee",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048514417eb0e17bb7225e0ad37ee",
-            "width": 64
-          }
-        ],
-        "name": "Grimey Park",
-        "release_date": "2022-04-20",
-        "release_date_precision": "day",
-        "total_tracks": 6,
-        "type": "album",
-        "uri": "spotify:album:1IhrrkevqxaxKpylbMfSzF"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
-          },
-          "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
-          "id": "68CRxZTAqk19AznItZInip",
-          "name": "Swifty Blue",
-          "type": "artist",
-          "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/27OdVby2oeFjM1C5XvC3hC"
-          },
-          "href": "https://api.spotify.com/v1/artists/27OdVby2oeFjM1C5XvC3hC",
-          "id": "27OdVby2oeFjM1C5XvC3hC",
-          "name": "Peysoh",
-          "type": "artist",
-          "uri": "spotify:artist:27OdVby2oeFjM1C5XvC3hC"
-        },
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5w61NhDHxboaPUjFZ9r2vh"
-          },
-          "href": "https://api.spotify.com/v1/artists/5w61NhDHxboaPUjFZ9r2vh",
-          "id": "5w61NhDHxboaPUjFZ9r2vh",
-          "name": "MoneySign Suede",
-          "type": "artist",
-          "uri": "spotify:artist:5w61NhDHxboaPUjFZ9r2vh"
-        }
-      ],
-      "available_markets": [
-        "AR",
-        "AU",
-        "AT",
-        "BE",
-        "BO",
-        "BR",
-        "BG",
-        "CA",
-        "CL",
-        "CO",
-        "CR",
-        "CY",
-        "CZ",
-        "DK",
-        "DO",
-        "DE",
-        "EC",
-        "EE",
-        "SV",
-        "FI",
-        "FR",
-        "GR",
-        "GT",
-        "HN",
-        "HK",
-        "HU",
-        "IS",
-        "IE",
-        "IT",
-        "LV",
-        "LT",
-        "LU",
-        "MY",
-        "MT",
-        "MX",
-        "NL",
-        "NZ",
-        "NI",
-        "NO",
-        "PA",
-        "PY",
-        "PE",
-        "PH",
-        "PL",
-        "PT",
-        "SG",
-        "SK",
-        "ES",
-        "SE",
-        "CH",
-        "TW",
-        "TR",
-        "UY",
-        "US",
-        "GB",
-        "AD",
-        "LI",
-        "MC",
-        "ID",
-        "JP",
-        "TH",
-        "VN",
-        "RO",
-        "IL",
-        "ZA",
-        "SA",
-        "AE",
-        "BH",
-        "QA",
-        "OM",
-        "KW",
-        "EG",
-        "MA",
-        "DZ",
-        "TN",
-        "LB",
-        "JO",
-        "PS",
-        "IN",
-        "BY",
-        "KZ",
-        "MD",
-        "UA",
-        "AL",
-        "BA",
-        "HR",
-        "ME",
-        "MK",
-        "RS",
-        "SI",
-        "KR",
-        "BD",
-        "PK",
-        "LK",
-        "GH",
-        "KE",
-        "NG",
-        "TZ",
-        "UG",
-        "AG",
-        "AM",
-        "BS",
-        "BB",
-        "BZ",
-        "BT",
-        "BW",
-        "BF",
-        "CV",
-        "CW",
-        "DM",
-        "FJ",
-        "GM",
-        "GE",
-        "GD",
-        "GW",
-        "GY",
-        "HT",
-        "JM",
-        "KI",
-        "LS",
-        "LR",
-        "MW",
-        "MV",
-        "ML",
-        "MH",
-        "FM",
-        "NA",
-        "NR",
-        "NE",
-        "PW",
-        "PG",
-        "WS",
-        "SM",
-        "ST",
-        "SN",
-        "SC",
-        "SL",
-        "SB",
-        "KN",
-        "LC",
-        "VC",
-        "SR",
-        "TL",
-        "TO",
-        "TT",
-        "TV",
-        "VU",
-        "AZ",
-        "BN",
-        "BI",
-        "KH",
-        "CM",
-        "TD",
-        "KM",
-        "GQ",
-        "SZ",
-        "GA",
-        "GN",
-        "KG",
-        "LA",
-        "MO",
-        "MR",
-        "MN",
-        "NP",
-        "RW",
-        "TG",
-        "UZ",
-        "ZW",
-        "BJ",
-        "MG",
-        "MU",
-        "MZ",
-        "AO",
-        "CI",
-        "DJ",
-        "ZM",
-        "CD",
-        "CG",
-        "IQ",
-        "LY",
-        "TJ",
-        "VE",
-        "ET",
-        "XK"
-      ],
-      "disc_number": 1,
-      "duration_ms": 163350,
-      "explicit": true,
-      "external_ids": {
-        "isrc": "USLD91737219"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/4gfMy1g8KrfSiUTz6AZTYX"
-      },
-      "href": "https://api.spotify.com/v1/tracks/4gfMy1g8KrfSiUTz6AZTYX",
-      "id": "4gfMy1g8KrfSiUTz6AZTYX",
-      "is_local": false,
-      "name": "Grimey Park",
-      "popularity": 42,
-      "preview_url": "https://p.scdn.co/mp3-preview/ac08d28282fce1b987b03132427dd4b24b46ce8c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-      "track_number": 2,
-      "type": "track",
-      "uri": "spotify:track:4gfMy1g8KrfSiUTz6AZTYX",
-      "rating": 4
-    },
     {
       "artists": [
         {
@@ -8368,44 +6665,6 @@
       "rating": 4
     },
     {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/5lTjv8Ag00qHSGhvK4JbeF"
-      },
-      "followers": {
-        "href": null,
-        "total": 40931
-      },
-      "genres": [
-        "melanesian pop",
-        "pacific islands pop",
-        "png pop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/5lTjv8Ag00qHSGhvK4JbeF",
-      "id": "5lTjv8Ag00qHSGhvK4JbeF",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb2aa11c45d04a93ff90c6cdc9",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051742aa11c45d04a93ff90c6cdc9",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1782aa11c45d04a93ff90c6cdc9",
-          "width": 160
-        }
-      ],
-      "name": "Justin Wellington",
-      "popularity": 53,
-      "type": "artist",
-      "uri": "spotify:artist:5lTjv8Ag00qHSGhvK4JbeF",
-      "rating": 4
-    },
-    {
       "album_type": "album",
       "artists": [
         {
@@ -8816,6 +7075,569 @@
       "rating": 3
     },
     {
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+          },
+          "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+          "id": "1McMsnEElThX1knmY4oliG",
+          "name": "Olivia Rodrigo",
+          "type": "artist",
+          "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 219724,
+      "explicit": true,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
+      },
+      "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
+      "id": "1kuGVB7EU95pJObxwvfwKS",
+      "is_local": false,
+      "is_playable": true,
+      "name": "vampire",
+      "preview_url": null,
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+            },
+            "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+            "id": "1McMsnEElThX1knmY4oliG",
+            "name": "Olivia Rodrigo",
+            "type": "artist",
+            "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "© 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+            "type": "C"
+          },
+          {
+            "text": "℗ 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "00602458374483"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp",
+        "id": "1xJHno7SmdVtZAtXbdbDZp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02e85259a1cae29a8d91f2093d",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851e85259a1cae29a8d91f2093d",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "label": "Olivia Rodrigo PS",
+        "name": "GUTS",
+        "popularity": 63,
+        "release_date": "2023-09-08",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp/tracks?offset=0&limit=50&market=fr&locale=nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 165833,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/34sOdxWu9FljH84UXdRwu1"
+              },
+              "href": "https://api.spotify.com/v1/tracks/34sOdxWu9FljH84UXdRwu1",
+              "id": "34sOdxWu9FljH84UXdRwu1",
+              "is_local": false,
+              "is_playable": true,
+              "name": "all-american bitch",
+              "preview_url": null,
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:34sOdxWu9FljH84UXdRwu1"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 184783,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3IX0yuEVvDbnqUwMBB3ouC"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3IX0yuEVvDbnqUwMBB3ouC",
+              "id": "3IX0yuEVvDbnqUwMBB3ouC",
+              "is_local": false,
+              "is_playable": true,
+              "name": "bad idea right?",
+              "preview_url": null,
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:3IX0yuEVvDbnqUwMBB3ouC"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 219724,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
+              "id": "1kuGVB7EU95pJObxwvfwKS",
+              "is_local": false,
+              "is_playable": true,
+              "name": "vampire",
+              "preview_url": null,
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 177212,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6QT6j7rKt7Vk3IuV2AUO9W"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6QT6j7rKt7Vk3IuV2AUO9W",
+              "id": "6QT6j7rKt7Vk3IuV2AUO9W",
+              "is_local": false,
+              "is_playable": true,
+              "name": "lacy",
+              "preview_url": null,
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:6QT6j7rKt7Vk3IuV2AUO9W"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 203369,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5sp71CUt0jXRNqHblPGp7b"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5sp71CUt0jXRNqHblPGp7b",
+              "id": "5sp71CUt0jXRNqHblPGp7b",
+              "is_local": false,
+              "is_playable": true,
+              "name": "ballad of a homeschooled girl",
+              "preview_url": null,
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:5sp71CUt0jXRNqHblPGp7b"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 198866,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5CscrLqFBgPfZR8fGtikov"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5CscrLqFBgPfZR8fGtikov",
+              "id": "5CscrLqFBgPfZR8fGtikov",
+              "is_local": false,
+              "is_playable": true,
+              "name": "making the bed",
+              "preview_url": null,
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:5CscrLqFBgPfZR8fGtikov"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 231907,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/53dtP2iUMvaF28JZcHnFuU"
+              },
+              "href": "https://api.spotify.com/v1/tracks/53dtP2iUMvaF28JZcHnFuU",
+              "id": "53dtP2iUMvaF28JZcHnFuU",
+              "is_local": false,
+              "is_playable": true,
+              "name": "logical",
+              "preview_url": null,
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:53dtP2iUMvaF28JZcHnFuU"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 211141,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2gyxAWHebV7xPYVxqoi86f"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2gyxAWHebV7xPYVxqoi86f",
+              "id": "2gyxAWHebV7xPYVxqoi86f",
+              "is_local": false,
+              "is_playable": true,
+              "name": "get him back!",
+              "preview_url": null,
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:2gyxAWHebV7xPYVxqoi86f"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 154516,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/26QLJMK8G0M06sk7h7Fkse"
+              },
+              "href": "https://api.spotify.com/v1/tracks/26QLJMK8G0M06sk7h7Fkse",
+              "id": "26QLJMK8G0M06sk7h7Fkse",
+              "is_local": false,
+              "is_playable": true,
+              "name": "love is embarrassing",
+              "preview_url": null,
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:26QLJMK8G0M06sk7h7Fkse"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 189386,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3Nl5OkkmS5DaBZvuYofpAt"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3Nl5OkkmS5DaBZvuYofpAt",
+              "id": "3Nl5OkkmS5DaBZvuYofpAt",
+              "is_local": false,
+              "is_playable": true,
+              "name": "the grudge",
+              "preview_url": null,
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:3Nl5OkkmS5DaBZvuYofpAt"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 199422,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6W9l02gRsXVxzIuQC1oc1X"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6W9l02gRsXVxzIuQC1oc1X",
+              "id": "6W9l02gRsXVxzIuQC1oc1X",
+              "is_local": false,
+              "is_playable": true,
+              "name": "pretty isn’t pretty",
+              "preview_url": null,
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:6W9l02gRsXVxzIuQC1oc1X"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
+                  "id": "1McMsnEElThX1knmY4oliG",
+                  "name": "Olivia Rodrigo",
+                  "type": "artist",
+                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 222358,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7fesNTgTEMEH0ye8MOgEDY"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7fesNTgTEMEH0ye8MOgEDY",
+              "id": "7fesNTgTEMEH0ye8MOgEDY",
+              "is_local": false,
+              "is_playable": true,
+              "name": "teenage dream",
+              "preview_url": null,
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:7fesNTgTEMEH0ye8MOgEDY"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 12
+        },
+        "type": "album",
+        "uri": "spotify:album:1xJHno7SmdVtZAtXbdbDZp"
+      },
+      "rating": 3
+    },
+    {
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+            },
+            "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
+            "id": "3iYIsGMIzYj4NFKgvhgey5",
+            "name": "Savu Ni Delai Lomai",
+            "type": "artist",
+            "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6kiiQrvQgkw5jfwR6mmCMu"
+        },
+        "href": "https://api.spotify.com/v1/albums/6kiiQrvQgkw5jfwR6mmCMu",
+        "id": "6kiiQrvQgkw5jfwR6mmCMu",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2734101d0e40bee07a5ec829d4f",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e024101d0e40bee07a5ec829d4f",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048514101d0e40bee07a5ec829d4f",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "Diva Meu Lesuva, Vol. 6",
+        "release_date": "2012-10-23",
+        "release_date_precision": "day",
+        "total_tracks": 11,
+        "type": "album",
+        "uri": "spotify:album:6kiiQrvQgkw5jfwR6mmCMu"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+          },
+          "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
+          "id": "3iYIsGMIzYj4NFKgvhgey5",
+          "name": "Savu Ni Delai Lomai",
+          "type": "artist",
+          "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 308686,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "FJPR01400129"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/5XeUDIMj7d0S3Psx3OagZZ"
+      },
+      "href": "https://api.spotify.com/v1/tracks/5XeUDIMj7d0S3Psx3OagZZ",
+      "id": "5XeUDIMj7d0S3Psx3OagZZ",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Diva Meu Lesuva",
+      "popularity": 18,
+      "preview_url": "https://p.scdn.co/mp3-preview/d60de24bc2aa0a870d5e891db1b4a60599e232f0?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:5XeUDIMj7d0S3Psx3OagZZ",
+      "rating": 5
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+      },
+      "followers": {
+        "href": null,
+        "total": 4007
+      },
+      "genres": [
+        "fijian pop",
+        "pacific islands pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
+      "id": "3iYIsGMIzYj4NFKgvhgey5",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734101d0e40bee07a5ec829d4f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024101d0e40bee07a5ec829d4f",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514101d0e40bee07a5ec829d4f",
+          "width": 64
+        }
+      ],
+      "name": "Savu Ni Delai Lomai",
+      "popularity": 12,
+      "type": "artist",
+      "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5",
+      "rating": 3
+    },
+    {
       "album_type": "album",
       "artists": [
         {
@@ -9203,7 +8025,7 @@
       },
       "type": "album",
       "uri": "spotify:album:2ZwNcWl8h9blysDE8i4juL",
-      "rating": 5
+      "rating": 1
     },
     {
       "album_type": "album",
@@ -9690,570 +8512,533 @@
       },
       "type": "album",
       "uri": "spotify:album:1rpCHilZQkw84A3Y9czvMO",
-      "rating": 3
-    },
-    {
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-          },
-          "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-          "id": "1McMsnEElThX1knmY4oliG",
-          "name": "Olivia Rodrigo",
-          "type": "artist",
-          "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 219724,
-      "explicit": true,
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
-      },
-      "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
-      "id": "1kuGVB7EU95pJObxwvfwKS",
-      "is_local": false,
-      "is_playable": true,
-      "name": "vampire",
-      "preview_url": null,
-      "track_number": 3,
-      "type": "track",
-      "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS",
-      "album": {
-        "album_type": "album",
-        "artists": [
-          {
-            "external_urls": {
-              "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-            },
-            "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-            "id": "1McMsnEElThX1knmY4oliG",
-            "name": "Olivia Rodrigo",
-            "type": "artist",
-            "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-          }
-        ],
-        "copyrights": [
-          {
-            "text": "© 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
-            "type": "C"
-          },
-          {
-            "text": "℗ 2023 Olivia Rodrigo, under exclusive license to Geffen Records",
-            "type": "P"
-          }
-        ],
-        "external_ids": {
-          "upc": "00602458374483"
-        },
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp"
-        },
-        "genres": [],
-        "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp",
-        "id": "1xJHno7SmdVtZAtXbdbDZp",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e02e85259a1cae29a8d91f2093d",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d00004851e85259a1cae29a8d91f2093d",
-            "width": 64
-          }
-        ],
-        "is_playable": true,
-        "label": "Olivia Rodrigo PS",
-        "name": "GUTS",
-        "popularity": 63,
-        "release_date": "2023-09-08",
-        "release_date_precision": "day",
-        "total_tracks": 12,
-        "tracks": {
-          "href": "https://api.spotify.com/v1/albums/1xJHno7SmdVtZAtXbdbDZp/tracks?offset=0&limit=50&market=fr&locale=nl-NL,nl;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6",
-          "items": [
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 165833,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/34sOdxWu9FljH84UXdRwu1"
-              },
-              "href": "https://api.spotify.com/v1/tracks/34sOdxWu9FljH84UXdRwu1",
-              "id": "34sOdxWu9FljH84UXdRwu1",
-              "is_local": false,
-              "is_playable": true,
-              "name": "all-american bitch",
-              "preview_url": null,
-              "track_number": 1,
-              "type": "track",
-              "uri": "spotify:track:34sOdxWu9FljH84UXdRwu1"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 184783,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/3IX0yuEVvDbnqUwMBB3ouC"
-              },
-              "href": "https://api.spotify.com/v1/tracks/3IX0yuEVvDbnqUwMBB3ouC",
-              "id": "3IX0yuEVvDbnqUwMBB3ouC",
-              "is_local": false,
-              "is_playable": true,
-              "name": "bad idea right?",
-              "preview_url": null,
-              "track_number": 2,
-              "type": "track",
-              "uri": "spotify:track:3IX0yuEVvDbnqUwMBB3ouC"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 219724,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/1kuGVB7EU95pJObxwvfwKS"
-              },
-              "href": "https://api.spotify.com/v1/tracks/1kuGVB7EU95pJObxwvfwKS",
-              "id": "1kuGVB7EU95pJObxwvfwKS",
-              "is_local": false,
-              "is_playable": true,
-              "name": "vampire",
-              "preview_url": null,
-              "track_number": 3,
-              "type": "track",
-              "uri": "spotify:track:1kuGVB7EU95pJObxwvfwKS"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 177212,
-              "explicit": false,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/6QT6j7rKt7Vk3IuV2AUO9W"
-              },
-              "href": "https://api.spotify.com/v1/tracks/6QT6j7rKt7Vk3IuV2AUO9W",
-              "id": "6QT6j7rKt7Vk3IuV2AUO9W",
-              "is_local": false,
-              "is_playable": true,
-              "name": "lacy",
-              "preview_url": null,
-              "track_number": 4,
-              "type": "track",
-              "uri": "spotify:track:6QT6j7rKt7Vk3IuV2AUO9W"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 203369,
-              "explicit": false,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/5sp71CUt0jXRNqHblPGp7b"
-              },
-              "href": "https://api.spotify.com/v1/tracks/5sp71CUt0jXRNqHblPGp7b",
-              "id": "5sp71CUt0jXRNqHblPGp7b",
-              "is_local": false,
-              "is_playable": true,
-              "name": "ballad of a homeschooled girl",
-              "preview_url": null,
-              "track_number": 5,
-              "type": "track",
-              "uri": "spotify:track:5sp71CUt0jXRNqHblPGp7b"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 198866,
-              "explicit": false,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/5CscrLqFBgPfZR8fGtikov"
-              },
-              "href": "https://api.spotify.com/v1/tracks/5CscrLqFBgPfZR8fGtikov",
-              "id": "5CscrLqFBgPfZR8fGtikov",
-              "is_local": false,
-              "is_playable": true,
-              "name": "making the bed",
-              "preview_url": null,
-              "track_number": 6,
-              "type": "track",
-              "uri": "spotify:track:5CscrLqFBgPfZR8fGtikov"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 231907,
-              "explicit": false,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/53dtP2iUMvaF28JZcHnFuU"
-              },
-              "href": "https://api.spotify.com/v1/tracks/53dtP2iUMvaF28JZcHnFuU",
-              "id": "53dtP2iUMvaF28JZcHnFuU",
-              "is_local": false,
-              "is_playable": true,
-              "name": "logical",
-              "preview_url": null,
-              "track_number": 7,
-              "type": "track",
-              "uri": "spotify:track:53dtP2iUMvaF28JZcHnFuU"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 211141,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/2gyxAWHebV7xPYVxqoi86f"
-              },
-              "href": "https://api.spotify.com/v1/tracks/2gyxAWHebV7xPYVxqoi86f",
-              "id": "2gyxAWHebV7xPYVxqoi86f",
-              "is_local": false,
-              "is_playable": true,
-              "name": "get him back!",
-              "preview_url": null,
-              "track_number": 8,
-              "type": "track",
-              "uri": "spotify:track:2gyxAWHebV7xPYVxqoi86f"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 154516,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/26QLJMK8G0M06sk7h7Fkse"
-              },
-              "href": "https://api.spotify.com/v1/tracks/26QLJMK8G0M06sk7h7Fkse",
-              "id": "26QLJMK8G0M06sk7h7Fkse",
-              "is_local": false,
-              "is_playable": true,
-              "name": "love is embarrassing",
-              "preview_url": null,
-              "track_number": 9,
-              "type": "track",
-              "uri": "spotify:track:26QLJMK8G0M06sk7h7Fkse"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 189386,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/3Nl5OkkmS5DaBZvuYofpAt"
-              },
-              "href": "https://api.spotify.com/v1/tracks/3Nl5OkkmS5DaBZvuYofpAt",
-              "id": "3Nl5OkkmS5DaBZvuYofpAt",
-              "is_local": false,
-              "is_playable": true,
-              "name": "the grudge",
-              "preview_url": null,
-              "track_number": 10,
-              "type": "track",
-              "uri": "spotify:track:3Nl5OkkmS5DaBZvuYofpAt"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 199422,
-              "explicit": true,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/6W9l02gRsXVxzIuQC1oc1X"
-              },
-              "href": "https://api.spotify.com/v1/tracks/6W9l02gRsXVxzIuQC1oc1X",
-              "id": "6W9l02gRsXVxzIuQC1oc1X",
-              "is_local": false,
-              "is_playable": true,
-              "name": "pretty isn’t pretty",
-              "preview_url": null,
-              "track_number": 11,
-              "type": "track",
-              "uri": "spotify:track:6W9l02gRsXVxzIuQC1oc1X"
-            },
-            {
-              "artists": [
-                {
-                  "external_urls": {
-                    "spotify": "https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG"
-                  },
-                  "href": "https://api.spotify.com/v1/artists/1McMsnEElThX1knmY4oliG",
-                  "id": "1McMsnEElThX1knmY4oliG",
-                  "name": "Olivia Rodrigo",
-                  "type": "artist",
-                  "uri": "spotify:artist:1McMsnEElThX1knmY4oliG"
-                }
-              ],
-              "disc_number": 1,
-              "duration_ms": 222358,
-              "explicit": false,
-              "external_urls": {
-                "spotify": "https://open.spotify.com/track/7fesNTgTEMEH0ye8MOgEDY"
-              },
-              "href": "https://api.spotify.com/v1/tracks/7fesNTgTEMEH0ye8MOgEDY",
-              "id": "7fesNTgTEMEH0ye8MOgEDY",
-              "is_local": false,
-              "is_playable": true,
-              "name": "teenage dream",
-              "preview_url": null,
-              "track_number": 12,
-              "type": "track",
-              "uri": "spotify:track:7fesNTgTEMEH0ye8MOgEDY"
-            }
-          ],
-          "limit": 50,
-          "next": null,
-          "offset": 0,
-          "previous": null,
-          "total": 12
-        },
-        "type": "album",
-        "uri": "spotify:album:1xJHno7SmdVtZAtXbdbDZp"
-      },
-      "rating": 3
+      "rating": 5
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+        "spotify": "https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR"
       },
       "followers": {
         "href": null,
-        "total": 4007
+        "total": 12429629
       },
       "genres": [
-        "fijian pop",
-        "pacific islands pop"
+        "dance pop",
+        "pop",
+        "urban contemporary"
       ],
-      "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
-      "id": "3iYIsGMIzYj4NFKgvhgey5",
+      "href": "https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR",
+      "id": "2DlGxzQSjYe5N6G9nkYghR",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b2734101d0e40bee07a5ec829d4f",
+          "url": "https://i.scdn.co/image/ab6761610000e5ebce391c85fb87d67d316d1413",
           "width": 640
         },
         {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e024101d0e40bee07a5ec829d4f",
-          "width": 300
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174ce391c85fb87d67d316d1413",
+          "width": 320
         },
         {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d000048514101d0e40bee07a5ec829d4f",
-          "width": 64
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178ce391c85fb87d67d316d1413",
+          "width": 160
         }
       ],
-      "name": "Savu Ni Delai Lomai",
-      "popularity": 12,
+      "name": "Jennifer Lopez",
+      "popularity": 73,
       "type": "artist",
-      "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5",
-      "rating": 1
+      "uri": "spotify:artist:2DlGxzQSjYe5N6G9nkYghR",
+      "rating": 3
     },
     {
       "album": {
-        "album_type": "album",
+        "album_type": "single",
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+              "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
             },
-            "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
-            "id": "3iYIsGMIzYj4NFKgvhgey5",
-            "name": "Savu Ni Delai Lomai",
+            "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
+            "id": "68CRxZTAqk19AznItZInip",
+            "name": "Swifty Blue",
             "type": "artist",
-            "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5"
+            "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/27OdVby2oeFjM1C5XvC3hC"
+            },
+            "href": "https://api.spotify.com/v1/artists/27OdVby2oeFjM1C5XvC3hC",
+            "id": "27OdVby2oeFjM1C5XvC3hC",
+            "name": "Peysoh",
+            "type": "artist",
+            "uri": "spotify:artist:27OdVby2oeFjM1C5XvC3hC"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5w61NhDHxboaPUjFZ9r2vh"
+            },
+            "href": "https://api.spotify.com/v1/artists/5w61NhDHxboaPUjFZ9r2vh",
+            "id": "5w61NhDHxboaPUjFZ9r2vh",
+            "name": "MoneySign Suede",
+            "type": "artist",
+            "uri": "spotify:artist:5w61NhDHxboaPUjFZ9r2vh"
           }
         ],
+        "available_markets": [
+          "AD",
+          "AE",
+          "AG",
+          "AL",
+          "AM",
+          "AO",
+          "AR",
+          "AT",
+          "AU",
+          "AZ",
+          "BA",
+          "BB",
+          "BD",
+          "BE",
+          "BF",
+          "BG",
+          "BH",
+          "BI",
+          "BJ",
+          "BN",
+          "BO",
+          "BR",
+          "BS",
+          "BT",
+          "BW",
+          "BY",
+          "BZ",
+          "CA",
+          "CD",
+          "CG",
+          "CH",
+          "CI",
+          "CL",
+          "CM",
+          "CO",
+          "CR",
+          "CV",
+          "CW",
+          "CY",
+          "CZ",
+          "DE",
+          "DJ",
+          "DK",
+          "DM",
+          "DO",
+          "DZ",
+          "EC",
+          "EE",
+          "EG",
+          "ES",
+          "ET",
+          "FI",
+          "FJ",
+          "FM",
+          "FR",
+          "GA",
+          "GB",
+          "GD",
+          "GE",
+          "GH",
+          "GM",
+          "GN",
+          "GQ",
+          "GR",
+          "GT",
+          "GW",
+          "GY",
+          "HK",
+          "HN",
+          "HR",
+          "HT",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IN",
+          "IQ",
+          "IS",
+          "IT",
+          "JM",
+          "JO",
+          "JP",
+          "KE",
+          "KG",
+          "KH",
+          "KI",
+          "KM",
+          "KN",
+          "KR",
+          "KW",
+          "KZ",
+          "LA",
+          "LB",
+          "LC",
+          "LI",
+          "LK",
+          "LR",
+          "LS",
+          "LT",
+          "LU",
+          "LV",
+          "LY",
+          "MA",
+          "MC",
+          "MD",
+          "ME",
+          "MG",
+          "MH",
+          "MK",
+          "ML",
+          "MN",
+          "MO",
+          "MR",
+          "MT",
+          "MU",
+          "MV",
+          "MW",
+          "MX",
+          "MY",
+          "MZ",
+          "NA",
+          "NE",
+          "NG",
+          "NI",
+          "NL",
+          "NO",
+          "NP",
+          "NR",
+          "NZ",
+          "OM",
+          "PA",
+          "PE",
+          "PG",
+          "PH",
+          "PK",
+          "PL",
+          "PS",
+          "PT",
+          "PW",
+          "PY",
+          "QA",
+          "RO",
+          "RS",
+          "RW",
+          "SA",
+          "SB",
+          "SC",
+          "SE",
+          "SG",
+          "SI",
+          "SK",
+          "SL",
+          "SM",
+          "SN",
+          "SR",
+          "ST",
+          "SV",
+          "SZ",
+          "TD",
+          "TG",
+          "TH",
+          "TJ",
+          "TL",
+          "TN",
+          "TO",
+          "TR",
+          "TT",
+          "TV",
+          "TW",
+          "TZ",
+          "UA",
+          "UG",
+          "US",
+          "UY",
+          "UZ",
+          "VC",
+          "VE",
+          "VN",
+          "VU",
+          "WS",
+          "XK",
+          "ZA",
+          "ZM",
+          "ZW"
+        ],
         "external_urls": {
-          "spotify": "https://open.spotify.com/album/6kiiQrvQgkw5jfwR6mmCMu"
+          "spotify": "https://open.spotify.com/album/1IhrrkevqxaxKpylbMfSzF"
         },
-        "href": "https://api.spotify.com/v1/albums/6kiiQrvQgkw5jfwR6mmCMu",
-        "id": "6kiiQrvQgkw5jfwR6mmCMu",
+        "href": "https://api.spotify.com/v1/albums/1IhrrkevqxaxKpylbMfSzF",
+        "id": "1IhrrkevqxaxKpylbMfSzF",
         "images": [
           {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2734101d0e40bee07a5ec829d4f",
+            "url": "https://i.scdn.co/image/ab67616d0000b2734417eb0e17bb7225e0ad37ee",
             "width": 640
           },
           {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e024101d0e40bee07a5ec829d4f",
+            "url": "https://i.scdn.co/image/ab67616d00001e024417eb0e17bb7225e0ad37ee",
             "width": 300
           },
           {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048514101d0e40bee07a5ec829d4f",
+            "url": "https://i.scdn.co/image/ab67616d000048514417eb0e17bb7225e0ad37ee",
             "width": 64
           }
         ],
-        "is_playable": true,
-        "name": "Diva Meu Lesuva, Vol. 6",
-        "release_date": "2012-10-23",
+        "name": "Grimey Park",
+        "release_date": "2022-04-20",
         "release_date_precision": "day",
-        "total_tracks": 11,
+        "total_tracks": 6,
         "type": "album",
-        "uri": "spotify:album:6kiiQrvQgkw5jfwR6mmCMu"
+        "uri": "spotify:album:1IhrrkevqxaxKpylbMfSzF"
       },
       "artists": [
         {
           "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3iYIsGMIzYj4NFKgvhgey5"
+            "spotify": "https://open.spotify.com/artist/68CRxZTAqk19AznItZInip"
           },
-          "href": "https://api.spotify.com/v1/artists/3iYIsGMIzYj4NFKgvhgey5",
-          "id": "3iYIsGMIzYj4NFKgvhgey5",
-          "name": "Savu Ni Delai Lomai",
+          "href": "https://api.spotify.com/v1/artists/68CRxZTAqk19AznItZInip",
+          "id": "68CRxZTAqk19AznItZInip",
+          "name": "Swifty Blue",
           "type": "artist",
-          "uri": "spotify:artist:3iYIsGMIzYj4NFKgvhgey5"
+          "uri": "spotify:artist:68CRxZTAqk19AznItZInip"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/27OdVby2oeFjM1C5XvC3hC"
+          },
+          "href": "https://api.spotify.com/v1/artists/27OdVby2oeFjM1C5XvC3hC",
+          "id": "27OdVby2oeFjM1C5XvC3hC",
+          "name": "Peysoh",
+          "type": "artist",
+          "uri": "spotify:artist:27OdVby2oeFjM1C5XvC3hC"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5w61NhDHxboaPUjFZ9r2vh"
+          },
+          "href": "https://api.spotify.com/v1/artists/5w61NhDHxboaPUjFZ9r2vh",
+          "id": "5w61NhDHxboaPUjFZ9r2vh",
+          "name": "MoneySign Suede",
+          "type": "artist",
+          "uri": "spotify:artist:5w61NhDHxboaPUjFZ9r2vh"
         }
       ],
+      "available_markets": [
+        "AR",
+        "AU",
+        "AT",
+        "BE",
+        "BO",
+        "BR",
+        "BG",
+        "CA",
+        "CL",
+        "CO",
+        "CR",
+        "CY",
+        "CZ",
+        "DK",
+        "DO",
+        "DE",
+        "EC",
+        "EE",
+        "SV",
+        "FI",
+        "FR",
+        "GR",
+        "GT",
+        "HN",
+        "HK",
+        "HU",
+        "IS",
+        "IE",
+        "IT",
+        "LV",
+        "LT",
+        "LU",
+        "MY",
+        "MT",
+        "MX",
+        "NL",
+        "NZ",
+        "NI",
+        "NO",
+        "PA",
+        "PY",
+        "PE",
+        "PH",
+        "PL",
+        "PT",
+        "SG",
+        "SK",
+        "ES",
+        "SE",
+        "CH",
+        "TW",
+        "TR",
+        "UY",
+        "US",
+        "GB",
+        "AD",
+        "LI",
+        "MC",
+        "ID",
+        "JP",
+        "TH",
+        "VN",
+        "RO",
+        "IL",
+        "ZA",
+        "SA",
+        "AE",
+        "BH",
+        "QA",
+        "OM",
+        "KW",
+        "EG",
+        "MA",
+        "DZ",
+        "TN",
+        "LB",
+        "JO",
+        "PS",
+        "IN",
+        "BY",
+        "KZ",
+        "MD",
+        "UA",
+        "AL",
+        "BA",
+        "HR",
+        "ME",
+        "MK",
+        "RS",
+        "SI",
+        "KR",
+        "BD",
+        "PK",
+        "LK",
+        "GH",
+        "KE",
+        "NG",
+        "TZ",
+        "UG",
+        "AG",
+        "AM",
+        "BS",
+        "BB",
+        "BZ",
+        "BT",
+        "BW",
+        "BF",
+        "CV",
+        "CW",
+        "DM",
+        "FJ",
+        "GM",
+        "GE",
+        "GD",
+        "GW",
+        "GY",
+        "HT",
+        "JM",
+        "KI",
+        "LS",
+        "LR",
+        "MW",
+        "MV",
+        "ML",
+        "MH",
+        "FM",
+        "NA",
+        "NR",
+        "NE",
+        "PW",
+        "PG",
+        "WS",
+        "SM",
+        "ST",
+        "SN",
+        "SC",
+        "SL",
+        "SB",
+        "KN",
+        "LC",
+        "VC",
+        "SR",
+        "TL",
+        "TO",
+        "TT",
+        "TV",
+        "VU",
+        "AZ",
+        "BN",
+        "BI",
+        "KH",
+        "CM",
+        "TD",
+        "KM",
+        "GQ",
+        "SZ",
+        "GA",
+        "GN",
+        "KG",
+        "LA",
+        "MO",
+        "MR",
+        "MN",
+        "NP",
+        "RW",
+        "TG",
+        "UZ",
+        "ZW",
+        "BJ",
+        "MG",
+        "MU",
+        "MZ",
+        "AO",
+        "CI",
+        "DJ",
+        "ZM",
+        "CD",
+        "CG",
+        "IQ",
+        "LY",
+        "TJ",
+        "VE",
+        "ET",
+        "XK"
+      ],
       "disc_number": 1,
-      "duration_ms": 308686,
-      "explicit": false,
+      "duration_ms": 163350,
+      "explicit": true,
       "external_ids": {
-        "isrc": "FJPR01400129"
+        "isrc": "USLD91737219"
       },
       "external_urls": {
-        "spotify": "https://open.spotify.com/track/5XeUDIMj7d0S3Psx3OagZZ"
+        "spotify": "https://open.spotify.com/track/4gfMy1g8KrfSiUTz6AZTYX"
       },
-      "href": "https://api.spotify.com/v1/tracks/5XeUDIMj7d0S3Psx3OagZZ",
-      "id": "5XeUDIMj7d0S3Psx3OagZZ",
+      "href": "https://api.spotify.com/v1/tracks/4gfMy1g8KrfSiUTz6AZTYX",
+      "id": "4gfMy1g8KrfSiUTz6AZTYX",
       "is_local": false,
-      "is_playable": true,
-      "name": "Diva Meu Lesuva",
-      "popularity": 18,
-      "preview_url": "https://p.scdn.co/mp3-preview/d60de24bc2aa0a870d5e891db1b4a60599e232f0?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "name": "Grimey Park",
+      "popularity": 42,
+      "preview_url": "https://p.scdn.co/mp3-preview/ac08d28282fce1b987b03132427dd4b24b46ce8c?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
       "track_number": 2,
       "type": "track",
-      "uri": "spotify:track:5XeUDIMj7d0S3Psx3OagZZ",
-      "rating": 5
+      "uri": "spotify:track:4gfMy1g8KrfSiUTz6AZTYX",
+      "rating": 1
     }
   ]
 }
