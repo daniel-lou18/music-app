@@ -18,6 +18,10 @@
   color: var(--main-font-color);
 }
 
+.link:global(.active) > * {
+  font-weight: bold;
+}
+
 .link svg:global(.fillable) {
   fill: var(--medium-white-color);
   animation: 0.1s linear alternate scale-up-down;

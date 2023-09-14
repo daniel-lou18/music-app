@@ -12,6 +12,10 @@
   color: var(--main-font-color);
 }
 
+.subNavLink:global(.active) {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1200px) {
   .subNavLink {
     font-size: 0.9rem;

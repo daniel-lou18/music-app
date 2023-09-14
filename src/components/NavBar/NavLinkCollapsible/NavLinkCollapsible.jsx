@@ -14,7 +14,7 @@ function NavLinkCollapsible({
     <li className={styles.listItem} onClick={onClick}>
       <Link
         className={`${styles.link} ${styles.dropdown} ${
-          location.pathname.includes({ pathname }) ? "active" : ""
+          location.pathname.includes(pathname) ? "active" : ""
         }`}
       >
         <div className={styles.navItem}>

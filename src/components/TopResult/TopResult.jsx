@@ -96,7 +96,7 @@ function TopResult({ title, type = "result" }) {
     >
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
       <div className={styles.result}>
-        <Heart id={favId} onClick={handleFavorite} />
+        <Heart id={favId} onClick={handleFavorite} type="album" />
         <img
           className={styles.img}
           src={

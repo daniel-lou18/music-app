@@ -2,24 +2,106 @@ svg.heartIcon:hover {
   cursor: pointer;
   stroke: lightgray;
   transform: scale(1.1);
-  fill: rgb(255, 0, 0, 0.5);
+  fill: rgba(220, 20, 60, 0.5);
+}
+
+.svgWrapper.checked svg.heartIcon {
+  animation: heart-explode 0.3s ease-out;
 }
 
 svg.heartIcon.redHeart:hover {
-  fill: rgb(255, 0, 0);
+  fill: rgba(220, 20, 60, 1);
+}
+
+@keyframes heart-explode {
+  0% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(0.5);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* @keyframes heart-explode2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+svg.heartIcon {
+  z-index: 5;
+  width: var(--size);
+  height: var(--size);
+}
+
+.svgWrapper {
+  --size: 28px;
+  box-sizing: border-box;
+  height: var(--size);
+  width: auto;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.svgWrapper.checked::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  height: calc(var(--size) * 2.3);
+  width: auto;
+  aspect-ratio: 1 / 1;
+  border: 0 solid var(--highlight-btn-color);
+  border-radius: 50%;
+  animation: explode 0.3s ease-out;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    border-width: var(--size);
+  }
+  50% {
+    transform: scale(0.3);
+    border-width: calc(var(--size) * 0.7);
+  }
+  100% {
+    transform: scale(1);
+    border-width: calc(var(--size) * 0);
+  }
 }
 
 .redHeart {
   opacity: 1;
 }
 
-svg.album {
+.svgWrapper.album {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 3%;
+  right: 3%;
 }
 
-svg.artist {
+.svgWrapper.artist {
   margin-left: auto;
-  display: block;
+  /* display: block; */
 }

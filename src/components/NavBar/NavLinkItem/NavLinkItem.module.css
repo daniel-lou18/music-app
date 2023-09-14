@@ -55,6 +55,10 @@
   color: var(--main-font-color);
 }
 
+.navLink:global(.active) {
+  font-weight: bold;
+}
+
 .navLink:global(.active) svg:global(.fillable) {
   fill: var(--medium-white-color);
 }
