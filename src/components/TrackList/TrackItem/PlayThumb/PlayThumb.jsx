@@ -14,7 +14,7 @@ function PlayThumb({ album, id, name, artists, preview_url }) {
   const isPlaying = isPlayingId === id ? true : false;
   const [currentTime, setCurrentTime] = useState(0);
   const audioEl = useRef();
-  console.log(album);
+  // console.log(album);
 
   useEffect(() => {
     isPlaying ? audioEl.current.play() : audioEl.current.pause();

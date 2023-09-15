@@ -25,6 +25,9 @@ export const MusicProvider = ({ children }) => {
 
   const reducer = (state, action) => {
     switch (action.type) {
+      case "query/updated": {
+        return { ...state, query: action.payload };
+      }
       case "search/query":
         return {
           ...state,
@@ -100,7 +103,7 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
-  console.log(data);
+  // console.log(data);
 
   useEffect(() => {
     if (!query || !token) return;

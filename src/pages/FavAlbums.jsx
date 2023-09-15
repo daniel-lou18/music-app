@@ -6,10 +6,16 @@ import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
 import NavLinkItem from "../components/NavBar/NavLinkItem";
 import LogoIcon from "../components/UI-elements/LogoIcon";
+import InfoMsg from "../components/InfoMsg/";
+import NoteIcon from "../components/UI-elements/NoteIcon/";
+import { useNavigate } from "react-router-dom";
 
 function FavAlbums() {
+  const navigate = useNavigate();
   const { favoritesData } = useFavorites();
   const albums = favoritesData.filter((item) => item.type === "album");
+
+  const handleClick = () => navigate("/app/search");
 
   return (
     <Results>
@@ -27,14 +33,20 @@ function FavAlbums() {
       <TopBar>
         <NavBtns />
       </TopBar>
-      {albums.length === 0 && <div>No favorite albums...</div>}
-      {albums.length > 0 && (
-        <>
-          <ListContainer type="favoritePage">
-            <HorizontalList items={albums} title="Favorite albums" />
-          </ListContainer>
-        </>
-      )}
+      <ListContainer type="favoritePage">
+        {albums.length === 0 && (
+          <InfoMsg
+            logo={<NoteIcon size={75} />}
+            heading="Albums you like will appear here"
+            paragraph_1="Save albums by clicking on the heart icon"
+            btnText="Find albums"
+            onClick={handleClick}
+          />
+        )}
+        {albums.length > 0 && (
+          <HorizontalList items={albums} title="Favorite albums" />
+        )}
+      </ListContainer>
     </Results>
   );
 }

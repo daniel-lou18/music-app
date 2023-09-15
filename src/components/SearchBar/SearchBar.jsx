@@ -1,7 +1,30 @@
 import styles from "./SearchBar.module.css";
 import NavBtns from "../UI-elements/NavBtns";
+import { useMusic } from "../../context/MusicContext";
+import { useSearchParams } from "react-router-dom";
+import { useBrowse } from "../../context/BrowseContext";
+import { useEffect } from "react";
 
-function SearchBar({ query, onQuery }) {
+function SearchBar() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { dispatch } = useMusic();
+  const { dispatch: dispatchBrowse } = useBrowse();
+  const query = searchParams.get("query") || "";
+
+  const handleSearch = (e) => {
+    setSearchParams({ query: e.target.value });
+    dispatch({ type: "query/updated", payload: searchParams.get("query") });
+    dispatchBrowse({ type: "reset" });
+  };
+
+  useEffect(() => {
+    if (query) {
+      setSearchParams({ query });
+      dispatch({ type: "query/updated", payload: query });
+      dispatchBrowse({ type: "reset" });
+    }
+  }, [dispatch, query, dispatchBrowse, searchParams, setSearchParams]);
+
   return (
     <div className={styles.searchContainer}>
       <NavBtns />
@@ -26,7 +49,7 @@ function SearchBar({ query, onQuery }) {
         <input
           type="text"
           value={query}
-          onChange={(e) => onQuery(e)}
+          onChange={handleSearch}
           placeholder="What do you want to listen to?"
         ></input>
       </div>

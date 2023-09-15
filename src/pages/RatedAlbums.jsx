@@ -6,11 +6,16 @@ import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
 import NavLinkItem from "../components/NavBar/NavLinkItem";
 import LogoIcon from "../components/UI-elements/LogoIcon";
+import InfoMsg from "../components/InfoMsg";
+import NoteIcon from "../components/UI-elements/NoteIcon";
+import { useNavigate } from "react-router-dom";
 
 function RatedAlbums() {
+  const navigate = useNavigate();
   const { ratedData } = useRated();
-  if (ratedData.length === 0) return <div>No rated albums...</div>;
   const albums = ratedData.filter((item) => item.type === "album");
+
+  const handleClick = () => navigate("/app/search");
 
   return (
     <Results>
@@ -28,14 +33,19 @@ function RatedAlbums() {
       <TopBar>
         <NavBtns />
       </TopBar>
-      {albums.length === 0 && <div>No rated albums...</div>}
-      {albums.length > 0 && (
-        <>
-          <ListContainer type="favoritePage">
-            <RatedList items={albums} title="Rated albums" />
-          </ListContainer>
-        </>
-      )}
+      <ListContainer type="favoritePage">
+        {albums.length === 0 && (
+          <InfoMsg
+            logo={<NoteIcon size={75} />}
+            heading="Albums you rate will appear here"
+            paragraph_1="Rate albums by clicking on a star"
+            paragraph_2="Remove ratings by clicking two times on the first star"
+            btnText="Find albums"
+            onClick={handleClick}
+          />
+        )}
+        {albums.length > 0 && <RatedList items={albums} title="Rated albums" />}
+      </ListContainer>
     </Results>
   );
 }

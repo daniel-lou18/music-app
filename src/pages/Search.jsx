@@ -6,26 +6,17 @@ import TrackList from "../components/TrackList";
 import TopResult from "../components/TopResult";
 import { useMusic } from "../context/MusicContext";
 import BrowseCategories from "../components/BrowseCategories";
-import { useBrowse } from "../context/BrowseContext";
 import Spinner from "../components/UI-elements/Spinner";
 import ErrorMsg from "../components/ErrorMsg";
 
 function Search() {
-  const { data, query, isLoading, error, dispatch, artistId, albumId } =
-    useMusic();
-  const { dispatch: dispatchBrowse } = useBrowse();
+  const { data, query, isLoading, error, artistId, albumId } = useMusic();
   const { tracks, artists, albums } = data;
-
-  const handleQuery = (e) => {
-    dispatch({ type: "search/query", payload: e.target.value });
-    dispatchBrowse({ type: "reset" });
-  };
-
   // console.log(data);
 
   return (
     <>
-      <SearchBar query={query} onQuery={handleQuery} />
+      <SearchBar />
       {(query || artistId || albumId) && (
         <Results>
           {isLoading && <Spinner />}

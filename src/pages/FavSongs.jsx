@@ -6,11 +6,17 @@ import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
 import NavLinkItem from "../components/NavBar/NavLinkItem";
 import LogoIcon from "../components/UI-elements/LogoIcon";
+import NoteIcon from "../components/UI-elements/NoteIcon/";
+import InfoMsg from "../components/InfoMsg";
+import { useNavigate } from "react-router-dom";
 
 function FavSongs() {
+  const navigate = useNavigate();
   const { favoritesData } = useFavorites();
   const tracks = favoritesData.filter((item) => item.type === "track");
   console.log(tracks);
+
+  const handleClick = () => navigate("/app/search");
 
   return (
     <Results>
@@ -28,17 +34,21 @@ function FavSongs() {
       <TopBar>
         <NavBtns />
       </TopBar>
-      {tracks.length === 0 && <div>No favorite tracks...</div>}
-      {tracks.length > 0 && (
-        <>
-          <ListContainer
-            type="favoritePage"
-            className="container-favorite-songs"
-          >
-            <TrackList tracks={tracks} title="Favorite songs" type="big" />
-          </ListContainer>
-        </>
-      )}
+
+      <ListContainer type="favoritePage" className="container-favorite-songs">
+        {tracks.length === 0 && (
+          <InfoMsg
+            logo={<NoteIcon size={75} />}
+            heading="Songs you like will appear here"
+            paragraph_1="Save songs by clicking on the heart icon"
+            btnText="Find songs"
+            onClick={handleClick}
+          />
+        )}
+        {tracks.length > 0 && (
+          <TrackList tracks={tracks} title="Favorite songs" type="big" />
+        )}
+      </ListContainer>
     </Results>
   );
 }

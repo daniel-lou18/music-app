@@ -6,11 +6,16 @@ import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
 import NavLinkItem from "../components/NavBar/NavLinkItem";
 import LogoIcon from "../components/UI-elements/LogoIcon";
+import InfoMsg from "../components/InfoMsg";
+import NoteIcon from "../components/UI-elements/NoteIcon";
+import { useNavigate } from "react-router-dom";
 
 function RatedArtists() {
+  const navigate = useNavigate();
   const { ratedData } = useRated();
-  if (ratedData.length === 0) return <div>No rated artists...</div>;
   const artists = ratedData.filter((item) => item.type === "artist");
+
+  const handleClick = () => navigate("/app/search");
 
   return (
     <Results>
@@ -28,14 +33,21 @@ function RatedArtists() {
       <TopBar>
         <NavBtns />
       </TopBar>
-      {artists.length === 0 && <div>No rated artists...</div>}
-      {artists.length > 0 && (
-        <>
-          <ListContainer type="favoritePage">
-            <RatedList items={artists} title="Rated artists" />
-          </ListContainer>
-        </>
-      )}
+      <ListContainer type="favoritePage">
+        {artists.length === 0 && (
+          <InfoMsg
+            logo={<NoteIcon size={75} />}
+            heading="Artists you rate will appear here"
+            paragraph_1="Rate artists by clicking on a star"
+            paragraph_2="Remove ratings by clicking two times on the first star"
+            btnText="Find artists"
+            onClick={handleClick}
+          />
+        )}
+        {artists.length > 0 && (
+          <RatedList items={artists} title="Rated artists" />
+        )}
+      </ListContainer>
     </Results>
   );
 }

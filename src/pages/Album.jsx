@@ -14,7 +14,7 @@ function Album() {
   const trackItems = currentAlbum?.tracks?.items;
   const { albumId } = useParams();
 
-  console.log(currentAlbum);
+  // console.log(currentAlbum);
   useEffect(() => {
     getAlbum(albumId);
   }, [albumId]);

@@ -6,11 +6,16 @@ import NavBtns from "../components/UI-elements/NavBtns/";
 import TopBar from "../components/Containers/TopBar";
 import NavLinkItem from "../components/NavBar/NavLinkItem";
 import LogoIcon from "../components/UI-elements/LogoIcon";
+import InfoMsg from "../components/InfoMsg";
+import NoteIcon from "../components/UI-elements/NoteIcon";
+import { useNavigate } from "react-router-dom";
 
 function RatedSongs() {
+  const navigate = useNavigate();
   const { ratedData } = useRated();
-  if (ratedData.length === 0) return <div>No rated tracks...</div>;
   const tracks = ratedData.filter((item) => item.type === "track");
+
+  const handleClick = () => navigate("/app/search");
 
   return (
     <Results>
@@ -28,17 +33,22 @@ function RatedSongs() {
       <TopBar>
         <NavBtns />
       </TopBar>
-      {tracks.length === 0 && <div>No rated tracks...</div>}
-      {tracks.length > 0 && (
-        <>
-          <ListContainer
-            type="favoritePage"
-            className="container-favorite-songs"
-          >
-            <TrackList tracks={tracks} title="Rated songs" type="big" />
-          </ListContainer>
-        </>
-      )}
+
+      <ListContainer type="favoritePage" className="container-favorite-songs">
+        {tracks.length === 0 && (
+          <InfoMsg
+            logo={<NoteIcon size={75} />}
+            heading="Songs you rate will appear here"
+            paragraph_1="Rate songs by clicking on a star"
+            paragraph_2="Remove ratings by clicking two times on the first star"
+            btnText="Find songs"
+            onClick={handleClick}
+          />
+        )}
+        {tracks.length > 0 && (
+          <TrackList tracks={tracks} title="Rated songs" type="big" />
+        )}
+      </ListContainer>
     </Results>
   );
 }

@@ -15,11 +15,15 @@ import RatedAlbums from "./pages/RatedAlbums";
 import Artist from "./pages/Artist";
 import Album from "./pages/Album";
 import Browse from "./pages/Browse";
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route index element={<Landing />} />
+        <Route path="login" element={<Login />} />
         <Route path="app" element={<AppLayout />}>
           <Route
             path=""

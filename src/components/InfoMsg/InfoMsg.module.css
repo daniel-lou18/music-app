@@ -1,0 +1,29 @@
+.infoContainer {
+  grid-column: 2 / 5;
+  padding-top: 5px;
+}
+
+.infoContainer,
+.infoContainer > * {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoContainer > * {
+  display: block;
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.infoMsg {
+  margin-bottom: 5px;
+}
+
+.infoTip {
+  margin-bottom: 20px;
+}
