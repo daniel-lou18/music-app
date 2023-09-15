@@ -30,9 +30,12 @@ export const HomeProvider = ({ children }) => {
           isLoadingReleases: false,
         };
       case "popular-tracks/loaded":
+        const tracksWithImgs = action.payload.map((track) => {
+          return { ...track, images: track.album.images };
+        });
         return {
           ...state,
-          popularTracksData: action.payload,
+          popularTracksData: tracksWithImgs,
           isLoadingTracks: false,
         };
       case "new-releases/error":
@@ -63,6 +66,7 @@ export const HomeProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+  // console.log(popularTracksData);
 
   useEffect(() => {
     if (!token) return;

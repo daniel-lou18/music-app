@@ -21,6 +21,8 @@ function Search() {
     dispatchBrowse({ type: "reset" });
   };
 
+  // console.log(data);
+
   return (
     <>
       <SearchBar query={query} onQuery={handleQuery} />

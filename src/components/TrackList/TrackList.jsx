@@ -17,7 +17,7 @@ function TrackList({ tracks, title, type, className, isLoading, error }) {
         {!isLoading &&
           !error &&
           tracks.map((track) => (
-            <TrackItem key={track.id} track={track} item={track} type={type} />
+            <TrackItem key={track.id} track={track} type={type} />
           ))}
       </ul>
     </>

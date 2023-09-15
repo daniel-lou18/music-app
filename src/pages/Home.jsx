@@ -22,6 +22,7 @@ function Home() {
     errorTracks,
   } = useHome();
 
+  // console.log(popularTracksData);
   useEffect(() => {
     dispatch({ type: "playing/set", payload: "" });
     dispatch({ type: "reset" });

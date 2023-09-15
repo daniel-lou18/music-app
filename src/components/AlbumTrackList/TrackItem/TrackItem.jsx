@@ -3,9 +3,11 @@ import TrackIcons from "./TrackIcons";
 import styles from "./TrackItem.module.css";
 import StarRating from "../../StarRating";
 import { useRated } from "../../../context/RatedContext";
+import { useMusic } from "../../../context/MusicContext";
 
 function TrackItem({ track, type }) {
   const { id, preview_url, name, artists } = track;
+  const { currentAlbum } = useMusic();
   const { ratedData, addRated, removeRated } = useRated();
   const ratedItem = ratedData.find((item) => item.id === id);
 
@@ -24,7 +26,7 @@ function TrackItem({ track, type }) {
           number={5}
           callback={addRated}
           beforeCallback={ratedItem ? removeRated : null}
-          item={track}
+          item={{ ...track, album: currentAlbum }}
           defaultRating={ratedItem?.rating}
         />
       )}

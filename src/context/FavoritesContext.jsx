@@ -40,6 +40,7 @@ export const FavoritesProvider = ({ children }) => {
     reducer,
     initialState
   );
+  console.log(favoritesData);
 
   useEffect(() => {
     const fetchFavorites = async () => {

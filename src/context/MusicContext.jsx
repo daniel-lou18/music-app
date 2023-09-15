@@ -67,6 +67,7 @@ export const MusicProvider = ({ children }) => {
           isLoading: false,
         };
       case "currentAlbum/loaded":
+        // const albumWithTrackImgs = { ...action.payload, tracks };
         return { ...state, currentAlbum: action.payload, isLoading: false };
       case "playing/set":
         return { ...state, isPlayingId: action.payload };
@@ -99,6 +100,7 @@ export const MusicProvider = ({ children }) => {
     },
     dispatch,
   ] = useReducer(reducer, initialState);
+  console.log(data);
 
   useEffect(() => {
     if (!query || !token) return;

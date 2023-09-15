@@ -2,16 +2,15 @@ import styles from "./TrackIcons.module.css";
 import { useFavorites } from "../../../../context/FavoritesContext";
 import Heart from "../../../UI-elements/Heart";
 import AlbumIcon from "../../../UI-elements/AlbumIcon";
-import ArtistIcon from "../../../UI-elements/ArtistIcon/ArtistIcon";
+import ArtistIcon from "../../../UI-elements/ArtistIcon";
 
 import { useNavigate } from "react-router-dom";
 import { useMusic } from "../../../../context/MusicContext";
 
 function TrackIcons({ track }) {
   const { id: spotifyId, artists } = track;
-  const {
-    currentAlbum: { id: albumId },
-  } = useMusic();
+  const { currentAlbum } = useMusic();
+  const { id: albumId } = currentAlbum;
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
 
@@ -19,7 +18,7 @@ function TrackIcons({ track }) {
 
   const handleFavorite = () => {
     if (!id) {
-      addFavorite(track);
+      addFavorite({ ...track, album: currentAlbum });
     } else {
       removeFavorite(id);
     }
