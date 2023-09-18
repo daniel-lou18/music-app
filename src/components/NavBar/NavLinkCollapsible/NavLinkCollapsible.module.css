@@ -127,11 +127,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  .svgWrapper svg {
+    height: 24px;
+    width: 24px;
+  }
+
   .textWrapper {
     margin-left: 12px;
   }
 
   .subMenu {
-    padding-left: 32px;
+    padding-left: 36px;
   }
 }

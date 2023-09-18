@@ -138,6 +138,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .listItem:not(:first-child) .svgWrapper svg {
+    height: 24px;
+    width: 24px;
+  }
+
   .logoMobile {
     display: block;
     margin-top: 5px;

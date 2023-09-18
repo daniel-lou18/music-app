@@ -2,7 +2,7 @@ import styles from "./HamburgerIcon.module.css";
 
 function HamburgerIcon({ isOpen, onClick }) {
   return (
-    <div
+    <button
       className={`hamburgerIcon ${styles.hamburgerWrapper} ${
         isOpen ? styles.isOpen : ""
       }`}
@@ -39,7 +39,7 @@ function HamburgerIcon({ isOpen, onClick }) {
           rx={4}
         />
       </svg>
-    </div>
+    </button>
   );
 }
 
