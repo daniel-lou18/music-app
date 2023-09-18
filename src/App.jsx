@@ -17,6 +17,7 @@ import Album from "./pages/Album";
 import Browse from "./pages/Browse";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 function App() {
   return (
@@ -24,7 +25,14 @@ function App() {
       <Routes>
         <Route index element={<Landing />} />
         <Route path="login" element={<Login />} />
-        <Route path="app" element={<AppLayout />}>
+        <Route
+          path="app"
+          element={
+            <ProtectedRoute>
+              <AppLayout />
+            </ProtectedRoute>
+          }
+        >
           <Route
             path=""
             element={

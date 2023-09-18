@@ -6,10 +6,8 @@ import ListContainer from "../components/Containers/ListContainer";
 import TopResult from "../components/TopResult";
 import TrackList from "../components/TrackList";
 import Results from "../components/Containers/Results";
-import NavBtns from "../components/UI-elements/NavBtns/";
-import TopBar from "../components/Containers/TopBar";
-import NavLinkItem from "../components/NavBar/NavLinkItem";
-import LogoIcon from "../components/UI-elements/LogoIcon";
+import { useAuth } from "../context/AuthContext";
+import User from "../components/User/User";
 
 function Home() {
   const { dispatch } = useMusic();
@@ -21,6 +19,7 @@ function Home() {
     errorReleases,
     errorTracks,
   } = useHome();
+  const { user } = useAuth();
 
   // console.log(popularTracksData);
   useEffect(() => {
@@ -30,7 +29,7 @@ function Home() {
 
   return (
     <Results>
-      <NavLinkItem
+      {/* <NavLinkItem
         to={""}
         icon={<LogoIcon />}
         text={
@@ -40,10 +39,11 @@ function Home() {
         }
         end={true}
         className="logoMobile"
-      />
-      <TopBar>
+      /> */}
+      {/* <>
         <NavBtns />
-      </TopBar>
+        <User />
+      </> */}
       <ListContainer position="left">
         <TopResult title="Featured Artist" type="featured" />
       </ListContainer>

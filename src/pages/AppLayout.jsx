@@ -5,6 +5,10 @@ import ContentContainer from "../components/Containers/ContentContainer";
 import { Outlet } from "react-router-dom";
 import HamburgerIcon from "../components/UI-elements/HamburgerIcon";
 import { useState } from "react";
+import AppHeader from "../components/Containers/AppHeader";
+import NavBtns from "../components/UI-elements/NavBtns";
+import User from "../components/User/";
+import LogoIcon from "../components/UI-elements/LogoIcon";
 
 function AppLayout() {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
@@ -14,11 +18,28 @@ function AppLayout() {
 
   return (
     <AppContainer hamburgerIsOpen={hamburgerIsOpen}>
-      <HamburgerIcon onClick={handleClickHamburger} isOpen={hamburgerIsOpen} />
       <Sidebar isVisible={hamburgerIsOpen}>
         <NavBar closeHamburger={handleCloseHamburger} />
       </Sidebar>
       <ContentContainer>
+        <AppHeader
+          isVisible={hamburgerIsOpen}
+          left={
+            <>
+              <NavBtns />
+              <LogoIcon size={24} />
+            </>
+          }
+          right={
+            <>
+              <User />
+              <HamburgerIcon
+                onClick={handleClickHamburger}
+                isOpen={hamburgerIsOpen}
+              />
+            </>
+          }
+        ></AppHeader>
         <Outlet />
       </ContentContainer>
     </AppContainer>

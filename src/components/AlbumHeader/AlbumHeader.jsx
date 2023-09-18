@@ -3,7 +3,6 @@ import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
-import TopBar from "../Containers/TopBar";
 import NavBtns from "../UI-elements/NavBtns";
 import Heart from "../UI-elements/Heart";
 
@@ -41,9 +40,9 @@ function AlbumHeader({ title }) {
       className={`${styles.resultContainer} ${styles.header}`}
       key={currentAlbum.id}
     >
-      <TopBar>
+      {/* <>
         <NavBtns />
-      </TopBar>
+      </> */}
       <div className={styles.result}>
         <div>
           <img

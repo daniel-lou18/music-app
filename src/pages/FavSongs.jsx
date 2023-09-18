@@ -2,10 +2,6 @@ import { useFavorites } from "../context/FavoritesContext";
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
 import TrackList from "../components/TrackList";
-import NavBtns from "../components/UI-elements/NavBtns/";
-import TopBar from "../components/Containers/TopBar";
-import NavLinkItem from "../components/NavBar/NavLinkItem";
-import LogoIcon from "../components/UI-elements/LogoIcon";
 import NoteIcon from "../components/UI-elements/NoteIcon/";
 import InfoMsg from "../components/InfoMsg";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +16,7 @@ function FavSongs() {
 
   return (
     <Results>
-      <NavLinkItem
+      {/* <NavLinkItem
         to={""}
         icon={<LogoIcon />}
         text={
@@ -30,10 +26,10 @@ function FavSongs() {
         }
         end={true}
         className="logoMobile"
-      />
-      <TopBar>
+      /> */}
+      {/* <>
         <NavBtns />
-      </TopBar>
+      </> */}
 
       <ListContainer type="favoritePage" className="container-favorite-songs">
         {tracks.length === 0 && (

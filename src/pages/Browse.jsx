@@ -1,12 +1,8 @@
 import HorizontalList from "../components/HorizontalList";
 import { useBrowse } from "../context/BrowseContext";
-import TopBar from "../components/Containers/TopBar";
-import NavBtns from "../components/UI-elements/NavBtns";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Spinner from "../components/UI-elements/Spinner";
-import NavLinkItem from "../components/NavBar/NavLinkItem";
-import LogoIcon from "../components/UI-elements/LogoIcon";
 
 function Browse() {
   const { data, genre, dispatch, isLoading } = useBrowse();
@@ -19,7 +15,7 @@ function Browse() {
 
   return (
     <>
-      <NavLinkItem
+      {/* <NavLinkItem
         to={""}
         icon={<LogoIcon />}
         text={
@@ -29,10 +25,10 @@ function Browse() {
         }
         end={true}
         className="logoMobile"
-      />
-      <TopBar>
+      /> */}
+      {/* <>
         <NavBtns />
-      </TopBar>
+      </> */}
       {isLoading && <Spinner />}
       {!isLoading && Object.keys(data).length !== 0 && (
         <HorizontalList

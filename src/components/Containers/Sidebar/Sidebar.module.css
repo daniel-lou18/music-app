@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    padding: 16px;
+    padding: 64px 16px 16px 16px;
 
     background-color: var(--darker-bg-color);
     position: fixed;

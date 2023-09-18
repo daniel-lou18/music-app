@@ -1,9 +1,10 @@
 .hamburgerWrapper {
-  position: absolute;
+  /* position: absolute;
   top: 16px;
   right: 16px;
-  z-index: 50;
-
+  z-index: 50; */
+  height: 32px;
+  width: 32px;
   background: transparent;
 }
 

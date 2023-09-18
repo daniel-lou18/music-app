@@ -1,0 +1,40 @@
+.buttonContainer {
+  height: 33px;
+  width: 33px;
+  border: none;
+}
+
+.buttonContainer button:hover {
+  cursor: pointer;
+}
+
+.buttonContainer button {
+  border-radius: 50%;
+  background: black;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer svg {
+  /* stroke: lightgrey; */
+  /* border: none; */
+}
+
+@media screen and (max-width: 600px) {
+  .buttonContainer {
+    height: 32px;
+    width: 32px;
+  }
+
+  .buttonContainer button {
+    background: transparent;
+  }
+
+  .buttonContainer svg {
+    fill: none;
+    stroke: var(--light-white-color);
+  }
+}

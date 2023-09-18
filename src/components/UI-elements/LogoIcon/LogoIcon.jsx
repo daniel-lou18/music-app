@@ -1,9 +1,9 @@
-function LogoIcon() {
+function LogoIcon({ size = 36 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
