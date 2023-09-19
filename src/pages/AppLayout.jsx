@@ -19,7 +19,8 @@ function AppLayout() {
       </Sidebar>
       <ContentContainer>
         <AppHeader
-          isVisible={hamburgerIsOpen}
+          noBackground={hamburgerIsOpen}
+          handleCloseHamburger={handleCloseHamburger}
           handleClickHamburger={handleClickHamburger}
           hamburgerIsOpen={hamburgerIsOpen}
         ></AppHeader>

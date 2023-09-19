@@ -6,15 +6,11 @@
   display: flex;
   justify-content: space-between;
   background: black;
-  transition: background 1.5s;
-}
-
-.noBackground {
-  background: transparent;
+  /* transition: background 1s; */
 }
 
 .appHeader > * {
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding-top: 10px;
@@ -22,7 +18,13 @@
   background: var(--darkest-bg-color);
 }
 
+.noBackground,
+.noBackground > * {
+  background: transparent;
+}
+
 .appHeaderLeft {
+  flex: 1;
   display: flex;
   justify-content: flex-start;
   padding-left: 25px;
@@ -35,6 +37,7 @@
 }
 
 .appHeaderRight {
+  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -42,7 +45,7 @@
   padding-right: 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   .appHeader svg:global(.feather-headphones) {
     display: none;
   }
@@ -59,6 +62,7 @@
   .appHeader > * {
     padding: 0;
     margin: 0;
+    background: var(--darker-bg-color);
   }
 
   .appHeader > * {

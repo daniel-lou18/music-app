@@ -26,7 +26,7 @@ function Artist() {
   if (!tracks || !artists || !albums) return null;
 
   return (
-    <Results>
+    <Results type="noPadding">
       {isLoading && <Spinner />}
       {!isLoading && error && <ErrorMsg errorMsg={error} />}
       {!isLoading &&

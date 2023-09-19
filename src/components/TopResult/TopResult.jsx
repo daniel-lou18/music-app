@@ -13,8 +13,9 @@ import ErrorMsg from "../ErrorMsg";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ReleaseDate from "./ReleaseDate/ReleaseDate";
+import Spinner from "../UI-elements/Spinner";
 
-function TopResult({ title, type = "result" }) {
+function TopResult({ title, type = "result", isLoading, error }) {
   const navigate = useNavigate();
   const { query, topResult, dispatch, isPlayingId } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
@@ -95,49 +96,53 @@ function TopResult({ title, type = "result" }) {
       onClick={handleClick}
     >
       <h2 className={`section-title ${styles.title}`}>{title}</h2>
-      <div className={styles.result}>
-        <Heart id={favId} onClick={handleFavorite} type="album" />
-        <img
-          className={styles.img}
-          src={
-            topResult.type === "track"
-              ? topResult.album.images[0]?.url
-              : topResult.images[0]?.url
-          }
-          alt={topResult.name}
-        />
-        <h3
-          className={`${styles.itemTitle} ${
-            topResult.name.length > 20 ? styles.itemTitleSmall : ""
-          }`}
-        >
-          {topResult.name.length > 30
-            ? topResult.name.slice(0, 30) + "..."
-            : topResult.name}
-        </h3>
-        <Subtitles topResult={topResult} />
-        {topResult.type === "album" ? (
-          <ReleaseDate releaseDate={topResult.release_date} />
-        ) : (
-          <PopularityIcon popularity={Math.ceil(topResult.popularity / 20)} />
-        )}
-        <PlayBtn
-          key={topResult.id}
-          type={topResult.type}
-          id={topResult.id}
-          previewUrl={topResult.preview_url}
-        />
-        <StarRating
-          size={24}
-          color="yellow"
-          text="Rating"
-          number={5}
-          callback={addRated}
-          beforeCallback={ratedItem ? removeRated : null}
-          item={topResult}
-          defaultRating={ratedItem ? ratedItem.rating : 0}
-        />
-      </div>
+      {isLoading && <Spinner />}
+      {!isLoading && error && <ErrorMsg errorMsg={error} />}
+      {!isLoading && !error && (
+        <div className={styles.result}>
+          <Heart id={favId} onClick={handleFavorite} type="album" />
+          <img
+            className={styles.img}
+            src={
+              topResult.type === "track"
+                ? topResult.album.images[0]?.url
+                : topResult.images[0]?.url
+            }
+            alt={topResult.name}
+          />
+          <h3
+            className={`${styles.itemTitle} ${
+              topResult.name.length > 20 ? styles.itemTitleSmall : ""
+            }`}
+          >
+            {topResult.name.length > 30
+              ? topResult.name.slice(0, 30) + "..."
+              : topResult.name}
+          </h3>
+          <Subtitles topResult={topResult} />
+          {topResult.type === "album" ? (
+            <ReleaseDate releaseDate={topResult.release_date} />
+          ) : (
+            <PopularityIcon popularity={Math.ceil(topResult.popularity / 20)} />
+          )}
+          <PlayBtn
+            key={topResult.id}
+            type={topResult.type}
+            id={topResult.id}
+            previewUrl={topResult.preview_url}
+          />
+          <StarRating
+            size={24}
+            color="yellow"
+            text="Rating"
+            number={5}
+            callback={addRated}
+            beforeCallback={ratedItem ? removeRated : null}
+            item={topResult}
+            defaultRating={ratedItem ? ratedItem.rating : 0}
+          />
+        </div>
+      )}
     </div>
   );
 }

@@ -4,8 +4,12 @@
   padding: 0 0 8px 25px;
 }
 
+.noPadding {
+  padding: 0;
+}
+
 @media screen and (max-width: 600px) {
-  .results {
+  .results:not(.noPadding) {
     padding-left: 16px;
   }
 }

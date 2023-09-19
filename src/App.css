@@ -23,7 +23,7 @@
 
 .content-container.header-container {
   padding: 0;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .playBtn {

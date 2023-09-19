@@ -3,6 +3,8 @@ import { useBrowse } from "../context/BrowseContext";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Spinner from "../components/UI-elements/Spinner";
+import Results from "../components/Containers/Results";
+import ListContainer from "../components/Containers/ListContainer";
 
 function Browse() {
   const { data, genre, dispatch, isLoading } = useBrowse();
@@ -15,27 +17,17 @@ function Browse() {
 
   return (
     <>
-      {/* <NavLinkItem
-        to={""}
-        icon={<LogoIcon />}
-        text={
-          <h1>
-            Spoti<span>Lite</span>
-          </h1>
-        }
-        end={true}
-        className="logoMobile"
-      /> */}
-      {/* <>
-        <NavBtns />
-      </> */}
       {isLoading && <Spinner />}
       {!isLoading && Object.keys(data).length !== 0 && (
-        <HorizontalList
-          items={artists.items}
-          title={genre[0].toUpperCase() + genre.slice(1)}
-          className="browse-category"
-        />
+        <Results>
+          <ListContainer>
+            <HorizontalList
+              items={artists.items}
+              title={genre[0].toUpperCase() + genre.slice(1)}
+              className="browse-category"
+            />
+          </ListContainer>
+        </Results>
       )}
     </>
   );

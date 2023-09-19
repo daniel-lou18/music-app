@@ -16,7 +16,7 @@ function TrackList({ tracks, title, type, className, isLoading, error }) {
         {!isLoading && error && <ErrorMsg errorMsg={error} />}
         {!isLoading &&
           !error &&
-          tracks.map((track) => (
+          tracks?.map((track) => (
             <TrackItem key={track.id} track={track} type={type} />
           ))}
       </ul>

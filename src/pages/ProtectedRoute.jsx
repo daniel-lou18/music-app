@@ -8,7 +8,7 @@ function ProtectedRoute({ children }) {
 
   useEffect(() => {
     const currentUser = localStorage.getItem("currentUser");
-    if (!isAuthenticated && !currentUser) navigate("/");
+    if (!isAuthenticated && !currentUser) navigate("/login");
     if (!isAuthenticated && currentUser) {
       getToken();
       login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);

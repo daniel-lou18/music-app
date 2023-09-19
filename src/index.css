@@ -43,6 +43,8 @@
 
 html {
   box-sizing: border-box;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 
   --darkest-bg-color: rgb(20, 20, 20);
   --darker-bg-color: rgb(30, 30, 30);

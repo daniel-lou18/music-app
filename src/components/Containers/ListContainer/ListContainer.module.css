@@ -12,6 +12,14 @@
   margin-right: 25px;
 }
 
+section:first-child :global(.section-title) {
+  margin-top: 15px;
+}
+
+.right.home-container-tracks h2:global(.section-title) {
+  margin-top: 15px;
+}
+
 .artistPage:nth-child(2) {
   margin-top: 10px;
   margin-left: 25px;

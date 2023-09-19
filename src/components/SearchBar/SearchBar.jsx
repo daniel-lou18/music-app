@@ -1,11 +1,11 @@
 import styles from "./SearchBar.module.css";
-import NavBtns from "../UI-elements/NavBtns";
 import { useMusic } from "../../context/MusicContext";
-import { useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 import { useBrowse } from "../../context/BrowseContext";
 import { useEffect } from "react";
 
 function SearchBar() {
+  const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
   const { dispatch } = useMusic();
   const { dispatch: dispatchBrowse } = useBrowse();
@@ -26,8 +26,11 @@ function SearchBar() {
   }, [dispatch, query, dispatchBrowse, searchParams, setSearchParams]);
 
   return (
-    <div className={styles.searchContainer}>
-      <NavBtns />
+    <div
+      className={`${styles.searchContainer} ${
+        location.pathname.includes("app/search") ? styles.visible : ""
+      }`}
+    >
       <div className={styles.searchField}>
         <span>
           <svg

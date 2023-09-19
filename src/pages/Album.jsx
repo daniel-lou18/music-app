@@ -22,7 +22,7 @@ function Album() {
   if (!trackItems || trackItems.length < 1) return null;
 
   return (
-    <Results>
+    <Results type="noPadding">
       {isLoading && <Spinner />}
       {!isLoading && error && <ErrorMsg errorMsg={error} />}
       {!isLoading && !error && (

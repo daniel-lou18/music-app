@@ -40,9 +40,7 @@ function AlbumHeader({ title }) {
       className={`${styles.resultContainer} ${styles.header}`}
       key={currentAlbum.id}
     >
-      {/* <>
-        <NavBtns />
-      </> */}
+      <div className={styles.topBar}></div>
       <div className={styles.result}>
         <div>
           <img
