@@ -1,7 +1,7 @@
 .resultContainer {
   background: linear-gradient(rgb(32, 178, 170, 0.4), rgb(32, 178, 170, 0.1));
-  padding-left: 25px;
-  padding-top: 15px;
+  /* padding-left: 25px;
+  padding-top: 15px; */
 }
 
 /* .itemInfo svg:global(.feather-heart):hover {
@@ -23,6 +23,7 @@
 }
 
 .result {
+  margin: 0 25px;
   padding-top: 20px;
   padding-bottom: 20px;
   /* height: 275px; */

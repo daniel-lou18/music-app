@@ -71,7 +71,6 @@ export const AuthProvider = ({ children }) => {
       const user = data.filter(
         (user) => user.email === email && user.password === password
       )[0];
-      console.log(user);
       if (user) dispatch({ type: "user/logged-in", payload: user });
     } catch (err) {
       console.error(err);

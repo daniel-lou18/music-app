@@ -5,6 +5,7 @@ import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import styles from "./ArtistHeader.module.css";
 import Heart from "../UI-elements/Heart";
+import AppHeaderNested from "../AppHeader/AppHeaderNested";
 
 function ArtistHeader({ title }) {
   const { currentArtist } = useMusic();
@@ -38,9 +39,7 @@ function ArtistHeader({ title }) {
       className={`${styles.resultContainer} ${styles.header}`}
       key={currentArtist.id}
     >
-      {/* <>
-        <NavBtns />
-      </> */}
+      <AppHeaderNested />
       <div className={styles.result}>
         <div>
           <img

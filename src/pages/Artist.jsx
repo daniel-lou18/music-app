@@ -1,5 +1,6 @@
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
+import ListContainerDynamic from "../components/Containers/ListContainer/ListContainerDynamic";
 import HorizontalList from "../components/HorizontalList/";
 import TrackList from "../components/TrackList";
 import { useMusic } from "../context/MusicContext";
@@ -37,16 +38,16 @@ function Artist() {
         )}
       {!isLoading && !error && tracks.length > 0 && (
         <>
-          <ListContainer>
+          <ListContainerDynamic>
             <ArtistHeader />
-          </ListContainer>
-          <ListContainer type="artistPage">
+          </ListContainerDynamic>
+          <ListContainerDynamic type="artistPage">
             <TrackList
               tracks={tracks.slice(0, 5)}
               title="Top Songs"
               type="big"
             />
-          </ListContainer>
+          </ListContainerDynamic>
           <ListContainer type="artistPage">
             <HorizontalList
               items={artists.slice(0, 10)}

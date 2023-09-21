@@ -3,8 +3,8 @@ import { useMusic } from "../../context/MusicContext";
 import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
-import NavBtns from "../UI-elements/NavBtns";
 import Heart from "../UI-elements/Heart";
+import AppHeaderNested from "../AppHeader/AppHeaderNested";
 
 function AlbumHeader({ title }) {
   const { currentAlbum } = useMusic();
@@ -37,12 +37,12 @@ function AlbumHeader({ title }) {
 
   return (
     <div
-      className={`${styles.resultContainer} ${styles.header}`}
+      className={`${styles.resultContainer} ${styles.header} header-green`}
       key={currentAlbum.id}
     >
-      <div className={styles.topBar}></div>
+      <AppHeaderNested />
       <div className={styles.result}>
-        <div>
+        <div className={styles.imgWrapper}>
           <img
             className={styles.img}
             src={currentAlbum.images[0]?.url}

@@ -1,4 +1,4 @@
-.topBar {
+/* .topBar {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,12 +6,23 @@
   background: rgb(32, 178, 170, 0.4);
   width: 100%;
   height: 71px;
+} */
+
+.header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .resultContainer {
   background: linear-gradient(rgb(32, 178, 170, 0.4), rgb(32, 178, 170, 0.1));
-  padding-left: 25px;
-  padding-top: 15px;
+  /* z-index: 50;
+  width: 100%; */
+  /* background: linear-gradient(#146d68 60%, #0c3f3d); */
+  /* padding-left: 25px;
+  padding-top: 15px; */
+}
+
+.hidden {
 }
 
 .redHeart {
@@ -19,7 +30,8 @@
 }
 
 .result {
-  padding-top: 20px;
+  margin: 0 25px;
+  /* padding-top: 20px; */
   padding-bottom: 20px;
   /* height: 275px; */
   border-radius: 0;
@@ -30,10 +42,15 @@
   align-items: center;
 }
 
-.header img {
+.imgWrapper {
   width: 225px;
   height: 225px;
+}
+
+.header img {
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .itemText {
@@ -56,6 +73,17 @@
   font-size: 0.9rem;
   font-weight: bold;
 }
+
+/* .resultContainer :global(.app-header) {
+  margin-left: -25px;
+  margin-top: -15px;
+  background: transparent;
+  background: linear-gradient(#146d68 60%, #0c3f3d);
+}
+
+.resultContainer :global(.app-header) > * {
+  background: initial;
+} */
 
 .itemTitle {
   grid-row: 2 / 3;
@@ -110,7 +138,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .header img {
+  .imgWrapper {
     width: 200px;
     height: 200px;
   }
@@ -134,7 +162,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .header img {
+  .imgWrapper {
     width: 175px;
     height: 175px;
   }
@@ -154,7 +182,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .header img {
+  .imgWrapper {
     width: 150px;
     height: 150px;
   }
@@ -200,7 +228,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .header img {
+  .imgWrapper {
     width: 100px;
     height: 100px;
   }
@@ -250,7 +278,7 @@
     gap: 10px;
   }
 
-  .header img {
+  .imgWrapper {
     width: 80px;
     height: 80px;
   }

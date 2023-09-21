@@ -21,7 +21,7 @@ function AppHeader({
       } ${
         location.pathname.includes("/app/artist") ||
         location.pathname.includes("/app/album")
-          ? styles.noBackground
+          ? styles.greenBackground
           : ""
       }`}
     >

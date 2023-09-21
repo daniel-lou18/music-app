@@ -18,6 +18,7 @@ import Browse from "./pages/Browse";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import { InterfaceProvider } from "./context/InterfaceContext";
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
           path="app"
           element={
             <ProtectedRoute>
-              <AppLayout />
+              <InterfaceProvider>
+                <AppLayout />
+              </InterfaceProvider>
             </ProtectedRoute>
           }
         >

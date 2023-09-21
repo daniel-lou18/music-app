@@ -1,3 +1,7 @@
+.listContainer {
+  --margin-top-default: 240px;
+}
+
 .horizontal {
   grid-column: 1 / -1;
 }
@@ -45,6 +49,28 @@ section:first-child :global(.section-title) {
   margin-right: 25px;
 }
 
+/* albumPage:first-child header {
+  position: relative;
+}
+
+.albumPage:first-child header::before {
+  content: "";
+  display: block;
+  position: sticky;
+  top: 0;
+  height: 8px;
+  width: 100%;
+  background: black;
+} */
+
+.hidden:first-child {
+  display: none;
+}
+
+.hidden:nth-child(2) {
+  margin-top: var(--margin-top-default);
+}
+
 @media screen and (max-width: 900px) {
   .left {
     grid-column: 1 / 4;
@@ -87,7 +113,7 @@ section:first-child :global(.section-title) {
 }
 
 /* @media screen and (max-width: 360px) {
-  .right {
-    margin-right: 10px;
-  }
-} */
+    .right {
+      margin-right: 10px;
+    }
+  } */
