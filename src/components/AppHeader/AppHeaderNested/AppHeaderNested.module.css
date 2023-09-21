@@ -54,13 +54,13 @@
 .btnsContainer {
   display: flex;
   justify-content: space-between;
+  background: transparent;
 }
 
 .btnsContainer > * {
   /* flex: 1 1 auto; */
   padding-top: 10px;
   padding-bottom: 10px;
-  background: transparent;
 }
 
 .appHeaderLeft {
@@ -68,8 +68,12 @@
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  padding-left: 25px;
+  padding-left: var(--space-l);
   height: 100%;
+}
+
+.appHeaderLeft :global(.navBtn) {
+  opacity: 0.7;
 }
 
 .appHeader svg:global(.feather-headphones) {
@@ -85,6 +89,10 @@
   align-items: center;
   /* gap: 16px; */
   padding-right: 30px;
+}
+
+.appHeaderRight button {
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 601px) {

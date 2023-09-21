@@ -8,12 +8,12 @@
 
 .right {
   grid-column: 3 / -1;
-  margin-right: 25px;
+  margin-right: var(--space-l);
 }
 
 .left {
   grid-column: 1 / 3;
-  margin-right: 25px;
+  margin-right: var(--space-l);
 }
 
 section:first-child :global(.section-title) {
@@ -26,8 +26,8 @@ section:first-child :global(.section-title) {
 
 .artistPage:nth-child(2) {
   margin-top: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: var(--space-l);
+  margin-right: var(--space-l);
 }
 
 .artistPage:last-child {
@@ -35,18 +35,18 @@ section:first-child :global(.section-title) {
 }
 
 .artistPage {
-  margin-left: 25px;
+  margin-left: var(--space-l);
   margin-right: 0;
 }
 
 .albumPage:nth-child(2) {
   margin-top: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: var(--space-l);
+  margin-right: var(--space-l);
 }
 
 :global(.favoritePage).container-favorite-songs {
-  margin-right: 25px;
+  margin-right: var(--space-l);
 }
 
 /* albumPage:first-child header {

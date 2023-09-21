@@ -1,7 +1,7 @@
 .results {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 0 0 8px 25px;
+  padding: 0 0 8px var(--space-l);
 }
 
 .noPadding {

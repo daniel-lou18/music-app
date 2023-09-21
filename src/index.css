@@ -62,6 +62,19 @@ html {
 
   --main-font-color: rgba(255, 255, 255, 0.92);
   --grey-font-color: rgba(255, 255, 255, 0.7);
+
+  --sidebar-width: 250px;
+  --sidebar-width-1200: 200px;
+  --sidebar-width-900: 150px;
+
+  --space-none: 0;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-base: 12px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
 }
 
 *,

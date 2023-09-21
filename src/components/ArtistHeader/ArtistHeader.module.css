@@ -23,7 +23,7 @@
 }
 
 .result {
-  margin: 0 25px;
+  margin: 0 var(--space-l);
   padding-top: 20px;
   padding-bottom: 20px;
   /* height: 275px; */
@@ -79,7 +79,7 @@
   grid-row: 3 / -1;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: var(--space-l);
 }
 
 :global(.popularityContainer.header) {

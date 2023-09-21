@@ -15,7 +15,7 @@
 }
 
 .listItemWrapper {
-  margin-right: 25px;
+  margin-right: var(--space-l);
 }
 
 .listItem {
@@ -58,7 +58,7 @@ li.listItem:hover :global(.playBtn) {
 } */
 
 .textContainer {
-  margin-top: 25px;
+  margin-top: var(--space-l);
 }
 
 .title,
