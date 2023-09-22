@@ -4,16 +4,19 @@ import { useBrowse } from "../../../context/BrowseContext";
 import ImgPlaceholder from "../../UI-elements/ImgPlaceholder";
 import BrowseBtn from "../../UI-elements/BrowseBtn";
 import { useState } from "react";
+import { useInterface } from "../../../context/InterfaceContext";
 
 function BrowseListItem({ imgUrl, title, genreName }) {
   const navigate = useNavigate();
   const [imgLoaded, setImgLoaded] = useState(false);
   const { dispatch: dispatchBrowse } = useBrowse();
+  const { dispatch: dispatchInterface } = useInterface();
 
   const handleBrowse = () => {
     dispatchBrowse({ type: "browse/genre", payload: genreName });
-    navigate(`/app/browse/${genreName}`);
+    dispatchInterface({ type: "header/fixed/transparent" });
     window.scrollTo(0, 0);
+    navigate(`/app/browse/${genreName}`);
   };
 
   return (

@@ -12,6 +12,11 @@
   margin-right: var(--space-l);
 }
 
+.right h2,
+.left h2 {
+  margin-top: 15px;
+}
+
 section:first-child :global(.section-title) {
   margin-top: 15px;
 }

@@ -1,7 +1,7 @@
 import styles from "./HorizontalListItem.module.css";
 import Heart from "../../UI-elements/Heart";
 import { useFavorites } from "../../../context/FavoritesContext";
-
+import { useInterface } from "../../../context/InterfaceContext";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ImgPlaceholder from "../../UI-elements/ImgPlaceholder/ImgPlaceholder";
@@ -11,6 +11,7 @@ import { useState } from "react";
 function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   const navigate = useNavigate();
   const [imgLoaded, setImgLoaded] = useState(false);
+  const { dispatch: dispatchInterface } = useInterface();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const favId = favoritesData.find((item) => item.id === id)?.id;
 
@@ -28,14 +29,24 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
     e.preventDefault();
     e.stopPropagation();
     if (type === "album") {
-      navigate(`/app/artist/${item.artists[0].id}`);
+      dispatchInterface({ type: "header/fixed/transparent" });
       window.scrollTo(0, 0);
+      navigate(`/app/artist/${item.artists[0].id}`);
     }
+  };
+
+  const handleClick = () => {
+    dispatchInterface({ type: "header/fixed/transparent" });
+    window.scrollTo(0, 0);
   };
 
   return (
     <li className={styles.listItemWrapper}>
-      <Link className={styles.listItem} to={`/app/${type}/${id}`}>
+      <Link
+        className={styles.listItem}
+        to={`/app/${type}/${id}`}
+        onClick={handleClick}
+      >
         {type === "artist" && (
           <Heart id={favId} onClick={handleFavorite} type={type} />
         )}

@@ -84,6 +84,7 @@ function TopResult({
 
   const handleFromArtistToArtist = () => {
     if (topResult.type === "artist") {
+      dispatchInterface({ type: "header/fixed/transparent" });
       navigate(`/app/artist/${spotifyId}`);
       window.scrollTo(0, 0);
     }
@@ -91,6 +92,7 @@ function TopResult({
 
   const handleFromAlbumToAlbum = () => {
     if (topResult.type === "album") {
+      dispatchInterface({ type: "header/fixed/transparent" });
       navigate(`/app/album/${spotifyId}`);
       window.scrollTo(0, 0);
     }

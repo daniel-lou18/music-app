@@ -7,7 +7,7 @@
 }
 
 .content-container {
-  /* min-height: 100vh; */
+  min-height: calc(100vh - 2 * var(--space-s));
   /* padding: 0 0 8px 25px; */
   background-color: var(--darkest-bg-color);
   margin-left: 8px;

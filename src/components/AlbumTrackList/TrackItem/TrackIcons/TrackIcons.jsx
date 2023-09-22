@@ -6,11 +6,13 @@ import ArtistIcon from "../../../UI-elements/ArtistIcon";
 
 import { useNavigate } from "react-router-dom";
 import { useMusic } from "../../../../context/MusicContext";
+import { useInterface } from "../../../../context/InterfaceContext";
 
 function TrackIcons({ track }) {
   const { id: spotifyId, artists } = track;
   const { currentAlbum } = useMusic();
   const { id: albumId } = currentAlbum;
+  const { dispatch: dispatchInterface } = useInterface;
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
 
@@ -26,11 +28,15 @@ function TrackIcons({ track }) {
 
   const handleAlbum = () => {
     if (!albumId) return;
+    dispatchInterface({ type: "header/fixed/transparent" });
+    window.scrollTo(0, 0);
     navigate(`/app/album/${albumId}`);
   };
 
   const handleArtist = () => {
     if (!artists || artists.length === 0) return;
+    dispatchInterface({ type: "header/fixed/transparent" });
+    window.scrollTo(0, 0);
     navigate(`/app/artist/${artists[0].id}`);
   };
 

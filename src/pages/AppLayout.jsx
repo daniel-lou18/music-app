@@ -6,6 +6,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useState } from "react";
 import AppHeaderNested from "../components/AppHeader/AppHeaderNested";
 import { useInterface } from "../context/InterfaceContext";
+import BottomLine from "../components/BottomLine";
 
 function AppLayout() {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
@@ -17,15 +18,6 @@ function AppLayout() {
 
   const handleClickHamburger = () => setHamburgerIsOpen((val) => !val);
   const handleCloseHamburger = () => setHamburgerIsOpen(false);
-
-  const FOOTER_STYLE = {
-    height: "8px",
-    width: "100%",
-    background: "black",
-    position: "sticky",
-    bottom: 0,
-    gridColumn: "1 / -1",
-  };
 
   return (
     <AppContainer hamburgerIsOpen={hamburgerIsOpen}>
@@ -42,7 +34,7 @@ function AppLayout() {
         ></AppHeaderNested>
         <Outlet />
       </ContentContainer>
-      <div style={FOOTER_STYLE}></div>
+      <BottomLine />
     </AppContainer>
   );
 }

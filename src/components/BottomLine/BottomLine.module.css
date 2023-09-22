@@ -1,0 +1,49 @@
+.bottom {
+  display: grid;
+  height: 8px;
+  width: 100%;
+  background: black;
+  position: sticky;
+  bottom: 0;
+  grid-column: 1 / -1;
+  z-index: 55;
+
+  grid-template-columns: var(--sidebar-width) auto;
+  gap: var(--space-s);
+}
+
+.bottomLeft {
+  grid-column: 1 / 2;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bottomRight {
+  grid-column: 2 / 3;
+  position: relative;
+}
+
+.bottomRight::before {
+  position: absolute;
+  content: "";
+  bottom: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 4px black;
+}
+
+.bottomRight::after {
+  position: absolute;
+  content: "";
+  bottom: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 4px black;
+}
