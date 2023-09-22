@@ -1,8 +1,14 @@
 .sidebar {
   box-sizing: border-box;
   padding: 15px 10px 8px var(--space-l);
+  margin: var(--space-s) 0 var(--space-s) var(--space-s);
   background-color: var(--darkest-bg-color);
   border-radius: 4px;
+
+  height: calc(100vh - 2 * var(--space-s));
+  position: sticky;
+  top: 8px;
+  left: 0;
 }
 
 .sidebar.visible {

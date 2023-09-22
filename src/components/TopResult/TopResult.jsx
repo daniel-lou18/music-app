@@ -34,7 +34,6 @@ function TopResult({
     if (!headerRef.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry);
         if (entry.isIntersecting)
           dispatchInterface({ type: "header/fixed/transparent" });
         else dispatchInterface({ type: "header/fixed/colored" });

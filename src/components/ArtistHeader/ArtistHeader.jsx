@@ -7,7 +7,6 @@ import styles from "./ArtistHeader.module.css";
 import Heart from "../UI-elements/Heart";
 import { useInterface } from "../../context/InterfaceContext";
 import { useEffect, useRef } from "react";
-// import AppHeaderNested from "../AppHeader/AppHeaderNested";
 
 function ArtistHeader({ title }) {
   const { currentArtist } = useMusic();
@@ -20,7 +19,6 @@ function ArtistHeader({ title }) {
     if (!headerRef.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry);
         if (entry.isIntersecting)
           dispatch({ type: "header/fixed/transparent" });
         else dispatch({ type: "header/fixed/colored" });

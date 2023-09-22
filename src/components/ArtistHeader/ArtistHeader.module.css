@@ -4,27 +4,13 @@
   padding-top: 15px; */
 }
 
-/* .itemInfo svg:global(.feather-heart):hover {
-  fill: rgb(255, 0, 0, 0.5);
-  cursor: pointer;
-  stroke: lightgray;
-  transform: scale(1.1);
-}
-
-.itemInfo svg:global(.feather-heart).redHeart:hover {
-  fill: rgb(255, 0, 0);
-} */
-
 .redHeart {
   opacity: 1;
 }
 
-.header {
-}
-
 .result {
   margin: 0 var(--space-l);
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 20px;
   /* height: 275px; */
   border-radius: 0;

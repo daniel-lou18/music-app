@@ -4,7 +4,6 @@ import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
 import Heart from "../UI-elements/Heart";
-import AppHeaderNested from "../AppHeader/AppHeaderNested";
 import { useInterface } from "../../context/InterfaceContext";
 import { useEffect, useRef } from "react";
 
@@ -19,7 +18,6 @@ function AlbumHeader({ title }) {
     if (!headerRef.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry);
         if (entry.isIntersecting)
           dispatch({ type: "header/fixed/transparent" });
         else dispatch({ type: "header/fixed/colored" });

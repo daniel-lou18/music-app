@@ -18,6 +18,15 @@ function AppLayout() {
   const handleClickHamburger = () => setHamburgerIsOpen((val) => !val);
   const handleCloseHamburger = () => setHamburgerIsOpen(false);
 
+  const FOOTER_STYLE = {
+    height: "8px",
+    width: "100%",
+    background: "black",
+    position: "sticky",
+    bottom: 0,
+    gridColumn: "1 / -1",
+  };
+
   return (
     <AppContainer hamburgerIsOpen={hamburgerIsOpen}>
       <Sidebar isVisible={hamburgerIsOpen}>
@@ -33,6 +42,7 @@ function AppLayout() {
         ></AppHeaderNested>
         <Outlet />
       </ContentContainer>
+      <div style={FOOTER_STYLE}></div>
     </AppContainer>
   );
 }

@@ -7,13 +7,12 @@
 }
 
 .content-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* padding: 0 0 8px 25px; */
   background-color: var(--darkest-bg-color);
   margin-left: 8px;
   margin-right: 8px;
   border-radius: 4px;
-  position: relative;
 }
 
 .app-container.hamburgerIsOpen {

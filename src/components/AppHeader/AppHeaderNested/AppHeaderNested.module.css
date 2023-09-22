@@ -3,7 +3,7 @@
   top: -1px;
   padding-top: 9px;
   z-index: 51;
-  transition: background 0.8s ease-in;
+  transition: background 0.5s ease-out;
 }
 
 .fixed {
@@ -12,7 +12,7 @@
 }
 
 .filter {
-  background: var(--darker-bg-color);
+  background: rgb(20, 30, 30);
 }
 
 .invertedBorderRadius {

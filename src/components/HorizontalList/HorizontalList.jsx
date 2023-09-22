@@ -23,7 +23,6 @@ function HorizontalList({
     if (!headerRef.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry);
         if (entry.isIntersecting)
           dispatch({ type: "header/fixed/transparent" });
         else dispatch({ type: "header/fixed/colored" });

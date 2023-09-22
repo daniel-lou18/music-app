@@ -13,7 +13,7 @@ function ProtectedRoute({ children }) {
       getToken();
       login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
     }
-  }, [isAuthenticated, navigate, login, getToken]);
+  }, [isAuthenticated, navigate]);
 
   return isAuthenticated ? children : null;
 }
