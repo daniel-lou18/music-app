@@ -1,5 +1,5 @@
 import Results from "../components/Containers/Results";
-import ListContainerDynamic from "../components/Containers/ListContainer/ListContainerDynamic";
+import ListContainer from "../components/Containers/ListContainer";
 import AlbumTrackList from "../components/AlbumTrackList";
 import { useMusic } from "../context/MusicContext";
 import AlbumHeader from "../components/AlbumHeader";
@@ -28,12 +28,12 @@ function Album() {
         {!isLoading && error && <ErrorMsg errorMsg={error} />}
         {!isLoading && !error && (
           <>
-            <ListContainerDynamic type="albumPage">
+            <ListContainer type="albumPage">
               <AlbumHeader />
-            </ListContainerDynamic>
-            <ListContainerDynamic type="albumPage">
+            </ListContainer>
+            <ListContainer type="albumPage">
               <AlbumTrackList title="Songs" type="big" />
-            </ListContainerDynamic>
+            </ListContainer>
           </>
         )}
       </Results>

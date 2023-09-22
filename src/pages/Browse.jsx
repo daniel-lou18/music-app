@@ -25,6 +25,7 @@ function Browse() {
               items={artists.items}
               title={genre[0].toUpperCase() + genre.slice(1)}
               className="browse-category"
+              first={true}
             />
           </ListContainer>
         </Results>

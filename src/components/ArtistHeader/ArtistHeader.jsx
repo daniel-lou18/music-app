@@ -5,12 +5,31 @@ import { useFavorites } from "../../context/FavoritesContext";
 import { useRated } from "../../context/RatedContext";
 import styles from "./ArtistHeader.module.css";
 import Heart from "../UI-elements/Heart";
-import AppHeaderNested from "../AppHeader/AppHeaderNested";
+import { useInterface } from "../../context/InterfaceContext";
+import { useEffect, useRef } from "react";
+// import AppHeaderNested from "../AppHeader/AppHeaderNested";
 
 function ArtistHeader({ title }) {
   const { currentArtist } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
+  const { dispatch } = useInterface();
+  const headerRef = useRef();
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry);
+        if (entry.isIntersecting)
+          dispatch({ type: "header/fixed/transparent" });
+        else dispatch({ type: "header/fixed/colored" });
+      },
+      { rootMargin: "-71px" }
+    );
+    observer.observe(headerRef.current);
+    return () => observer.disconnect();
+  }, [dispatch]);
 
   if (!currentArtist)
     return (
@@ -39,7 +58,6 @@ function ArtistHeader({ title }) {
       className={`${styles.resultContainer} ${styles.header}`}
       key={currentArtist.id}
     >
-      <AppHeaderNested />
       <div className={styles.result}>
         <div>
           <img
@@ -56,7 +74,7 @@ function ArtistHeader({ title }) {
           >
             {name.length > 30 ? name.slice(0, 30) + "..." : name}
           </h3>
-          <div className={styles.itemInfo}>
+          <div className={styles.itemInfo} ref={headerRef}>
             <div className={styles.secondSubtitleWrapper}>
               <h4 className={`${styles.secondSubtitle}`}>
                 {currentArtist.type.slice(0, 1).toUpperCase() +

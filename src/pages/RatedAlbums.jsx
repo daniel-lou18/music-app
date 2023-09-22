@@ -15,20 +15,6 @@ function RatedAlbums() {
 
   return (
     <Results>
-      {/* <NavLinkItem
-        to={""}
-        icon={<LogoIcon />}
-        text={
-          <h1>
-            Spoti<span>Lite</span>
-          </h1>
-        }
-        end={true}
-        className="logoMobile"
-      /> */}
-      {/* <>
-        <NavBtns />
-      </> */}
       <ListContainer type="favoritePage">
         {albums.length === 0 && (
           <InfoMsg
@@ -40,7 +26,9 @@ function RatedAlbums() {
             onClick={handleClick}
           />
         )}
-        {albums.length > 0 && <RatedList items={albums} title="Rated albums" />}
+        {albums.length > 0 && (
+          <RatedList items={albums} title="Rated albums" first={true} />
+        )}
       </ListContainer>
     </Results>
   );

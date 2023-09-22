@@ -3,11 +3,16 @@
   top: -1px;
   padding-top: 9px;
   z-index: 51;
-  /* transition: background 1s; */
+  transition: background 0.8s ease-in;
 }
 
-.hidden {
-  visibility: hidden;
+.fixed {
+  position: fixed;
+  width: calc(100% - calc(var(--sidebar-width) + 2 * var(--space-s)));
+}
+
+.filter {
+  background: var(--darker-bg-color);
 }
 
 .invertedBorderRadius {
@@ -98,6 +103,18 @@
 @media screen and (min-width: 601px) {
   .appHeader svg:global(.feather-headphones) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fixed {
+    width: calc(100% - calc(var(--sidebar-width-1200) + 2 * var(--space-s)));
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fixed {
+    width: calc(100% - calc(var(--sidebar-width-900) + 2 * var(--space-s)));
   }
 }
 

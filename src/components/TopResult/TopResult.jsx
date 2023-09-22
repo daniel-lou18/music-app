@@ -10,16 +10,40 @@ import { artist } from "../../../data/featuredArtist";
 import Subtitles from "./Subtitles";
 import ErrorMsg from "../ErrorMsg";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import ReleaseDate from "./ReleaseDate/ReleaseDate";
 import Spinner from "../UI-elements/Spinner";
+import { useInterface } from "../../context/InterfaceContext";
 
-function TopResult({ title, type = "result", isLoading, error }) {
+function TopResult({
+  title,
+  type = "result",
+  isLoading,
+  error,
+  first = false,
+}) {
   const navigate = useNavigate();
   const { query, topResult, dispatch, isPlayingId } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
+  const { dispatch: dispatchInterface } = useInterface();
+  const headerRef = useRef();
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry);
+        if (entry.isIntersecting)
+          dispatchInterface({ type: "header/fixed/transparent" });
+        else dispatchInterface({ type: "header/fixed/colored" });
+      },
+      { rootMargin: "-71px" }
+    );
+    observer.observe(headerRef.current);
+    return () => observer.disconnect();
+  }, [dispatchInterface]);
 
   useEffect(() => {
     if (type === "featured") {
@@ -95,7 +119,12 @@ function TopResult({ title, type = "result", isLoading, error }) {
       key={topResult.id}
       onClick={handleClick}
     >
-      <h2 className={`section-title ${styles.title}`}>{title}</h2>
+      <h2
+        ref={first ? headerRef : null}
+        className={`section-title ${styles.title}`}
+      >
+        {title}
+      </h2>
       {isLoading && <Spinner />}
       {!isLoading && error && <ErrorMsg errorMsg={error} />}
       {!isLoading && !error && (

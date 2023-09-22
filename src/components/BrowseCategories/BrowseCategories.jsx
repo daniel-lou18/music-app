@@ -13,6 +13,7 @@ function BrowseCategories() {
           type="browse"
           genreNames={genres}
           className="browse-categories"
+          first={true}
         />
       </ListContainer>
     </Results>

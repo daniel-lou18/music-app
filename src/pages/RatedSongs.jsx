@@ -15,21 +15,6 @@ function RatedSongs() {
 
   return (
     <Results>
-      {/* <NavLinkItem
-        to={""}
-        icon={<LogoIcon />}
-        text={
-          <h1>
-            Spoti<span>Lite</span>
-          </h1>
-        }
-        end={true}
-        className="logoMobile"
-      /> */}
-      {/* <>
-        <NavBtns />
-      </> */}
-
       <ListContainer type="favoritePage" className="container-favorite-songs">
         {tracks.length === 0 && (
           <InfoMsg
@@ -42,7 +27,12 @@ function RatedSongs() {
           />
         )}
         {tracks.length > 0 && (
-          <TrackList tracks={tracks} title="Rated songs" type="big" />
+          <TrackList
+            tracks={tracks}
+            title="Rated songs"
+            type="big"
+            first={true}
+          />
         )}
       </ListContainer>
     </Results>

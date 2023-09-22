@@ -4,7 +4,6 @@ import NavBtns from "../../UI-elements/NavBtns";
 import User from "../../User/";
 import LogoMobile from "../LogoMobile";
 import SearchBar from "../../SearchBar";
-import { useEffect, useRef } from "react";
 import { useInterface } from "../../../context/InterfaceContext";
 
 function AppHeaderNested({
@@ -12,31 +11,16 @@ function AppHeaderNested({
   handleCloseHamburger,
   handleClickHamburger,
   hamburgerIsOpen,
+  type = "normal",
 }) {
-  const { nestedHeaderIsVisible, dispatch } = useInterface();
-  const headerRef = useRef();
-
-  useEffect(() => {
-    if (!headerRef.current) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.intersectionRatio < 1)
-          dispatch({ type: "nestedHeader/false" });
-        else dispatch({ type: "nestedHeader/true" });
-      },
-      { threshold: [1] }
-    );
-    observer.observe(headerRef.current);
-    return () => observer.disconnect();
-  }, [dispatch, nestedHeaderIsVisible]);
+  const { fixedHeaderIsColored } = useInterface();
 
   return (
     <header
-      ref={headerRef}
       className={`${styles.appHeader} app-header ${
         noBackground ? styles.noBackground : ""
-      } ${styles.greenBackground} ${
-        nestedHeaderIsVisible ? "" : styles.hidden
+      } ${styles.greenBackground} ${type === "fixed" ? styles.fixed : ""} ${
+        fixedHeaderIsColored ? styles.filter : ""
       }`}
     >
       <div className={styles.invertedBorderRadius} />

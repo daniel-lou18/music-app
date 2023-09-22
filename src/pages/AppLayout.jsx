@@ -4,13 +4,13 @@ import NavBar from "../components/NavBar";
 import ContentContainer from "../components/Containers/ContentContainer";
 import { Outlet, useLocation } from "react-router-dom";
 import { useState } from "react";
-import AppHeader from "../components/AppHeader";
+import AppHeaderNested from "../components/AppHeader/AppHeaderNested";
 import { useInterface } from "../context/InterfaceContext";
 
 function AppLayout() {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
   const location = useLocation();
-  const { nestedHeaderIsVisible } = useInterface();
+  const { fixedHeaderIsColored } = useInterface();
   const pathIsAlbumOrArtist =
     location.pathname.includes("/app/artist") ||
     location.pathname.includes("/app/album");
@@ -24,15 +24,13 @@ function AppLayout() {
         <NavBar closeHamburger={handleCloseHamburger} />
       </Sidebar>
       <ContentContainer>
-        {(!pathIsAlbumOrArtist ||
-          (pathIsAlbumOrArtist && !nestedHeaderIsVisible)) && (
-          <AppHeader
-            noBackground={hamburgerIsOpen}
-            handleCloseHamburger={handleCloseHamburger}
-            handleClickHamburger={handleClickHamburger}
-            hamburgerIsOpen={hamburgerIsOpen}
-          ></AppHeader>
-        )}
+        <AppHeaderNested
+          noBackground={hamburgerIsOpen}
+          handleCloseHamburger={handleCloseHamburger}
+          handleClickHamburger={handleClickHamburger}
+          hamburgerIsOpen={hamburgerIsOpen}
+          type={pathIsAlbumOrArtist && "fixed"}
+        ></AppHeaderNested>
         <Outlet />
       </ContentContainer>
     </AppContainer>

@@ -3,6 +3,8 @@ import HorizontalListItem from "./HorizontalListItem";
 import BrowseListItem from "./BrowseListItem/BrowseListItem";
 import Spinner from "../UI-elements/Spinner";
 import ErrorMsg from "../ErrorMsg";
+import { useInterface } from "../../context/InterfaceContext";
+import { useEffect, useRef } from "react";
 
 function HorizontalList({
   items,
@@ -12,12 +14,32 @@ function HorizontalList({
   className,
   isLoading,
   error,
+  first = false,
 }) {
+  const { dispatch } = useInterface();
+  const headerRef = useRef();
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry);
+        if (entry.isIntersecting)
+          dispatch({ type: "header/fixed/transparent" });
+        else dispatch({ type: "header/fixed/colored" });
+      },
+      { rootMargin: "-71px" }
+    );
+    observer.observe(headerRef.current);
+    return () => observer.disconnect();
+  }, [dispatch]);
+
   return (
     <>
       {type === "search" && (
         <>
           <h2
+            ref={first ? headerRef : null}
             className={`section-title title-horizontal-list ${
               styles[`title-${className}`]
             }`}
@@ -53,6 +75,7 @@ function HorizontalList({
       {type === "browse" && (
         <>
           <h2
+            ref={first ? headerRef : null}
             className={`section-title title-browse-categories ${
               styles[`title-${className}`]
             }`}

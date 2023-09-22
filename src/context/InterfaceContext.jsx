@@ -2,26 +2,26 @@ import { createContext, useContext, useReducer } from "react";
 
 const InterfaceContext = createContext();
 
-const initialState = { nestedHeaderIsVisible: true };
+const initialState = { fixedHeaderIsColored: false };
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "nestedHeader/true":
-      return { ...state, nestedHeaderIsVisible: true };
-    case "nestedHeader/false":
-      return { ...state, nestedHeaderIsVisible: false };
+    case "header/fixed/transparent":
+      return { ...state, fixedHeaderIsColored: false };
+    case "header/fixed/colored":
+      return { ...state, fixedHeaderIsColored: true };
     default:
       throw new Error("Unknown action type");
   }
 };
 
 export const InterfaceProvider = function ({ children }) {
-  const [{ nestedHeaderIsVisible }, dispatch] = useReducer(
+  const [{ fixedHeaderIsColored }, dispatch] = useReducer(
     reducer,
     initialState
   );
   return (
-    <InterfaceContext.Provider value={{ nestedHeaderIsVisible, dispatch }}>
+    <InterfaceContext.Provider value={{ fixedHeaderIsColored, dispatch }}>
       {children}
     </InterfaceContext.Provider>
   );

@@ -15,20 +15,6 @@ function RatedArtists() {
 
   return (
     <Results>
-      {/* <NavLinkItem
-        to={""}
-        icon={<LogoIcon />}
-        text={
-          <h1>
-            Spoti<span>Lite</span>
-          </h1>
-        }
-        end={true}
-        className="logoMobile"
-      /> */}
-      {/* <>
-        <NavBtns />
-      </> */}
       <ListContainer type="favoritePage">
         {artists.length === 0 && (
           <InfoMsg
@@ -41,7 +27,7 @@ function RatedArtists() {
           />
         )}
         {artists.length > 0 && (
-          <RatedList items={artists} title="Rated artists" />
+          <RatedList items={artists} title="Rated artists" first={true} />
         )}
       </ListContainer>
     </Results>

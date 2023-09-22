@@ -5,11 +5,30 @@ import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
 import Heart from "../UI-elements/Heart";
 import AppHeaderNested from "../AppHeader/AppHeaderNested";
+import { useInterface } from "../../context/InterfaceContext";
+import { useEffect, useRef } from "react";
 
 function AlbumHeader({ title }) {
   const { currentAlbum } = useMusic();
   const { favoritesData, addFavorite, removeFavorite } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
+  const { dispatch } = useInterface();
+  const headerRef = useRef();
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry);
+        if (entry.isIntersecting)
+          dispatch({ type: "header/fixed/transparent" });
+        else dispatch({ type: "header/fixed/colored" });
+      },
+      { rootMargin: "-71px" }
+    );
+    observer.observe(headerRef.current);
+    return () => observer.disconnect();
+  }, [dispatch]);
 
   if (!currentAlbum || !currentAlbum.artists)
     return (
@@ -40,7 +59,6 @@ function AlbumHeader({ title }) {
       className={`${styles.resultContainer} ${styles.header} header-green`}
       key={currentAlbum.id}
     >
-      <AppHeaderNested />
       <div className={styles.result}>
         <div className={styles.imgWrapper}>
           <img
@@ -57,7 +75,7 @@ function AlbumHeader({ title }) {
           >
             {name.length > 30 ? name.slice(0, 25) + "..." : name}
           </h3>
-          <div className={styles.itemInfo}>
+          <div className={styles.itemInfo} ref={headerRef}>
             <div className={styles.secondSubtitleWrapper}>
               <h4 className={`${styles.secondSubtitle}`}>
                 {currentAlbum.type.slice(0, 1).toUpperCase() +

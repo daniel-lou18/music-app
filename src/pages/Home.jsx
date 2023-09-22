@@ -7,7 +7,6 @@ import TopResult from "../components/TopResult";
 import TrackList from "../components/TrackList";
 import Results from "../components/Containers/Results";
 import { useAuth } from "../context/AuthContext";
-import User from "../components/User/User";
 
 function Home() {
   const { dispatch } = useMusic();
@@ -29,23 +28,8 @@ function Home() {
 
   return (
     <Results>
-      {/* <NavLinkItem
-        to={""}
-        icon={<LogoIcon />}
-        text={
-          <h1>
-            Spoti<span>Lite</span>
-          </h1>
-        }
-        end={true}
-        className="logoMobile"
-      /> */}
-      {/* <>
-        <NavBtns />
-        <User />
-      </> */}
       <ListContainer position="left">
-        <TopResult title="Featured Artist" type="featured" />
+        <TopResult title="Featured Artist" type="featured" first={true} />
       </ListContainer>
       <ListContainer position="right" className={"home-container-tracks"}>
         <TrackList

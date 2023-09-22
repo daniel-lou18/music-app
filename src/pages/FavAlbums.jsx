@@ -40,7 +40,7 @@ function FavAlbums() {
           />
         )}
         {albums.length > 0 && (
-          <HorizontalList items={albums} title="Favorite albums" />
+          <HorizontalList items={albums} title="Favorite albums" first={true} />
         )}
       </ListContainer>
     </Results>

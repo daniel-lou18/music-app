@@ -22,7 +22,12 @@ function Search() {
               <ListContainer>{`No results found for "${query}"`}</ListContainer>
             )}
           <ListContainer position="left">
-            <TopResult title="Top Result" isLoading={isLoading} error={error} />
+            <TopResult
+              title="Top Result"
+              isLoading={isLoading}
+              error={error}
+              first={true}
+            />
           </ListContainer>
           <ListContainer position="right" className="search-container-tracks">
             <TrackList
