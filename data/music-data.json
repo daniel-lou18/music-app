@@ -6786,109 +6786,6 @@
         "artists": [
           {
             "external_urls": {
-              "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
-            },
-            "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
-            "id": "7Ln80lUS6He07XvHI8qqHH",
-            "name": "Arctic Monkeys",
-            "type": "artist",
-            "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
-          }
-        ],
-        "external_urls": {
-          "spotify": "https://open.spotify.com/album/6645HGh7ZOZSUTpqW9iYLR"
-        },
-        "href": "https://api.spotify.com/v1/albums/6645HGh7ZOZSUTpqW9iYLR",
-        "id": "6645HGh7ZOZSUTpqW9iYLR",
-        "images": [
-          {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4",
-            "width": 640
-          },
-          {
-            "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e020acf7f2eefe5bd36efbc26b4",
-            "width": 300
-          },
-          {
-            "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d000048510acf7f2eefe5bd36efbc26b4",
-            "width": 64
-          }
-        ],
-        "is_playable": true,
-        "name": "AM",
-        "release_date": "2013-01-01",
-        "release_date_precision": "day",
-        "total_tracks": 12,
-        "type": "album",
-        "uri": "spotify:album:6645HGh7ZOZSUTpqW9iYLR"
-      },
-      "artists": [
-        {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
-          },
-          "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
-          "id": "7Ln80lUS6He07XvHI8qqHH",
-          "name": "Arctic Monkeys",
-          "type": "artist",
-          "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
-        }
-      ],
-      "disc_number": 1,
-      "duration_ms": 272394,
-      "explicit": false,
-      "external_ids": {
-        "isrc": "GBCEL1300362"
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/track/5FVd6KXrgO9B3JPmC8OPst"
-      },
-      "href": "https://api.spotify.com/v1/tracks/5FVd6KXrgO9B3JPmC8OPst",
-      "id": "5FVd6KXrgO9B3JPmC8OPst",
-      "is_local": false,
-      "is_playable": true,
-      "linked_from": {
-        "external_urls": {
-          "spotify": "https://open.spotify.com/track/3rq5w4bQGigXOfdN30ATJt"
-        },
-        "href": "https://api.spotify.com/v1/tracks/3rq5w4bQGigXOfdN30ATJt",
-        "id": "3rq5w4bQGigXOfdN30ATJt",
-        "type": "track",
-        "uri": "spotify:track:3rq5w4bQGigXOfdN30ATJt"
-      },
-      "name": "Do I Wanna Know?",
-      "popularity": 89,
-      "preview_url": "https://p.scdn.co/mp3-preview/006bc465fe3d1c04dae93a050eca9d402a7322b8?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
-      "track_number": 1,
-      "type": "track",
-      "uri": "spotify:track:5FVd6KXrgO9B3JPmC8OPst",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4",
-          "width": 640
-        },
-        {
-          "height": 300,
-          "url": "https://i.scdn.co/image/ab67616d00001e020acf7f2eefe5bd36efbc26b4",
-          "width": 300
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/ab67616d000048510acf7f2eefe5bd36efbc26b4",
-          "width": 64
-        }
-      ]
-    },
-    {
-      "album": {
-        "album_type": "ALBUM",
-        "artists": [
-          {
-            "external_urls": {
               "spotify": "https://open.spotify.com/artist/4AK6F7OLvEQ5QYCBNiQWHq"
             },
             "href": "https://api.spotify.com/v1/artists/4AK6F7OLvEQ5QYCBNiQWHq",
@@ -11672,6 +11569,100 @@
       "total_tracks": 10,
       "type": "album",
       "uri": "spotify:album:7DOyUfUOWH3myPk79r8Js9"
+    },
+    {
+      "album": {
+        "album_type": "ALBUM",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
+            },
+            "href": "https://api.spotify.com/v1/artists/0du5cEVh5yTK9QJze8zA0C",
+            "id": "0du5cEVh5yTK9QJze8zA0C",
+            "name": "Bruno Mars",
+            "type": "artist",
+            "uri": "spotify:artist:0du5cEVh5yTK9QJze8zA0C"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4PgleR09JVnm3zY1fW3XBA"
+        },
+        "href": "https://api.spotify.com/v1/albums/4PgleR09JVnm3zY1fW3XBA",
+        "id": "4PgleR09JVnm3zY1fW3XBA",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02232711f7d66a1e19e89e28c5",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851232711f7d66a1e19e89e28c5",
+            "width": 64
+          }
+        ],
+        "is_playable": true,
+        "name": "24K Magic",
+        "release_date": "2016-11-17",
+        "release_date_precision": "day",
+        "total_tracks": 9,
+        "type": "album",
+        "uri": "spotify:album:4PgleR09JVnm3zY1fW3XBA"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C"
+          },
+          "href": "https://api.spotify.com/v1/artists/0du5cEVh5yTK9QJze8zA0C",
+          "id": "0du5cEVh5yTK9QJze8zA0C",
+          "name": "Bruno Mars",
+          "type": "artist",
+          "uri": "spotify:artist:0du5cEVh5yTK9QJze8zA0C"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 206693,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "USAT21602948"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0KKkJNfGyhkQ5aFogxQAPU",
+      "id": "0KKkJNfGyhkQ5aFogxQAPU",
+      "is_local": false,
+      "is_playable": true,
+      "name": "That's What I Like",
+      "popularity": 88,
+      "preview_url": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0?cid=625e44fdf4c54d3ab62a5d1c95e3f353",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:0KKkJNfGyhkQ5aFogxQAPU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02232711f7d66a1e19e89e28c5",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851232711f7d66a1e19e89e28c5",
+          "width": 64
+        }
+      ]
     }
   ],
   "rated": [

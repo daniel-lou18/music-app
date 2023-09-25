@@ -13,6 +13,7 @@
   margin-left: 8px;
   margin-right: 8px;
   border-radius: 4px;
+  position: relative;
 }
 
 .app-container.hamburgerIsOpen {

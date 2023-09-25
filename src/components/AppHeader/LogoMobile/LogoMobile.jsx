@@ -5,7 +5,9 @@ import styles from "./LogoMobile.module.css";
 function LogoMobile({ onClick }) {
   return (
     <Link to="" className={styles.logoLink} onClick={onClick}>
-      <LogoIcon size={24} />
+      <div className={styles.logoWrapper}>
+        <LogoIcon size={24} />
+      </div>
     </Link>
   );
 }

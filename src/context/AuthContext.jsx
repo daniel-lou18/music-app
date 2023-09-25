@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useCallback, useContext, useReducer } from "react";
 
 const SPOTIFY_URL = "https://accounts.spotify.com/api/token";
 const body =
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
   const [{ token, error, isLoading, user, isAuthenticated }, dispatch] =
     useReducer(reducer, initialState);
 
-  const getToken = async () => {
+  const getToken = useCallback(async () => {
     dispatch({ type: "loading" });
     try {
       const res = await fetch(`${SPOTIFY_URL}`, {
@@ -60,9 +60,9 @@ export const AuthProvider = ({ children }) => {
       console.error(err);
       dispatch({ type: "error", payload: err.message });
     }
-  };
+  }, []);
 
-  const login = async (email, password) => {
+  const login = useCallback(async (email, password) => {
     dispatch({ type: "loading" });
     try {
       const res = await fetch(`${JSON_URL}/users`);
@@ -76,7 +76,7 @@ export const AuthProvider = ({ children }) => {
       console.error(err);
       dispatch({ type: "error", payload: err.message });
     }
-  };
+  }, []);
 
   const logout = () => {
     dispatch({ type: "user/logged-out" });

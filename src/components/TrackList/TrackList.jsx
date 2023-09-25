@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useInterface } from "../../context/InterfaceContext";
 import ErrorMsg from "../ErrorMsg";
-import Spinner from "../UI-elements/Spinner";
 import TrackItem from "./TrackItem";
 import styles from "./TrackList.module.css";
 
@@ -44,7 +43,6 @@ function TrackList({
           styles[className]
         }`}
       >
-        {isLoading && <Spinner />}
         {!isLoading && error && <ErrorMsg errorMsg={error} />}
         {!isLoading &&
           !error &&

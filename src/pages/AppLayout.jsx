@@ -5,13 +5,11 @@ import ContentContainer from "../components/Containers/ContentContainer";
 import { Outlet, useLocation } from "react-router-dom";
 import { useState } from "react";
 import AppHeaderNested from "../components/AppHeader/AppHeaderNested";
-import { useInterface } from "../context/InterfaceContext";
 import BottomLine from "../components/BottomLine";
 
 function AppLayout() {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
   const location = useLocation();
-  const { fixedHeaderIsColored } = useInterface();
   const pathIsAlbumOrArtist =
     location.pathname.includes("/app/artist") ||
     location.pathname.includes("/app/album");

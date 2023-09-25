@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useReducer,
+} from "react";
 import Fuse from "fuse.js";
 
 import { useAuth } from "./AuthContext";
@@ -138,13 +144,51 @@ export const MusicProvider = ({ children }) => {
     return () => controller.abort();
   }, [token, query]);
 
-  const getArtist = async (artistId) => {
-    if (!token || !artistId) return;
+  const getArtist = useCallback(
+    async (artistId) => {
+      if (!token || !artistId) return;
 
-    async function fetchArtist(source, actionType) {
+      async function fetchArtist(source, actionType) {
+        try {
+          dispatch({ type: "loading" });
+          const res = await fetch(`${BASE_URL}/artists/${artistId}/${source}`, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token})}`,
+            },
+          });
+          if (!res.ok)
+            throw new Error(`Could not get artist data (${res.status})`);
+          const data = await res.json();
+          dispatch({ type: actionType, payload: data });
+        } catch (err) {
+          console.error(err);
+          dispatch({ type: "error", payload: err });
+        }
+      }
+
+      await fetchArtist("", "currentArtist/artist-info/loaded");
+      await fetchArtist("albums?limit=10", "currentArtist/albums/loaded");
+      await fetchArtist(
+        "related-artists",
+        "currentArtist/related-artists/loaded"
+      );
+      await fetchArtist(
+        "top-tracks?market=Fr",
+        "currentArtist/top-tracks/loaded"
+      );
+    },
+    [token]
+  );
+
+  const getAlbum = useCallback(
+    async (albumId) => {
+      if (!token || !albumId) return;
+
       try {
         dispatch({ type: "loading" });
-        const res = await fetch(`${BASE_URL}/artists/${artistId}/${source}`, {
+        const res = await fetch(`${BASE_URL}/albums/${albumId}?market=fr`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -152,47 +196,16 @@ export const MusicProvider = ({ children }) => {
           },
         });
         if (!res.ok)
-          throw new Error(`Could not get artist data (${res.status})`);
+          throw new Error(`Could not get album data (${res.status})`);
         const data = await res.json();
-        dispatch({ type: actionType, payload: data });
+        dispatch({ type: "currentAlbum/loaded", payload: data });
       } catch (err) {
         console.error(err);
         dispatch({ type: "error", payload: err });
       }
-    }
-
-    await fetchArtist("", "currentArtist/artist-info/loaded");
-    await fetchArtist("albums?limit=10", "currentArtist/albums/loaded");
-    await fetchArtist(
-      "related-artists",
-      "currentArtist/related-artists/loaded"
-    );
-    await fetchArtist(
-      "top-tracks?market=Fr",
-      "currentArtist/top-tracks/loaded"
-    );
-  };
-
-  const getAlbum = async (albumId) => {
-    if (!token || !albumId) return;
-
-    try {
-      dispatch({ type: "loading" });
-      const res = await fetch(`${BASE_URL}/albums/${albumId}?market=fr`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token})}`,
-        },
-      });
-      if (!res.ok) throw new Error(`Could not get album data (${res.status})`);
-      const data = await res.json();
-      dispatch({ type: "currentAlbum/loaded", payload: data });
-    } catch (err) {
-      console.error(err);
-      dispatch({ type: "error", payload: err });
-    }
-  };
+    },
+    [token]
+  );
 
   return (
     <MusicContext.Provider

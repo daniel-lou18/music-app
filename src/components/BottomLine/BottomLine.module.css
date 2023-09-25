@@ -47,3 +47,15 @@
   border-bottom-right-radius: 4px;
   box-shadow: 0 4px black;
 }
+
+@media screen and (max-width: 1200px) {
+  .bottom {
+    grid-template-columns: var(--sidebar-width-1200) auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bottom {
+    grid-template-columns: var(--sidebar-width-900) auto;
+  }
+}

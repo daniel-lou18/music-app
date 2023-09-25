@@ -6,7 +6,7 @@ import ListContainer from "../components/Containers/ListContainer";
 import TopResult from "../components/TopResult";
 import TrackList from "../components/TrackList";
 import Results from "../components/Containers/Results";
-import { useAuth } from "../context/AuthContext";
+import Spinner from "../components/UI-elements/Spinner";
 
 function Home() {
   const { dispatch } = useMusic();
@@ -18,9 +18,7 @@ function Home() {
     errorReleases,
     errorTracks,
   } = useHome();
-  const { user } = useAuth();
 
-  // console.log(popularTracksData);
   useEffect(() => {
     dispatch({ type: "playing/set", payload: "" });
     dispatch({ type: "reset" });
@@ -28,28 +26,33 @@ function Home() {
 
   return (
     <Results>
-      <ListContainer position="left">
-        <TopResult title="Featured Artist" type="featured" first={true} />
-      </ListContainer>
-      <ListContainer position="right" className={"home-container-tracks"}>
-        <TrackList
-          tracks={popularTracksData}
-          title="Popular Songs"
-          className="popularTracks"
-          isLoading={isLoadingTracks}
-          error={errorTracks}
-        />
-      </ListContainer>
-      <ListContainer>
-        <HorizontalList
-          type="search"
-          items={newReleasesData}
-          title="New Releases"
-          className="releases-albums"
-          isLoading={isLoadingReleases}
-          error={errorReleases}
-        />
-      </ListContainer>
+      {(isLoadingTracks || isLoadingReleases) && <Spinner />}
+      {!isLoadingTracks && !isLoadingReleases && (
+        <>
+          <ListContainer position="left">
+            <TopResult title="Featured Artist" type="featured" first={true} />
+          </ListContainer>
+          <ListContainer position="right" className={"home-container-tracks"}>
+            <TrackList
+              tracks={popularTracksData}
+              title="Popular Songs"
+              className="popularTracks"
+              isLoading={isLoadingTracks}
+              error={errorTracks}
+            />
+          </ListContainer>
+          <ListContainer>
+            <HorizontalList
+              type="search"
+              items={newReleasesData}
+              title="New Releases"
+              className="releases-albums"
+              isLoading={isLoadingReleases}
+              error={errorReleases}
+            />
+          </ListContainer>
+        </>
+      )}
     </Results>
   );
 }

@@ -21,7 +21,7 @@ function Artist() {
 
   useEffect(() => {
     getArtist(artistId);
-  }, [artistId]);
+  }, [artistId, getArtist]);
 
   if (!tracks || !artists || !albums) return null;
 

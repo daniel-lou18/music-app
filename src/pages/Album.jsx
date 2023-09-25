@@ -17,7 +17,7 @@ function Album() {
   // console.log(currentAlbum);
   useEffect(() => {
     getAlbum(albumId);
-  }, [albumId]);
+  }, [albumId, getAlbum]);
 
   if (!trackItems || trackItems.length < 1) return null;
 

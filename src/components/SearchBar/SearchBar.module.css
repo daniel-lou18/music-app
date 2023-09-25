@@ -30,6 +30,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
   .searchField {
     grid-column: 1 / 6;
     top: 0;
@@ -58,17 +65,21 @@
   color: var(--light-white-color);
 }
 
-@media screen and (max-width: 600px) {
-  .searchField input {
-    height: 32px;
-    font-size: 0.9rem;
-  }
-}
-
 .searchField svg {
   position: absolute;
   z-index: 5;
   top: 50%;
   left: 13px;
   transform: translateY(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .searchField input {
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .searchField svg {
+    left: var(--space-xs);
+  }
 }

@@ -47,7 +47,6 @@ function HorizontalList({
           </h2>
 
           <ul className={`${styles.horList} ${className} ${styles[className]}`}>
-            {isLoading && <Spinner />}
             {!isLoading && error && <ErrorMsg errorMsg={error} />}
             {!isLoading &&
               !error &&
