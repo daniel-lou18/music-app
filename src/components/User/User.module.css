@@ -6,6 +6,12 @@
 
 .buttonContainer button:hover {
   cursor: pointer;
+  background: var(--main-btn-color);
+  opacity: 1;
+}
+
+.buttonContainer button:hover svg {
+  fill: var(--light-white-color);
 }
 
 .buttonContainer button {
@@ -16,11 +22,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.buttonContainer svg {
-  /* stroke: lightgrey; */
-  /* border: none; */
 }
 
 @media screen and (max-width: 600px) {
