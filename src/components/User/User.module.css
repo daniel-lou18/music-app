@@ -34,6 +34,10 @@
     background: transparent;
   }
 
+  .buttonContainer button:hover {
+    background: none;
+  }
+
   .buttonContainer svg {
     fill: none;
     stroke: var(--light-white-color);

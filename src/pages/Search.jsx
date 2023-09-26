@@ -6,6 +6,7 @@ import TopResult from "../components/TopResult";
 import { useMusic } from "../context/MusicContext";
 import BrowseCategories from "../components/BrowseCategories";
 import Spinner from "../components/UI-elements/Spinner";
+import ErrorMsg from "../components/ErrorMsg";
 
 function Search() {
   const { data, query, isLoading, error, artistId, albumId } = useMusic();
@@ -20,47 +21,56 @@ function Search() {
             tracks?.items.length === 0 &&
             artists?.items.length === 0 &&
             albums?.items.length === 0 && (
-              <ListContainer>{`No results found for "${query}"`}</ListContainer>
+              <ListContainer>
+                <ErrorMsg
+                  errorMsg={`No results found for "${query}"`}
+                  errorTip="Please check if everything is spelled correctly"
+                  displayButton={false}
+                />
+              </ListContainer>
             )}
-          {!isLoading && (
-            <>
-              <ListContainer position="left">
-                <TopResult
-                  title="Top Result"
-                  isLoading={isLoading}
-                  error={error}
-                  first={true}
-                />
-              </ListContainer>
-              <ListContainer
-                position="right"
-                className="search-container-tracks"
-              >
-                <TrackList
-                  tracks={tracks?.items.slice(0, 5)}
-                  title="Songs"
-                  isLoading={isLoading}
-                  error={error}
-                />
-              </ListContainer>
-              <ListContainer>
-                <HorizontalList
-                  items={artists?.items}
-                  title="Artists"
-                  isLoading={isLoading}
-                  error={error}
-                />
-              </ListContainer>
-              <ListContainer>
-                <HorizontalList
-                  items={albums?.items}
-                  title="Albums"
-                  isLoading={isLoading}
-                  error={error}
-                />
-              </ListContainer>
-            </>
-          )}
+          {!isLoading &&
+            tracks?.items.length !== 0 &&
+            artists?.items.length !== 0 &&
+            albums?.items.length !== 0 && (
+              <>
+                <ListContainer position="left">
+                  <TopResult
+                    title="Top Result"
+                    isLoading={isLoading}
+                    error={error}
+                    first={true}
+                  />
+                </ListContainer>
+                <ListContainer
+                  position="right"
+                  className="search-container-tracks"
+                >
+                  <TrackList
+                    tracks={tracks?.items.slice(0, 5)}
+                    title="Songs"
+                    isLoading={isLoading}
+                    error={error}
+                  />
+                </ListContainer>
+                <ListContainer>
+                  <HorizontalList
+                    items={artists?.items}
+                    title="Artists"
+                    isLoading={isLoading}
+                    error={error}
+                  />
+                </ListContainer>
+                <ListContainer>
+                  <HorizontalList
+                    items={albums?.items}
+                    title="Albums"
+                    isLoading={isLoading}
+                    error={error}
+                  />
+                </ListContainer>
+              </>
+            )}
         </Results>
       )}
       {(!query || !query.trim() || Object.keys(data).length === 0) &&

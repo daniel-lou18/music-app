@@ -54,7 +54,11 @@ function TopResult({
       <div className={`result-container ${styles.resultContainer}`}>
         <h2 className={`section-title ${styles.title}`}>{title}</h2>
         <div className={styles.result}>
-          <ErrorMsg errorMsg={`No Top Result found for "${query}"`} />
+          <ErrorMsg
+            errorMsg={`No Top Result found for "${query}"`}
+            errorTip="Please check if everything is spelled correctly"
+            displayButton={false}
+          />
         </div>
       </div>
     );

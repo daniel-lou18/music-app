@@ -6,8 +6,12 @@ import ArtistIcon from "../../../UI-elements/ArtistIcon/ArtistIcon";
 
 import { useNavigate } from "react-router-dom";
 import { useInterface } from "../../../../context/InterfaceContext";
+import { useState } from "react";
+import Alert from "../../../Alert";
+import TrashIcon from "../../../UI-elements/TrashIcon";
 
 function TrackIcons({ track }) {
+  const [showAlert, setShowAlert] = useState(false);
   const {
     id: spotifyId,
     artists,
@@ -22,8 +26,10 @@ function TrackIcons({ track }) {
   const handleFavorite = () => {
     if (!id) {
       addFavorite(track);
+      setShowAlert(false);
     } else {
       removeFavorite(id);
+      setShowAlert(true);
     }
   };
 
@@ -42,11 +48,19 @@ function TrackIcons({ track }) {
   };
 
   return (
-    <div className={styles.iconsContainer}>
-      <Heart id={id} onClick={handleFavorite} />
-      <AlbumIcon onClick={handleAlbum} />
-      <ArtistIcon onClick={handleArtist} />
-    </div>
+    <>
+      {showAlert && (
+        <Alert
+          icon={<TrashIcon height={20} width={20} />}
+          text="Item succesfully removed"
+        />
+      )}
+      <div className={styles.iconsContainer}>
+        <Heart id={id} onClick={handleFavorite} />
+        <AlbumIcon onClick={handleAlbum} />
+        <ArtistIcon onClick={handleArtist} />
+      </div>
+    </>
   );
 }
 

@@ -3,7 +3,12 @@ import AlertIcon from "../UI-elements/AlertIcon";
 import Button from "../UI-elements/Button";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function ErrorMsg({ errorMsg }) {
+function ErrorMsg({
+  errorMsg,
+  errorTip = "Try reloading the page",
+  displayButton = true,
+  buttonText = "Reload page",
+}) {
   const location = useLocation();
   const navigate = useNavigate();
   console.log(location.pathname);
@@ -13,8 +18,10 @@ function ErrorMsg({ errorMsg }) {
       <AlertIcon />
       <h2 className={styles.errorTitle}>Something went wrong</h2>
       <p className={styles.errorMsg}>{errorMsg}</p>
-      <p className={styles.errorTip}>Try reloading the page</p>
-      <Button text="Reload page" onClick={() => navigate(location.pathname)} />
+      <p className={styles.errorTip}>{errorTip}</p>
+      {displayButton && (
+        <Button text={buttonText} onClick={() => navigate(location.pathname)} />
+      )}
     </div>
   );
 }
