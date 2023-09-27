@@ -6,15 +6,26 @@ import { useRated } from "../../context/RatedContext";
 import styles from "./ArtistHeader.module.css";
 import Heart from "../UI-elements/Heart";
 import { useInterface } from "../../context/InterfaceContext";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useHandleFavorite } from "../../hooks/useHandleFavorite";
+import { createPortal } from "react-dom";
+import Alert from "../Alert";
+import TrashIcon from "../UI-elements/TrashIcon";
 
 function ArtistHeader({ title }) {
+  const [showAlert, setShowAlert] = useState(false);
   const { currentArtist } = useMusic();
-  const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  const { favoritesData } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
   const { dispatch } = useInterface();
   const headerRef = useRef();
 
+  const { id: spotifyId } = currentArtist;
+  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
+  const ratedItem = ratedData.find((item) => item.id === spotifyId);
+  const handleFavorite = useHandleFavorite(favId, currentArtist, setShowAlert);
+
+  const name = currentArtist.name;
   useEffect(() => {
     if (!headerRef.current) return;
     const observer = new IntersectionObserver(
@@ -37,25 +48,19 @@ function ArtistHeader({ title }) {
       </div>
     );
 
-  const { id: spotifyId } = currentArtist;
-  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
-  const ratedItem = ratedData.find((item) => item.id === spotifyId);
-
-  const name = currentArtist.name;
-
-  const handleFavorite = () => {
-    if (!favId) {
-      addFavorite(currentArtist);
-    } else {
-      removeFavorite(favId);
-    }
-  };
-
   return (
     <div
       className={`${styles.resultContainer} ${styles.header}`}
       key={currentArtist.id}
     >
+      {showAlert &&
+        createPortal(
+          <Alert
+            icon={<TrashIcon height={20} width={20} />}
+            text="Artist succesfully removed from Favorites"
+          />,
+          document.body
+        )}
       <div className={styles.result}>
         <div>
           <img

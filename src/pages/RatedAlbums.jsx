@@ -5,8 +5,6 @@ import { useRated } from "../context/RatedContext";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon";
 import { useNavigate } from "react-router-dom";
-import Alert from "../components/Alert";
-import TrashIcon from "../components/UI-elements/TrashIcon/TrashIcon";
 
 function RatedAlbums() {
   const navigate = useNavigate();
@@ -31,10 +29,6 @@ function RatedAlbums() {
         {albums.length > 0 && (
           <RatedList items={albums} title="Rated albums" first={true} />
         )}
-        <Alert
-          icon={<TrashIcon height={20} width={20} />}
-          text="Item succesfully removed"
-        />
       </ListContainer>
     </Results>
   );

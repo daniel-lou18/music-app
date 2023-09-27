@@ -1,8 +1,7 @@
 .container {
   position: fixed;
-  top: 8px;
-  left: 50%;
-  /* transform: translateX(-50%); */
+  bottom: var(--space-s);
+  right: var(--space-s);
   z-index: 60;
   display: flex;
   align-items: center;
@@ -50,4 +49,10 @@
   width: 0.75rem;
   height: 0.75rem;
   stroke: var(--light-white-color);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    right: 50%;
+  }
 }

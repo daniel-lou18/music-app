@@ -5,14 +5,28 @@ import { useRated } from "../../context/RatedContext";
 import styles from "./AlbumHeader.module.css";
 import Heart from "../UI-elements/Heart";
 import { useInterface } from "../../context/InterfaceContext";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useHandleFavorite } from "../../hooks/useHandleFavorite";
+import { createPortal } from "react-dom";
+import Alert from "../Alert";
+import TrashIcon from "../UI-elements/TrashIcon";
 
 function AlbumHeader({ title }) {
+  const [showAlert, setShowAlert] = useState(false);
   const { currentAlbum } = useMusic();
-  const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  const { favoritesData } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
   const { dispatch } = useInterface();
   const headerRef = useRef();
+
+  const { id: spotifyId } = currentAlbum;
+  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
+  const ratedItem = ratedData.find((item) => item.id === spotifyId);
+
+  const name =
+    currentAlbum.name.slice(0, 1).toUpperCase() +
+    currentAlbum.name.slice(1).toLowerCase();
+  const handleFavorite = useHandleFavorite(favId, currentAlbum, setShowAlert);
 
   useEffect(() => {
     if (!headerRef.current) return;
@@ -36,27 +50,19 @@ function AlbumHeader({ title }) {
       </div>
     );
 
-  const { id: spotifyId } = currentAlbum;
-  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
-  const ratedItem = ratedData.find((item) => item.id === spotifyId);
-
-  const name =
-    currentAlbum.name.slice(0, 1).toUpperCase() +
-    currentAlbum.name.slice(1).toLowerCase();
-
-  const handleFavorite = () => {
-    if (!favId) {
-      addFavorite(currentAlbum);
-    } else {
-      removeFavorite(favId);
-    }
-  };
-
   return (
     <div
       className={`${styles.resultContainer} ${styles.header} header-green`}
       key={currentAlbum.id}
     >
+      {showAlert &&
+        createPortal(
+          <Alert
+            icon={<TrashIcon height={20} width={20} />}
+            text="Album succesfully removed from Favorites"
+          />,
+          document.body
+        )}
       <div className={styles.result}>
         <div className={styles.imgWrapper}>
           <img

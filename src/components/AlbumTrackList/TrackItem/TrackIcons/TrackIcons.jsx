@@ -10,6 +10,8 @@ import { useInterface } from "../../../../context/InterfaceContext";
 import { useState } from "react";
 import Alert from "../../../Alert";
 import TrashIcon from "../../../UI-elements/TrashIcon";
+import { useHandleFavorite } from "../../../../hooks/useHandleFavorite";
+import { createPortal } from "react-dom";
 
 function TrackIcons({ track }) {
   const [showAlert, setShowAlert] = useState(false);
@@ -17,20 +19,15 @@ function TrackIcons({ track }) {
   const { currentAlbum } = useMusic();
   const { id: albumId } = currentAlbum;
   const { dispatch: dispatchInterface } = useInterface;
-  const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  const { favoritesData } = useFavorites();
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
-
   const navigate = useNavigate();
 
-  const handleFavorite = () => {
-    if (!id) {
-      addFavorite({ ...track, album: currentAlbum });
-      setShowAlert(false);
-    } else {
-      removeFavorite(id);
-      setShowAlert(true);
-    }
-  };
+  const handleFavorite = useHandleFavorite(
+    id,
+    { ...track, album: currentAlbum },
+    setShowAlert
+  );
 
   const handleAlbum = () => {
     if (!albumId) return;
@@ -48,12 +45,14 @@ function TrackIcons({ track }) {
 
   return (
     <>
-      {showAlert && (
-        <Alert
-          icon={<TrashIcon height={20} width={20} />}
-          text="Item succesfully removed"
-        />
-      )}
+      {showAlert &&
+        createPortal(
+          <Alert
+            icon={<TrashIcon height={20} width={20} />}
+            text="Song succesfully removed from Favorites"
+          />,
+          document.body
+        )}
       <div className={styles.iconsContainer}>
         <Heart id={id} onClick={handleFavorite} />
         <AlbumIcon onClick={handleAlbum} />

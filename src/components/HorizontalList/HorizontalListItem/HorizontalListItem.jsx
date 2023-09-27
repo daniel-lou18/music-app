@@ -2,37 +2,35 @@ import styles from "./HorizontalListItem.module.css";
 import Heart from "../../UI-elements/Heart";
 import { useFavorites } from "../../../context/FavoritesContext";
 import { useInterface } from "../../../context/InterfaceContext";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import ImgPlaceholder from "../../UI-elements/ImgPlaceholder/ImgPlaceholder";
+import ImgPlaceholder from "../../UI-elements/ImgPlaceholder";
 import GoToBtn from "../../UI-elements/GoToBtn";
 import { useState } from "react";
+import { useHandleFavorite } from "../../../hooks/useHandleFavorite";
+import Alert from "../../Alert";
+import { createPortal } from "react-dom";
+import TrashIcon from "../../UI-elements/TrashIcon";
+import useFromAlbumToArtist from "../../../hooks/useFromAlbumToArtist";
 
 function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
-  const navigate = useNavigate();
+  const [showAlert, setShowAlert] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
   const { dispatch: dispatchInterface } = useInterface();
-  const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  const { favoritesData } = useFavorites();
   const favId = favoritesData.find((item) => item.id === id)?.id;
 
-  const handleFavorite = (e) => {
+  const handleFavorite = useHandleFavorite(favId, item, setShowAlert);
+  const handleFavoriteClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    if (!favId) {
-      addFavorite(item);
-    } else {
-      removeFavorite(favId);
-    }
+    handleFavorite();
   };
 
-  const handleFromAlbumToArtist = (e) => {
+  const handleFromAlbumToArtist = useFromAlbumToArtist(type, item);
+  const handleFromAlbumToArtistClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    if (type === "album") {
-      dispatchInterface({ type: "header/fixed/transparent" });
-      window.scrollTo(0, 0);
-      navigate(`/app/artist/${item.artists[0].id}`);
-    }
+    handleFromAlbumToArtist();
   };
 
   const handleClick = () => {
@@ -42,13 +40,21 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
 
   return (
     <li className={styles.listItemWrapper}>
+      {showAlert &&
+        createPortal(
+          <Alert
+            icon={<TrashIcon height={20} width={20} />}
+            text="Song succesfully removed from Favorites"
+          />,
+          document.body
+        )}
       <Link
         className={styles.listItem}
         to={`/app/${type}/${id}`}
         onClick={handleClick}
       >
         {type === "artist" && (
-          <Heart id={favId} onClick={handleFavorite} type={type} />
+          <Heart id={favId} onClick={handleFavoriteClick} type={type} />
         )}
         <div className={styles.imgWrapper}>
           <img
@@ -61,7 +67,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
           />
           {!imgLoaded && <ImgPlaceholder />}
           {type === "album" && imgLoaded && (
-            <Heart id={favId} onClick={handleFavorite} type={type} />
+            <Heart id={favId} onClick={handleFavoriteClick} type={type} />
           )}
           <GoToBtn />
         </div>
@@ -77,7 +83,7 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
             className={`${styles.subtitle} ${
               type === "album" ? styles.link : ""
             }`}
-            onClick={handleFromAlbumToArtist}
+            onClick={handleFromAlbumToArtistClick}
           >
             {subtitle}
           </h4>
