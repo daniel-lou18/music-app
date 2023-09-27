@@ -10,10 +10,17 @@ import { artist } from "../../../data/featuredArtist";
 import Subtitles from "./Subtitles";
 import ErrorMsg from "../ErrorMsg";
 
-import { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 import ReleaseDate from "./ReleaseDate/ReleaseDate";
 import { useInterface } from "../../context/InterfaceContext";
+import useHandleToArtist from "../../hooks/useHandleToArtist";
+import { useHandleFavorite } from "../../hooks/useHandleFavorite";
+import { createPortal } from "react-dom";
+import Alert from "../Alert";
+import TrashIcon from "../UI-elements/TrashIcon";
+import useHandleToAlbum from "../../hooks/useHandleToAlbum";
+import useHandlePause from "../../hooks/useHandlePause";
+import useHandlePlay from "../../hooks/useHandlePlay";
 
 function TopResult({
   title,
@@ -22,12 +29,25 @@ function TopResult({
   error,
   first = false,
 }) {
-  const navigate = useNavigate();
+  const [showAlert, setShowAlert] = useState(false);
   const { query, topResult, dispatch, isPlayingId } = useMusic();
-  const { favoritesData, addFavorite, removeFavorite } = useFavorites();
+  const { favoritesData } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
   const { dispatch: dispatchInterface } = useInterface();
   const headerRef = useRef();
+  const { id: spotifyId } = topResult || {};
+  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
+  const ratedItem = ratedData.find((item) => item.id === spotifyId);
+
+  const handleFavorite = useHandleFavorite(favId, topResult, setShowAlert);
+  const handleFavoriteClick = (e) => {
+    e.stopPropagation();
+    handleFavorite();
+  };
+  const handleFromArtistToArtist = useHandleToArtist(topResult, spotifyId);
+  const handleFromAlbumToAlbum = useHandleToAlbum(topResult, spotifyId);
+  const handlePause = useHandlePause(topResult, isPlayingId, spotifyId);
+  const handlePlay = useHandlePlay(topResult, isPlayingId, spotifyId);
 
   useEffect(() => {
     if (!headerRef.current) return;
@@ -63,58 +83,11 @@ function TopResult({
       </div>
     );
 
-  const { id: spotifyId } = topResult;
-  const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
-  const ratedItem = ratedData.find((item) => item.id === spotifyId);
-
-  const handlePlay = () => {
-    if (
-      topResult.type === "track" &&
-      topResult.preview_url &&
-      isPlayingId !== spotifyId
-    )
-      dispatch({ type: "playing/set", payload: spotifyId });
-  };
-
-  const handlePause = () => {
-    if (
-      topResult.type === "track" &&
-      topResult.preview_url &&
-      isPlayingId === spotifyId
-    )
-      dispatch({ type: "playing/set", payload: "" });
-  };
-
-  const handleFromArtistToArtist = () => {
-    if (topResult.type === "artist") {
-      dispatchInterface({ type: "header/fixed/transparent" });
-      navigate(`/app/artist/${spotifyId}`);
-      window.scrollTo(0, 0);
-    }
-  };
-
-  const handleFromAlbumToAlbum = () => {
-    if (topResult.type === "album") {
-      dispatchInterface({ type: "header/fixed/transparent" });
-      navigate(`/app/album/${spotifyId}`);
-      window.scrollTo(0, 0);
-    }
-  };
-
   const handleClick = () => {
-    handlePlay();
-    handlePause();
-    handleFromAlbumToAlbum();
-    handleFromArtistToArtist();
-  };
-
-  const handleFavorite = (e) => {
-    e.stopPropagation();
-    if (!favId) {
-      addFavorite(topResult);
-    } else {
-      removeFavorite(favId);
-    }
+    if (topResult?.type === "track") handlePlay();
+    if (topResult?.type === "track") handlePause();
+    if (topResult?.type === "album") handleFromAlbumToAlbum();
+    if (topResult?.type === "artist") handleFromArtistToArtist();
   };
 
   return (
@@ -123,6 +96,14 @@ function TopResult({
       key={topResult.id}
       onClick={handleClick}
     >
+      {showAlert &&
+        createPortal(
+          <Alert
+            icon={<TrashIcon height={20} width={20} />}
+            text="Song succesfully removed from Favorites"
+          />,
+          document.body
+        )}
       <h2
         ref={first ? headerRef : null}
         className={`section-title ${styles.title}`}
@@ -133,7 +114,7 @@ function TopResult({
         {!isLoading && error && <ErrorMsg errorMsg={error} />}
         {!isLoading && !error && (
           <>
-            <Heart id={favId} onClick={handleFavorite} type="album" />
+            <Heart id={favId} onClick={handleFavoriteClick} type="album" />
             <img
               className={styles.img}
               src={

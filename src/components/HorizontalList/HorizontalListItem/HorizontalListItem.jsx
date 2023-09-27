@@ -10,7 +10,7 @@ import { useHandleFavorite } from "../../../hooks/useHandleFavorite";
 import Alert from "../../Alert";
 import { createPortal } from "react-dom";
 import TrashIcon from "../../UI-elements/TrashIcon";
-import useFromAlbumToArtist from "../../../hooks/useFromAlbumToArtist";
+import useHandleToArtist from "../../../hooks/useHandleToArtist";
 
 function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   const [showAlert, setShowAlert] = useState(false);
@@ -26,7 +26,11 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
     handleFavorite();
   };
 
-  const handleFromAlbumToArtist = useFromAlbumToArtist(type, item);
+  const handleFromAlbumToArtist = useHandleToArtist(
+    type,
+    item,
+    item && item.artists && item.artists[0].id
+  );
   const handleFromAlbumToArtistClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
