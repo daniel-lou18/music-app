@@ -8,8 +8,8 @@ function useHandleToArtist(item, artistId) {
 
   return function () {
     dispatchInterface({ type: "header/fixed/transparent" });
-    window.scrollTo(0, 0);
     navigate(`/app/artist/${artistId}`);
+    window.scrollTo(0, 0);
   };
 }
 

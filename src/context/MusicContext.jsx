@@ -237,7 +237,7 @@ export const useMusic = () => {
 function getTopResult(items, query) {
   const itemsArray = [
     ...items.artists.items,
-    ...items.tracks.items,
+    ...items.tracks.items.slice(0, 5),
     ...items.albums.items,
   ];
   const options = { includeScore: true, keys: ["name"] };

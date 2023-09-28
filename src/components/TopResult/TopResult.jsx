@@ -21,6 +21,7 @@ import TrashIcon from "../UI-elements/TrashIcon";
 import useHandleToAlbum from "../../hooks/useHandleToAlbum";
 import useHandlePause from "../../hooks/useHandlePause";
 import useHandlePlay from "../../hooks/useHandlePlay";
+import useLockedMessage from "../../hooks/useLockedMessage";
 
 function TopResult({
   title,
@@ -29,7 +30,8 @@ function TopResult({
   error,
   first = false,
 }) {
-  const [showAlert, setShowAlert] = useState(false);
+  const [showAlertFavorites, setShowAlertFavorites] = useState(false);
+  const [showAlertLocked, setShowAlertLocked] = useState(false);
   const { query, topResult, dispatch, isPlayingId } = useMusic();
   const { favoritesData } = useFavorites();
   const { ratedData, addRated, removeRated } = useRated();
@@ -39,7 +41,11 @@ function TopResult({
   const favId = favoritesData.find((item) => item.id === spotifyId)?.id;
   const ratedItem = ratedData.find((item) => item.id === spotifyId);
 
-  const handleFavorite = useHandleFavorite(favId, topResult, setShowAlert);
+  const handleFavorite = useHandleFavorite(
+    favId,
+    topResult,
+    setShowAlertFavorites
+  );
   const handleFavoriteClick = (e) => {
     e.stopPropagation();
     handleFavorite();
@@ -48,6 +54,7 @@ function TopResult({
   const handleFromAlbumToAlbum = useHandleToAlbum(topResult, spotifyId);
   const handlePause = useHandlePause(topResult, isPlayingId, spotifyId);
   const handlePlay = useHandlePlay(topResult, isPlayingId, spotifyId);
+  const handleLocked = useLockedMessage(topResult, setShowAlertLocked);
 
   useEffect(() => {
     if (!headerRef.current) return;
@@ -84,6 +91,7 @@ function TopResult({
     );
 
   const handleClick = () => {
+    if (!topResult?.preview_url) handleLocked();
     if (topResult?.type === "track") handlePlay();
     if (topResult?.type === "track") handlePause();
     if (topResult?.type === "album") handleFromAlbumToAlbum();
@@ -96,11 +104,19 @@ function TopResult({
       key={topResult.id}
       onClick={handleClick}
     >
-      {showAlert &&
+      {showAlertFavorites &&
         createPortal(
           <Alert
             icon={<TrashIcon height={20} width={20} />}
             text="Song succesfully removed from Favorites"
+          />,
+          document.body
+        )}
+      {showAlertLocked &&
+        createPortal(
+          <Alert
+            icon={<TrashIcon height={20} width={20} />}
+            text="You need a premium account to play this song"
           />,
           document.body
         )}

@@ -27,7 +27,6 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
   };
 
   const handleFromAlbumToArtist = useHandleToArtist(
-    type,
     item,
     item && item.artists && item.artists[0].id
   );

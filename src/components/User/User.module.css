@@ -1,7 +1,9 @@
 .buttonContainer {
+  position: relative;
   height: 33px;
   width: 33px;
   border: none;
+  font-size: 0.9rem;
 }
 
 .buttonContainer button:hover {
@@ -22,6 +24,30 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.menuContainer {
+  position: absolute;
+  top: calc(100% + var(--space-s));
+  right: 0;
+  background: var(--medium-bg-color);
+  border-radius: var(--space-xs);
+  padding: var(--space-s);
+}
+
+.userInfo span {
+  display: block;
+}
+
+.userEmail {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {

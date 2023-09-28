@@ -10,7 +10,7 @@ import ErrorMsg from "../components/ErrorMsg";
 
 function Search() {
   const { data, query, isLoading, error, artistId, albumId } = useMusic();
-  console.log(data);
+  // console.log(data);
   const { tracks, artists, albums } = data;
 
   return (
@@ -30,9 +30,7 @@ function Search() {
                 />
               </ListContainer>
             )}
-          {((!isLoading && tracks?.items.length !== 0) ||
-            artists?.items.length !== 0 ||
-            albums?.items.length !== 0) && (
+          {!isLoading && (
             <>
               <ListContainer position="left">
                 <TopResult
@@ -73,7 +71,7 @@ function Search() {
           )}
         </Results>
       )}
-      {(!query || !query.trim() || Object.keys(data).length === 0) &&
+      {(!query || Object.keys(data).length === 0) &&
         !isLoading &&
         !artistId &&
         !albumId && <BrowseCategories />}
