@@ -49,7 +49,10 @@ html {
   --darkest-bg-color: rgb(20, 20, 20);
   --darker-bg-color: rgb(30, 30, 30);
   --dark-bg-color: rgb(60, 60, 60);
+  --grey-bg-color: rgb(80, 80, 80);
   --medium-bg-color: rgba(255, 255, 255, 0.5);
+
+  --grey-border-color: rgb(80, 80, 80);
 
   --light-white-color: rgba(255, 255, 255, 0.92);
   --medium-white-color: rgba(255, 255, 255, 0.7);

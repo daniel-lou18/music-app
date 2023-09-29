@@ -1,7 +1,6 @@
 .searchContainer {
   flex: 1 1 auto;
   margin-right: var(--space-l);
-  margin-bottom: -5px;
   visibility: hidden;
 }
 
@@ -11,7 +10,6 @@
 
 .searchField {
   position: relative;
-  top: -6px;
   padding-left: 8px;
   padding-right: 10px;
 }
@@ -62,14 +60,14 @@
   padding-left: 40px;
   vertical-align: middle;
   font-size: 1rem;
+  line-height: 1rem;
   color: var(--light-white-color);
 }
 
 .searchField svg {
   position: absolute;
-  z-index: 5;
   top: 50%;
-  left: 13px;
+  left: var(--space-m);
   transform: translateY(-50%);
 }
 

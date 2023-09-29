@@ -2,7 +2,7 @@ svg.heartIcon:hover {
   cursor: pointer;
   stroke: lightgray;
   transform: scale(1.1);
-  fill: rgba(220, 20, 60, 0.5);
+  fill: rgba(220, 20, 60, 0.7);
 }
 
 .svgWrapper.checked svg.heartIcon {

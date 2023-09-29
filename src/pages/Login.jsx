@@ -8,6 +8,7 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  console.log(user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ function Login() {
   }, [isAuthenticated, navigate]);
 
   useEffect(() => {
+    if (!user) return;
     localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
 

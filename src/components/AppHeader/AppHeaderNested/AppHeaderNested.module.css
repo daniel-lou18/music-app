@@ -58,6 +58,7 @@
 
 .btnsContainer {
   display: flex;
+
   background: transparent;
 }
 
@@ -71,6 +72,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   padding-left: var(--space-l);
   height: 100%;
 }

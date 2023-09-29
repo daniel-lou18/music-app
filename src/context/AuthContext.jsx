@@ -79,6 +79,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const logout = () => {
+    localStorage.removeItem("currentUser");
     dispatch({ type: "user/logged-out" });
   };
 

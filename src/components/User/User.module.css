@@ -1,53 +1,119 @@
-.buttonContainer {
+.userContainer {
   position: relative;
+  font-size: 0.85rem;
   height: 33px;
   width: 33px;
-  border: none;
-  font-size: 0.9rem;
 }
 
-.buttonContainer button:hover {
+.buttonContainer:hover {
   cursor: pointer;
   background: var(--main-btn-color);
   opacity: 1;
+  outline: 2px solid lightgray;
+  transform: scale(1.05);
 }
 
-.buttonContainer button:hover svg {
+.buttonContainer:hover svg {
   fill: var(--light-white-color);
 }
 
-.buttonContainer button {
+.buttonContainer {
+  opacity: 1;
+  outline: 4px solid black;
+  border: none;
   border-radius: 50%;
+  overflow: hidden;
   background: black;
   height: 100%;
   width: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.buttonContainer img {
+  width: 100%;
+  height: auto;
 }
 
 .menuContainer {
   position: absolute;
   top: calc(100% + var(--space-s));
   right: 0;
-  background: var(--medium-bg-color);
+  background: var(--dark-bg-color);
   border-radius: var(--space-xs);
-  padding: var(--space-s);
+}
+
+.userInfo {
+  cursor: default;
+  line-height: 1rem;
+  padding: var(--space-s) var(--space-m);
 }
 
 .userInfo span {
   display: block;
 }
 
-.userEmail {
-  font-size: 0.8rem;
-  font-style: italic;
+.userName {
+  font-size: 0.9rem;
 }
 
-.navLink {
+.userEmail {
+  font-size: 0.7rem;
+  color: var(--medium-white-color);
+}
+
+.menuItemsContainer {
+  margin: 0 var(--space-xs);
+  border-top: 1px solid var(--grey-border-color);
+  border-bottom: 1px solid var(--grey-border-color);
+}
+
+/* .menuItemsContainer ul {
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+} */
+
+.menuItem {
+  display: block;
+  line-height: 2.3rem;
+  border-radius: calc(var(--space-xs) / 2);
+  overflow: hidden;
+}
+
+.menuItem:hover {
+  background: var(--grey-bg-color);
+}
+
+.navLink:hover {
+  cursor: not-allowed;
+}
+
+.navLink,
+.logOutButton {
+  padding-left: var(--space-s);
+  padding-right: var(--space-l);
+  width: 100%;
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: var(--space-base);
+  background: inherit;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  width: 20px;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.logOut {
+  line-height: 2.3rem;
+  margin: 0 var(--space-xs);
+  overflow: hidden;
+  padding-bottom: calc(var(--space-xs) / 2);
 }
 
 @media screen and (max-width: 600px) {

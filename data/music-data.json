@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "first_name": "John",
-      "last_name": "Doe",
-      "email": "john@mail.com",
+      "first_name": "Lou",
+      "last_name": "Derudder",
+      "email": "loutje@mail.com",
       "password": "password",
       "profile_picture": {
-        "url": null
+        "url": "src/assets/images/profile_pictures/IMG-20220323-WA0009.png"
       }
     },
     {
@@ -2073,47 +2073,6 @@
       "total_tracks": 17,
       "type": "album",
       "uri": "spotify:album:392p3shh2jkxUxY2VHvlH8"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/0ONHkAv9pCAFxb0zJwDNTy"
-      },
-      "followers": {
-        "href": null,
-        "total": 2864160
-      },
-      "genres": [
-        "gangster rap",
-        "hip hop",
-        "pop rap",
-        "rap",
-        "southern hip hop",
-        "trap",
-        "virginia hip hop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/0ONHkAv9pCAFxb0zJwDNTy",
-      "id": "0ONHkAv9pCAFxb0zJwDNTy",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebc5b88a3924d8318f25f20594",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174c5b88a3924d8318f25f20594",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178c5b88a3924d8318f25f20594",
-          "width": 160
-        }
-      ],
-      "name": "Pusha T",
-      "popularity": 69,
-      "type": "artist",
-      "uri": "spotify:artist:0ONHkAv9pCAFxb0zJwDNTy"
     },
     {
       "album_type": "album",
@@ -5529,39 +5488,6 @@
         "type": "album",
         "uri": "spotify:album:6DmPNcfpkXBVRJsEIJY9tl"
       }
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/0avMDS4HyoCEP6RqZJWpY2"
-      },
-      "followers": {
-        "href": null,
-        "total": 342423
-      },
-      "genres": ["countrygaze", "indie pop", "modern dream pop"],
-      "href": "https://api.spotify.com/v1/artists/0avMDS4HyoCEP6RqZJWpY2",
-      "id": "0avMDS4HyoCEP6RqZJWpY2",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebd1e68fe27f0b9d187b070b56",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174d1e68fe27f0b9d187b070b56",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178d1e68fe27f0b9d187b070b56",
-          "width": 160
-        }
-      ],
-      "name": "Ethel Cain",
-      "popularity": 62,
-      "type": "artist",
-      "uri": "spotify:artist:0avMDS4HyoCEP6RqZJWpY2"
     },
     {
       "album": {
