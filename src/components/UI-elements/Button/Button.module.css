@@ -10,6 +10,19 @@
   vertical-align: middle;
 }
 
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.big {
+  font-size: 1.2rem;
+  color: var(--light-white-color);
+  padding: var(--space-m);
+  background-color: var(--medium-btn-color);
+  font-weight: bold;
+}
+
 .button:hover {
   background-color: var(--main-btn-color);
   cursor: pointer;

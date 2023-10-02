@@ -19,7 +19,7 @@
 }
 
 .logoLink span {
-  color: lightgreen;
+  color: var(--highlight-btn-color);
   font-style: italic;
 }
 

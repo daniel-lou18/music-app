@@ -1,4 +1,4 @@
-.logoContainer {
+a.logoContainer {
   /* margin-left: auto;
   margin-right: auto; */
   display: flex;
@@ -6,14 +6,16 @@
   gap: 12px;
   height: 50px;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
-.logoContainer h1 {
-  font-size: 1.5rem;
+.logoContainer h1.logoText {
+  font-size: 2.5rem;
 }
 
 .logoContainer span {
-  color: lightgreen;
+  color: var(--highlight-btn-color);
   font-style: italic;
 }
 

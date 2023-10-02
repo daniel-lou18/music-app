@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import styles from "./Logo.module.css";
 
 function Logo() {
   return (
-    <div className={styles.logoContainer}>
+    <Link className={styles.logoContainer} to="/">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
+        width="52"
+        height="52"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -18,13 +19,13 @@ function Logo() {
         <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
         <path
           d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
-          fill="green"
+          fill="rgb(32, 178, 170)"
         />
       </svg>
-      <h1>
+      <h1 className={styles.logoText}>
         Spoti<span>Lite</span>
       </h1>
-    </div>
+    </Link>
   );
 }
 

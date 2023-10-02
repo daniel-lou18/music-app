@@ -1,0 +1,30 @@
+.form {
+  background-color: var(--dark-bg-color);
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 48rem;
+  margin: 8rem auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row input {
+  border-radius: var(--space-xs);
+  line-height: 1.1rem;
+  font-size: 1rem;
+  border: none;
+  padding: var(--space-s) var(--space-s);
+}
+
+.row input:focus {
+  outline: 3px solid var(--highlight-btn-color);
+}

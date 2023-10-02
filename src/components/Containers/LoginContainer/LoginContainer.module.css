@@ -1,0 +1,5 @@
+.login {
+  padding: 2.5rem 5rem;
+  background-color: var(--darkest-bg-color);
+  min-height: 100vh;
+}

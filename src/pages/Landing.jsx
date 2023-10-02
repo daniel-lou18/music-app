@@ -1,13 +1,17 @@
-import { useNavigate } from "react-router-dom";
-import Button from "../components/UI-elements/Button";
+import StaticPage from "../components/Containers/StaticPage";
 
 function Landing() {
-  const navigate = useNavigate();
+  const textContent = {
+    title: "Listen to your favorite music",
+    subtitle: "Whenever, wherever, forever",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  };
   return (
-    <div>
-      Landing page
-      <Button text="Login" onClick={() => navigate("login")} />
-    </div>
+    <StaticPage
+      textContent={textContent}
+      to="/login"
+      linkText="Start listening"
+    />
   );
 }
 

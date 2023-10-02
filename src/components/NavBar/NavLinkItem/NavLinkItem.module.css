@@ -45,7 +45,7 @@
 }
 
 .listItem:first-child .navLink span {
-  color: lightgreen;
+  color: var(--highlight-btn-color);
   font-style: italic;
   font-weight: bold;
 }
