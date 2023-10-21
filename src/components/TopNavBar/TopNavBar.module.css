@@ -20,6 +20,10 @@
   font-weight: bold;
 }
 
+.link:hover {
+  color: var(--light-white-color);
+}
+
 .nav a:global(.active) {
   background-color: var(--highlight-btn-color);
 }

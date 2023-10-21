@@ -72,6 +72,7 @@ export const AuthProvider = ({ children }) => {
         (user) => user.email === email && user.password === password
       )[0];
       if (user) dispatch({ type: "user/logged-in", payload: user });
+      if (!user) throw new Error("Wrong email or password");
     } catch (err) {
       console.error(err);
       dispatch({ type: "error", payload: err.message });

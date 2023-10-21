@@ -1,13 +1,11 @@
 .form {
-  background-color: var(--dark-bg-color);
+  background-color: var(--darker-bg-color);
   border-radius: 7px;
   padding: 2rem 3rem;
-  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  width: 48rem;
   margin: 8rem auto;
 }
 
@@ -18,13 +16,38 @@
 }
 
 .row input {
+  background-color: var(--dark-bg-color);
   border-radius: var(--space-xs);
   line-height: 1.1rem;
   font-size: 1rem;
   border: none;
+  outline: 1px solid var(--medium-white-color);
+  box-shadow: 0 0 3px var(--light-white-color);
   padding: var(--space-s) var(--space-s);
 }
 
 .row input:focus {
   outline: 3px solid var(--highlight-btn-color);
+  box-shadow: 0 0 6px var(--highlight-btn-color);
+}
+
+.row:nth-child(2) {
+  position: relative;
+}
+
+.errorMessage {
+  font-size: 0.9rem;
+  color: var(--light-white-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: var(--space-s);
+}
+
+.form button {
+  color: var(--light-white-color);
+  font-size: 1rem;
+  line-height: 1.1rem;
+  padding: var(--space-base) var(--space-m);
+  border-radius: var(--space-xs);
 }

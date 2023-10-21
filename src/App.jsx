@@ -1,5 +1,12 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import AppLayout from "./pages/AppLayout";
 import { HomeProvider } from "./context/HomeContext";
 import Home from "./pages/Home";
@@ -21,9 +28,9 @@ import ProtectedRoute from "./pages/ProtectedRoute";
 import { InterfaceProvider } from "./context/InterfaceContext";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
         <Route index element={<Landing />} />
         <Route path="login" element={<Login />} />
         <Route
@@ -59,9 +66,10 @@ function App() {
             <Route path="rated/albums" element={<RatedAlbums />} />
           </Route>
         </Route>
-      </Routes>
-    </BrowserRouter>
+      </Route>
+    )
   );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

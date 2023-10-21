@@ -31,7 +31,12 @@ function User() {
 
   return (
     <div className={styles.userContainer}>
-      <button className={styles.buttonContainer} onClick={handleButtonClick}>
+      <button
+        className={`${styles.buttonContainer} ${
+          menuIsVisible ? styles.active : ""
+        }`}
+        onClick={handleButtonClick}
+      >
         {profilePictureUrl && <img src={profilePictureUrl} alt="user" />}
         {!profilePictureUrl && <UserPlaceholder size={24} />}
       </button>

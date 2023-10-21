@@ -2,6 +2,10 @@
   margin-top: 20px;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .navItem,
 .link {
   text-decoration: none;

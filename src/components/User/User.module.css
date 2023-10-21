@@ -5,7 +5,8 @@
   width: 33px;
 }
 
-.userContainer button.buttonContainer:hover {
+.userContainer button.buttonContainer:hover,
+.userContainer button.buttonContainer.active {
   cursor: pointer;
   background: var(--main-btn-color);
   opacity: 1;

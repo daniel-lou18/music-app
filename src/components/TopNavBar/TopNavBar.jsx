@@ -19,6 +19,11 @@ function TopNavBar() {
           </Link>
         </li>
         <li>
+          <Link to="#" className={`${styles.link} ${styles.signup}`}>
+            Sign Up
+          </Link>
+        </li>
+        <li>
           <NavLink to="/login" className={`${styles.cta} ${styles.link}`}>
             Login
           </NavLink>
