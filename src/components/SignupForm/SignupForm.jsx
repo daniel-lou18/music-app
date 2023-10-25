@@ -6,16 +6,21 @@ import { Link, useNavigate } from "react-router-dom";
 import styles from "./SignupForm.module.css";
 
 function SignupForm() {
-  const { getToken, login, isAuthenticated, user, isLoading, error } =
+  const { getToken, login, isAuthenticated, user, isLoading, error, dispatch } =
     useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  console.log(user);
+  const [passwordConfirmMessage, setPasswordConfirmMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (password !== passwordConfirm)
+      return setPasswordConfirmMessage({
+        message: `Passwords do not match \u2716`,
+        color: "red",
+      });
     getToken();
     login(email, password);
   };
@@ -29,6 +34,16 @@ function SignupForm() {
     localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
 
+  useEffect(() => {
+    if (!password || !passwordConfirm) return;
+    if (password === passwordConfirm)
+      setPasswordConfirmMessage({
+        message: `Passwords match \u2713`,
+        color: "green",
+      });
+    else setPasswordConfirmMessage("");
+  }, [password, passwordConfirm]);
+
   if (isLoading) return <Spinner />;
 
   return (
@@ -41,7 +56,11 @@ function SignupForm() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
+        {error?.errorType === "emailError" && (
+          <p className={styles.message}>{error.message}</p>
+        )}
       </div>
       <div className={styles.row}>
         <label htmlFor="password">Password</label>
@@ -50,23 +69,37 @@ function SignupForm() {
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
+          minLength={8}
         />
-        {error && <p className={styles.errorMessage}>{error}</p>}
+        {error?.errorType === "passwordError" && (
+          <p className={styles.message}>{error.message}</p>
+        )}
       </div>
       <div className={styles.row}>
         <label htmlFor="passwordConfirm">Confirm password</label>
         <input
-          type="passwordConfirm"
+          type="password"
           id="passwordConfirm"
           value={passwordConfirm}
           onChange={(e) => setPasswordConfirm(e.target.value)}
         />
-        {error && <p className={styles.errorMessage}>{error}</p>}
+        {passwordConfirmMessage && (
+          <p
+            className={`${styles.message} ${
+              passwordConfirmMessage.color === "green"
+                ? styles.green
+                : styles.red
+            }`}
+          >
+            {passwordConfirmMessage.message}
+          </p>
+        )}
       </div>
       <Button text="Create an account" type="submit" size="big" />
       <div className={`${styles.createAccount}`}>
         <span>Already have an account? </span>
-        <Link to="/signup" className={`${styles.createAccountLink}`}>
+        <Link to="/login" className={`${styles.createAccountLink}`}>
           Sign in here
         </Link>
       </div>

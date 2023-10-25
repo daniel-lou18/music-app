@@ -66,6 +66,8 @@ html {
 
   --main-font-color: rgba(255, 255, 255, 0.92);
   --grey-font-color: rgba(255, 255, 255, 0.7);
+  --red-font-color: rgba(220, 20, 60, 0.9);
+  --green-font-color: rgba(0, 128, 0, 0.9);
 
   --sidebar-width: 250px;
   --sidebar-width-1200: 200px;

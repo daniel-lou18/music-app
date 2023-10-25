@@ -3,8 +3,8 @@ import { createContext, useCallback, useContext, useReducer } from "react";
 const SPOTIFY_URL = "https://accounts.spotify.com/api/token";
 const body =
   "grant_type=client_credentials&client_id=625e44fdf4c54d3ab62a5d1c95e3f353&client_secret=9401a23a8e6c47bdac04f93de44f7890";
-
 const JSON_URL = "http://localhost:3000";
+const API_URL = "http://localhost:3030/api/v1";
 
 const AuthContext = createContext();
 
@@ -84,6 +84,28 @@ export const AuthProvider = ({ children }) => {
     dispatch({ type: "user/logged-out" });
   };
 
+  const forgotPassword = useCallback(async (email) => {
+    dispatch({ type: "loading" });
+    try {
+      const res = await fetch(`${API_URL}/users/forgotPassword`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      console.log(res);
+      if (!res.ok)
+        throw new Error(
+          `${res.status} Could not find any user with this email`
+        );
+      const data = await res.json();
+    } catch (err) {
+      console.error(err.message);
+      dispatch({ type: "error", payload: err.message });
+    }
+  }, []);
+
   return (
     <AuthContext.Provider
       value={{
@@ -93,8 +115,10 @@ export const AuthProvider = ({ children }) => {
         getToken,
         login,
         logout,
+        forgotPassword,
         user,
         isAuthenticated,
+        dispatch,
       }}
     >
       {children}

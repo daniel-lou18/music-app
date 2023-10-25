@@ -42,18 +42,21 @@ function LoginForm() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </div>
       <div className={styles.row}>
         <div className={`${styles.passwordLabelContainer}`}>
           <label htmlFor="password">Password</label>
-          <Link>Forgot password?</Link>
+          <Link to="/forgot-password">Forgot password?</Link>
         </div>
         <input
           type="password"
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
+          minLength={8}
         />
         {error && <p className={styles.errorMessage}>{error}</p>}
       </div>
