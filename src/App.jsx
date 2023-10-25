@@ -26,6 +26,7 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import { InterfaceProvider } from "./context/InterfaceContext";
+import Signup from "./pages/Signup";
 
 function App() {
   const router = createBrowserRouter(
@@ -33,6 +34,7 @@ function App() {
       <Route>
         <Route index element={<Landing />} />
         <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
         <Route
           path="app"
           element={

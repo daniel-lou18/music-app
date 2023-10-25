@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
-import Button from "../../components/UI-elements/Button";
-import Spinner from "../../components/UI-elements/Spinner";
+import Button from "../UI-elements/Button";
+import Spinner from "../UI-elements/Spinner";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import styles from "./LoginForm.module.css";
+import styles from "./SignupForm.module.css";
 
-function LoginForm() {
+function SignupForm() {
   const { getToken, login, isAuthenticated, user, isLoading, error } =
     useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
   console.log(user);
 
   const handleSubmit = async (e) => {
@@ -32,9 +33,7 @@ function LoginForm() {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <h2 className={`${styles.title} section-title`}>
-        Log in to your account
-      </h2>
+      <h2 className={`${styles.title} section-title`}>Create an account</h2>
       <div className={styles.row}>
         <label htmlFor="email">Email</label>
         <input
@@ -45,10 +44,7 @@ function LoginForm() {
         />
       </div>
       <div className={styles.row}>
-        <div className={`${styles.passwordLabelContainer}`}>
-          <label htmlFor="password">Password</label>
-          <Link>Forgot password?</Link>
-        </div>
+        <label htmlFor="password">Password</label>
         <input
           type="password"
           id="password"
@@ -57,15 +53,25 @@ function LoginForm() {
         />
         {error && <p className={styles.errorMessage}>{error}</p>}
       </div>
-      <Button text="Log in" type="submit" size="big" />
+      <div className={styles.row}>
+        <label htmlFor="passwordConfirm">Confirm password</label>
+        <input
+          type="passwordConfirm"
+          id="passwordConfirm"
+          value={passwordConfirm}
+          onChange={(e) => setPasswordConfirm(e.target.value)}
+        />
+        {error && <p className={styles.errorMessage}>{error}</p>}
+      </div>
+      <Button text="Create an account" type="submit" size="big" />
       <div className={`${styles.createAccount}`}>
-        <span>Don't have an account yet? </span>
+        <span>Already have an account? </span>
         <Link to="/signup" className={`${styles.createAccountLink}`}>
-          Sign up
+          Sign in here
         </Link>
       </div>
     </form>
   );
 }
 
-export default LoginForm;
+export default SignupForm;

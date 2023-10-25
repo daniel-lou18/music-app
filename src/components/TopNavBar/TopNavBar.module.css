@@ -21,10 +21,14 @@
 }
 
 .link:hover {
-  color: var(--light-white-color);
+  color: var(--main-btn-color);
 }
 
-.nav a:global(.active) {
+.link.signup:global(.active) {
+  color: var(--main-btn-color);
+}
+
+.link.login:global(.active) {
   background-color: var(--highlight-btn-color);
 }
 
