@@ -6,7 +6,7 @@
       "email": "loutje@mail.com",
       "password": "123456789",
       "profile_picture": {
-        "url": "src/assets/images/profile_pictures/IMG-20220323-WA0009.png"
+        "url": "/IMG-20220323-WA0009.png"
       }
     },
     {
@@ -5142,6 +5142,190 @@
       "track_number": 8,
       "type": "track",
       "uri": "spotify:track:60a0Rd6pjrkxjPbaKzXjfq"
+    },
+    {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/46pWGuE3dSwY3bMMXGBvVS"
+          },
+          "href": "https://api.spotify.com/v1/artists/46pWGuE3dSwY3bMMXGBvVS",
+          "id": "46pWGuE3dSwY3bMMXGBvVS",
+          "name": "Rema",
+          "type": "artist",
+          "uri": "spotify:artist:46pWGuE3dSwY3bMMXGBvVS"
+        }
+      ],
+      "available_markets": [
+        "AD",
+        "AE",
+        "AG",
+        "AL",
+        "AM",
+        "AR",
+        "AT",
+        "AU",
+        "AZ",
+        "BA",
+        "BB",
+        "BD",
+        "BE",
+        "BG",
+        "BH",
+        "BN",
+        "BO",
+        "BR",
+        "BS",
+        "BT",
+        "BZ",
+        "CA",
+        "CH",
+        "CL",
+        "CO",
+        "CR",
+        "CW",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "DM",
+        "DO",
+        "DZ",
+        "EC",
+        "EE",
+        "EG",
+        "ES",
+        "FI",
+        "FJ",
+        "FM",
+        "FR",
+        "GB",
+        "GD",
+        "GE",
+        "GR",
+        "GT",
+        "GY",
+        "HK",
+        "HN",
+        "HR",
+        "HT",
+        "HU",
+        "ID",
+        "IE",
+        "IL",
+        "IN",
+        "IQ",
+        "IS",
+        "IT",
+        "JM",
+        "JO",
+        "JP",
+        "KG",
+        "KH",
+        "KI",
+        "KN",
+        "KR",
+        "KW",
+        "KZ",
+        "LA",
+        "LB",
+        "LC",
+        "LI",
+        "LK",
+        "LT",
+        "LU",
+        "LV",
+        "LY",
+        "MA",
+        "MC",
+        "MD",
+        "ME",
+        "MH",
+        "MK",
+        "MN",
+        "MO",
+        "MT",
+        "MV",
+        "MX",
+        "MY",
+        "NI",
+        "NL",
+        "NO",
+        "NP",
+        "NR",
+        "NZ",
+        "OM",
+        "PA",
+        "PE",
+        "PG",
+        "PH",
+        "PK",
+        "PL",
+        "PS",
+        "PT",
+        "PW",
+        "PY",
+        "QA",
+        "RO",
+        "RS",
+        "SA",
+        "SB",
+        "SE",
+        "SG",
+        "SI",
+        "SK",
+        "SM",
+        "SR",
+        "SV",
+        "TH",
+        "TJ",
+        "TL",
+        "TN",
+        "TO",
+        "TR",
+        "TT",
+        "TV",
+        "TW",
+        "UA",
+        "US",
+        "UY",
+        "UZ",
+        "VC",
+        "VE",
+        "VN",
+        "VU",
+        "WS",
+        "XK"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/53oOgXjjaTx42Sy2exYlH9"
+      },
+      "href": "https://api.spotify.com/v1/albums/53oOgXjjaTx42Sy2exYlH9",
+      "id": "53oOgXjjaTx42Sy2exYlH9",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273a0b4e05b489e5e037028b496",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02a0b4e05b489e5e037028b496",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851a0b4e05b489e5e037028b496",
+          "width": 64
+        }
+      ],
+      "name": "RAVAGE",
+      "release_date": "2023-10-26",
+      "release_date_precision": "day",
+      "total_tracks": 5,
+      "type": "album",
+      "uri": "spotify:album:53oOgXjjaTx42Sy2exYlH9"
     }
   ],
   "rated": [
@@ -6069,11 +6253,7 @@
         "href": null,
         "total": 9645042
       },
-      "genres": [
-        "electro",
-        "filter house",
-        "rock"
-      ],
+      "genres": ["electro", "filter house", "rock"],
       "href": "https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi",
       "id": "4tZwfgrHOc3mvqYlEYSvVi",
       "images": [
@@ -6107,9 +6287,7 @@
         "href": null,
         "total": 357024
       },
-      "genres": [
-        "chanson"
-      ],
+      "genres": ["chanson"],
       "href": "https://api.spotify.com/v1/artists/7gVzeNvBbUpj6PXX5ekCMs",
       "id": "7gVzeNvBbUpj6PXX5ekCMs",
       "images": [
@@ -8534,11 +8712,7 @@
             "href": null,
             "total": 4471259
           },
-          "genres": [
-            "alternative metal",
-            "nu metal",
-            "post-grunge"
-          ],
+          "genres": ["alternative metal", "nu metal", "post-grunge"],
           "href": "https://api.spotify.com/v1/artists/5BtHciL0e0zOP7prIHn3pP",
           "id": "5BtHciL0e0zOP7prIHn3pP",
           "images": [
@@ -8571,12 +8745,7 @@
             "href": null,
             "total": 6286764
           },
-          "genres": [
-            "alternative metal",
-            "nu metal",
-            "rap metal",
-            "rock"
-          ],
+          "genres": ["alternative metal", "nu metal", "rap metal", "rock"],
           "href": "https://api.spotify.com/v1/artists/3TOqt5oJwL9BE2NG9MEwDa",
           "id": "3TOqt5oJwL9BE2NG9MEwDa",
           "images": [
@@ -8609,12 +8778,7 @@
             "href": null,
             "total": 9720266
           },
-          "genres": [
-            "alternative metal",
-            "nu metal",
-            "rap metal",
-            "rock"
-          ],
+          "genres": ["alternative metal", "nu metal", "rap metal", "rock"],
           "href": "https://api.spotify.com/v1/artists/5eAWCfyUhZtHHtBdNk56l1",
           "id": "5eAWCfyUhZtHHtBdNk56l1",
           "images": [
@@ -8647,12 +8811,7 @@
             "href": null,
             "total": 14367827
           },
-          "genres": [
-            "modern rock",
-            "permanent wave",
-            "punk",
-            "rock"
-          ],
+          "genres": ["modern rock", "permanent wave", "punk", "rock"],
           "href": "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
           "id": "7oPftvlwr6VrsViSDV7fJY",
           "images": [
@@ -8765,12 +8924,7 @@
             "href": null,
             "total": 4224081
           },
-          "genres": [
-            "alternative metal",
-            "nu metal",
-            "post-grunge",
-            "rock"
-          ],
+          "genres": ["alternative metal", "nu metal", "post-grunge", "rock"],
           "href": "https://api.spotify.com/v1/artists/2RTUTCvo6onsAnheUk3aL9",
           "id": "2RTUTCvo6onsAnheUk3aL9",
           "images": [
@@ -8803,12 +8957,7 @@
             "href": null,
             "total": 10224361
           },
-          "genres": [
-            "alternative metal",
-            "nu metal",
-            "rap metal",
-            "rock"
-          ],
+          "genres": ["alternative metal", "nu metal", "rap metal", "rock"],
           "href": "https://api.spotify.com/v1/artists/05fG473iIaoy82BF1aGhL8",
           "id": "05fG473iIaoy82BF1aGhL8",
           "images": [
@@ -8964,9 +9113,7 @@
             "href": null,
             "total": 4108247
           },
-          "genres": [
-            "alternative metal"
-          ],
+          "genres": ["alternative metal"],
           "href": "https://api.spotify.com/v1/artists/5nGIFgo0shDenQYSE0Sn7c",
           "id": "5nGIFgo0shDenQYSE0Sn7c",
           "images": [
@@ -9077,11 +9224,7 @@
             "href": null,
             "total": 6547084
           },
-          "genres": [
-            "alternative metal",
-            "canadian rock",
-            "post-grunge"
-          ],
+          "genres": ["alternative metal", "canadian rock", "post-grunge"],
           "href": "https://api.spotify.com/v1/artists/6deZN1bslXzeGvOLaLMOIF",
           "id": "6deZN1bslXzeGvOLaLMOIF",
           "images": [
@@ -9154,10 +9297,7 @@
             "href": null,
             "total": 6590739
           },
-          "genres": [
-            "alternative metal",
-            "nu metal"
-          ],
+          "genres": ["alternative metal", "nu metal"],
           "href": "https://api.spotify.com/v1/artists/0nmQIMXWTXfhgOBdNzhGOs",
           "id": "0nmQIMXWTXfhgOBdNzhGOs",
           "images": [
