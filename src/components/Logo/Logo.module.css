@@ -21,7 +21,15 @@ a.logoContainer {
 
 @media screen and (max-width: 600px) {
   .logoContainer svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .logoContainer h1.logoText {
+    font-size: 1.5rem;
+  }
+
+  a.logoContainer {
+    margin-bottom: 0;
   }
 }

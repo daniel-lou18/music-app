@@ -46,3 +46,17 @@
 .cta:hover {
   background-color: var(--highlight-btn-color);
 }
+
+@media screen and (max-width: 600px) {
+  .link:not(.login) {
+    display: none;
+  }
+
+  .nav {
+    padding: var(--space-m) 0;
+  }
+
+  .nav ul {
+    gap: 0;
+  }
+}

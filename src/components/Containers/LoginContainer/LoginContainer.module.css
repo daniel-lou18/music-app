@@ -3,3 +3,18 @@
   background-color: var(--darkest-bg-color);
   min-height: 100vh;
 }
+
+@media screen and (max-width: 600px) {
+  .login {
+    padding: var(--space-m);
+  }
+
+  .login nav {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .login ul {
+    display: none;
+  }
+}

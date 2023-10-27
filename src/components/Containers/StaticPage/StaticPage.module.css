@@ -12,8 +12,9 @@
 
 .homepage {
   position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
-  width: 100vw;
   padding: 2.5rem 5rem;
 }
 
@@ -42,4 +43,23 @@
   font-size: 1.2rem;
   color: var(--color-light--1);
   margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .homepage {
+    padding: 0 var(--space-m);
+    width: 100vw;
+  }
+
+  .homepage h1 {
+    font-size: 3rem;
+  }
+
+  .homepage h2 {
+    font-size: 2rem;
+  }
+
+  .homepage h3 {
+    font-size: 1rem;
+  }
 }
