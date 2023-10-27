@@ -7,16 +7,19 @@ function StaticPage({ textContent, to, linkText }) {
   const { title, subtitle, text } = textContent;
 
   return (
-    <main className={styles.homepage}>
-      <TopNavBar />
+    <>
+      <div className={styles.background}></div>
+      <main className={styles.homepage}>
+        <TopNavBar />
 
-      <section>
-        <h1>{title}</h1>
-        <h2>{subtitle}</h2>
-        <h3>{text}</h3>
-        <Button to={to} text={linkText.toUpperCase()} size="big" />
-      </section>
-    </main>
+        <section>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          <h3>{text}</h3>
+          <Button to={to} text={linkText.toUpperCase()} size="big" />
+        </section>
+      </main>
+    </>
   );
 }
 

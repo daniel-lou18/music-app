@@ -43,6 +43,7 @@ function LoginForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          placeholder="email: 'loutje@mail.com'"
         />
       </div>
       <div className={styles.row}>
@@ -57,6 +58,7 @@ function LoginForm() {
           onChange={(e) => setPassword(e.target.value)}
           required
           minLength={8}
+          placeholder="password: 123456789"
         />
         {error && <p className={styles.errorMessage}>{error}</p>}
       </div>
