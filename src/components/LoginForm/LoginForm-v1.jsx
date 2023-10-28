@@ -6,17 +6,17 @@ import { Link, useNavigate } from "react-router-dom";
 import styles from "./LoginForm.module.css";
 
 function LoginForm() {
-  const { getToken, isAuthenticated, login, user, isLoading, error } =
+  const { getToken, login, isAuthenticated, user, isLoading, error } =
     useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  console.log(user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!email || !password) return;
     getToken();
-    login({ email, password });
+    login(email, password);
   };
 
   useEffect(() => {

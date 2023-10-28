@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useReducer } from "react";
+import supabase from "../services/supabase";
 
 const SPOTIFY_URL = "https://accounts.spotify.com/api/token";
 const body =
@@ -62,22 +63,51 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const login = useCallback(async (email, password) => {
+  const login = useCallback(async ({ email, password }) => {
     dispatch({ type: "loading" });
     try {
-      const res = await fetch(`${JSON_URL}/users`);
-      if (!res.ok) throw new Error(`${res.status}: Could not get users`);
-      const data = await res.json();
-      const user = data.filter(
-        (user) => user.email === email && user.password === password
-      )[0];
-      if (user) dispatch({ type: "user/logged-in", payload: user });
-      if (!user) throw new Error("Wrong email or password");
+      let { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      if (error) throw new Error(error.message);
+      console.log(data);
+      if (data)
+        dispatch({
+          type: "user/logged-in",
+          payload: {
+            access_token: data.access_token,
+            first_name: "Loutje",
+            last_name: "Patapoutje",
+            email,
+            password,
+            profile_picture: {
+              url: "/IMG-20220323-WA0009.png",
+            },
+          },
+        });
     } catch (err) {
       console.error(err);
       dispatch({ type: "error", payload: err.message });
     }
   }, []);
+
+  // const login = useCallback(async (email, password) => {
+  //   dispatch({ type: "loading" });
+  //   try {
+  //     const res = await fetch(`${JSON_URL}/users`);
+  //     if (!res.ok) throw new Error(`${res.status}: Could not get users`);
+  //     const data = await res.json();
+  //     const user = data.filter(
+  //       (user) => user.email === email && user.password === password
+  //     )[0];
+  //     if (user) dispatch({ type: "user/logged-in", payload: user });
+  //     if (!user) throw new Error("Wrong email or password");
+  //   } catch (err) {
+  //     console.error(err);
+  //     dispatch({ type: "error", payload: err.message });
+  //   }
+  // }, []);
 
   const logout = () => {
     localStorage.removeItem("currentUser");
