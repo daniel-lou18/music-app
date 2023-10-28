@@ -39,17 +39,37 @@ export const RatedProvider = ({ children }) => {
   const [{ ratedData }, dispatchRated] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("rated"));
-    if (!data) return;
-    console.log(data);
-    dispatchRated({ type: "loaded", payload: data });
+    const fetchRated = async () => {
+      try {
+        dispatchRated({ type: "loading" });
+        const res = await fetch(`${BASE_URL}/rated`);
+        const data = await res.json();
+        dispatchRated({ type: "loaded", payload: data });
+      } catch (err) {
+        console.error(err);
+        dispatchRated({ type: "error", payload: err });
+      }
+    };
+
+    fetchRated();
   }, []);
 
-  const addRated = (item, rating) => {
-    const data = JSON.parse(localStorage.getItem("rated")) || [];
-    data.push({ ...item, rating });
-    dispatchRated({ type: "added", payload: data });
-    localStorage.setItem("rated", JSON.stringify(data));
+  const addRated = async (item, rating) => {
+    try {
+      dispatchRated({ type: "loading" });
+      const res = await fetch(`${BASE_URL}/rated`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...item, rating }),
+      });
+      const data = await res.json();
+      dispatchRated({ type: "added", payload: data });
+    } catch (err) {
+      console.error(err);
+      dispatchRated({ type: "error", payload: err });
+    }
   };
 
   const removeRated = async (id) => {

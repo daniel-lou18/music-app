@@ -2,8 +2,6 @@ import { useContext, createContext, useReducer, useEffect } from "react";
 
 const FavoritesContext = createContext();
 
-const BASE_URL = "http://localhost:3000";
-
 export const FavoritesProvider = ({ children }) => {
   const initialState = {
     favoritesData: [],
@@ -43,54 +41,20 @@ export const FavoritesProvider = ({ children }) => {
   console.log(favoritesData);
 
   useEffect(() => {
-    const fetchFavorites = async () => {
-      try {
-        dispatchFavorites({ type: "loading" });
-        const res = await fetch(`${BASE_URL}/favorites`);
-        const data = await res.json();
-        dispatchFavorites({ type: "loaded", payload: data });
-      } catch (err) {
-        console.error(err);
-        dispatchFavorites({ type: "error", payload: err });
-      }
-    };
-
-    fetchFavorites();
+    const data = JSON.parse(localStorage.getItem("favorites"));
+    if (!data) return;
+    console.log(data);
+    dispatchFavorites({ type: "loaded", payload: data });
   }, []);
 
-  const addFavorite = async (item) => {
-    try {
-      dispatchFavorites({ type: "loading" });
-      const res = await fetch(`${BASE_URL}/favorites`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...item }),
-      });
-      const data = await res.json();
-      dispatchFavorites({ type: "added", payload: data });
-    } catch (err) {
-      console.error(err);
-      dispatchFavorites({ type: "error", payload: err });
-    }
+  const addFavorite = (item) => {
+    const data = JSON.parse(localStorage.getItem("favorites")) || [];
+    data.push(item);
+    dispatchFavorites({ type: "loaded", payload: data });
+    localStorage.setItem("favorites", JSON.stringify(data));
   };
 
-  const removeFavorite = async (id) => {
-    try {
-      dispatchFavorites({ type: "loading" });
-      await fetch(`${BASE_URL}/favorites/${id}`, {
-        method: "DELETE",
-      });
-      dispatchFavorites({
-        type: "removed",
-        payload: favoritesData.filter((item) => item.id !== id),
-      });
-    } catch (err) {
-      console.error(err);
-      dispatchFavorites({ type: "error", payload: err });
-    }
-  };
+  const removeFavorite = (id) => {};
 
   return (
     <FavoritesContext.Provider

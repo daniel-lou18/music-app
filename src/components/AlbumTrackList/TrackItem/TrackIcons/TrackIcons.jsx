@@ -18,7 +18,7 @@ function TrackIcons({ track }) {
   const { id: spotifyId, artists } = track;
   const { currentAlbum } = useMusic();
   const { id: albumId } = currentAlbum;
-  const { dispatch: dispatchInterface } = useInterface;
+  const { dispatch: dispatchInterface } = useInterface();
   const { favoritesData } = useFavorites();
   const id = favoritesData.find((item) => item.id === spotifyId)?.id;
   const navigate = useNavigate();

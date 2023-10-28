@@ -4,14 +4,18 @@ import { useEffect } from "react";
 
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
-  const { isAuthenticated, login, getToken } = useAuth();
+  const { isAuthenticated, login, getToken, dispatch } = useAuth();
 
   useEffect(() => {
     const currentUser = localStorage.getItem("currentUser");
     if (!isAuthenticated && !currentUser) navigate("/login");
     if (!isAuthenticated && currentUser) {
       getToken();
-      login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
+      dispatch({
+        type: "user/logged-in",
+        payload: JSON.parse(currentUser),
+      });
+      // login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
     }
   }, [isAuthenticated, navigate, getToken, login]);
 

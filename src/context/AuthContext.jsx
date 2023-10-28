@@ -76,7 +76,7 @@ export const AuthProvider = ({ children }) => {
         dispatch({
           type: "user/logged-in",
           payload: {
-            access_token: data.access_token,
+            access_token: data.session.access_token,
             first_name: "Loutje",
             last_name: "Patapoutje",
             email,
