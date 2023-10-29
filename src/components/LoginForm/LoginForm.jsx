@@ -28,7 +28,7 @@ function LoginForm() {
     localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
 
-  if (isLoading) return <Spinner />;
+  // if (isLoading) return <Spinner />;
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
@@ -49,7 +49,9 @@ function LoginForm() {
       <div className={styles.row}>
         <div className={`${styles.passwordLabelContainer}`}>
           <label htmlFor="password">Password</label>
-          <Link to="/forgot-password">Forgot password?</Link>
+          <Link to="/forgot-password" className={styles.forgotPassword}>
+            Forgot password?
+          </Link>
         </div>
         <input
           type="password"
@@ -62,9 +64,22 @@ function LoginForm() {
         />
         {error && <p className={styles.errorMessage}>{error}</p>}
       </div>
-      <Button text="Log in" type="submit" size="big" />
+      <Button
+        text={
+          isLoading ? (
+            <div className={`${styles.spinnerWrapper}`}>
+              <Spinner />
+            </div>
+          ) : (
+            "Log in"
+          )
+        }
+        type="submit"
+        size="big"
+        disabled={isLoading ? true : false}
+      />
       <div className={`${styles.createAccount}`}>
-        <span>Don't have an account yet? </span>
+        <span>Don't have an account? </span>
         <Link to="/signup" className={`${styles.createAccountLink}`}>
           Sign up
         </Link>

@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import styles from "./Button.module.css";
 
-function Button({ type = "button", text, onClick, to, size = "normal" }) {
+function Button({
+  type = "button",
+  text,
+  onClick,
+  to,
+  size = "normal",
+  disabled = false,
+}) {
   if (to)
     return (
       <Link
@@ -14,7 +21,12 @@ function Button({ type = "button", text, onClick, to, size = "normal" }) {
       </Link>
     );
   return (
-    <button type={type} className={styles.button} onClick={onClick}>
+    <button
+      type={type}
+      className={styles.button}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {text}
     </button>
   );

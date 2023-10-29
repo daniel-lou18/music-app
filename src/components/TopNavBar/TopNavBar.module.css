@@ -48,8 +48,20 @@
 }
 
 @media screen and (max-width: 600px) {
-  .link:not(.login) {
+  .listItem:first-child,
+  .listItem:nth-child(2) {
     display: none;
+  }
+
+  .link:link,
+  .link:visited {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .cta:link,
+  .cta:visited {
+    padding: var(--space-base) var(--space-s);
   }
 
   .nav {
@@ -57,6 +69,6 @@
   }
 
   .nav ul {
-    gap: 0;
+    gap: 1.5rem;
   }
 }

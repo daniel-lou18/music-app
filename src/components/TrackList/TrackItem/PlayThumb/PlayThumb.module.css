@@ -73,12 +73,6 @@
   padding: 5px 0;
 }
 
-/* @media screen and (min-width: 600px) {
-  .textContainer.trackNameSmall .trackName {
-    font-size: 0.8rem;
-  }
-} */
-
 .trackArtist {
   font-size: 0.8rem;
   opacity: 0.7;
@@ -106,6 +100,22 @@
 @media screen and (max-width: 1200px) {
   .inputRange {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imgWrapper {
+    height: 45px;
+    width: 45px;
+  }
+
+  .img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .textContainer {
+    padding: 7px 0;
   }
 }
 

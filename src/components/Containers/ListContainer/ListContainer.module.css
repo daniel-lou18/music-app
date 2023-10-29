@@ -73,11 +73,11 @@ section:first-child :global(.section-title) {
 
   .right.home-container-tracks h2:global(.section-title),
   :global(.favoritePage) h2:global(.section-title) {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .right.search-container-tracks h2:global(.section-title) {
-    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   .artistPage {

@@ -78,9 +78,9 @@ function HorizontalListItem({ id, imgUrl, title, subtitle, type, item }) {
           <h3
             className={`${styles.title} ${
               type === "artist" ? styles.link : ""
-            }`}
+            } ${title.length > 30 ? styles.titleSmall : ""}`}
           >
-            {title.length > 30 ? title.slice(0, 35) + "..." : title}
+            {title.length > 30 ? title.slice(0, 30) + "..." : title}
           </h3>
           <h4
             className={`${styles.subtitle} ${

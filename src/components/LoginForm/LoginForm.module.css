@@ -71,6 +71,8 @@ h2.title {
   font-size: 1rem;
   padding: var(--space-base) var(--space-m);
   border-radius: var(--space-xs);
+  display: flex;
+  justify-content: center;
 }
 
 .createAccount {
@@ -96,8 +98,30 @@ h2.title {
   font-size: 0.9rem;
 }
 
+.spinnerWrapper {
+  width: 1rem;
+  height: 1rem;
+}
+
+.form :global(.spinner) {
+  position: static;
+  margin-top: 0;
+  margin-left: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid transparent;
+  border-top-color: var(--medium-white-color);
+  border-bottom-color: var(--medium-white-color);
+}
+
 @media screen and (max-width: 600px) {
   .form {
     min-width: 90%;
+    padding: 1.5rem 2rem;
+    margin-top: 4rem;
+  }
+
+  .form a.forgotPassword {
+    font-size: 0.8rem;
   }
 }

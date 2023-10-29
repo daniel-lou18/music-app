@@ -17,7 +17,7 @@ function ProtectedRoute({ children }) {
       });
       // login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
     }
-  }, [isAuthenticated, navigate, getToken, login]);
+  }, [isAuthenticated, navigate, getToken, login, dispatch]);
 
   return isAuthenticated ? children : null;
 }

@@ -9,6 +9,8 @@ function SignupForm() {
   const { getToken, login, isAuthenticated, user, isLoading, error, dispatch } =
     useAuth();
   const navigate = useNavigate();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
@@ -50,6 +52,28 @@ function SignupForm() {
     <form onSubmit={handleSubmit} className={styles.form}>
       <h2 className={`${styles.title} section-title`}>Create an account</h2>
       <div className={styles.row}>
+        <label htmlFor="firstName">First name</label>
+        <input
+          type="text"
+          id="firstName"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          required
+        />
+        <p className={styles.message}>{error.message}</p>
+      </div>
+      <div className={styles.row}>
+        <label htmlFor="lastName">Last name</label>
+        <input
+          type="text"
+          id="lastName"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          required
+        />
+        <p className={styles.message}>{error.message}</p>
+      </div>
+      <div className={styles.row}>
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -58,9 +82,7 @@ function SignupForm() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        {error?.errorType === "emailError" && (
-          <p className={styles.message}>{error.message}</p>
-        )}
+        <p className={styles.message}>{error.message}</p>
       </div>
       <div className={styles.row}>
         <label htmlFor="password">Password</label>

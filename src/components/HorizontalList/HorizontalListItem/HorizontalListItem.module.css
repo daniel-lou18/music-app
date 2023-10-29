@@ -22,7 +22,7 @@
 
 .listItemWrapper {
   margin-right: var(--space-l);
-  grid-column: span;
+  grid-column: span 1;
 }
 
 .listItem {
@@ -80,6 +80,10 @@
   margin-bottom: 10px;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+.textContainer .title.titleSmall {
+  font-size: 0.7em;
 }
 
 .subtitle {
