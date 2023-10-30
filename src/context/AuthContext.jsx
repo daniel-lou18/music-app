@@ -86,7 +86,8 @@ export const AuthProvider = ({ children }) => {
         console.error(err);
         dispatch({ type: "error", payload: err.message });
       }
-    }
+    },
+    []
   );
 
   const login = useCallback(async ({ email, password }) => {

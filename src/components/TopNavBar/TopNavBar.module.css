@@ -61,7 +61,7 @@
 
   .cta:link,
   .cta:visited {
-    padding: var(--space-s) var(--space-s);
+    /* padding: var(--space-base) var(--space-m); */
   }
 
   .nav {
@@ -69,6 +69,6 @@
   }
 
   .nav ul {
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 }
