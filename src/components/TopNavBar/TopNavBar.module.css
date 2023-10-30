@@ -61,7 +61,7 @@
 
   .cta:link,
   .cta:visited {
-    padding: var(--space-base) var(--space-s);
+    padding: var(--space-s) var(--space-s);
   }
 
   .nav {

@@ -1,7 +1,5 @@
 .container {
   position: fixed;
-  bottom: var(--space-s);
-  right: var(--space-s);
   z-index: 60;
   display: flex;
   align-items: center;
@@ -11,6 +9,17 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bottomRight {
+  bottom: var(--space-s);
+  right: var(--space-s);
+}
+
+.topCentered {
+  top: var(--space-s);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon {

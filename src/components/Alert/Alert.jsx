@@ -1,26 +1,30 @@
 import { useEffect, useState } from "react";
 import styles from "./Alert.module.css";
 
-function Alert({ icon = false, text }) {
+function Alert({
+  icon = false,
+  text,
+  timeout = 5000,
+  position = "bottomRight",
+}) {
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
-    const timerId = setTimeout(() => setIsVisible(false), 5000);
+    if (!timeout) return;
+    const timerId = setTimeout(() => setIsVisible(false), timeout);
     return () => clearTimeout(timerId);
-  }, []);
+  }, [timeout]);
 
   if (!isVisible) return null;
 
   return (
     <div
-      className={styles.container}
-      //   class="flex items-center p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+      className={`${styles.container} ${styles[position]} alert`}
       role="alert"
     >
       {icon}
       {!icon && (
         <svg
           className={styles.icon}
-          // class="flex-shrink-0 w-4 h-4"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -34,13 +38,11 @@ function Alert({ icon = false, text }) {
         onClick={() => setIsVisible(false)}
         className={styles.closeButton}
         type="button"
-        // class="ml-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700"
         data-dismiss-target="#alert-1"
         aria-label="Close"
       >
         <svg
           className={styles.close}
-          //   class="w-3 h-3"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -16,7 +16,7 @@ function LoginForm() {
     e.preventDefault();
     if (!email || !password) return;
     getToken();
-    login({ email, password });
+    await login({ email, password });
   };
 
   useEffect(() => {
@@ -27,8 +27,6 @@ function LoginForm() {
     if (!user) return;
     localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
-
-  // if (isLoading) return <Spinner />;
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>

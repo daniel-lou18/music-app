@@ -23,6 +23,8 @@ const reducer = (state, action) => {
       return { ...state, isLoading: true, error: "" };
     case "token/loaded":
       return { ...state, isLoading: false, token: action.payload };
+    case "user/created":
+      return { ...state, isLoading: false };
     case "user/logged-in":
       return {
         ...state,
@@ -62,6 +64,30 @@ export const AuthProvider = ({ children }) => {
       dispatch({ type: "error", payload: err.message });
     }
   }, []);
+
+  const signup = useCallback(
+    async ({ firstName, lastName, email, password }) => {
+      dispatch({ type: "loading" });
+      try {
+        const { data, error } = await supabase.auth.signUp({
+          email,
+          password,
+          options: {
+            data: {
+              firstName,
+              lastName,
+            },
+          },
+        });
+        if (error) throw new Error(error.message);
+        if (data) dispatch({ type: "user/created" });
+        return data;
+      } catch (err) {
+        console.error(err);
+        dispatch({ type: "error", payload: err.message });
+      }
+    }
+  );
 
   const login = useCallback(async ({ email, password }) => {
     dispatch({ type: "loading" });
@@ -143,6 +169,7 @@ export const AuthProvider = ({ children }) => {
         isLoading,
         error,
         getToken,
+        signup,
         login,
         logout,
         forgotPassword,

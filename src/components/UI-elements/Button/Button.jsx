@@ -8,6 +8,7 @@ function Button({
   to,
   size = "normal",
   disabled = false,
+  className,
 }) {
   if (to)
     return (
@@ -23,7 +24,7 @@ function Button({
   return (
     <button
       type={type}
-      className={styles.button}
+      className={`${styles.button} ${className}`}
       onClick={onClick}
       disabled={disabled}
     >

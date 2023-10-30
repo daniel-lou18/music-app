@@ -4,9 +4,11 @@ import Spinner from "../UI-elements/Spinner";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./SignupForm.module.css";
+import { createPortal } from "react-dom";
+import Alert from "../Alert";
 
 function SignupForm() {
-  const { getToken, login, isAuthenticated, user, isLoading, error, dispatch } =
+  const { getToken, signup, isAuthenticated, user, isLoading, error } =
     useAuth();
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
@@ -15,6 +17,16 @@ function SignupForm() {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
   const [passwordConfirmMessage, setPasswordConfirmMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleReset = () => {
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPassword("");
+    setPasswordConfirm("");
+    setPasswordConfirmMessage("");
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,7 +36,11 @@ function SignupForm() {
         color: "red",
       });
     getToken();
-    login(email, password);
+    const data = await signup({ firstName, lastName, email, password });
+    if (data) {
+      setShowAlert(true);
+      handleReset();
+    }
   };
 
   useEffect(() => {
@@ -46,10 +62,25 @@ function SignupForm() {
     else setPasswordConfirmMessage("");
   }, [password, passwordConfirm]);
 
-  if (isLoading) return <Spinner />;
-
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
+      {showAlert &&
+        createPortal(
+          <Alert
+            text={
+              <p>
+                Account successfully created. Log in with your email and
+                password.{" "}
+                <Link to="/login" className={`${styles.createAccountLink}`}>
+                  Sign in here
+                </Link>
+              </p>
+            }
+            timeout={false}
+            position="topCentered"
+          />,
+          document.body
+        )}
       <h2 className={`${styles.title} section-title`}>Create an account</h2>
       <div className={styles.row}>
         <label htmlFor="firstName">First name</label>
@@ -106,19 +137,41 @@ function SignupForm() {
           value={passwordConfirm}
           onChange={(e) => setPasswordConfirm(e.target.value)}
         />
-        {passwordConfirmMessage && (
-          <p
-            className={`${styles.message} ${
-              passwordConfirmMessage.color === "green"
-                ? styles.green
-                : styles.red
-            }`}
-          >
-            {passwordConfirmMessage.message}
-          </p>
-        )}
+
+        <p
+          className={`${styles.message} ${
+            passwordConfirmMessage.color === "green" && !error
+              ? styles.green
+              : styles.red
+          }`}
+        >
+          {error && <span className={`${styles.red}`}>{error}</span>}
+          {!error && passwordConfirmMessage && passwordConfirmMessage.message}
+        </p>
       </div>
-      <Button text="Create an account" type="submit" size="big" />
+      <div className={`${styles.btnContainer}`}>
+        <Button
+          className={`${styles.cancelBtn}`}
+          text="Cancel"
+          size="big"
+          onClick={handleReset}
+        />
+        <Button
+          className={`${styles.signupBtn}`}
+          text={
+            isLoading ? (
+              <div className={`${styles.spinnerWrapper}`}>
+                <Spinner />
+              </div>
+            ) : (
+              "Create account"
+            )
+          }
+          type="submit"
+          size="big"
+          disabled={isLoading ? true : false}
+        />
+      </div>
       <div className={`${styles.createAccount}`}>
         <span>Already have an account? </span>
         <Link to="/login" className={`${styles.createAccountLink}`}>
