@@ -11,7 +11,6 @@ function ErrorMsg({
 }) {
   const location = useLocation();
   const navigate = useNavigate();
-  console.log(location.pathname);
 
   return (
     <div className={`${styles.errorContainer} errorContainer`}>

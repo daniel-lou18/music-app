@@ -36,7 +36,7 @@
 
 .menuContainer {
   position: absolute;
-  top: calc(100% + var(--space-s));
+  top: calc(100% + (2 * var(--space-s)));
   right: 0;
   background: var(--dark-bg-color);
   border-radius: var(--space-xs);
@@ -118,6 +118,12 @@
 }
 
 @media screen and (max-width: 600px) {
+  .menuContainer {
+    position: fixed;
+    right: 16px;
+    top: 56px;
+  }
+
   .buttonContainer {
     height: 56px;
     width: 56px;

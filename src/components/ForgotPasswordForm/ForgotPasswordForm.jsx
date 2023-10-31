@@ -23,7 +23,7 @@ function ForgotPassword() {
 
   useEffect(() => {
     if (!user) return;
-    localStorage.setItem("currentUser", JSON.stringify(user));
+    // localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
 
   if (isLoading) return <Spinner />;

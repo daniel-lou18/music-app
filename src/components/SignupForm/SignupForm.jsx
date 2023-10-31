@@ -49,7 +49,7 @@ function SignupForm() {
 
   useEffect(() => {
     if (!user) return;
-    localStorage.setItem("currentUser", JSON.stringify(user));
+    // localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
 
   useEffect(() => {

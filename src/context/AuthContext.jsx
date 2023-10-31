@@ -1,10 +1,15 @@
-import { createContext, useCallback, useContext, useReducer } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useReducer,
+} from "react";
 import supabase from "../services/supabase";
 
 const SPOTIFY_URL = "https://accounts.spotify.com/api/token";
 const body =
   "grant_type=client_credentials&client_id=625e44fdf4c54d3ab62a5d1c95e3f353&client_secret=9401a23a8e6c47bdac04f93de44f7890";
-const JSON_URL = "http://localhost:3000";
 const API_URL = "http://localhost:3030/api/v1";
 
 const AuthContext = createContext();
@@ -33,7 +38,7 @@ const reducer = (state, action) => {
         user: action.payload,
       };
     case "user/logged-out":
-      return { ...state, isAuthenticated: false, user: null };
+      return { ...state, isLoading: false, isAuthenticated: false, user: null };
     case "error":
       return { ...state, isLoading: false, error: action.payload };
     default:
@@ -104,10 +109,9 @@ export const AuthProvider = ({ children }) => {
           type: "user/logged-in",
           payload: {
             access_token: data.session.access_token,
-            first_name: "Loutje",
-            last_name: "Patapoutje",
+            firstName: data.user.user_metadata.firstName,
+            lastName: data.user.user_metadata.firstName,
             email,
-            password,
             profile_picture: {
               url: "/IMG-20220323-WA0009.png",
             },
@@ -119,27 +123,46 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  // const login = useCallback(async (email, password) => {
-  //   dispatch({ type: "loading" });
-  //   try {
-  //     const res = await fetch(`${JSON_URL}/users`);
-  //     if (!res.ok) throw new Error(`${res.status}: Could not get users`);
-  //     const data = await res.json();
-  //     const user = data.filter(
-  //       (user) => user.email === email && user.password === password
-  //     )[0];
-  //     if (user) dispatch({ type: "user/logged-in", payload: user });
-  //     if (!user) throw new Error("Wrong email or password");
-  //   } catch (err) {
-  //     console.error(err);
-  //     dispatch({ type: "error", payload: err.message });
-  //   }
-  // }, []);
-
-  const logout = () => {
-    localStorage.removeItem("currentUser");
-    dispatch({ type: "user/logged-out" });
+  const getCurrentUser = async () => {
+    dispatch({ type: "loading" });
+    try {
+      const { data: session } = await supabase.auth.getSession();
+      console.log(session);
+      if (!session) return dispatch({ type: "user/logged-out" });
+      const { data, error } = await supabase.auth.getUser();
+      if (error) throw new Error(error.message);
+      console.log(data);
+      if (data) {
+        dispatch({
+          type: "user/logged-in",
+          payload: {
+            access_token: session.session.access_token,
+            firstName: data.user.user_metadata.firstName,
+            lastName: data.user.user_metadata.firstName,
+            email: data.user.email,
+            profile_picture: {
+              url: "/IMG-20220323-WA0009.png",
+            },
+          },
+        });
+      }
+    } catch (err) {
+      console.error(err);
+      dispatch({ type: "error", payload: err.message });
+    }
   };
+
+  const logout = useCallback(async () => {
+    dispatch({ type: "loading" });
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) throw new Error(error.message);
+      dispatch({ type: "user/logged-out" });
+    } catch (err) {
+      console.error(err);
+      dispatch({ type: "error", payload: err.message });
+    }
+  }, []);
 
   const forgotPassword = useCallback(async (email) => {
     dispatch({ type: "loading" });
@@ -172,6 +195,7 @@ export const AuthProvider = ({ children }) => {
         getToken,
         signup,
         login,
+        getCurrentUser,
         logout,
         forgotPassword,
         user,

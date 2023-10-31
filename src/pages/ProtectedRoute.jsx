@@ -1,25 +1,38 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
+import Spinner from "../components/UI-elements/Spinner";
 
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
-  const { isAuthenticated, login, getToken, dispatch } = useAuth();
+  const location = useLocation();
+  const { isAuthenticated, isLoading, getToken, token, getCurrentUser } =
+    useAuth();
 
   useEffect(() => {
-    const currentUser = localStorage.getItem("currentUser");
-    if (!isAuthenticated && !currentUser) navigate("/login");
-    if (!isAuthenticated && currentUser) {
-      getToken();
-      dispatch({
-        type: "user/logged-in",
-        payload: JSON.parse(currentUser),
-      });
-      // login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
-    }
-  }, [isAuthenticated, navigate, getToken, login, dispatch]);
+    const loadToken = async () => {
+      if (!token) await getToken();
+    };
+    loadToken();
+  }, [isAuthenticated, token, getToken]);
 
-  return isAuthenticated ? children : null;
+  useEffect(() => {
+    if (!isAuthenticated && !isLoading) {
+      navigate("/login");
+    }
+    // if (!isAuthenticated && user) {
+    //   getToken();
+    //   dispatch({
+    //     type: "user/logged-in",
+    //     payload: JSON.parse(user),
+    //   });
+    //   login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
+    // }
+  }, [isAuthenticated, navigate, isLoading, token, location]);
+
+  if (isLoading) return <Spinner />;
+
+  return isAuthenticated && !isLoading ? children : null;
 }
 
 export default ProtectedRoute;

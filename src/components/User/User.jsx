@@ -45,7 +45,7 @@ function User() {
           <div className={styles.userInfo}>
             <span
               className={styles.userName}
-            >{`${user.first_name} ${user.last_name}`}</span>
+            >{`${user.firstName} ${user.lastName}`}</span>
             <span className={styles.userEmail}>{user.email}</span>
           </div>
           <div className={styles.menuItemsContainer}>
