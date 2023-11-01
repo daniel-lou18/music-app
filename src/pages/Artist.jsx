@@ -23,7 +23,7 @@ function Artist() {
     getArtist(artistId);
   }, [artistId, getArtist]);
 
-  if (!tracks || !artists || !albums) return null;
+  if ((!tracks || !artists || !albums) && !isLoading) return null;
 
   return (
     <Results type="noPadding">

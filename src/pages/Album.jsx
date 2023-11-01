@@ -19,7 +19,7 @@ function Album() {
     getAlbum(albumId);
   }, [albumId, getAlbum]);
 
-  if (!trackItems || trackItems.length < 1) return null;
+  if ((!trackItems || trackItems.length < 1) && !isLoading) return null;
 
   return (
     <>

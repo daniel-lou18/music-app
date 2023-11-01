@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import UserPlaceholder from "../UI-elements/UserPlaceholder";
 import styles from "./User.module.css";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function User() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
