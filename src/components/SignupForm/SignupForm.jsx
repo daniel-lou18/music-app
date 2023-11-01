@@ -69,11 +69,14 @@ function SignupForm() {
           <Alert
             text={
               <p>
-                Account successfully created. Log in with your email and
-                password.{" "}
+                Account successfully created.{" "}
                 <Link to="/login" className={`${styles.createAccountLink}`}>
+                  Log in
+                </Link>{" "}
+                with your email and password.{" "}
+                {/* <Link to="/login" className={`${styles.createAccountLink}`}>
                   Sign in here
-                </Link>
+                </Link> */}
               </p>
             }
             timeout={false}

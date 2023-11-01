@@ -17,13 +17,13 @@
 }
 
 .topCentered {
-  top: var(--space-s);
+  top: var(--space-m);
   left: 50%;
   transform: translateX(-50%);
 }
 
 .icon {
-  /* flex-shrink: 0; */
+  flex-shrink: 0;
   width: 1rem;
   height: 1rem;
 }
