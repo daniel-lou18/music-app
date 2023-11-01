@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import UserPlaceholder from "../UI-elements/UserPlaceholder";
 import styles from "./User.module.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 function User() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   const { user, logout } = useAuth();
   const profilePictureUrl = user.profile_picture.url;
   const menuRef = useRef();
-  console.log(user);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!menuIsVisible) return;
@@ -27,7 +27,10 @@ function User() {
     setMenuIsVisible((val) => !val);
   };
 
-  const handleLogout = () => logout();
+  const handleLogout = () => {
+    navigate("/login");
+    logout();
+  };
 
   return (
     <div className={styles.userContainer}>

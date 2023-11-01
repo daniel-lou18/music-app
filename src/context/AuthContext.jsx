@@ -123,35 +123,6 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const getCurrentUser = async () => {
-    dispatch({ type: "loading" });
-    try {
-      const { data: session } = await supabase.auth.getSession();
-      console.log(session);
-      if (!session) return dispatch({ type: "user/logged-out" });
-      const { data, error } = await supabase.auth.getUser();
-      if (error) throw new Error(error.message);
-      console.log(data);
-      if (data) {
-        dispatch({
-          type: "user/logged-in",
-          payload: {
-            access_token: session.session.access_token,
-            firstName: data.user.user_metadata.firstName,
-            lastName: data.user.user_metadata.firstName,
-            email: data.user.email,
-            profile_picture: {
-              url: "/IMG-20220323-WA0009.png",
-            },
-          },
-        });
-      }
-    } catch (err) {
-      console.error(err);
-      dispatch({ type: "error", payload: err.message });
-    }
-  };
-
   const logout = useCallback(async () => {
     dispatch({ type: "loading" });
     try {
@@ -195,7 +166,6 @@ export const AuthProvider = ({ children }) => {
         getToken,
         signup,
         login,
-        getCurrentUser,
         logout,
         forgotPassword,
         user,

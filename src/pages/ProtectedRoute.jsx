@@ -1,34 +1,69 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
 import Spinner from "../components/UI-elements/Spinner";
+import supabase from "../services/supabase";
 
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
-  const location = useLocation();
-  const { isAuthenticated, isLoading, getToken, token, getCurrentUser } =
-    useAuth();
+  const { isAuthenticated, isLoading, getToken, dispatch } = useAuth();
 
   useEffect(() => {
-    const loadToken = async () => {
-      if (!token) await getToken();
+    dispatch({ type: "loading" });
+    const auth = async () => {
+      try {
+        const { data: session } = await supabase.auth.getSession();
+        console.log(session);
+        if (!session.session) {
+          navigate("login");
+          return dispatch({ type: "user/logged-out" });
+        }
+        const { data, error } = await supabase.auth.getUser();
+        if (error) throw new Error(error.message);
+        console.log(data);
+        if (data) {
+          await getToken();
+          dispatch({
+            type: "user/logged-in",
+            payload: {
+              access_token: session.session.access_token,
+              firstName: data.user.user_metadata.firstName,
+              lastName: data.user.user_metadata.firstName,
+              email: data.user.email,
+              profile_picture: {
+                url: "/IMG-20220323-WA0009.png",
+              },
+            },
+          });
+        }
+      } catch (err) {
+        console.error(err);
+        dispatch({ type: "error" });
+      }
     };
-    loadToken();
-  }, [isAuthenticated, token, getToken]);
+    auth();
+  }, [dispatch, getToken, navigate]);
 
-  useEffect(() => {
-    if (!isAuthenticated && !isLoading) {
-      navigate("/login");
-    }
-    // if (!isAuthenticated && user) {
-    //   getToken();
-    //   dispatch({
-    //     type: "user/logged-in",
-    //     payload: JSON.parse(user),
-    //   });
-    //   login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
-    // }
-  }, [isAuthenticated, navigate, isLoading, token, location]);
+  // useEffect(() => {
+  //   const loadToken = async () => {
+  //     if (!token) await getToken();
+  //   };
+  //   loadToken();
+  // }, [isAuthenticated, token, getToken]);
+
+  // useEffect(() => {
+  //   if (!isAuthenticated && !isLoading) {
+  //     navigate("/login");
+  //   }
+  //   if (!isAuthenticated && user) {
+  //     getToken();
+  //     dispatch({
+  //       type: "user/logged-in",
+  //       payload: JSON.parse(user),
+  //     });
+  //     login(JSON.parse(currentUser).email, JSON.parse(currentUser).password);
+  //   }
+  // }, [isAuthenticated, navigate, isLoading, token, location]);
 
   if (isLoading) return <Spinner />;
 
