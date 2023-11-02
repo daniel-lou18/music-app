@@ -11,6 +11,8 @@ function RatedSongs() {
   const { ratedData } = useRated();
   const tracks = ratedData.filter((item) => item.type === "track");
 
+  console.log(ratedData);
+
   const handleClick = () => navigate("/app/search");
 
   return (

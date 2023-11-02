@@ -47,25 +47,17 @@ export const RatedProvider = ({ children }) => {
 
   const addRated = (item, rating) => {
     const data = JSON.parse(localStorage.getItem("rated")) || [];
+    dispatchRated({ type: "added", payload: { ...item, rating } });
     data.push({ ...item, rating });
-    dispatchRated({ type: "added", payload: data });
     localStorage.setItem("rated", JSON.stringify(data));
   };
 
   const removeRated = async (id) => {
-    try {
-      dispatchRated({ type: "loading" });
-      await fetch(`${BASE_URL}/rated/${id}`, {
-        method: "DELETE",
-      });
-      dispatchRated({
-        type: "removed",
-        payload: ratedData.filter((item) => item.id !== id),
-      });
-    } catch (err) {
-      console.error(err);
-      dispatchRated({ type: "error", payload: err });
-    }
+    const data = JSON.parse(localStorage.getItem("rated"));
+    if (data.length === 0) return;
+    const newArr = data.filter((el) => el.id !== id);
+    dispatchRated({ type: "removed", payload: newArr });
+    localStorage.setItem("rated", JSON.stringify(newArr));
   };
 
   return (

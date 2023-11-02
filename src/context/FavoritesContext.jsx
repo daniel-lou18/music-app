@@ -54,7 +54,13 @@ export const FavoritesProvider = ({ children }) => {
     localStorage.setItem("favorites", JSON.stringify(data));
   };
 
-  const removeFavorite = (id) => {};
+  const removeFavorite = (id) => {
+    const data = JSON.parse(localStorage.getItem("favorites"));
+    if (data.length === 0) return;
+    const newArr = data.filter((el) => el.id !== id);
+    dispatchFavorites({ type: "loaded", payload: newArr });
+    localStorage.setItem("favorites", JSON.stringify(newArr));
+  };
 
   return (
     <FavoritesContext.Provider
