@@ -14,7 +14,7 @@ function ProtectedRoute({ children }) {
       try {
         const { data: session } = await supabase.auth.getSession();
         if (!session.session) {
-          navigate("login");
+          navigate("/login");
           return dispatch({ type: "user/logged-out" });
         }
         const { data, error } = await supabase.auth.getUser();

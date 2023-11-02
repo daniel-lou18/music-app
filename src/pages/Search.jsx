@@ -16,7 +16,7 @@ function Search() {
   return (
     <>
       {(query || artistId || albumId) && (
-        <Results>
+        <Results type="search-results-container">
           {isLoading && <Spinner />}
           {!isLoading &&
             tracks?.items.length === 0 &&

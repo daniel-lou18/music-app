@@ -20,6 +20,10 @@
 
 @media screen and (max-width: 600px) {
   .spinner {
+    top: 50vh;
+  }
+
+  :global(.search-results-container) .spinner {
     top: 25vh;
   }
 }

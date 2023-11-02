@@ -104,18 +104,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .imgWrapper {
+  .imgWrapper,
+  .img,
+  .btnsContainer {
     height: 45px;
     width: 45px;
-  }
-
-  .img {
-    height: 45px;
-    width: 45px;
-  }
-
-  .textContainer {
-    padding: 7px 0;
   }
 }
 

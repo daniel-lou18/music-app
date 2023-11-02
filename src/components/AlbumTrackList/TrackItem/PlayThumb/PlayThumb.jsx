@@ -16,10 +16,12 @@ function PlayThumb({ id, name, artists, preview_url }) {
   const audioEl = useRef();
 
   useEffect(() => {
+    if (!audioEl.current) return;
     isPlaying ? audioEl.current.play() : audioEl.current.pause();
   }, [isPlaying]);
 
   useEffect(() => {
+    if (!audioEl.current) return;
     const intervalId = setInterval(() => {
       setCurrentTime(audioEl.current.currentTime);
     }, 1000);
