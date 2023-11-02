@@ -61,7 +61,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    right: 50%;
+  .bottomRight {
+    right: var(--space-m);
+    left: var(--space-m);
+  }
+
+  .text {
+    font-size: 0.8rem;
   }
 }

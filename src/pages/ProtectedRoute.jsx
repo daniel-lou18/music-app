@@ -29,7 +29,7 @@ function ProtectedRoute({ children }) {
               lastName: data.user.user_metadata.firstName,
               email: data.user.email,
               profile_picture: {
-                url: "/IMG-20220323-WA0009.png",
+                url: data.user.user_metadata.profile_picture.url,
               },
             },
           });

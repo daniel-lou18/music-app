@@ -10,6 +10,7 @@ function User() {
   const profilePictureUrl = user.profile_picture.url;
   const menuRef = useRef();
   const navigate = useNavigate();
+  console.log(user);
 
   useEffect(() => {
     if (!menuIsVisible) return;

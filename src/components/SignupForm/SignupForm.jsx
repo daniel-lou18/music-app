@@ -73,10 +73,7 @@ function SignupForm() {
                 <Link to="/login" className={`${styles.createAccountLink}`}>
                   Log in
                 </Link>{" "}
-                with your email and password.{" "}
-                {/* <Link to="/login" className={`${styles.createAccountLink}`}>
-                  Sign in here
-                </Link> */}
+                with your email and password.
               </p>
             }
             timeout={false}

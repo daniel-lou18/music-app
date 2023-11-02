@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useReducer,
-} from "react";
+import { createContext, useCallback, useContext, useReducer } from "react";
 import supabase from "../services/supabase";
 
 const SPOTIFY_URL = "https://accounts.spotify.com/api/token";
@@ -81,6 +75,9 @@ export const AuthProvider = ({ children }) => {
             data: {
               firstName,
               lastName,
+              profile_picture: {
+                url: null,
+              },
             },
           },
         });
@@ -113,7 +110,7 @@ export const AuthProvider = ({ children }) => {
             lastName: data.user.user_metadata.firstName,
             email,
             profile_picture: {
-              url: "/IMG-20220323-WA0009.png",
+              url: data.user.user_metadata.profile_picture.url,
             },
           },
         });
