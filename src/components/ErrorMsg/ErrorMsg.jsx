@@ -8,12 +8,15 @@ function ErrorMsg({
   errorTip = "Try reloading the page",
   displayButton = true,
   buttonText = "Reload page",
+  position,
 }) {
   const location = useLocation();
   const navigate = useNavigate();
 
   return (
-    <div className={`${styles.errorContainer} errorContainer`}>
+    <div
+      className={`${styles.errorContainer} errorContainer ${styles[position]}`}
+    >
       <AlertIcon />
       <h2 className={styles.errorTitle}>Something went wrong</h2>
       <p className={styles.errorMsg}>{errorMsg}</p>

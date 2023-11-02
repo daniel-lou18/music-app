@@ -28,6 +28,7 @@ import ProtectedRoute from "./pages/ProtectedRoute";
 import { InterfaceProvider } from "./context/InterfaceContext";
 import Signup from "./pages/Signup";
 import ForgotPassword from "./pages/ForgotPassword";
+import ErrorMsg from "./components/ErrorMsg";
 
 function App() {
   const router = createBrowserRouter(
@@ -70,6 +71,17 @@ function App() {
             <Route path="rated/albums" element={<RatedAlbums />} />
           </Route>
         </Route>
+        <Route
+          path="*"
+          element={
+            <ErrorMsg
+              errorMsg="404 Could not find the page you requested"
+              errorTip="Please check the URL"
+              position="centered"
+              displayButton={false}
+            />
+          }
+        />
       </Route>
     )
   );
