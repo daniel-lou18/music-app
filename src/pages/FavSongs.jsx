@@ -5,12 +5,16 @@ import TrackList from "../components/TrackList";
 import NoteIcon from "../components/UI-elements/NoteIcon/";
 import InfoMsg from "../components/InfoMsg";
 import { useNavigate } from "react-router-dom";
+import FavSongsOperations from "../components/Operations/FavSongsOperations";
+import { useFavoriteSongsOperations } from "../hooks/useFavoritesOperations";
 
 function FavSongs() {
   const navigate = useNavigate();
   const { favoritesData } = useFavorites();
-  const tracks = favoritesData.filter((item) => item.type === "track");
+  let tracks = favoritesData.filter((item) => item.type === "track");
   console.log(tracks);
+
+  tracks = useFavoriteSongsOperations(tracks);
 
   const handleClick = () => navigate("/app/search");
 
@@ -29,7 +33,7 @@ function FavSongs() {
         {tracks.length > 0 && (
           <TrackList
             tracks={tracks}
-            title="Favorite songs"
+            title={<FavSongsOperations />}
             type="big"
             first={true}
           />

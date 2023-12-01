@@ -4,31 +4,22 @@ import ListContainer from "../components/Containers/ListContainer";
 import HorizontalList from "../components/HorizontalList";
 import InfoMsg from "../components/InfoMsg/";
 import NoteIcon from "../components/UI-elements/NoteIcon/";
+import { useFavoriteAlbumsOperations } from "../hooks/useFavoritesOperations";
+import FavAlbumsOperations from "../components/Operations/FavAlbumsOperations";
 import { useNavigate } from "react-router-dom";
 
 function FavAlbums() {
   const navigate = useNavigate();
   const { favoritesData } = useFavorites();
-  const albums = favoritesData.filter((item) => item.type === "album");
+  let albums = favoritesData.filter((item) => item.type === "album");
+  console.log(albums);
+
+  albums = useFavoriteAlbumsOperations(albums);
 
   const handleClick = () => navigate("/app/search");
 
   return (
     <Results>
-      {/* <NavLinkItem
-        to={""}
-        icon={<LogoIcon />}
-        text={
-          <h1>
-            Spoti<span>Lite</span>
-          </h1>
-        }
-        end={true}
-        className="logoMobile"
-      /> */}
-      {/* <>
-        <NavBtns />
-      </> */}
       <ListContainer type="favoritePage">
         {albums.length === 0 && (
           <InfoMsg
@@ -40,7 +31,11 @@ function FavAlbums() {
           />
         )}
         {albums.length > 0 && (
-          <HorizontalList items={albums} title="Favorite albums" first={true} />
+          <HorizontalList
+            items={albums}
+            title={<FavAlbumsOperations />}
+            first={true}
+          />
         )}
       </ListContainer>
     </Results>

@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import styles from "./LoginForm.module.css";
 
 function LoginForm() {
-  const { getToken, isAuthenticated, login, user, isLoading, error } =
+  const { getToken, isAuthenticated, login, user, isLoading, error, dispatch } =
     useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -27,6 +27,10 @@ function LoginForm() {
     if (!user) return;
     // localStorage.setItem("currentUser", JSON.stringify(user));
   }, [user]);
+
+  useEffect(() => {
+    dispatch({ type: "reset" });
+  }, [dispatch]);
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>

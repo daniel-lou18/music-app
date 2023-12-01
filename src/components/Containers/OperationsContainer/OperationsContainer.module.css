@@ -1,0 +1,17 @@
+.operations {
+  display: flex;
+  align-items: center;
+}
+
+.operations :global(.row) {
+  gap: 1.6rem;
+  flex: 1;
+}
+
+.operations :global(.title) {
+  margin-right: auto;
+}
+
+.albums {
+  padding-right: var(--space-l);
+}

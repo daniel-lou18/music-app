@@ -5,13 +5,16 @@ import { useRated } from "../context/RatedContext";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon";
 import { useNavigate } from "react-router-dom";
+import RatedSongsOperations from "../components/Operations/RatedSongsOperations";
+import { useRatedSongsOperations } from "../hooks/useRatedOperations";
 
 function RatedSongs() {
   const navigate = useNavigate();
   const { ratedData } = useRated();
-  const tracks = ratedData.filter((item) => item.type === "track");
-
+  let tracks = ratedData.filter((item) => item.type === "track");
   console.log(ratedData);
+
+  tracks = useRatedSongsOperations(tracks);
 
   const handleClick = () => navigate("/app/search");
 
@@ -31,7 +34,7 @@ function RatedSongs() {
         {tracks.length > 0 && (
           <TrackList
             tracks={tracks}
-            title="Rated songs"
+            title={<RatedSongsOperations />}
             type="big"
             first={true}
           />

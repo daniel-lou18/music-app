@@ -35,6 +35,15 @@ const reducer = (state, action) => {
       return { ...state, isLoading: false, isAuthenticated: false, user: null };
     case "error":
       return { ...state, isLoading: false, error: action.payload };
+    case "reset": {
+      return {
+        ...state,
+        isLoading: false,
+        error: "",
+        isAuthenticated: false,
+        user: null,
+      };
+    }
     default:
       throw new Error("Unknown action type");
   }

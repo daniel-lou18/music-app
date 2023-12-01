@@ -32,3 +32,9 @@
   margin-top: 50vh;
   transform: translateY(-50%);
 }
+
+@media screen and (max-width: 600px) {
+  .errorContainer {
+    grid-column: 1 / -1;
+  }
+}

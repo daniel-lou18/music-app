@@ -8,8 +8,15 @@ import { createPortal } from "react-dom";
 import Alert from "../Alert";
 
 function SignupForm() {
-  const { getToken, signup, isAuthenticated, user, isLoading, error } =
-    useAuth();
+  const {
+    getToken,
+    signup,
+    isAuthenticated,
+    user,
+    isLoading,
+    error,
+    dispatch,
+  } = useAuth();
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -61,6 +68,10 @@ function SignupForm() {
       });
     else setPasswordConfirmMessage("");
   }, [password, passwordConfirm]);
+
+  useEffect(() => {
+    dispatch({ type: "reset" });
+  }, [dispatch]);
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
