@@ -4,12 +4,18 @@ import RatedList from "../components/RatedList";
 import { useRated } from "../context/RatedContext";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon";
+import RatedArtistsOperations from "../components/Operations/RatedArtistsOperations";
+import { useRatedArtistsOperations } from "../hooks/useRatedOperations";
 import { useNavigate } from "react-router-dom";
 
 function RatedArtists() {
   const navigate = useNavigate();
   const { ratedData } = useRated();
-  const artists = ratedData.filter((item) => item.type === "artist");
+  let artists = ratedData.filter((item) => item.type === "artist");
+
+  console.log(artists);
+
+  artists = useRatedArtistsOperations(artists);
 
   const handleClick = () => navigate("/app/search");
 
@@ -27,7 +33,11 @@ function RatedArtists() {
           />
         )}
         {artists.length > 0 && (
-          <RatedList items={artists} title="Rated artists" first={true} />
+          <RatedList
+            items={artists}
+            title={<RatedArtistsOperations />}
+            first={true}
+          />
         )}
       </ListContainer>
     </Results>

@@ -73,3 +73,19 @@ export function useFavoriteAlbumsOperations(data) {
 
   return filteredTracks;
 }
+
+export function useFavoriteArtistsOperations(data) {
+  const [searchParams] = useSearchParams();
+  let filteredTracks = data;
+
+  const sortValue = searchParams.get("sortBy") || "name-asc";
+  let [sortField, sortOrder] = sortValue.split("-");
+  const modifier = sortOrder === "asc" ? 1 : -1;
+  filteredTracks.sort((a, b) => {
+    if (a[sortField] < b[sortField]) return -1 * modifier;
+    if (a[sortField] > b[sortField]) return 1 * modifier;
+    return 0;
+  });
+
+  return filteredTracks;
+}

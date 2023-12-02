@@ -4,12 +4,16 @@ import ListContainer from "../components/Containers/ListContainer";
 import HorizontalList from "../components/HorizontalList";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon/";
+import { useFavoriteArtistsOperations } from "../hooks/useFavoritesOperations";
 import { useNavigate } from "react-router-dom";
+import FavoriteArtistsOperations from "../components/Operations/FavArtistsOperations";
 
 function FavArtists() {
   const navigate = useNavigate();
   const { favoritesData } = useFavorites();
-  const artists = favoritesData.filter((item) => item.type === "artist");
+  let artists = favoritesData.filter((item) => item.type === "artist");
+
+  artists = useFavoriteArtistsOperations(artists);
 
   const handleClick = () => navigate("/app/search");
 
@@ -28,7 +32,7 @@ function FavArtists() {
         {artists.length > 0 && (
           <HorizontalList
             items={artists}
-            title="Favorite artists"
+            title={<FavoriteArtistsOperations />}
             first={true}
           />
         )}

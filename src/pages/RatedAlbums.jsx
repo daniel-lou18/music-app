@@ -4,12 +4,16 @@ import RatedList from "../components/RatedList";
 import { useRated } from "../context/RatedContext";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon";
+import RatedAlbumsOperations from "../components/Operations/RatedAlbumsOperations";
+import { useRatedAlbumsOperations } from "../hooks/useRatedOperations";
 import { useNavigate } from "react-router-dom";
 
 function RatedAlbums() {
   const navigate = useNavigate();
   const { ratedData } = useRated();
-  const albums = ratedData.filter((item) => item.type === "album");
+  let albums = ratedData.filter((item) => item.type === "album");
+
+  albums = useRatedAlbumsOperations(albums);
 
   const handleClick = () => navigate("/app/search");
 
@@ -27,7 +31,11 @@ function RatedAlbums() {
           />
         )}
         {albums.length > 0 && (
-          <RatedList items={albums} title="Rated albums" first={true} />
+          <RatedList
+            items={albums}
+            title={<RatedAlbumsOperations />}
+            first={true}
+          />
         )}
       </ListContainer>
     </Results>
