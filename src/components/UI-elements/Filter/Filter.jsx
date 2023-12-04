@@ -4,7 +4,7 @@ import Button from "../Button";
 
 function Filter({ fieldName, options }) {
   const [searchParams, setSearchParams] = useSearchParams();
-  const currentFieldValue = searchParams.get("subscription") || "all";
+  const currentFieldValue = searchParams.get(fieldName) || "all";
   const handleClick = (fieldValue) => {
     searchParams.set(fieldName, fieldValue);
     setSearchParams(searchParams);

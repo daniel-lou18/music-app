@@ -7,6 +7,21 @@ import InfoMsg from "../components/InfoMsg";
 import { useNavigate } from "react-router-dom";
 import FavSongsOperations from "../components/Operations/FavSongsOperations";
 import { useFavoriteSongsOperations } from "../hooks/useFavoritesOperations";
+import CompoundList from "../components/HorizontalList/CompoundList";
+import Row from "../components/UI-elements/Row/Row";
+
+const filterOptions = [
+  { value: "all", label: "All" },
+  { value: "free", label: "Free" },
+  { value: "paid", label: "Paid" },
+];
+
+const sortOptions = [
+  { value: "name-asc", label: "Sort by song name (A-Z)" },
+  { value: "name-desc", label: "Sort by song name (Z-A)" },
+  { value: "artist-asc", label: "Sort by artist name (A-Z)" },
+  { value: "artist-desc", label: "Sort by artist name (Z-A)" },
+];
 
 function FavSongs() {
   const navigate = useNavigate();
@@ -31,12 +46,17 @@ function FavSongs() {
           />
         )}
         {tracks.length > 0 && (
-          <TrackList
-            tracks={tracks}
-            title={<FavSongsOperations />}
-            type="big"
-            first={true}
-          />
+          <CompoundList items={tracks} first={true}>
+            <Row>
+              <CompoundList.Title>Favorite songs</CompoundList.Title>
+              <CompoundList.Filter
+                fieldName="subscription"
+                options={filterOptions}
+              />
+              <CompoundList.Sort options={sortOptions} />
+            </Row>
+            <CompoundList.TrackList />
+          </CompoundList>
         )}
       </ListContainer>
     </Results>

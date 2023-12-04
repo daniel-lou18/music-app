@@ -1,12 +1,19 @@
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
-import RatedList from "../components/RatedList";
 import { useRated } from "../context/RatedContext";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon";
-import RatedArtistsOperations from "../components/Operations/RatedArtistsOperations";
 import { useRatedArtistsOperations } from "../hooks/useRatedOperations";
 import { useNavigate } from "react-router-dom";
+import CompoundList from "../components/HorizontalList/CompoundList";
+import Row from "../components/UI-elements/Row/Row";
+
+const sortOptions = [
+  { value: "rating-desc", label: "Sort by rating (descending)" },
+  { value: "rating-asc", label: "Sort by rating (ascending)" },
+  { value: "name-asc", label: "Sort by artist name (A-Z)" },
+  { value: "name-desc", label: "Sort by artist name (Z-A)" },
+];
 
 function RatedArtists() {
   const navigate = useNavigate();
@@ -33,11 +40,13 @@ function RatedArtists() {
           />
         )}
         {artists.length > 0 && (
-          <RatedList
-            items={artists}
-            title={<RatedArtistsOperations />}
-            first={true}
-          />
+          <CompoundList items={artists} first={true} type="albums">
+            <Row>
+              <CompoundList.Title>Rated artists</CompoundList.Title>
+              <CompoundList.Sort options={sortOptions} />
+            </Row>
+            <CompoundList.RatedList />
+          </CompoundList>
         )}
       </ListContainer>
     </Results>

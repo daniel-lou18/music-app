@@ -35,3 +35,15 @@
 .filterContainer button:global(.active):disabled:hover {
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 900px) {
+  .filterContainer button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filterContainer button {
+    font-size: 0.8rem;
+  }
+}

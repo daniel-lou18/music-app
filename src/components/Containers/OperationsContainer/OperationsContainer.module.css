@@ -10,8 +10,23 @@
 
 .operations :global(.title) {
   margin-right: auto;
+  white-space: nowrap;
 }
 
 .albums {
   padding-right: var(--space-l);
+}
+
+@media screen and (max-width: 600px) {
+  .operations :global(.title) {
+    font-size: 1.2rem;
+  }
+
+  .operations :global(.filterContainer) {
+    display: none;
+  }
+
+  .operations select {
+    font-size: 0.9rem;
+  }
 }

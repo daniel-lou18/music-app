@@ -1,12 +1,17 @@
 import { useFavorites } from "../context/FavoritesContext";
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
-import HorizontalList from "../components/HorizontalList";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon/";
 import { useFavoriteArtistsOperations } from "../hooks/useFavoritesOperations";
 import { useNavigate } from "react-router-dom";
-import FavoriteArtistsOperations from "../components/Operations/FavArtistsOperations";
+import CompoundList from "../components/HorizontalList/CompoundList";
+import Row from "../components/UI-elements/Row/Row";
+
+const sortOptions = [
+  { value: "name-asc", label: "Sort by artist name (A-Z)" },
+  { value: "name-desc", label: "Sort by artist name (Z-A)" },
+];
 
 function FavArtists() {
   const navigate = useNavigate();
@@ -30,11 +35,13 @@ function FavArtists() {
           />
         )}
         {artists.length > 0 && (
-          <HorizontalList
-            items={artists}
-            title={<FavoriteArtistsOperations />}
-            first={true}
-          />
+          <CompoundList items={artists} first={true} type="albums">
+            <Row>
+              <CompoundList.Title>Favorite artists</CompoundList.Title>
+              <CompoundList.Sort options={sortOptions} />
+            </Row>
+            <CompoundList.List />
+          </CompoundList>
         )}
       </ListContainer>
     </Results>

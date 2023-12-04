@@ -42,8 +42,69 @@ h2.title-browse-categories {
   }
 }
 
-/* @media screen and (max-width: 480px) {
-  .horList {
-    grid-template-columns: repeat(1, 1fr);
+/* Styles for CompoundList */
+
+.compoundList {
+  overflow: hidden;
+}
+
+.compoundList :global(.row) {
+  gap: 1.6rem;
+  flex: 1;
+  margin-bottom: var(--space-m);
+}
+
+.compoundList :global(.section-title) {
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+.albums :global(.row) {
+  padding-right: var(--space-l);
+}
+
+@media screen and (max-width: 900px) {
+  .compoundList :global(.filterContainer) button,
+  .compoundList select {
+    font-size: 0.9rem;
   }
-} */
+  .compoundList :global(.section-title) {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .compoundList :global(.filterContainer) button,
+  .compoundList select {
+    font-size: 0.8rem;
+  }
+
+  .compoundList :global(.row) {
+    margin-top: var(--space-m);
+  }
+
+  .compoundList :global(.filterContainer) {
+    display: none;
+  }
+
+  .albums :global(.row) {
+    padding-right: var(--space-m);
+  }
+}
+
+/* Styles for TrackList */
+
+.tracklist {
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow: hidden;
+}
+
+.tracklist.big {
+  height: auto;
+}
+
+.popularTracks {
+  position: relative;
+}

@@ -7,3 +7,17 @@
   background-color: var(--darker-bg-color);
   box-shadow: var(--space-s);
 }
+
+@media screen and (max-width: 900px) {
+  .select {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .select {
+    background-color: var(--dark-bg-color);
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+}

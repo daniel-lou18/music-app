@@ -1,12 +1,21 @@
 import { useFavorites } from "../context/FavoritesContext";
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
-import HorizontalList from "../components/HorizontalList";
 import InfoMsg from "../components/InfoMsg/";
 import NoteIcon from "../components/UI-elements/NoteIcon/";
 import { useFavoriteAlbumsOperations } from "../hooks/useFavoritesOperations";
-import FavAlbumsOperations from "../components/Operations/FavAlbumsOperations";
 import { useNavigate } from "react-router-dom";
+import CompoundList from "../components/HorizontalList/CompoundList";
+import Row from "../components/UI-elements/Row/Row";
+
+const sortOptions = [
+  { value: "name-asc", label: "Sort by album name (A-Z)" },
+  { value: "name-desc", label: "Sort by album name (Z-A)" },
+  { value: "artist-asc", label: "Sort by artist name (A-Z)" },
+  { value: "artist-desc", label: "Sort by artist name (Z-A)" },
+  { value: "release_date-asc", label: "Sort by date (asc)" },
+  { value: "release_date-desc", label: "Sort by date (desc)" },
+];
 
 function FavAlbums() {
   const navigate = useNavigate();
@@ -31,11 +40,13 @@ function FavAlbums() {
           />
         )}
         {albums.length > 0 && (
-          <HorizontalList
-            items={albums}
-            title={<FavAlbumsOperations />}
-            first={true}
-          />
+          <CompoundList items={albums} first={true} type="albums">
+            <Row>
+              <CompoundList.Title>Favorite albums</CompoundList.Title>
+              <CompoundList.Sort options={sortOptions} />
+            </Row>
+            <CompoundList.List />
+          </CompoundList>
         )}
       </ListContainer>
     </Results>

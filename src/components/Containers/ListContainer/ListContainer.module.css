@@ -89,6 +89,10 @@ section:first-child :global(.section-title) {
     margin-left: 16px;
     margin-right: 16px;
   }
+
+  :global(.favoritePage).container-favorite-songs {
+    margin-right: var(--space-m);
+  }
 }
 
 /* @media screen and (max-width: 360px) {

@@ -1,12 +1,27 @@
 import Results from "../components/Containers/Results";
 import ListContainer from "../components/Containers/ListContainer";
-import TrackList from "../components/TrackList";
 import { useRated } from "../context/RatedContext";
 import InfoMsg from "../components/InfoMsg";
 import NoteIcon from "../components/UI-elements/NoteIcon";
 import { useNavigate } from "react-router-dom";
-import RatedSongsOperations from "../components/Operations/RatedSongsOperations";
 import { useRatedSongsOperations } from "../hooks/useRatedOperations";
+import CompoundList from "../components/HorizontalList/CompoundList";
+import Row from "../components/UI-elements/Row/Row";
+
+const filterOptions = [
+  { value: "all", label: "All" },
+  { value: "free", label: "Free" },
+  { value: "paid", label: "Paid" },
+];
+
+const sortOptions = [
+  { value: "rating-desc", label: "Sort by rating (descending)" },
+  { value: "rating-asc", label: "Sort by rating (ascending)" },
+  { value: "name-asc", label: "Sort by song name (A-Z)" },
+  { value: "name-desc", label: "Sort by song name (Z-A)" },
+  { value: "artist-asc", label: "Sort by artist name (A-Z)" },
+  { value: "artist-desc", label: "Sort by artist name (Z-A)" },
+];
 
 function RatedSongs() {
   const navigate = useNavigate();
@@ -32,12 +47,17 @@ function RatedSongs() {
           />
         )}
         {tracks.length > 0 && (
-          <TrackList
-            tracks={tracks}
-            title={<RatedSongsOperations />}
-            type="big"
-            first={true}
-          />
+          <CompoundList items={tracks} first={true}>
+            <Row>
+              <CompoundList.Title>Rated songs</CompoundList.Title>
+              <CompoundList.Filter
+                fieldName="subscription"
+                options={filterOptions}
+              />
+              <CompoundList.Sort options={sortOptions} />
+            </Row>
+            <CompoundList.TrackList type="big" />
+          </CompoundList>
         )}
       </ListContainer>
     </Results>
